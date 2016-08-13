@@ -1,0 +1,174 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/servantData.js"></script>
+<script type="text/javascript" src="js/pageController.js"></script>
+<link href="css/wtf.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="warpper">
+<div class="bg"></div>
+<h3>Filter</h3>
+<div class="controllerDiv">
+<table id="controlPanel" class="panel">
+  <tr>
+     <td style="width:30%;text-align: left;">Drop Item:</td>
+     <td style="width:70%;test-align: right;">
+        <select id="itemSelector">
+          <option value="water">純水</option>
+          <option value="food">食材</option>
+          <option value="stone">石材</option>          
+          <option value="wood">木材</option>
+          <option value="iron">鐵塊</option>
+        </select>
+     </td>
+  </tr>
+  <tr> 
+     <td class="width:30%;text-align: left;">職階：</td>
+     <td style="width:70%;test-align: right;">
+        <select id="classSelector">
+          <option value="all">全選</option>
+          <option value="saber">劍</option>
+          <option value="archer">弓</option>
+          <option value="lancer">槍</option>
+          <option value="rider">騎</option>
+          <option value="assassin">殺</option>
+          <option value="caster">術</option>
+          <option value="berserker">狂</option>
+          <option value="ex">特</option>
+        </select>
+     </td>
+  </tr>
+  <tr>
+     <td class="width:30%;text-align: left;">稀有度</td>
+     <td style="width:70%;test-align: right;">
+       <input type="checkBox" name="rarity" value="1" checked="checked"/>1☆
+       <input type="checkBox" name="rarity" value="2" checked="checked"/>2☆
+       <input type="checkBox" name="rarity" value="3" checked="checked"/>3☆
+       <input type="checkBox" name="rarity" value="4" checked="checked"/>4☆
+       <input type="checkBox" name="rarity" value="5" checked="checked"/>5☆
+       <input type="hidden" id="rarityCheck" value="12345" />
+     </td>
+  </tr>
+</table>
+<input type="button" value="filter" onclick="filterRun();" style="z-index:2;"/>
+</div>
+<hr/>
+<div id="resultDiv">
+<h3>Result Table</h3>
+<table class="resultTable"><thead>
+<th>rarilty</th>
+<th>劍</th>
+<th>弓</th>
+<th>槍</th>
+<th>騎</th>
+<th>殺</th>
+<th>術</th>
+<th>狂</th>
+<th>特</th>
+</thead>
+<tbody>
+<tr class="1">
+  <td style="text-align:center; width:5%">1☆</td>
+  <td class="saber"></td>
+  <td class="archer"></td>
+  <td class="lancer"></td>
+  <td class="rider"></td>
+  <td class="assassin"></td>
+  <td class="caster"></td>
+  <td class="berserker"></td>
+  <td class="ex"></td>
+</tr>
+<tr class="2">
+  <td style="text-align:center; width:5%">2☆</td>
+  <td class="saber"></td>
+  <td class="archer"></td>
+  <td class="lancer"></td>
+  <td class="rider"></td>
+  <td class="assassin"></td>
+  <td class="caster"></td>
+  <td class="berserker"></td>
+  <td class="ex"></td>
+</tr>
+<tr class="3">
+  <td style="text-align:center; width:5%">3☆</td>
+  <td class="saber"></td>
+  <td class="archer"></td>
+  <td class="lancer"></td>
+  <td class="rider"></td>
+  <td class="assassin"></td>
+  <td class="caster"></td>
+  <td class="berserker"></td>
+  <td class="ex"></td>
+</tr>
+<tr class="4">
+  <td style="text-align:center; width:5%">4☆</td>
+  <td class="saber"></td>
+  <td class="archer"></td>
+  <td class="lancer"></td>
+  <td class="rider"></td>
+  <td class="assassin"></td>
+  <td class="caster"></td>
+  <td class="berserker"></td>
+  <td class="ex"></td>
+</tr>
+<tr class="5">
+  <td style="text-align:center; width:5%">5☆</td>
+  <td class="saber"></td>
+  <td class="archer"></td>
+  <td class="lancer"></td>
+  <td class="rider"></td>
+  <td class="assassin"></td>
+  <td class="caster"></td>
+  <td class="berserker"></td>
+  <td class="ex"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<h3>party member</h3>
+<div id="partyDiv">
+<ul id="partyList">
+</ul>
+<h3>cost & item bouns</h3>
+cost:<span id="cost" style="font-size:1cm">0</span>
+food:<span id="food" style="font-size:1cm">0</span>
+water:<span id="water" style="font-size:1cm">0</span>
+wood:<span id="wood" style="font-size:1cm">0</span>
+stone:<span id="stone" style="font-size:1cm">0</span>
+iron:<span id="iron" style="font-size:1cm">0</span>
+</div>
+<hr/>
+<div>
+<p>note：<br/>
+沙灘：food/water，寄居蟹(劍)與boss大型寄居蟹(劍)<br/>
+草原：stone/food，飛蟲(騎)與boss雙角馬(槍)<br/>
+洞窟：iron/water，石頭(狂)與boss眼球(弓)<br/>
+叢林：wood/food，海魔(弓)與boss奇美拉(狂)<br/>
+山地：wood/stone/iron，飛龍與boss巨龍<br/>
+原始林：food/water，魔豬(狂)與boss黑獸(殺)<br/>
+
+
+</p>
+</div>
+</div>
+<select id="craftSelector" class="hidden craft">
+  <option value="0" selected="selected" item="N/A">無</option>
+  <option value='12' item='iron'>船長(鐵)</option>
+  <option value='9' item='stone'>阿塔(石)</option>
+  <option value='5' item='wood'>布丁(木)</option>
+  <option value='12' item='waterfood'>卡蜜拉(水+食)</option>
+  <option value="12" item="N/A">其他5☆</option>
+  <option value="9" item="N/A">其他4☆</option>
+  <option value="5" item="N/A">其他3☆</option>
+</select>
+</body>
+<script type="text/javascript">
+var servantData = new Array();
+var partyCost = 0;
+initServantData();
+initPage();
+
+</script>
+</html>
