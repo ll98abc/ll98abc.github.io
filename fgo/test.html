@@ -12,15 +12,21 @@
 <div class="controllerDiv">
 <table id="controlPanel" class="panel">
   <tr>
-     <td style="width:30%;text-align: left;">Drop Item:</td>
-     <td style="width:70%;test-align: right;">
+     <td style="width:20%;text-align: left;">Drop Item:</td>
+     <td style="width:80%;test-align: right;">
         <select id="itemSelector">
           <option value="water">純水</option>
           <option value="food">食材</option>
           <option value="stone">石材</option>          
           <option value="wood">木材</option>
           <option value="iron">鐵塊</option>
-        </select>
+          <option value="blue">藍錠</option>
+          <option value="gold">金錠</option>
+          <option value="silver">銀錠</option>
+          <option value="oil">燃油</option>
+          <option value="cement">水泥</option>
+        </select><br/>
+     イシュカ合金=<label class="blueMetal">藍錠</label>、エードラム合金=<label class="goldMetal">金錠</label>、レアルタ合金=<label class="silverMetal">銀錠</label>
      </td>
   </tr>
   <tr> 
@@ -124,20 +130,28 @@
   <td class="ex"></td>
 </tr>
 </tbody>
-</table>
+</table><br/>
+※紅字表示該servant不需要切換P1/P2禮裝，加成相同。<br/>
+EX：金閃閃P1 bonus為【石材】，P2為【金錠】，裝備阿塔喵禮裝就不用切換了。
 </div>
 <hr/>
 <h3>party member</h3>
 <div id="partyDiv">
 <ul id="partyList">
 </ul>
-<h3>cost & item bouns</h3>
-cost:<span id="cost" style="font-size:1cm">0</span>
+<h3>cost & item bonus</h3>
 food:<span id="food" style="font-size:1cm">0</span>
 water:<span id="water" style="font-size:1cm">0</span>
 wood:<span id="wood" style="font-size:1cm">0</span>
 stone:<span id="stone" style="font-size:1cm">0</span>
-iron:<span id="iron" style="font-size:1cm">0</span>
+iron:<span id="iron" style="font-size:1cm">0</span><br/>
+oil:<span id="oil" style="font-size:1cm">0</span>
+cement:<span id="cement" style="font-size:1cm">0</span>
+silver:<span id="silver" style="font-size:1cm">0</span>
+gold:<span id="gold" style="font-size:1cm">0</span>
+blue:<span id="blue" style="font-size:1cm">0</span>
+<br/>
+cost:<span id="cost" style="font-size:1cm">0</span>
 </div>
 <hr/>
 <div>
@@ -148,17 +162,16 @@ iron:<span id="iron" style="font-size:1cm">0</span>
 叢林：wood/food，海魔(弓)與boss奇美拉(狂)<br/>
 山地：wood/stone/iron，飛龍與boss巨龍<br/>
 原始林：food/water，魔豬(狂)與boss黑獸(殺)<br/>
-
-
 </p>
 </div>
 </div>
-<select id="craftSelector" class="hidden craft">
+<select id="craftSelector" class="hidden">
   <option value="0" selected="selected" item="N/A">無</option>
-  <option value='12' item='iron'>船長(鐵)</option>
-  <option value='9' item='stone'>阿塔(石)</option>
-  <option value='5' item='wood'>布丁(木)</option>
+  <option value='12' item='iron'>船長or圓桌提督(鐵+藍錠)</option>
+  <option value='9' item='stone'>阿塔or小金星prpr(石+金錠)</option>
+  <option value='5' item='wood'>布丁or豆爸(木+銀錠)</option>
   <option value='12' item='waterfood'>卡蜜拉(水+食)</option>
+  <option value="12" item="oilcement">夜鶯(燃油+水泥)</option
   <option value="12" item="N/A">其他5☆</option>
   <option value="9" item="N/A">其他4☆</option>
   <option value="5" item="N/A">其他3☆</option>

@@ -35,39 +35,59 @@ td, th{
 
 .saber{
   width: 11%;
-  text-align:center;
+  text-align:left;
 }
 
 .archer{
   width: 11%;
-  text-align:center;
+  text-align:left;
 }
 
 .lancer{
   width: 11%;
-  text-align:center;
+  text-align:left;
 }
 .rider{
   width: 11%;
-  text-align:center;
+  text-align:left;
 }
 .assassin{
   width: 11%;
-  text-align:center;
+  text-align:left;
 }
 .caster{
   width: 11%;
-  text-align:center;
+  text-align:left;
 }
 .berserker{
   width: 11%;
-  text-align:center;
+  text-align:left;
 }
 .ex{
   width: 11%;
-  text-align:center;
+  text-align:left;
 }
 
 .hidden{
   display:none;
 }
+
+.blueMetal{
+  color:blue;
+  font-weight:bold;
+}
+
+.goldMetal{
+  color:yellow;
+  font-weight:bold;
+}
+
+.silverMetal{
+  color:grey;
+  font-weight:bold;
+}
+
+.craftFixed{
+  color:red;
+}
+
