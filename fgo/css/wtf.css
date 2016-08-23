@@ -91,3 +91,11 @@ td, th{
   color:red;
 }
 
+.note{
+  padding : 5px;
+  border: 1px solid grey;
+  width: 40%;
+  display: inline-block;
+  float: left;
+}
+
