@@ -11,7 +11,7 @@ Quest.3: target : 打倒魔法☆少女童謠醬
          prev : mainQuest.1-3 clear
          reward : 呼符
 
-Quest.4: target : 打倒治癒☆少女C子莉莉
+Quest.4: target : 打倒治癒☆少女C子蘿
          prev : mainQuest.1-3 clear
          reward : 呼符
 
@@ -19,7 +19,7 @@ Quest.14: target : 對魔法☆少女童謠醬造成10萬傷害
           prev : mainQuest.1-3 clear
           reward : 肥料禮裝
 
-Quest.15: target : 對治癒☆少女C子莉莉造成50萬傷害
+Quest.15: target : 對治癒☆少女C子蘿造成50萬傷害
           prev: mainQuest.2-3 clear
           reward : 2M QP
 
