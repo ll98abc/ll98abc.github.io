@@ -5,31 +5,55 @@
 
 Quest.2: target : お菓子の国 EXTRA I clear
          prev : quest.1
-         reward : 呼符
+         reward : 50綠方
 
 Quest.3: target : 打倒魔法☆少女童謠醬
-         prev : main.1-3 clear
-         reward : 肥料禮裝
+         prev : mainQuest.1-3 clear
+         reward : 呼符
+
+Quest.4: target : 打倒治癒☆少女C子莉莉
+         prev : mainQuest.1-3 clear
+         reward : 呼符
 
 Quest.14: target : 對魔法☆少女童謠醬造成10萬傷害
-         prev : main.1-3 clear
-         reward : 肥料禮裝
+          prev : mainQuest.1-3 clear
+          reward : 肥料禮裝
+
+Quest.15: target : 對治癒☆少女C子莉莉造成50萬傷害
+          prev: mainQuest.2-3 clear
+          reward : 2M QP
 
 Quest.24: target : 打倒20隻薑餅人
           prev: 對魔法少女童謠醬造成35k傷害 (擊倒1次)
           reward : 開啟第二階段的worldMatch與特攻禮裝(紅)
 
-Quest.71: target : お菓子の国　進行5次有戰鬥的任務
+Quest.25: target : 打倒50隻薑餅人
+          prev: quest.25 clear
+          reward : 開啟第二階段的worldMatch與特攻禮裝(紅)
+
+Quest.71: target : お菓子の国　完成5次有戰鬥的任務
           prev: 對魔法少女童謠醬造成100k傷害 (擊倒3次)
           reward : 開啟第三階段的worldMatch與100綠方
+
+Quest.72: target : 大海原と竜の国　完成5次有戰鬥的任務
+          prev: mainQuest.2-3
+          reward : 槍輝石*5
 
 Quest.87: target : 取得100個布丁
           prev: 對魔法少女童謠醬造成35k傷害 (擊倒1次)
           reward : 50綠方
 
+Quest.88: target : 取得300個布丁
+          prev: quest.87 clear
+          reward : 銀蘋果
+
 Quest.89: target : 取得100個DVD
           prev: 對魔法少女童謠醬造成100k傷害 (擊倒3次)
           reward : 50綠方
+
+Quest.91: target : 取得100個獅子君
+          prev: quest.3 clear
+          reward : 弓輝石*5
 
 Quest.96: target : 完成10個任務
           prev : quest.1 clear

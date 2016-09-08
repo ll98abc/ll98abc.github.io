@@ -5,10 +5,25 @@ drop:DVD / lion
 mainQuest.1-1  no battle
 
 mainQuest.1-2  cost 5
-emeny:狂薑餅人(5k) / 狂薑餅人(5k)+狂薑餅人(12k)
+enemy:狂薑餅人(5k) / 狂薑餅人(5k)+狂薑餅人(12k)
 drop:布丁
-unlock: freeQuest.1
+prev: onceQuest.1
 
 mainQuest.1-3 no battle
-unlock: freeQuest.2
+prev: onceQuest.2
 
+mainQuest.2-1 no battle
+prev: quest.3
+
+mainQuest.2-2A cost 5
+prev: mainQuest.2-1
+enemy: 槍龍(7k) /  槍龍(9k)*2 / 槍龍(13k)*2+槍龍(25k)
+drop: 獅子君
+
+mainQuest.2-2B cost 5
+prev: mainQuest.2-1
+enemy: 劍龍牙兵(4k)*2+弓龍牙兵(4k) /  劍龍牙兵(6k)+弓龍牙兵(6k)*2 / 劍龍牙兵(23k)*+劍&弓龍牙兵(12k)
+drop: 布丁
+
+mainQuest.2-3 no battle
+prev: mainQuest 2-2B

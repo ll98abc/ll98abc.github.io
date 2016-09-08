@@ -4,23 +4,48 @@ enemy: 狂薑餅人(3k)*3 /狂薑餅人(4k)*2+玉藻貓(7k)
 drop: 狂銀棋+布丁
 
 onceQuest.2 お菓子の国 EXTRA II cost10
-prev: quest.2 clear
+prev: mainQuest.1-3 clear
 enemy: 槍巧克力兵(3k)*3 /槍巧克力兵(5k)+阿芙(17k)
 drop: 騎銀棋+DVD
 
 
-freeQuest.3 お菓子の国 rank D cost15
+freeQuest.1 お菓子の国 rank D cost15
 prev: 對魔法☆少女童謠醬造成35k傷害 (擊倒1次)
 emeny: 狂薑餅人(7k)*3 / 狂薑餅人(8k)*2+德翁(19k)
 drop: 布丁
+
+freeQuest.2 お菓子の国 rank C cost15
+prev: 對魔法☆少女童謠醬造成100k傷害 (擊倒3次)
+emeny: 弓巧克力兵(5k)*3 / 弓巧克力兵(8k)*2+阿塔喵喵(26k)
+drop: DVD
+
+freeQuest.3 お菓子の国 rank B cost15
+prev: freeQuest.2 
+emeny: 殺人馬(5k)*3 / 殺人馬(8k)*2+嫁怪芙蘭(25k)
+drop: 獅子君
+
+freeQuest.4 お菓子の国 rank A cost20
+prev: freeQuest.2 
+emeny: 槍人馬(6k)*2+狂薑餅人(8k) / 槍人馬(13k)*2+狂薑餅人(13k) / 奇美拉(22k)+黑槍傻(26k)
+drop: 布丁+DVD+獅子君
 
 
 worldMatch.1 魔法☆少女童謠醬 cost 10
 prev:  mainQuest.1-3 clear
 emeny: 狂薑餅人(3k)*3  / 魔神柱(50k)+魔法☆少女童謠醬(35k)
-drop: 布丁+DVD+lion
+drop: 布丁+DVD+獅子君
 
 worldMatch.2 魔法☆少女童謠醬 cost 10
-prev:  mainQuest.1-3 clear
-emeny: 狂薑餅人(3k)*3  / 魔神柱(50k)+魔法☆少女童謠醬(35k)
-drop: 布丁+DVD+lion
+prev:  quest.24 clear
+emeny: 狂薑餅人(3k)*3  / 魔神柱(60k)+魔法☆少女童謠醬(40k)
+drop: 布丁+DVD+獅子君
+
+worldMatch.3 魔法☆少女童謠醬 cost 10
+prev:  quest.71 clear
+emeny: 狂薑餅人(3k)*3  / 魔神柱(75k)+魔法☆少女童謠醬(62k)
+drop: 布丁+DVD+獅子君
+
+worldMatch.4 治癒☆少女C子蘿 cost 10
+prev:  mainQuest.2-3 clear
+emeny: 槍龍(6k)*3  / 劍龍牙兵(45k)+治癒☆少女C子蘿(100k)
+drop: DVD+獅子君
