@@ -1,0 +1,26 @@
+﻿onceQuest.1 お菓子の国 EXTRA I cost10
+prev: quest.1 clear
+enemy: 狂薑餅人(3k)*3 /狂薑餅人(4k)*2+玉藻貓(7k)
+drop: 狂銀棋+布丁
+
+onceQuest.2 お菓子の国 EXTRA II cost10
+prev: quest.2 clear
+enemy: 槍巧克力兵(3k)*3 /槍巧克力兵(5k)+阿芙(17k)
+drop: 騎銀棋+DVD
+
+
+freeQuest.3 お菓子の国 rank D cost15
+prev: 對魔法☆少女童謠醬造成35k傷害 (擊倒1次)
+emeny: 狂薑餅人(7k)*3 / 狂薑餅人(8k)*2+德翁(19k)
+drop: 布丁
+
+
+worldMatch.1 魔法☆少女童謠醬 cost 10
+prev:  mainQuest.1-3 clear
+emeny: 狂薑餅人(3k)*3  / 魔神柱(50k)+魔法☆少女童謠醬(35k)
+drop: 布丁+DVD+lion
+
+worldMatch.2 魔法☆少女童謠醬 cost 10
+prev:  mainQuest.1-3 clear
+emeny: 狂薑餅人(3k)*3  / 魔神柱(50k)+魔法☆少女童謠醬(35k)
+drop: 布丁+DVD+lion

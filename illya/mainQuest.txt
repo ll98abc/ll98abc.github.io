@@ -1,0 +1,14 @@
+﻿prolog cost 5
+enemy:劍麋鹿(6k)*2 + 狂雪人(12k)
+drop:DVD / lion
+
+mainQuest.1-1  no battle
+
+mainQuest.1-2  cost 5
+emeny:狂薑餅人(5k) / 狂薑餅人(5k)+狂薑餅人(12k)
+drop:布丁
+unlock: freeQuest.1
+
+mainQuest.1-3 no battle
+unlock: freeQuest.2
+
