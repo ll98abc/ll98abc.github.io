@@ -1,42 +1,104 @@
 ﻿<html>
 <head>
 <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+
+<script type="text/javascript" src="js/mainQuest.js"></script>
+<script type="text/javascript" src="js/freeQuest.js"></script>
+<script type="text/javascript" src="js/missionList.js"></script>
+ 
 <link href="css/wtf.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="warpper">
 <div class="bg"></div>
-<h3>Filter</h3>
+<h3>任務面板</h3>
 <div class="controllerDiv">
 <table id="controlPanel" class="panel">
   <tr>
-     <td style="width:20%;text-align: left;">Drop Item:</td>
+     <td style="width:20%;text-align: left;">Category:</td>
      <td style="width:80%;test-align: right;">
-        <select id="itemSelector">        
-        </select><br/>
-     </td>
-  </tr>
-  <tr> 
-     <td class="width:30%;text-align: left;">職階：</td>
-     <td style="width:70%;test-align: right;">        
+      <input type="radio" name="questFilter" value="mainQuestSelector"/>主線關卡&nbsp;
+      <input type="radio" name="questFilter" value="extraQuestSelector"/>單發關卡&nbsp;
+      <input type="radio" name="questFilter" value="freeQuestSelector"/>農場關卡&nbsp;
+      <input type="radio" name="questFilter" value="missionSelector"/>活動任務&nbsp;
      </td>
   </tr>
   <tr>
-     <td class="width:30%;text-align: left;">稀有度</td>
-     <td style="width:70%;test-align: right;">     
+     <td style="width:20%;text-align: left;">Quest:</td>
+     <td style="width:80%;test-align: right;">
+        <select id="mainQuestSelector" class="selector hidden">
+          <option value="">請選擇</option>        
+        </select>
+        <select id="extraQuestSelector" class="selector hidden">
+          <option value="">請選擇</option>        
+        </select>
+        <select id="freeQuestSelector" class="selector hidden">
+          <option value="">請選擇</option>        
+        </select>
+        <select id="missionSelector" class="selector hidden">
+          <option value="">請選擇</option>        
+        </select>
+     </td>
+  </tr>
+  <tr> 
+     <td style="width:20%;text-align: left;">任務目標：</td>
+     <td style="width:80%;test-align: right;">        
+     </td>
+  </tr>
+  <tr>
+     <td style="width:20%;text-align: left;">關卡內容：</td>
+     <td style="width:80%;test-align: right;">     
+     </td>
+  </tr>
+  <tr>
+     <td style="width:20%;text-align: left;">任務獎勵：</td>
+     <td style="width:80%;test-align: right;">     
+     </td>
+  </tr>
+  <tr>
+     <td style="width:20%;text-align: left;">前置任務：</td>
+     <td style="width:80%;test-align: right;">     
+     </td>
+  </tr>
+  <tr>
+     <td colspan="2">
+       <input id="missionLocate" type="button" value="任務地點"/>     
      </td>
   </tr>
 </table>
 </div>
 <hr/>
+<h3>世界地圖</h3>
 <div id="mapDiv">
+  <div class="worldMap">
+    <a class="a_1 hidden"></a>
+    <a class="a_2 hidden"></a>
+    <a class="a_3 hidden"></a>
+    <a class="a_4 hidden"></a>
+    <a class="b_1 hidden"></a>
+    <a class="b_2 hidden"></a>
+    <a class="b_3 hidden"></a>
+    <a class="b_4 hidden"></a> 
+  </div>
+</div>
+<hr/>
+<h3>關卡內容</h3><input type="button" value="all Clear" onclick="allClear();">
+<div id="questDiv">
+</div>
 </div>
 </body>
 <script type="text/javascript">
-var servantData = new Array();
-var partyCost = 0;
-//initServantData();
-//initPage();
+var mainQuestList = new Array();
+var extraQuestList = new Array();
+var freeQuestList = new Array();
+var extraQuestList = new Array();
+var worldMatchList = new Array();
+var missionList = new Array();
+
+//initMissionData();
+initFreeQuestData();
+initMainQuestsData();
+initPage();
 
 </script>
 </html>

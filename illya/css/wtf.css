@@ -12,6 +12,117 @@
   z-index : -1;
 }
 
+.worldMap{
+	height: 755px;
+  width: 1344px;
+	background-image: url(../images/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.a_1{
+	position: absolute;
+	display:block;
+	height : 50px;
+	width: 50px;
+	background-image: url(../images/anchor.jpg);
+	background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 92%;
+  left: 67%;
+}
+
+.a_2{
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 109%;
+  left: 69%;
+}
+
+.a_3{
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 101%;
+  left: 77%;
+}
+
+.a_4{
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 109%;
+  left: 86%;
+}
+
+.b_1{
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 91%;
+  left: 33%;
+}
+
+.b_2{
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 86%;
+  left: 17%;
+}
+
+.b_3{
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 110%;
+  left: 29%;
+}
+.b_4{
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
 .controllerDiv{
   z-index : 2;
 }
@@ -24,73 +135,14 @@
   z-index : 2;
 }
 
-.resultTable{
-  width: 90%;
-  border: 1px solid black;
-  padding : 10px;
-}
-
 td, th{
   border: 1px solid black; 
-}
-
-.saber{
-  width: 11%;
-  text-align:left;
-}
-
-.archer{
-  width: 11%;
-  text-align:left;
-}
-
-.lancer{
-  width: 11%;
-  text-align:left;
-}
-.rider{
-  width: 11%;
-  text-align:left;
-}
-.assassin{
-  width: 11%;
-  text-align:left;
-}
-.caster{
-  width: 11%;
-  text-align:left;
-}
-.berserker{
-  width: 11%;
-  text-align:left;
-}
-.ex{
-  width: 11%;
-  text-align:left;
 }
 
 .hidden{
   display:none;
 }
 
-.blueMetal{
-  color:blue;
-  font-weight:bold;
-}
-
-.goldMetal{
-  color:yellow;
-  font-weight:bold;
-}
-
-.silverMetal{
-  color:grey;
-  font-weight:bold;
-}
-
-.craftFixed{
-  color:red;
-}
 
 .note{
   padding : 5px;
