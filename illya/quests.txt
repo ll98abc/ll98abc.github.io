@@ -31,6 +31,14 @@ Quest.25: target : 打倒50隻薑餅人
           prev: quest.25 clear
           reward : 開啟第二階段的worldMatch與特攻禮裝(紅)
 
+Quest.35: target : 打倒30隻「骨」系敵人
+          prev: 對治癒☆少女C子蘿造成20萬傷害
+          reward : 特攻禮裝(藍)
+
+Quest.62: target : 打倒10隻saber class的偽魔法♂少女
+　　　　　prev: 對治癒☆少女C子蘿造成20萬傷害
+          reward : 騎士勳章*5
+
 Quest.71: target : お菓子の国　完成5次有戰鬥的任務
           prev: 對魔法少女童謠醬造成100k傷害 (擊倒3次)
           reward : 開啟第三階段的worldMatch與100綠方
