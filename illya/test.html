@@ -5,7 +5,7 @@
 <script type="text/javascript" src="js/mainQuest.js"></script>
 <script type="text/javascript" src="js/freeQuest.js"></script>
 <script type="text/javascript" src="js/missionList.js"></script>
- 
+<script type="text/javascript" src="js/pageController.js"></script>
 <link href="css/wtf.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -15,17 +15,17 @@
 <div class="controllerDiv">
 <table id="controlPanel" class="panel">
   <tr>
-     <td style="width:20%;text-align: left;">Category:</td>
-     <td style="width:80%;test-align: right;">
+     <td style="width:25%;text-align: left;">Category:</td>
+     <td style="width:75%;test-align: right;">
       <input type="radio" name="questFilter" value="mainQuestSelector"/>主線關卡&nbsp;
       <input type="radio" name="questFilter" value="extraQuestSelector"/>單發關卡&nbsp;
       <input type="radio" name="questFilter" value="freeQuestSelector"/>農場關卡&nbsp;
-      <input type="radio" name="questFilter" value="missionSelector"/>活動任務&nbsp;
+      <input type="radio" name="questFilter" value="missionSelector" checked="checked"/>活動任務&nbsp;
      </td>
   </tr>
   <tr>
-     <td style="width:20%;text-align: left;">Quest:</td>
-     <td style="width:80%;test-align: right;">
+     <td style="width:25%;text-align: left;">Quest:</td>
+     <td style="width:75%;test-align: right;">
         <select id="mainQuestSelector" class="selector hidden">
           <option value="">請選擇</option>        
         </select>
@@ -40,29 +40,26 @@
         </select>
      </td>
   </tr>
-  <tr> 
-     <td style="width:20%;text-align: left;">任務目標：</td>
-     <td style="width:80%;test-align: right;">        
+  <tr>
+     <td style="width:25%;text-align: left;">任務目標/關卡內容</td>
+     <td style="width:75%;test-align: right;" id="questContent">     
      </td>
   </tr>
   <tr>
-     <td style="width:20%;text-align: left;">關卡內容：</td>
-     <td style="width:80%;test-align: right;">     
+     <td style="width:25%;text-align: left;">任務獎勵/關卡掉落</td>
+     <td style="width:75%;test-align: right;" id="questReward">     
      </td>
   </tr>
   <tr>
-     <td style="width:20%;text-align: left;">任務獎勵：</td>
-     <td style="width:80%;test-align: right;">     
-     </td>
-  </tr>
-  <tr>
-     <td style="width:20%;text-align: left;">前置任務：</td>
-     <td style="width:80%;test-align: right;">     
+     <td style="width:25%;text-align: left;">前置任務</td>
+     <td style="width:75%;test-align: right;" id="questPrevStep">     
      </td>
   </tr>
   <tr>
      <td colspan="2">
-       <input id="missionLocate" type="button" value="任務地點"/>     
+       <input id="dropMap" type="button" value="任務地點"/>
+       <input id="missionTag" type="input" value=""/>
+       <input id="missionLocate" type="input" value="" />
      </td>
   </tr>
 </table>
@@ -82,7 +79,7 @@
   </div>
 </div>
 <hr/>
-<h3>關卡內容</h3><input type="button" value="all Clear" onclick="allClear();">
+<h3>關卡內容<input style="margin-left:60%" type="button" value="all Clear" onclick="allClear();"></h3>
 <div id="questDiv">
 </div>
 </div>
@@ -95,9 +92,9 @@ var extraQuestList = new Array();
 var worldMatchList = new Array();
 var missionList = new Array();
 
-//initMissionData();
+initMissionData();
 initFreeQuestData();
-initMainQuestsData();
+initMainQuestData();
 initPage();
 
 </script>
