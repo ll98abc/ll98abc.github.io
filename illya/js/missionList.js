@@ -3,9 +3,9 @@
 	missionList[0] = {
 		name : "Mission1",
 		target: "おかしなおかしなお菓子の国【Ⅱ】 clear",
-        prev: "mainQuest.おかしなおかしなお菓子の国【I】",
-        reward: "金蘋果",
-        tag: ""
+        	prev: "mainQuest.おかしなおかしなお菓子の国【I】",
+        	reward: "金蘋果",
+        	tag: ""
 	}
 
 	missionList[1] = {
@@ -13,26 +13,26 @@
 		target: "extraQuest.1 お菓子の国 EXTRA I clear",
 		prev: "Mission1 clear",
 		reward: "金蘋果",
-           tag: ""
+           	tag: ""
 	}
 
 	missionList[2] = {
 		name : "Mission3",
 		target: "打倒魔法☆少女童謠醬",
-        prev: "mainQuest.おかしなおかしなお菓子の国【Ⅲ】 clear",
+        	prev: "mainQuest.おかしなおかしなお菓子の国【Ⅲ】 clear",
 		reward: "呼符",
-        tag: ""
+        	tag: ""
 	}
 
-    missionList[3] = {
+    	missionList[3] = {
 		name : "Mission4",
 		target: "打倒治癒☆少女C子蘿",
-        prev: "mainQuest.大海原と竜の国【Ⅲ】 clear",
-        reward: "呼符",
-        tag: ""
+        	prev: "mainQuest.大海原と竜の国【Ⅲ】 clear",
+        	reward: "呼符",
+        	tag: ""
 	}
 
-    missionList[4] = {
+    	missionList[4] = {
 		name : "Mission5",
 		target: "打倒文學☆少女艾蓮娜",
 		prev: "unknown",
@@ -40,7 +40,7 @@
 		tag: ""
 	}
 
-    missionList[5] = {
+    	missionList[5] = {
 		name : "Mission6",
 		target: "打倒婊子☆天使梅芙",
 		prev: "unknown",
@@ -48,7 +48,7 @@
 		tag: ""
 	}
 
-    missionList[6] = {
+    	missionList[6] = {
 		name : "Mission7",
 		target: "打倒First Lady",
 		prev: "unknown",
@@ -56,7 +56,7 @@
 		tag: ""
 	}
 
-    missionList[7] = {
+    	missionList[7] = {
 		name : "Mission8 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
@@ -64,7 +64,7 @@
 		tag: ""
 	}
 
-    missionList[8] = {
+    	missionList[8] = {
 		name : "Mission9 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
@@ -72,15 +72,15 @@
 		tag: ""
 	}
 
-    missionList[9] = {
+    	missionList[9] = {
 		name : "Mission10 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
 		reward: "unknown",
-        tag: ""
+        	tag: ""
 	}
 
-    missionList[10] = {
+    	missionList[10] = {
 		name : "Mission11 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
@@ -88,15 +88,15 @@
 		tag: ""
 	}
 
-    missionList[11] = {
+    	missionList[11] = {
 		name : "Mission12 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
 		reward: "unknown",
-        tag: ""
+        	tag: ""
 	}
 	
-    missionList[12] = {
+	    missionList[12] = {
 		name : "Mission13 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
@@ -105,47 +105,47 @@
 	}
 
 
-    missionList[13] = {
+    	missionList[13] = {
 		name : "Mission14",
-        target : "對魔法☆少女童謠醬造成100k傷害",
-        prev: "mainQuest.おかしなおかしなお菓子の国【Ⅲ】 clear",
-        reward: "肥料禮裝",
-        tag: ""
-    }
+        	target : "對魔法☆少女童謠醬造成100k傷害",
+        	prev: "mainQuest.おかしなおかしなお菓子の国【Ⅲ】 clear",
+        	reward: "肥料禮裝",
+        	tag: ""
+    	}
 
-    missionList[14] = {
-        name : "Mission15",
-        target : "對治癒☆少女C子蘿造成500k傷害",
-        prev: "mainQuest.大海原と竜の国【Ⅲ】 clear clear",
-        reward: "2M QP",
-        tag: ""
-    }
+    	missionList[14] = {
+        	name : "Mission15",
+        	target : "對治癒☆少女C子蘿造成500k傷害",
+        	prev: "mainQuest.大海原と竜の国【Ⅲ】 clear clear",
+        	reward: "2M QP",
+        	tag: ""
+    	}
 
-    missionList[15] = {
+    	missionList[15] = {
 		name : "Mission16",
 		target: "對文學☆少女艾蓮娜造成1M傷害",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "2.5M QP",
-        tag: ""
+        	tag: ""
 	}
 
-    missionList[16] = {
+    	missionList[16] = {
 		name : "Mission17",
 		target: "對婊子☆天使梅芙造成1.5M傷害",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "3M QP",
-        tag: ""
+        	tag: ""
 	}
 
         missionList[17] = {
 		name : "Mission18",
 		target: "對First Lady造成2.5M傷害",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "3.5M QP",
-        tag: ""
+        	tag: ""
 	}
 
-    missionList[18] = {
+    	missionList[18] = {
 		name : "Mission19 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
@@ -153,228 +153,228 @@
 		tag: ""
 	}
 
-    missionList[19] = {
+    	missionList[19] = {
 		name : "Mission20 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
-        prev: "unknown",
-        reward: "unknown",
-        tag: ""
+        	prev: "unknown",
+        	reward: "unknown",
+        	tag: ""
 	}
 
-    missionList[20] = {
+    	missionList[20] = {
 		name : "Mission21 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "unknown",
-        tag: ""
+        	tag: ""
 	}
 
-    missionList[21] = {
+    	missionList[21] = {
 		name : "Mission22 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "unknown",
-        tag: ""
+        	tag: ""
 	}
 
-    missionList[22] = {
+    	missionList[22] = {
 		name : "Mission23 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "unknown",
-        tag: ""
+        	tag: ""
 	}
 
-    missionList[23] = {
-        name : "Mission24",
-        target : "打倒20隻餅乾哥雷姆",
-        prev: "對魔法少女童謠醬造成35k傷害 (擊倒1次)",
-        reward: "開啟童謠醬第二階段的worldMatch與特攻禮裝(紅)",
-        tag: "biscuitGolem"
-    }
+    	missionList[23] = {
+        	name : "Mission24",
+        	target : "打倒20隻餅乾哥雷姆",
+        	prev: "對魔法少女童謠醬造成35k傷害 (擊倒1次)",
+        	reward: "開啟童謠醬第二階段的worldMatch與特攻禮裝(紅)",
+        	tag: "biscuitGolem"
+    	}
 
-    missionList[24] = {
-        name : "Mission25",
-        target : "打倒50隻餅乾哥雷姆",
-        prev: "Mission24 clear",
-        reward: "黨證*5",
-        tag: "biscuitGolem"
-    }
+    	missionList[24] = {
+        	name : "Mission25",
+        	target : "打倒50隻餅乾哥雷姆",
+        	prev: "Mission24 clear",
+        	reward: "黨證*5",
+        	tag: "biscuitGolem"
+    	}
 
-    missionList[25] = {
+    	missionList[25] = {
 		name : "Mission26 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
-        prev: "unknown",
+	        prev: "unknown",
 		reward: "unknown",
-        tag: ""
+	        tag: ""
 	}
 
-    missionList[26] = {
-        name : "Mission27",
-        target : "打倒30隻彩虹飛龍",
-        prev: "對治癒☆少女C子蘿造成500k傷害(擊倒4次)",
-        reward: "開啟C子蘿第三階段的worldMatch與龍牙*5",
-        tag: "rainbowWyvern"
-    }
+    	missionList[26] = {
+	        name : "Mission27",
+	        target : "打倒30隻彩虹飛龍",
+	        prev: "對治癒☆少女C子蘿造成500k傷害(擊倒4次)",
+	        reward: "開啟C子蘿第三階段的worldMatch與龍牙*5",
+	        tag: "rainbowWyvern"
+    	}
 
-    missionList[27] = {
-        name : "Mission28",
-        target : "打倒50隻彩虹飛龍",
-        prev: "Mission.27 clear",
-        reward: "龍牙*5",
-        tag: "rainbowWyvern"
-    }
+	missionList[27] = {
+	        name : "Mission28",
+	        target : "打倒50隻彩虹飛龍",
+        	prev: "Mission.27 clear",
+        	reward: "龍牙*5",
+        	tag: "rainbowWyvern"
+    	}
 
-    missionList[28] = {
+    	missionList[28] = {
 		name : "Mission29",
 		target: "打倒20本魔導書",
-        prev: "unknow",
+        	prev: "unknow",
 		reward: "術輝石*5",
-        tag: "spellBook"
-	}
+        	tag: "spellBook"
+    	}
 
-    missionList[29] = {
+    	missionList[29] = {
 		name : "Mission30",
 		target: "打倒50本魔導書",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "術輝石*5",
-        tag: "spellBook"
-	}
+        	tag: "spellBook"
+    	}
 
-    missionList[30] = {
+    	missionList[30] = {
 		name : "Mission31",
 		target: "打倒20個雪人",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "黨證*5",
-        tag: "snowMan"
+        	tag: "snowMan"
 	}
 
-    missionList[31] = {
+    	missionList[31] = {
 		name : "Mission32",
 		target: "打倒40個雪人",
-        prev: "Mission.31 clear",
+        	prev: "Mission.31 clear",
 		reward: "unknown",
-        tag: "snowMan"
+        	tag: "snowMan"
 	}
 
-    missionList[32] = {
+	missionList[32] = {
 		name : "Mission33",
 		target: "打倒魔法杖40根",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "肥料禮裝",
-        tag: "wand"
+        	tag: "wand"
 	}
 
-    missionList[33] = {
-		name : "Mission34",
+	missionList[33] = {
+	    	name : "Mission34",
 		target: "打倒魔法杖70根",
-        prev: "Mission.33 clear",
+        	prev: "Mission.33 clear",
 		reward: "肥料禮裝",
-        tag: "wand"
+        	tag: "wand"
 	}
 
-    missionList[34] = {
+    	missionList[34] = {
 		name : "Mission35",
 		target: "打倒30隻「骨」系敵人",
-        prev: "對治癒☆少女C子蘿造成200k傷害(擊倒2次)",
+        	prev: "對治癒☆少女C子蘿造成200k傷害(擊倒2次)",
 		reward: "開啟C子蘿第二階段的worldMatch與特攻禮裝(藍)",
-        tag: "skeleton"
+        	tag: "skeleton"
 	}
 
-    missionList[35] = {
+	missionList[35] = {
 		name : "Mission36",
 		target: "打倒50隻「骨」系敵人",
-        prev: "Mission35",
+        	prev: "Mission35",
 		reward: "兇骨*5",
-        tag: "skeleton"
+        	tag: "skeleton"
 	}
 
-    missionList[36] = {
+    	missionList[36] = {
 		name : "Mission37",
 		target: "打倒70隻「骨」系敵人",
-        prev: "Mission.36 clear",
+        	prev: "Mission.36 clear",
 		reward: "心型護腕",
-        tag: "skeleton"
+        	tag: "skeleton"
 	}
           
-    missionList[37] = {
+    	missionList[37] = {
 		name : "Mission38",
 		target: "打倒亡靈系敵人30隻",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "兇骨*5",
-        tag: "ghost"
+        	tag: "ghost"
 	} 
 
-    missionList[38] = {
+    	missionList[38] = {
 		name : "Mission39",
 		target: "打倒亡靈系敵人50隻",
-        prev: "Mission.38 clear",
+        	prev: "Mission.38 clear",
 		reward: "兇骨*5",
-        tag: "ghost"
+        	tag: "ghost"
 	}
 
-    missionList[39] = {
+    	missionList[39] = {
 		name : "Mission40",
 		target: "打倒亡靈系敵人70隻",
-        prev: "Mission.39 clear",
+        	prev: "Mission.39 clear",
 		reward: "特攻禮裝(紅)",
-        tag: "ghost"
+        	tag: "ghost"
 	}
 
-    missionList[40] = {
+    	missionList[40] = {
 		name : "Mission41",
 		target: "打倒有角的敵人50隻",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "隕蹄鐵*5",
-        tag: "horn"
+        	tag: "horn"
 	}
 
-    missionList[41] = {
+    	missionList[41] = {
 		name : "Mission42",
 		target: "打倒有角的敵人50隻",
-        prev: "Mission.41 clear",
+        	prev: "Mission.41 clear",
 		reward: "隕蹄鐵*5",
-        tag: "horn"
+        	tag: "horn"
 	}
 
-    missionList[42] = {
+    	missionList[42] = {
 		name : "Mission43",
 		target: "打倒有角的敵人50隻",
-        prev: "Mission.42 clear",
+        	prev: "Mission.42 clear",
 		reward: "特攻禮裝(藍)",
-        tag: "horn"
+        	tag: "horn"
 	}
 
-    missionList[43] = {
+    	missionList[43] = {
 		name : "Mission44 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "unknown",
-        tag: ""
+        	tag: ""
 	}
 
-    missionList[44] = {
+    	missionList[44] = {
 		name : "Mission45",
 		target: "打倒5隻龍屬性魔法♂少女鯖",
-        prev: "unknown",
+        	prev: "mission.4 clear",
 		reward: "槍魔石*5",
-        tag: "dragon"
+        	tag: "dragon"
 	}
 
-    missionList[45] = {
+    	missionList[45] = {
 		name : "Mission46",
 		target: "打倒10隻龍屬性魔法♂少女鯖",
-        prev: "Mission.45 clear",
+        	prev: "Mission.45 clear",
 		reward: "術魔石*5",
-        tag: "dragon"
+        	tag: "dragon"
 	}
 
-    missionList[46] = {
+    	missionList[46] = {
 		name : "Mission47",
 		target: "打倒15隻龍屬性魔法♂少女鯖",
-        prev: "Mission.46 clear",
+        	prev: "Mission.46 clear",
 		reward: "unknown",
-        tag: "dragon"
+        	tag: "dragon"
 	}
 
 	missionList[47] = {
@@ -665,7 +665,7 @@
 		tag: ""
 	}
 
-    missionList[83] = {
+    	missionList[83] = {
 		name : "Mission84 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
@@ -673,15 +673,15 @@
 		tag: ""
 	}
 
-    missionList[84] = {
+    	missionList[84] = {
 		name : "Mission85 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
-        prev: "unknown",
+        	prev: "unknown",
 		reward: "unknown",
 		tag: ""
 	}
 
-    missionList[85] = {
+    	missionList[85] = {
 		name : "Mission86 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
@@ -689,7 +689,7 @@
 		tag: ""
 	}
 
-    missionList[86] = {
+    	missionList[86] = {
 		name : "Mission87",
 		target: "取得100個布丁",
 		prev: "對魔法少女童謠醬造成35k傷害 (擊倒1次)",
@@ -697,7 +697,7 @@
 		tag: "布丁"
 	}
 
-    missionList[87] = {
+    	missionList[87] = {
 		name : "Mission88",
 		target: "取得300個布丁",
 		prev: "Mission.87 clear",
@@ -705,7 +705,7 @@
 		tag: "布丁"
 	}
 
-    missionList[88] = {
+    	missionList[88] = {
 		name : "Mission89",
 		target: "取得100個DVD",
 		prev: "對魔法少女童謠醬造成100k傷害 (擊倒3次)",
@@ -713,7 +713,7 @@
 		tag: "DVD"
 	}
 
-    missionList[89] = {
+    	missionList[89] = {
 		name : "Mission90",
 		target: "target : 取得300個DVD",
 		prev: "mission.89 clear",
@@ -721,7 +721,7 @@
 		tag: "DVD"
 	}
 
-    missionList[90] = {
+    	missionList[90] = {
 		name : "Mission91",
 		target: "取得100個獅子君",
 		prev: "Nission.3 clear",
@@ -729,7 +729,7 @@
 		tag: "獅子君"
 	}
 
-    missionList[91] = {
+    	missionList[91] = {
 		name : "Mission92",
 		target: "取得300個獅子君",
 		prev: "Mission.91 clear",
@@ -737,7 +737,7 @@
 		tag: "獅子君"
 	}
 
-    missionList[92] = {
+    	missionList[92] = {
 		name : "Mission93",
 		target: "小黑靈基再臨一",
 		prev: "unknown",
@@ -745,7 +745,7 @@
 		tag: ""
 	}
           
-    missionList[93] = {
+    	missionList[93] = {
 		name : "Mission94",
 		target: "小黑靈基再臨三",
 		prev: "Mission.93 clear",
@@ -754,7 +754,7 @@
 	}
 
 
-    missionList[94] = {
+    	missionList[94] = {
 		name : "Mission95",
 		target: "小黑絆等級三",
 		prev: "unknown",
@@ -763,31 +763,31 @@
 	}
 
 
-    missionList[95] = {
+    	missionList[95] = {
 		name : "Mission96",
 		target: "完成10個任務",
-        prev: "Mission.1 clear",
+        	prev: "Mission.1 clear",
 		reward: "特攻禮裝(紅)",
-        tag: ""
+        	tag: ""
 	}
 
-    missionList[96] = {
+    	missionList[96] = {
 		name : "Mission97",
 		target: "完成30個任務",
-        prev: "Mission.96 clear",
+        	prev: "Mission.96 clear",
 		reward: "聖晶石",
 		tag: ""
 	}
 
-    missionList[97] = {
+    	missionList[97] = {
 		name : "Mission98",
 		target: "完成60個任務",
-        prev: "Mission.97 clear",
+        	prev: "Mission.97 clear",
 		reward: "心型護腕",
 		tag: ""
 	}
 
-    missionList[98] = {
+    	missionList[98] = {
 		name : "Mission99 9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
@@ -795,7 +795,7 @@
 		tag: ""
 	}
 
-    missionList[99] = {
+    	missionList[99] = {
 		name : "Mission100 *9/14 1700 後滿足條件開啟",
 		target: "unknown",
 		prev: "unknown",
