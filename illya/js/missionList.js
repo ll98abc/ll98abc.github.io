@@ -35,7 +35,7 @@
     	missionList[4] = {
 		name : "Mission5",
 		target: "打倒文學☆少女艾蓮娜",
-		prev: "unknown",
+		prev: "mainQuest.死せる書架の国【Ⅲ】clear",
 		reward: "呼符",
 		tag: ""
 	}
@@ -124,7 +124,7 @@
     	missionList[15] = {
 		name : "Mission16",
 		target: "對文學☆少女艾蓮娜造成1M傷害",
-        	prev: "unknown",
+        	prev: "mainQuest.死せる書架の国【Ⅲ】clear",
 		reward: "2.5M QP",
         	tag: ""
 	}
@@ -380,7 +380,7 @@
 	missionList[47] = {
 		name : "Mission48",
 		target: "打倒5隻混沌屬性魔法♂少女鯖",
-		prev: "unknown",
+		prev: "mainQuest.死せる書架の国【Ⅲ】clear",
 		reward: "蛇寶玉*5",
 		tag: "chaos"
 	}
@@ -428,7 +428,7 @@
 	missionList[53] = {
 		name : "Mission54",
 		target: "打倒5隻中庸屬性的魔法♂少女鯖",
-		prev: "unknown",
+		prev: "mainQuest.死せる書架の国【Ⅲ】clear",
 		reward: "八連雙晶*5",
 		tag: "neutral"
 	}
@@ -580,7 +580,7 @@
 	missionList[72] = {
 		name : "Mission73",
 		target: "在 死せる書架の国 完成5次有戰鬥的任務",
-		prev: "unknown",
+		prev: "mainQuest.死せる書架の国【Ⅲ】clear",
 		reward: "100綠方",
 		tag: ""
 	}
