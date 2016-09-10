@@ -88,7 +88,7 @@
 			name: "freeQuest.9 死せる書架の国 rank D",
 			cost: "20",
 			prev: "unknown",
-			enemy: "殺女鬼(?)*3/殺女鬼(?)*3/殺女鬼(?)*2+猛毒☆少女靜謐炭(?)",
+			enemy: "殺女鬼(10k)*3/殺女鬼(12k)*3/殺女鬼(17k)*2+猛毒☆少女靜謐炭(80k)",
 			drop: "DVD",
 			locate: "c_1",
 			tag: "ghost/assassin/lawful/evil"
