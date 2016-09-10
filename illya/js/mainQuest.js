@@ -153,7 +153,7 @@
 		name: "worldMatch.5 治癒☆少女C子蘿",
 		cost: "10",
 		prev: "mission.35 clear",
-		emeny: "槍龍(6k)*3/劍龍牙兵(60k)*2+治癒☆少女C子蘿(150k)",
+		enemy: "槍龍(6k)*3/劍龍牙兵(60k)*2+治癒☆少女C子蘿(150k)",
 		drop: "DVD+獅子君",
 		locate: "b_4"
 	}
