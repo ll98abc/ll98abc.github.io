@@ -2,6 +2,8 @@
 	
   buildSelector();
 	
+  $(".anchor").not(".hidden").addClass("hidden");
+  
   $("input[name='questFilter']").bind("change", function(){
 	  //總之把當前的隱藏
 	  $(".selector").not(".hidden").addClass("hidden");

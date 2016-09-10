@@ -88,9 +88,9 @@
 			name: "freeQuest.9 死せる書架の国 rank D",
 			cost: "20",
 			prev: "unknown",
-			enemy: "女鬼 & ??",
+			enemy: "殺女鬼(?)*3/殺女鬼(?)*3/靜謐(?)+殺女鬼(?)*2",
 			drop: "DVD",
-			locate: "c_?",
+			locate: "c_1",
 			tag: "ghost/assassin/lawful/evil"
 	}
 	
@@ -98,19 +98,19 @@
 			name: "freeQuest.10 死せる書架の国 rank C",
 			cost: "20",
 			prev: "unknown",
-			enemy: "書 & ??",
+			enemy: "術魔書(11k)*3/術魔書(15k)*3/術魔書(22k)*2+魔法☆良妻玉藻前(67k)",
 			drop: "獅子君",
-			locate: "c_?",
-			tag: "spellBook/caster/neutral/good"
+			locate: "c_4",
+			tag: "spellBook/caster/neutral/evil"
 	}
 	
 	freeQuestList[10] = {			
 			name: "freeQuest.11 死せる書架の国 rank B",
 			cost: "20",
 			prev: "unknown",
-			enemy: "門 & ??",
+			enemy: "術門(6k)*3/術門(11k)*3/術門(24k)*2+高僧☆少女三藏(101k)",
 			drop: "布丁",
-			locate: "c_?",
+			locate: "c_3",
 			tag: "caster/lawful/good"
 	}
 	
@@ -118,9 +118,9 @@
 			name: "freeQuest.12 死せる書架の国 rank A",
 			cost: "20",
 			prev: "unknown",
-			enemy: "門 &書&惡魔&??",
+			enemy: "術門(9k)*2+術魔書(9k)/術魔書(14k)*2+術惡魔(49k)/術魔書(17k)+術門(22k)+萬能☆少女達文西(103k)",
 			drop: "布丁+DVD+獅子君",
-			locate: "c_?",
+			locate: "c_3",
 			tag: "spellBook/caster/chaos/good"
 	}
 	
@@ -128,19 +128,19 @@
 			name: "freeQuest.13 雪華とハチミツの国 rank D",
 			cost: "20",
 			prev: "unknown",
-			enemy: "手手&麋鹿",
+			enemy: "劍麋鹿(9k)+弓手(9k)*2/弓手(11k)*3/劍麋鹿(32k)*2+王上☆少女莉莉白(100k)",
 			drop: "布丁+DVD",
-			locate: "d_?",
-			tag: "saber/lawful/good/dragon"
+			locate: "d_4",
+			tag: "horn/saber/lawful/good/dragon"
 	}
 	
 	freeQuestList[13] = {			
 			name: "freeQuest.14 雪華とハチミツの国 rank C",
 			cost: "20",
 			prev: "unknown",
-			enemy: "手手&雪人",
+			enemy: "狂雪人(10k)*2+弓手(11k)/弓手(13k)+狂雪人(12k)*2/攻手(25k)+狂雪人(38k)+魔法☆惡女卡蜜拉(95k)",
 			drop: "布丁+獅子君",
-			locate: "d_?",
+			locate: "d_3",
 			tag: "snowMan/assassin/chaos/evil"
 	}
 	
@@ -148,29 +148,29 @@
 			name: "freeQuest.15 雪華とハチミツの国 rank B",
 			cost: "20",
 			prev: "unknown",
-			enemy: "麋鹿&雪人",
+			enemy: "槍麋鹿(10k)*2+狂雪人(10k)/槍麋鹿(16k)+狂雪人(18k)/狂雪人(27k)+槍麋鹿(23k)+船長☆少女德雷克(98k)",
 			drop: "DVD+獅子君",
-			locate: "d_?",
-			tag: "snowMan/rider/chaos/evil"
+			locate: "d_2",
+			tag: "horn/snowMan/rider/chaos/evil"
 	}
 	
 	freeQuestList[15] = {			
 			name: "freeQuest.16 雪華とハチミツの国 rank A",
 			cost: "20",
 			prev: "unknown",
-			enemy: "麋鹿+石巨人&??",
+			enemy: "劍麋鹿(10k)*3/劍石巨人(?)/劍麋鹿(26k)*2+不良☆少女莫太郎(123k)",
 			drop: "DVD",
-			locate: "d_?",
-			tag: "saber/chaos/normal/dragon"
+			locate: "d_4",
+			tag: "horn/saber/chaos/normal/dragon"
 	}
 	
 	freeQuestList[16] = {			
 			name: "freeQuest.17 星原と水晶の国 rank D",
 			cost: "20",
 			prev: "unknown",
-			enemy: "法杖&??",
+			enemy: "殺魔杖(8k)*3/殺魔杖(18k)*3/殺魔杖(34k)+狂魔杖(30k)+神秘☆少女Ｘ(115k)",
 			drop: "布丁+獅子君",
-			locate: "e_?",
+			locate: "e_2",
 			tag: "wand/assassin/chaos/normal/dragon"
 	}
 	
@@ -178,9 +178,9 @@
 			name: "freeQuest.18 星原と水晶の国 rank C",
 			cost: "20",
 			prev: "unknown",
-			enemy: "法杖&??",
+			enemy: "狂魔杖(9k)*3/狂魔杖(12k)*2+術魔杖(17k)/狂魔杖(33k)+術魔杖(46k)+法老☆少女妮特莉(110k)",
 			drop: "DVD+獅子君",
-			locate: "e_?",
+			locate: "e_2",
 			tag: "wand/caster/lawful/good"
 	}
 	
@@ -188,9 +188,9 @@
 			name: "freeQuest.19 星原と水晶の国 rank B",
 			cost: "20",
 			prev: "unknown",
-			enemy: "法杖&??",
+			enemy: "術魔杖(8k)*3/術魔杖(12k)*2+殺魔杖(10k)/術魔杖(38k)*2+病嬌☆少女布倫親(119k)",
 			drop: "布丁+DVD",
-			locate: "e_?",
+			locate: "e_3",
 			tag: "wand/lancer/neutral/good"
 	}
 	
@@ -198,9 +198,9 @@
 			name: "freeQuest.20 星原と水晶の国 rank B+",
 			cost: "20",
 			prev: "unknown",
-			enemy: "法杖&??",
+			enemy: "殺魔杖(9k)*3/殺魔杖(13k)*3/殺魔杖(43k)*2+惡墮☆少女黑賽巴(142k)",
 			drop: "布丁",
-			locate: "e_?",
+			locate: "e_3",
 			tag: "wand/saber/lawful/evil/dragon"
 	}
 	
@@ -208,9 +208,9 @@
 			name: "freeQuest.21 星原と水晶の国 rank A",
 			cost: "20",
 			prev: "unknown",
-			enemy: "法杖&??",
+			enemy: "術魔杖(9k)*3/術魔杖(22k)*3/術魔杖(49k)*2+魔法☆媽媽源賴光(189k)",
 			drop: "DVD",
-			locate: "e_?",
+			locate: "e_4",
 			tag: "wand/berserk/chaos/good"
 	}
 	
@@ -218,9 +218,9 @@
 			name: "freeQuest.19 星原と水晶の国 rank A+",
 			cost: "20",
 			prev: "unknown",
-			enemy: "法杖&髒狗狗&??",
+			enemy: "狂魔杖(12k)*3/殺黑狗(107k)/狂魔杖(39k)*2+復讎☆少女黑阿貞(146k)",
 			drop: "獅子君",
-			locate: "e_?",
+			locate: "e_4",
 			tag: "wand/avanger/chaos/evil"
 	}
 	
