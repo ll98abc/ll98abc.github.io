@@ -126,7 +126,7 @@
 	mainQuestList[13] = {			
 			name: "死せる書架の国【Ⅱ】",
 			cost: "20",
-			prev: "mainQuest.死せる書架の国【Ⅰ】" clear",
+			prev: "mainQuest.死せる書架の国【Ⅰ】clear",
 			enemy: "殺女鬼(31k)*2+殺女鬼(55k)", 
 			drop: "DVD",
 			locate: "c_1",
