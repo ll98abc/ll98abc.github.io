@@ -113,6 +113,156 @@
 			tag: "rainbowWyvern/chaos/evil"
 	}
 	
+	mainQuestList[12] = {			
+			name: "死せる書架の国【Ⅰ】",
+			cost: "20",
+			prev: "mission.4 clear",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "c_1",
+			tag: ""
+	}
+	
+	mainQuestList[13] = {			
+			name: "死せる書架の国【Ⅱ】",
+			cost: "20",
+			prev: "mainQuest.死せる書架の国【Ⅰ】" clear",
+			enemy: "殺女鬼(31k)*2+殺女鬼(55k)", 
+			drop: "DVD",
+			locate: "c_1",
+			tag: "ghost"
+	}
+	
+	mainQuestList[14] = {			
+			name: "死せる書架の国【Ⅲ】",
+			cost: "20",
+			prev: "mainQuest.死せる書架の国【Ⅱ】" clear",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "c_1",
+			tag: ""
+	}
+	
+	mainQuestList[15] = {			
+			name: "extraQuest.5 死せる書架の国 EXTRA Ⅰ",
+			cost: "20",
+			prev: "Mission.40 clear",
+			enemy: "術魔書(9k)*3/術魔書(12k)*2/術魔書(21k)*2+病弱☆少女沖田桑", 
+			drop: "劍銀棋+獅子君",
+			locate: "c_1",
+			tag: "spellbook/saber/neutral/normal"
+	}
+	
+	mainQuestList[16] = {			
+			name: "extraQuest.6 死せる書架の国 EXTRA Ⅱ",
+			cost: "20",
+			prev: "Mission.47 clear",
+			enemy: "殺女鬼(9k)*3/殺女鬼(12k)*2/殺女鬼(14k)*2+魔王☆少女信長公", 
+			drop: "弓銀棋+DVD",
+			locate: "c_1",
+			tag: "ghost/archer/lawful/normal"
+	}
+	
+	mainQuestList[17] = {			
+			name: "雪華とハチミツの国【Ⅰ】",
+			cost: "20",
+			prev: "Mission.5 clear",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "d_1",
+			tag: ""
+	}
+	
+	mainQuestList[18] = {			
+			name: "雪華とハチミツの国【Ⅱ】",
+			cost: "20",
+			prev: "mainQuest.雪華とハチミツの国【Ⅰ】 clear",
+			enemy: "劍麋鹿(7k)*2+狂雪人(9k)/槍麋鹿(10k)*2+狂雪人(14k)/槍麋鹿(19k)+劍麋鹿(19k)+狂雪人(60k)", 
+			drop: "DVD",
+			locate: "d_1",
+			tag: "horn/snowMan"
+	}
+	
+	mainQuestList[19] = {			
+			name: "雪華とハチミツの国【Ⅲ】",
+			cost: "20",
+			prev: "mainQuest.雪華とハチミツの国【Ⅱ】 clear",
+			enemy: "殺麋鹿(9k)*3/殺麋鹿(10k)*2+劍麋鹿(14k)/狂雪人(16k)+使魔‧庫醬(64k)", 
+			drop: "DVD+獅子君",
+			locate: "d_1",
+			tag: "horn/snowMan/berserk/chaos/evil"
+	}
+	
+	mainQuestList[20] = {			
+			name: "雪華とハチミツの国【Ⅳ】",
+			cost: "20",
+			prev: "mainQuest.雪華とハチミツの国【Ⅲ】 clear",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "d_1",
+			tag: ""
+	}
+	
+	mainQuestList[21] = {			
+			name: "雪華とハチミツの国 EXTRA Ⅰ",
+			cost: "20",
+			prev: "mission.63 clear",
+			enemy: "狂雪人(15k)*3/狂雪人(20k)*2+狂雪人(25k)/狂雪人(45k)*2+軍神☆少女阿提拉", 
+			drop: "劍銀棋+獅子君",
+			locate: "d_1",
+			tag: "snowMan/saber/chaos/good"
+	}
+	
+	mainQuestList[22] = {			
+			name: "雪華とハチミツの国 EXTRA Ⅱ",
+			cost: "20",
+			prev: "unknown",
+			enemy: "弓手(13k)*3/弓手(19k)*3/弓手(37k)*2+魔法☆幼女傑克醬", 
+			drop: "殺銀棋+布丁",
+			locate: "d_1",
+			tag: "assassin/chaos/evil"
+	}
+	
+	mainQuestList[23] = {			
+			name: "星原と水晶の国【Ⅰ】",
+			cost: "20",
+			prev: "Mission.6 clear",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "e_1",
+			tag: ""
+	}
+	
+	mainQuestList[24] = {			
+			name: "星原と水晶の国【Ⅱ】",
+			cost: "20",
+			prev: "mainQuest.星原と水晶の国【Ⅰ】 clear",
+			enemy: "殺術狂魔杖(10k)/殺魔杖(14k)*3/殺術魔杖(22k)+狂魔杖(72k)", 
+			drop: "布丁+DVD+獅子君",
+			locate: "e_1",
+			tag: "wand"
+	}
+	
+	mainQuestList[23] = {			
+			name: "星原と水晶の国【Ⅲ】",
+			cost: "20",
+			prev: "mainQuest.星原と水晶の国【Ⅱ】 clear",
+			enemy: "狂魔杖(9k)+殺魔杖(10k)/殺魔杖(12k)+術魔杖(16k)*2/殺魔杖(12k)*2+術魔杖(90k)", 
+			drop: "布丁+DVD+獅子君",
+			locate: "e_1",
+			tag: ""
+	}
+	
+	mainQuestList[23] = {			
+			name: "星原と水晶の国【Ⅳ】",
+			cost: "20",
+			prev: "mainQuest.星原と水晶の国【Ⅲ】 clear",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "e_1",
+			tag: ""
+	}
+	
 	worldMatchList[0] = {			
 		name: "worldMatch.1 魔法☆少女童謠醬",
 		cost: "10",
