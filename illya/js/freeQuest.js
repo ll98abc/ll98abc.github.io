@@ -1,44 +1,6 @@
 ﻿function initFreeQuestData(){
 
-	extraQuestList[0] = {
-			name: "extraQuest.1 お菓子の国 EXTRA I",
-			cost: "10",
-			prev: "mainQuest.おかしなおかしなお菓子の国【Ⅱ】 clear",
-			enemy: "狂薑餅人(3k)*3/狂薑餅人(4k)*2+玉藻貓(7k)",
-			drop: "狂銀棋+布丁",
-			locate: "a_1",
-			tag : "biscuitGolem/berserker/chaos/good"
-	}
-
-	extraQuestList[1] = {
-			name: "extraQuest.2 お菓子の国 EXTRA II",
-			cost: "10",
-			prev: "mainQuest.おかしなおかしなお菓子の国【Ⅲ】 clear",
-			enemy: "槍骨兵(3k)*3 /槍骨兵(5k)+阿芙(17k)",
-			drop: "騎銀棋+DVD",
-			locate: "a_1",
-			tag: "biscuitGolem/rider/chaos/good"
-	}
-
-	extraQuestList[2] = {			
-			name: "extraQuest.3 大海原と竜の国 EXTRA I", 
-			cost: "20",
-			prev: "對治癒☆少女C子蘿造成200k傷害(擊倒2次)",
-			enemy: "殺幽靈(5k)*3/殺幽靈(6k)*2/殺幽靈(14k)*2+魔法年上★酒吞(32k)", 
-			drop: "殺銀棋+布丁",
-			locate: "b_2",
-			tag: "ghost/assassin/chaos/evil/dragon"
-	}
-
-	extraQuestList[3] = {			
-			name: "extraQuest.4 大海原と竜の国 EXTRA II",
-			cost: "20",
-			prev: "extraQuest.3 clear",
-			enemy: "殺龍牙兵(6k)*2+槍飛龍(7k)/殺龍牙兵(7k)*2+槍飛龍(9k)/槍飛龍(22k)*2+魔法童女Ｉ★ＢＡＲＡ☆ＫＩ(33k)", 
-			drop: "狂銀棋+DVD+獅子君",
-			locate: "b_3",
-			tag: "rainbowWyvern/chaos/evil"
-	}
+	
  
     
 	freeQuestList[0] = {			
@@ -108,8 +70,8 @@
 			prev: "對治癒☆少女C子蘿造成200k傷害(擊倒2次)",
 			enemy: "殺幽靈(9k)*2+槍飛龍(9k)/殺幽靈(10k)*2+殺幽靈(11k)/槍飛龍(15k)*2+美杜莎(43k)",
 			drop: "DVD+獅子君",
-			locate: "b_1",
-			tag: "ghose/rainbowWyvern/rider/chaos/good/god"
+			locate: "b_2",
+			tag: "ghost/rainbowWyvern/rider/chaos/good/god"
 	}
 
 	freeQuestList[7] = {			
@@ -118,8 +80,149 @@
 			prev: "對治癒☆少女C子蘿造成500k傷害(擊倒4次)",
 			enemy: "劍龍牙兵(8k)*3/殺巨龍(53k)/劍龍牙兵(12k)+藍傻(50k)",
 			drop: "布丁+DVD+獅子君",
-			locate: "b_2",
+			locate: "b_1",
 			tag: "skeleton/saber/lawful/good/dragon"
 	}
+	
+	freeQuestList[8] = {			
+			name: "freeQuest.9 死せる書架の国 rank D",
+			cost: "20",
+			prev: "unknown",
+			enemy: "女鬼 & ??",
+			drop: "DVD",
+			locate: "c_?",
+			tag: "ghost/assassin/lawful/evil"
+	}
+	
+	freeQuestList[9] = {			
+			name: "freeQuest.10 死せる書架の国 rank C",
+			cost: "20",
+			prev: "unknown",
+			enemy: "書 & ??",
+			drop: "獅子君",
+			locate: "c_?",
+			tag: "spellBook/caster/neutral/good"
+	}
+	
+	freeQuestList[10] = {			
+			name: "freeQuest.11 死せる書架の国 rank B",
+			cost: "20",
+			prev: "unknown",
+			enemy: "門 & ??",
+			drop: "布丁",
+			locate: "c_?",
+			tag: "caster/lawful/good"
+	}
+	
+	freeQuestList[11] = {			
+			name: "freeQuest.12 死せる書架の国 rank A",
+			cost: "20",
+			prev: "unknown",
+			enemy: "門 &書&惡魔&??",
+			drop: "布丁+DVD+獅子君",
+			locate: "c_?",
+			tag: "spellBook/caster/chaos/good"
+	}
+	
+	freeQuestList[12] = {			
+			name: "freeQuest.13 雪華とハチミツの国 rank D",
+			cost: "20",
+			prev: "unknown",
+			enemy: "手手&麋鹿",
+			drop: "布丁+DVD",
+			locate: "d_?",
+			tag: "saber/lawful/good/dragon"
+	}
+	
+	freeQuestList[13] = {			
+			name: "freeQuest.14 雪華とハチミツの国 rank C",
+			cost: "20",
+			prev: "unknown",
+			enemy: "手手&雪人",
+			drop: "布丁+獅子君",
+			locate: "d_?",
+			tag: "snowMan/assassin/chaos/evil"
+	}
+	
+	freeQuestList[14] = {			
+			name: "freeQuest.15 雪華とハチミツの国 rank B",
+			cost: "20",
+			prev: "unknown",
+			enemy: "麋鹿&雪人",
+			drop: "DVD+獅子君",
+			locate: "d_?",
+			tag: "snowMan/rider/chaos/evil"
+	}
+	
+	freeQuestList[15] = {			
+			name: "freeQuest.16 雪華とハチミツの国 rank A",
+			cost: "20",
+			prev: "unknown",
+			enemy: "麋鹿+石巨人&??",
+			drop: "DVD",
+			locate: "d_?",
+			tag: "saber/chaos/normal/dragon"
+	}
+	
+	freeQuestList[16] = {			
+			name: "freeQuest.17 星原と水晶の国 rank D",
+			cost: "20",
+			prev: "unknown",
+			enemy: "法杖&??",
+			drop: "布丁+獅子君",
+			locate: "e_?",
+			tag: "wand/assassin/chaos/normal/dragon"
+	}
+	
+	freeQuestList[17] = {			
+			name: "freeQuest.18 星原と水晶の国 rank C",
+			cost: "20",
+			prev: "unknown",
+			enemy: "法杖&??",
+			drop: "DVD+獅子君",
+			locate: "e_?",
+			tag: "wand/caster/lawful/good"
+	}
+	
+	freeQuestList[18] = {			
+			name: "freeQuest.19 星原と水晶の国 rank B",
+			cost: "20",
+			prev: "unknown",
+			enemy: "法杖&??",
+			drop: "布丁+DVD",
+			locate: "e_?",
+			tag: "wand/lancer/neutral/good"
+	}
+	
+	freeQuestList[19] = {			
+			name: "freeQuest.20 星原と水晶の国 rank B+",
+			cost: "20",
+			prev: "unknown",
+			enemy: "法杖&??",
+			drop: "布丁",
+			locate: "e_?",
+			tag: "wand/saber/lawful/evil/dragon"
+	}
+	
+	freeQuestList[20] = {			
+			name: "freeQuest.21 星原と水晶の国 rank A",
+			cost: "20",
+			prev: "unknown",
+			enemy: "法杖&??",
+			drop: "DVD",
+			locate: "e_?",
+			tag: "wand/berserk/chaos/good"
+	}
+	
+	freeQuestList[21] = {			
+			name: "freeQuest.19 星原と水晶の国 rank A+",
+			cost: "20",
+			prev: "unknown",
+			enemy: "法杖&髒狗狗&??",
+			drop: "獅子君",
+			locate: "e_?",
+			tag: "wand/avanger/chaos/evil"
+	}
+	
 	
 }

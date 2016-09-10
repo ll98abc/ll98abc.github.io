@@ -1,10 +1,10 @@
 ﻿<html>
 <head>
-<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="js/mainQuest.js"></script>
 <script type="text/javascript" src="js/freeQuest.js"></script>
 <script type="text/javascript" src="js/missionList.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js"></script>
 <script type="text/javascript" src="js/pageController.js"></script>
 <link href="css/wtf.css" rel="stylesheet" type="text/css" />
 </head>
@@ -18,7 +18,7 @@
      <td style="width:25%;text-align: left;">Category:</td>
      <td style="width:75%;test-align: right;">
       <input type="radio" name="questFilter" value="mainQuestSelector"/>主線關卡&nbsp;
-      <input type="radio" name="questFilter" value="extraQuestSelector"/>單發關卡&nbsp;
+      <input type="radio" name="questFilter" value="worldMatchQuestSelector"/>對決關卡&nbsp;
       <input type="radio" name="questFilter" value="freeQuestSelector"/>農場關卡&nbsp;
       <input type="radio" name="questFilter" value="missionSelector" checked="checked"/>活動任務&nbsp;
      </td>
@@ -29,7 +29,7 @@
         <select id="mainQuestSelector" class="selector hidden">
           <option value="">請選擇</option>        
         </select>
-        <select id="extraQuestSelector" class="selector hidden">
+        <select id="worldMatchQuestSelector" class="selector hidden">
           <option value="">請選擇</option>        
         </select>
         <select id="freeQuestSelector" class="selector hidden">
@@ -57,9 +57,10 @@
   </tr>
   <tr>
      <td colspan="2">
-       <input id="dropMap" type="button" value="任務地點"/>
-       <input id="missionTag" type="input" value=""/>
-       <input id="missionLocate" type="input" value="" />
+       <input id="mapAnchor" type="button" value="任務地點檢索" onclick="missionFilter();"/>
+       <input id="missionTag" type="hidden" value=""/>
+       <input id="missionLocate" type="hidden" value="" />
+       <label style="color:#220088;">※任務地點檢索只支援「打倒x個怪物」or「打倒o屬性的鯖」的任務。</label>
      </td>
   </tr>
 </table>
@@ -68,19 +69,239 @@
 <h3>世界地圖</h3>
 <div id="mapDiv">
   <div class="worldMap">
-    <a class="a_1 hidden"></a>
-    <a class="a_2 hidden"></a>
-    <a class="a_3 hidden"></a>
-    <a class="a_4 hidden"></a>
-    <a class="b_1 hidden"></a>
-    <a class="b_2 hidden"></a>
-    <a class="b_3 hidden"></a>
-    <a class="b_4 hidden"></a> 
+    <a class="z_0 spot" onclick="popUp('z_0');"></a>
+    <a class="a_1 anchor hidden" onclick="popUp('a_1');"></a><a class="a_1 spot" onclick="popUp('a_1');"></a>
+    <a class="a_2 anchor hidden" onclick="popUp('a_2');"></a><a class="a_2 spot" onclick="popUp('a_2');"></a>
+    <a class="a_3 anchor hidden" onclick="popUp('a_3');"></a><a class="a_3 spot" onclick="popUp('a_3');"></a>
+    <a class="a_4 anchor hidden" onclick="popUp('a_4');"></a><a class="a_4 spot" onclick="popUp('a_4');"></a>
+    <a class="b_1 anchor hidden" onclick="popUp('b_1');"></a><a class="b_1 spot" onclick="popUp('b_1');"></a>
+    <a class="b_2 anchor hidden" onclick="popUp('b_2');"></a><a class="b_2 spot" onclick="popUp('b_2');"></a>
+    <a class="b_3 anchor hidden" onclick="popUp('b_3');"></a><a class="b_3 spot" onclick="popUp('b_3');"></a>
+    <a class="b_4 anchor hidden" onclick="popUp('b_4');"></a><a class="b_4 spot" onclick="popUp('b_4');"></a>
+    
   </div>
 </div>
 <hr/>
-<h3>關卡內容<input style="margin-left:60%" type="button" value="all Clear" onclick="allClear();"></h3>
-<div id="questDiv">
+<h3>TEST</h3>
+<div id="z_0" style="display:none;" class="popUp">
+<table class="zone">
+<thead>
+<th colspan="2" style="background-color: #00DD44;">zone:中立地帶</th>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">No free quest here.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="a_1" style="display:none;" class="popUp">
+<table class="zone">
+<thead>
+<th colspan="2" style="background-color: #00DD44;">zone:お菓子の家</th>
+</thead>
+<tbody>
+<tr>
+  <td style="width:25%;text-align: right;">名稱：</td>
+  <td style="width:75%;text-align: left;">freeQuest.4 お菓子の国 rank A</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">內容：</td>
+  <td style="width:75%;text-align: left;">槍人馬(6k)*2+狂薑餅人(8k)<br/>槍人馬(13k)*2+狂薑餅人(13k)<br/>奇美拉(22k)+黑槍傻(26k)</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">掉落：</td>
+  <td style="width:75%;text-align: left;">布丁+DVD+獅子君</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">note：</td>
+  <td style="width:75%;text-align: left;">餅乾哥雷姆/「槍」鯖/秩序/惡/龍屬性</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="a_2" style="display:none;" class="popUp">
+<table class="zone">
+<thead>
+<th colspan="2" style="background-color: #00DD44;">zone:お菓子の街</th>
+</thead>
+<tbody>
+<tr>
+  <td style="width:25%;text-align: right;">名稱：</td>
+  <td style="width:75%;text-align: left;">freeQuest.2 お菓子の国 rank C</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">內容：</td>
+  <td style="width:75%;text-align: left;">弓骨兵(5k)*3<br/>弓骨兵(8k)*2+阿塔喵喵(26k)</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">掉落：</td>
+  <td style="width:75%;text-align: left;">DVD</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">note：</td>
+  <td style="width:75%;text-align: left;">「骨」/弓/中庸/惡</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="a_3" style="display:none;" class="popUp">
+<table class="zone">
+<thead>
+<th colspan="2" style="background-color: #00DD44;">zone:お菓子の城</th>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">No free quest here.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="a_4" style="display:none;" class="popUp">
+<table class="zone">
+<thead>
+<th colspan="2" style="background-color: #00DD44;">zone:お菓子の森</th>
+</thead>
+<tbody>
+<tr>
+  <td style="width:25%;text-align: right;">名稱：</td>
+  <td style="width:75%;text-align: left;">freeQuest.1 お菓子の国 rank D</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">內容：</td>
+  <td style="width:75%;text-align: left;">狂薑餅人(7k)*3<br/>狂薑餅人(8k)*2+德翁(19k)</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">掉落：</td>
+  <td style="width:75%;text-align: left;">布丁</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">note：</td>
+  <td style="width:75%;text-align: left;">餅乾哥雷姆/「劍」鯖/中庸/中立/</td>
+</tr>
+<tr><td colspan="2" style="background-color: #FFFF77;">&nbsp;</td></tr>
+<tr>
+  <td style="width:25%;text-align: right;">名稱：</td>
+  <td style="width:75%;text-align: left;">freeQuest.3 お菓子の国 rank B</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">內容：</td>
+  <td style="width:75%;text-align: left;">殺人馬(5k)*3<br/>殺人馬(8k)*2+嫁怪芙蘭(25k)</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">掉落：</td>
+  <td style="width:75%;text-align: left;">獅子君</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">note：</td>
+  <td style="width:75%;text-align: left;">「狂」鯖/混沌/中立</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="b_1" style="display:none;" class="popUp">
+<table class="zone">
+<thead>
+<th colspan="2" style="background-color: #00DD44;">zone:穩やかな海</th>
+</thead>
+<tbody>
+<tr>
+  <td style="width:25%;text-align: right;">名稱：</td>
+  <td style="width:75%;text-align: left;">freeQuest.6 大海原と竜の国 rank C</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">內容：</td>
+  <td style="width:75%;text-align: left;">槍飛龍(8k)+殺龍牙兵(8k)<br/>槍飛龍(10k)*2+殺龍牙兵(10k)<br/>槍飛龍(15k)*2+槍龍娘(43k)</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">掉落：</td>
+  <td style="width:75%;text-align: left;">布丁+DVD+獅子君</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">note：</td>
+  <td style="width:75%;text-align: left;">「骨」/彩虹飛龍/「槍」鯖/混沌/惡/龍</td>
+</tr>
+<tr><td colspan="2" style="background-color: #FFFF77;">&nbsp;</td></tr>
+<tr>
+  <td style="width:25%;text-align: right;">名稱：</td>
+  <td style="width:75%;text-align: left;">freeQuest.8 大海原と竜の国 rank A</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">內容：</td>
+  <td style="width:75%;text-align: left;">劍龍牙兵(8k)*3<br/>殺巨龍(53k)<br/>劍龍牙兵(12k)+藍傻(50k)</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">掉落：</td>
+  <td style="width:75%;text-align: left;">布丁+DVD+獅子君</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">note：</td>
+  <td style="width:75%;text-align: left;">「骨」/「劍」鯖/秩序/善/龍</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="b_2" style="display:none;" class="popUp">
+<table class="zone">
+<thead>
+<th colspan="2" style="background-color: #00DD44;">zone:凪の海</th>
+</thead>
+<tbody>
+<tr>
+  <td style="width:25%;text-align: right;">名稱：</td>
+  <td style="width:75%;text-align: left;">freeQuest.7 大海原と竜の国 rank B</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">內容：</td>
+  <td style="width:75%;text-align: left;">殺幽靈(9k)*2+槍飛龍(9k)<br/>殺幽靈(10k)*2+殺幽靈(11k)<br/>槍飛龍(15k)*2+美杜莎(43k)</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">掉落：</td>
+  <td style="width:75%;text-align: left;">DVD+獅子君</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">note：</td>
+  <td style="width:75%;text-align: left;">彩虹飛龍/「騎」鯖/混沌/善</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="b_3" style="display:none;" class="popUp">
+<table class="zone">
+<thead>
+<th colspan="2" style="background-color: #00DD44;">zone:嵐の海</th>
+</thead>
+<tbody>
+<tr>
+  <td style="width:25%;text-align: right;">名稱：</td>
+  <td style="width:75%;text-align: left;">freeQuest.5 大海原と竜の国 rank D</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">內容：</td>
+  <td style="width:75%;text-align: left;">弓龍牙兵(8k)*2+殺幽靈(8k)<br/>弓龍牙兵(9k)*2+殺幽靈(9k)<br/>殺幽靈(11k)+瑪塔‧哈里(53k)</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">掉落：</td>
+  <td style="width:75%;text-align: left;">布丁+DVD</td>
+</tr>
+<tr>
+  <td style="width:25%;text-align: right;">note：</td>
+  <td style="width:75%;text-align: left;">「骨」/「殺」鯖/混沌/中立</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="b_4" style="display:none;" class="popUp">
+<table class="zone">
+<thead>
+<th colspan="2" style="background-color: #00DD44;">zone:溟海の城</th>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">No free quest here.</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </body>

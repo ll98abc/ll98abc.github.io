@@ -8,9 +8,15 @@
 	  
 	  if ($(this).prop("checked")){		  
 		$("#"+$(this).val()).removeClass("hidden");
+		
+		if ("missionSelector" == $(this).val() ){
+			$("#mapAnchor").prop("disabled" , false);
+		}else{
+			$("#mapAnchor").prop("disabled" , true);;
+		}
 	  }
 
-          $("#questContent , #questReward , #questPrevStep").html("");
+      $("#questContent , #questReward , #questPrevStep").html("");
   });
  
   $("input[name='questFilter']:checked").change();
@@ -28,7 +34,7 @@ function buildSelector(){
     }
 
     for (var i = 0; i <	worldMatchList.length;i++){
-      $("#mainQuestSelector").append($("<option>"+worldMatchList[i].name+"</option>")
+      $("#worldMatchQuestSelector").append($("<option>"+worldMatchList[i].name+"</option>")
                              .attr("cost" , worldMatchList[i].cost)
                              .attr("prev" , worldMatchList[i].prev)
                              .attr("enemy" , worldMatchList[i].enemy)
@@ -56,20 +62,13 @@ function buildSelector(){
                              .attr("tag" , freeQuestList[i].tag)
                              .val(freeQuestList[i].name));
     }
+    
 
-    for (var i = 0;i < extraQuestList.length;i++){
-      $("#extraQuestSelector").append($("<option>"+extraQuestList[i].name+"</option>")
-                             .attr("cost" , extraQuestList[i].cost)
-                             .attr("prev" , extraQuestList[i].prev)
-                             .attr("enemy" , extraQuestList[i].enemy)
-                             .attr("drop" , extraQuestList[i].drop)
-                             .attr("locate" , extraQuestList[i].locate)
-                             .attr("tag" , extraQuestList[i].tag)
-                             .val(extraQuestList[i].name));
-    }
+    $("#mainQuestSelector , #freeQuestSelector , #worldMatchQuestSelector").bind("change" , function (){
 
-    $("#mainQuestSelector , #freeQuestSelector , #extraQuestSelector").bind("change" , function (){
-
+      //總之先清除table內容
+      $("#questContent , #questReward , #questPrevStep").html("");
+      
       var name = $(this).val();
       
       var selectedOption =  $(this).children("[value='"+name+"']");
@@ -93,12 +92,13 @@ function buildSelector(){
       }
       
 
-    });
-
-  
+    });  
 
     $("#missionSelector").bind("change" , function(){
-
+   
+      //總之先清除table內容
+      $("#questContent , #questReward , #questPrevStep").html("");
+        
       var name = $(this).val();
       
       var selectedOption =  $(this).children("[value='"+name+"']");
@@ -115,7 +115,30 @@ function buildSelector(){
     
 }
 
-function filterRun(){
+function missionFilter(){
+  var tag = $("#missionTag").val();
   
+  //清除之前的檢索紀錄
+  $(".anchor").not(".hidden").addClass("hidden");
+  
+  for (var i = 0;i < freeQuestList.length;i++){
+	  if (freeQuestList[i].tag.indexOf(tag) > -1){
+		  $("."+freeQuestList[i].locate).removeClass("hidden");
+	  }
+  }
 }
+
+function popUp(target){
+	$.blockUI({
+        message: $("#"+target),
+        css: {            
+            border: "0px", 
+            'background-color': 'rgba(0,0,0,0)',
+            cursor: 'default'            
+          }
+      });
+	
+	$(".blockOverlay").click($.unblockUI);
+}
+
 

@@ -26,8 +26,18 @@
 			drop: "布丁",
 			locate: "a_1"
 	}
-
+	
 	mainQuestList[3] = {
+			name: "extraQuest.1 お菓子の国 EXTRA I",
+			cost: "10",
+			prev: "mainQuest.おかしなおかしなお菓子の国【Ⅱ】 clear",
+			enemy: "狂薑餅人(3k)*3/狂薑餅人(4k)*2+玉藻貓(7k)",
+			drop: "狂銀棋+布丁",
+			locate: "a_1",
+			tag : "biscuitGolem/berserker/chaos/good"
+	}
+
+	mainQuestList[4] = {
 			name: "おかしなおかしなお菓子の国【Ⅲ】",
 			cost: "",
 			prev: "extraQuest.1 お菓子の国 EXTRA I",
@@ -35,8 +45,18 @@
 			drop: "N/A",
 			locate: "a_3"
 	}
+	
+	mainQuestList[5] = {
+			name: "extraQuest.2 お菓子の国 EXTRA II",
+			cost: "10",
+			prev: "mainQuest.おかしなおかしなお菓子の国【Ⅲ】 clear",
+			enemy: "槍骨兵(3k)*3 /槍骨兵(5k)+阿芙(17k)",
+			drop: "騎銀棋+DVD",
+			locate: "a_1",
+			tag: "biscuitGolem/rider/chaos/good"
+	}
 
-	mainQuestList[4] = {
+	mainQuestList[6] = {
 			name: "大海原と竜の国【Ⅰ】" ,
 			cost: "",
 			prev: "mission.3 clear",
@@ -45,7 +65,7 @@
 			locate: "b_1"
 	}
 	
-	mainQuestList[5] = {			
+	mainQuestList[7] = {			
 			name: "大海原と竜の国【Ⅱ】A",
 			cost: "5",
 			prev: "mainQuest.大海原と竜の国【Ⅰ】clear",
@@ -55,7 +75,7 @@
 			
 	}
 
-	mainQuestList[6] = {			
+	mainQuestList[8] = {			
 			name: "大海原と竜の国【Ⅱ】B",
 			cost: "5",
 			prev: "mainQuest.大海原と竜の国【Ⅱ】A clear",
@@ -64,16 +84,35 @@
 			locate: "b_1"
 	}
 
-	mainQuestList[7] = {
+	mainQuestList[9] = {
 			name: "大海原と竜の国【Ⅲ】",
 			cost: "",
 			prev: "mainQuest.大海原と竜の国【Ⅱ】B clear",
 			enemy: "no battle",
 			drop: "布丁",
 			locate: "b_4"
+	}	
+
+	mainQuestList[10] = {			
+			name: "extraQuest.3 大海原と竜の国 EXTRA I", 
+			cost: "20",
+			prev: "對治癒☆少女C子蘿造成200k傷害(擊倒2次)",
+			enemy: "殺幽靈(5k)*3/殺幽靈(6k)*2/殺幽靈(14k)*2+魔法年上★酒吞(32k)", 
+			drop: "殺銀棋+布丁",
+			locate: "b_2",
+			tag: "ghost/assassin/chaos/evil/dragon"
 	}
 
-
+	mainQuestList[11] = {			
+			name: "extraQuest.4 大海原と竜の国 EXTRA II",
+			cost: "20",
+			prev: "extraQuest.3 3 大海原と竜の国 EXTRA I clear",
+			enemy: "殺龍牙兵(6k)*2+槍飛龍(7k)/殺龍牙兵(7k)*2+槍飛龍(9k)/槍飛龍(22k)*2+魔法童女Ｉ★ＢＡＲＡ☆ＫＩ(33k)", 
+			drop: "狂銀棋+DVD+獅子君",
+			locate: "b_3",
+			tag: "rainbowWyvern/chaos/evil"
+	}
+	
 	worldMatchList[0] = {			
 		name: "worldMatch.1 魔法☆少女童謠醬",
 		cost: "10",

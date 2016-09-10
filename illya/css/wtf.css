@@ -3,8 +3,8 @@
 }
 
 .bg {
-  height : 1024px;
-  width: 1280px;
+  height : 100%;
+  width: 100%;
   position : absolute;
   background : url(../images/mahoudouji.jpg) right center no-repeat fixed;
   background-size : 1000px 1030px;
@@ -13,114 +13,86 @@
 }
 
 .worldMap{
-	height: 755px;
+  height: 755px;
   width: 1344px;
-	background-image: url(../images/map.jpg);
+  background-image: url(../images/map.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.anchor{
+	position: absolute;
+	float: left;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  z-index: 99;		
+}
+
+.spot{
+	position: absolute;
+  float: left;
+  display:block;
+  height : 50px;
+  width: 50px;
+  z-index: 3;	
+}
+
+.z_0{
+	/*中立地帶*/
+	margin-top: 315px;
+  margin-left:635px;
 }
 
 .a_1{
-	position: absolute;
-	display:block;
-	height : 50px;
-	width: 50px;
-	background-image: url(../images/anchor.jpg);
-	background-repeat: no-repeat;
-  background-position: center center;
-  background-size : 100% 100%;
-  top: 92%;
-  left: 67%;
+	/*お菓子の家*/
+  margin-top: 490px;
+  margin-left:900px;  
 }
 
-.a_2{
-  position: absolute;
-  display:block;
-  height : 50px;
-  width: 50px;
-  background-image: url(../images/anchor.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size : 100% 100%;
-  top: 109%;
-  left: 69%;
+.a_2{  
+	/*お菓子の街*/
+  margin-top: 610px;
+  margin-left:915px;
 }
 
-.a_3{
-  position: absolute;
-  display:block;
-  height : 50px;
-  width: 50px;
-  background-image: url(../images/anchor.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size : 100% 100%;
-  top: 101%;
-  left: 77%;
+.a_3{ 
+	/*お菓子の城*/
+  margin-top: 560px;
+  margin-left:1030px;
 }
 
-.a_4{
-  position: absolute;
-  display:block;
-  height : 50px;
-  width: 50px;
-  background-image: url(../images/anchor.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size : 100% 100%;
-  top: 109%;
-  left: 86%;
+.a_4{ 
+	/*お菓子の森*/
+  margin-top: 610px;
+  margin-left:1140px;
 }
 
-.b_1{
-  position: absolute;
-  display:block;
-  height : 50px;
-  width: 50px;
-  background-image: url(../images/anchor.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size : 100% 100%;
-  top: 91%;
-  left: 33%;
+.b_1{ 
+	/*穩やかな海*/
+  margin-top: 480px;
+  margin-left:440px;
 }
 
-.b_2{
-  position: absolute;
-  display:block;
-  height : 50px;
-  width: 50px;
-  background-image: url(../images/anchor.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size : 100% 100%;
-  top: 86%;
-  left: 17%;
+.b_2{ 
+	/*凪の海*/
+  margin-top: 450px;
+  margin-left:220px;
 }
 
-.b_3{
-  position: absolute;
-  display:block;
-  height : 50px;
-  width: 50px;
-  background-image: url(../images/anchor.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size : 100% 100%;
-  top: 110%;
-  left: 29%;
+.b_3{ 
+	/*嵐の海*/
+  margin-top: 615px;
+  margin-left:380px;
 }
-.b_4{
-  position: absolute;
-  display:block;
-  height : 50px;
-  width: 50px;
-  background-image: url(../images/anchor.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size : 100% 100%;
-  top: 103%;
-  left: 18%;
+.b_4{ 
+	/*溟海の城*/
+  margin-top: 570px;
+  margin-left:225px;
 }
 
 .controllerDiv{
@@ -135,6 +107,13 @@
   z-index : 2;
 }
 
+.zone{  
+	width: 450px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding : 10px;  
+}
+
 td, th{
   border: 1px solid black; 
 }
@@ -143,6 +122,10 @@ td, th{
   display:none;
 }
 
+.popUp{	
+	width: 450px;
+  background-color: #FFFFFF;  	
+}
 
 .note{
   padding : 5px;
