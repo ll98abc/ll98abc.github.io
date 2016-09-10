@@ -243,7 +243,7 @@
 			tag: "wand"
 	}
 	
-	mainQuestList[23] = {			
+	mainQuestList[25] = {			
 			name: "星原と水晶の国【Ⅲ】",
 			cost: "20",
 			prev: "mainQuest.星原と水晶の国【Ⅱ】 clear",
@@ -253,7 +253,7 @@
 			tag: ""
 	}
 	
-	mainQuestList[23] = {			
+	mainQuestList[26] = {			
 			name: "星原と水晶の国【Ⅳ】",
 			cost: "20",
 			prev: "mainQuest.星原と水晶の国【Ⅲ】 clear",
