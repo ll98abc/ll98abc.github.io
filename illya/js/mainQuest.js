@@ -136,7 +136,7 @@
 	mainQuestList[14] = {			
 			name: "死せる書架の国【Ⅲ】",
 			cost: "20",
-			prev: "mainQuest.死せる書架の国【Ⅱ】" clear",
+			prev: "mainQuest.死せる書架の国【Ⅱ】clear",
 			enemy: "no battle", 
 			drop: "N/A",
 			locate: "c_1",
