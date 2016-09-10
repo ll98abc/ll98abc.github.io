@@ -300,7 +300,7 @@
     	missionList[37] = {
 		name : "Mission38",
 		target: "打倒亡靈系敵人30隻",
-        	prev: "unknown",
+        	prev: "對文學☆少女艾蓮娜造成300k傷害(擊倒兩次)",
 		reward: "兇骨*5",
         	tag: "ghost"
 	} 
@@ -404,7 +404,7 @@
 	missionList[50] = {
 		name : "Mission51",
 		target: "打倒5隻惡屬性的魔法♂少女鯖",
-		prev: "unknown",
+		prev: "對文學☆少女艾蓮娜造成300k傷害(擊倒兩次)",
 		reward: "地溝油*5",
 		tag: "evil"
 	}
