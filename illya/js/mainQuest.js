@@ -316,5 +316,76 @@
 		drop: "DVD+獅子君",
 		locate: "b_4"
 	}
+	
+	worldMatchList[6] = {
+		name: "worldMatch.7 文學☆少女艾蓮娜",
+		cost: "10",
+		prev: "unknown",
+		enemy: "術女鬼(9k)*3/術魔書(42k)*2+文學☆少女艾蓮娜(180k)",
+		drop: "布丁+DVD",
+		locate: "c_1"
+	}
+	
+	worldMatchList[7] = {
+		name: "worldMatch.8 文學☆少女艾蓮娜",
+		cost: "10",
+		prev: "mission.38 clear",
+		enemy: "術女鬼(9k)*3/術魔書(52k)*2+文學☆少女艾蓮娜(220k)",
+		drop: "布丁+DVD",
+		locate: "c_1"
+	}
+	
+	worldMatchList[8] = {
+		name: "worldMatch.9 文學☆少女艾蓮娜",
+		cost: "10",
+		prev: "mission.49 clear",
+		enemy: "術女鬼(9k)*3/術魔書(58k)*2+文學☆少女艾蓮娜(300k)",
+		drop: "布丁+DVD",
+		locate: "c_1"
+	}
+	
+	worldMatchList[9] = {
+		name: "worldMatch.10 文學☆少女艾蓮娜",
+		cost: "10",
+		prev: "mission.29 clear",
+		enemy: "術女鬼(9k)*3/術魔書(80k)+文學☆少女艾蓮娜(360k)",
+		drop: "布丁+DVD",
+		locate: "c_1"
+	}
+	
+	worldMatchList[10] = {
+		name: "worldMatch.11 婊子☆天使梅芙",
+		cost: "10",
+		prev: "mainQuest.星原と水晶の国【Ⅳ】 clear",
+		enemy: "狂雪人(10k)+殺麋鹿(10k)*2/使魔‧庫醬(100k)+婊子☆天使梅芙(240k)",
+		drop: "DVD+獅子君",
+		locate: "d_1"
+	}
+	
+	worldMatchList[11] = {
+		name: "worldMatch.12 婊子☆天使梅芙",
+		cost: "10",
+		prev: "mission.58 clear",
+		enemy: "狂雪人(10k)+殺麋鹿(10k)*2/使魔‧庫醬(120k)+婊子☆天使梅芙(300k)",
+		drop: "DVD+獅子君",
+		locate: "d_1"
+	}
 
+	worldMatchList[12] = {
+		name: "worldMatch.13 婊子☆天使梅芙",
+		cost: "10",
+		prev: "mission.42 clear",
+		enemy: "狂雪人(11k)+殺麋鹿(11k)*2/使魔‧庫醬(140k)+婊子☆天使梅芙(360k)",
+		drop: "DVD+獅子君",
+		locate: "d_1"
+	}
+	
+	worldMatchList[13] = {
+		name: "worldMatch.14 婊子☆天使梅芙",
+		cost: "10",
+		prev: "mission.52 clear",
+		enemy: "狂雪人(12k)+殺麋鹿(12k)*2/使魔‧庫醬(160k)+婊子☆天使梅芙(400k)",
+		drop: "DVD+獅子君",
+		locate: "d_1"
+	}
 }
