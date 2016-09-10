@@ -131,6 +131,8 @@ function missionFilter(){
 		  $("."+freeQuestList[i].locate).removeClass("hidden");
 	  }
   }
+  
+  $("html,body").stop().animate({scrollTop:$('#mapDiv').offset().top},400);
 }
 
 function popUp(target){
