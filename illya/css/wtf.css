@@ -114,6 +114,10 @@
   padding : 10px;  
 }
 
+tr{
+	line-height: 28px;
+}
+
 td, th{
   border: 1px solid black; 
 }

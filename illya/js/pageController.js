@@ -118,6 +118,11 @@ function buildSelector(){
 function missionFilter(){
   var tag = $("#missionTag").val();
   
+  if ("" == tag){
+	  alert("任務地點檢索只支援「打倒x個怪物」or「打倒o屬性的鯖」。");
+	  return false;
+  }
+  
   //清除之前的檢索紀錄
   $(".anchor").not(".hidden").addClass("hidden");
   
@@ -131,7 +136,8 @@ function missionFilter(){
 function popUp(target){
 	$.blockUI({
         message: $("#"+target),
-        css: {            
+        css: {       
+        	top: "20%",
             border: "0px", 
             'background-color': 'rgba(0,0,0,0)',
             cursor: 'default'            
@@ -141,4 +147,8 @@ function popUp(target){
 	$(".blockOverlay").click($.unblockUI);
 }
 
+function cleanMap(){
+	//清除之前的檢索紀錄
+	$(".anchor").not(".hidden").addClass("hidden");
+}
 
