@@ -430,7 +430,7 @@
 		target: "打倒5隻中庸屬性的魔法♂少女鯖",
 		prev: "mainQuest.死せる書架の国【Ⅲ】clear",
 		reward: "八連雙晶*5",
-		tag: "neutral"
+		tag: "normal"
 	}
 
 	missionList[54] = {
@@ -438,7 +438,7 @@
 		target: "打倒10隻中庸屬性的魔法♂少女鯖",
 		prev: "Mission.54 clear",
 		reward: "八連雙晶*5",
-		tag: "neutral"
+		tag: "normal"
 	}
 
 	missionList[55] = {
@@ -446,7 +446,7 @@
 		target: "打倒15隻中庸屬性的魔法♂少女鯖",
 		prev: "Mission.55 clear",
 		reward: "心型護腕",
-		tag: "neutral"
+		tag: "normal"
 	}
 
 	missionList[56] = {
