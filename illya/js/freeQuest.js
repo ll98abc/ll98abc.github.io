@@ -97,7 +97,7 @@
 	freeQuestList[9] = {			
 			name: "freeQuest.10 死せる書架の国 rank C",
 			cost: "20",
-			prev: "unknown",
+			prev: "mission.16 clear",
 			enemy: "術魔書(11k)*3/術魔書(15k)*3/術魔書(22k)*2+魔法☆良妻玉藻前(67k)",
 			drop: "獅子君",
 			locate: "c_4",
@@ -107,7 +107,7 @@
 	freeQuestList[10] = {			
 			name: "freeQuest.11 死せる書架の国 rank B",
 			cost: "20",
-			prev: "unknown",
+			prev: "mission.55 clear",
 			enemy: "術門(6k)*3/術門(11k)*3/術門(24k)*2+高僧☆少女三藏(101k)",
 			drop: "布丁",
 			locate: "c_3",
@@ -117,7 +117,7 @@
 	freeQuestList[11] = {			
 			name: "freeQuest.12 死せる書架の国 rank A",
 			cost: "20",
-			prev: "unknown",
+			prev: "mission.88 clear",
 			enemy: "術門(9k)*2+術魔書(9k)/術魔書(14k)*2+術惡魔(49k)/術魔書(17k)+術門(22k)+萬能☆少女達文西(103k)",
 			drop: "布丁+DVD+獅子君",
 			locate: "c_3",
