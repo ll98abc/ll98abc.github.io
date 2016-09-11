@@ -388,4 +388,49 @@
 		drop: "DVD+獅子君",
 		locate: "d_1"
 	}
+	
+	worldMatchList[14] = {
+		name: "worldMatch.15 強吻♡少女小★黑",
+		cost: "10",
+		prev: "mainQuest.星原と水晶の国【Ⅳ】 clear",
+		enemy: "強吻♡少女小★黑(200k)",
+		drop: "獅子君",
+		locate: "e_1"
+	}
+	
+	worldMatchList[15] = {
+		name: "worldMatch.16 強吻♡少女小★黑",
+		cost: "10",
+		prev: "unknown",
+		enemy: "殺魔杖(10k)*3/狂魔杖(48k)+術魔杖(73k)+強吻♡少女小★黑(240k)",
+		drop: "布丁+獅子君",
+		locate: "e_1"
+	}
+	
+	worldMatchList[16] = {
+		name: "worldMatch.17 強吻♡少女小★黑",
+		cost: "10",
+		prev: "mission.60 clear",
+		enemy: "殺魔杖(11k)*3/狂魔杖(51k)+術魔杖(78k)+強吻♡少女小★黑(300k)",
+		drop: "布丁+獅子君",
+		locate: "e_1"
+	}
+	
+	worldMatchList[17] = {
+		name: "worldMatch.18 強吻♡少女小★黑",
+		cost: "10",
+		prev: "mission.34 clear",
+		enemy: "unknown",
+		drop: "布丁+獅子君",
+		locate: "e_1"
+	}
+	
+	worldMatchList[18] = {
+		name: "worldMatch.19 強吻♡少女小★黑",
+		cost: "10",
+		prev: "unknown",
+		enemy: "unknown",
+		drop: "布丁+獅子君",
+		locate: "e_1"
+	}
 }
