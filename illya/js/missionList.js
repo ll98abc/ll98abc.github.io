@@ -228,7 +228,7 @@
     	missionList[28] = {
 		name : "Mission29",
 		target: "打倒20本魔導書",
-        	prev: "unknow",
+        	prev: "對文學☆少女艾蓮娜造成1.3M傷害(擊倒6次)",
 		reward: "術輝石*5",
         	tag: "spellBook"
     	}
@@ -452,7 +452,7 @@
 	missionList[56] = {
 		name : "Mission57",
 		target: "打倒5隻秩序屬性的魔法♂少女鯖",
-		prev: "unknown",
+		prev: "對文學☆少女艾蓮娜造成1.3M傷害(擊倒6次)",
 		reward: "大騎士勳章*5",
 		tag: "lawful"
 	}
