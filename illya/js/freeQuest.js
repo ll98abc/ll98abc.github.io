@@ -77,7 +77,7 @@
 	freeQuestList[7] = {			
 			name: "freeQuest.8 大海原と竜の国 rank A",
 			cost: "20",
-			prev: "對治癒☆少女C子蘿造成500k傷害(擊倒4次)",
+			prev: "mission.89 clear",
 			enemy: "劍龍牙兵(8k)*3/殺巨龍(53k)/劍龍牙兵(12k)+大食☆少女藍傻巴(50k)",
 			drop: "布丁+DVD+獅子君",
 			locate: "b_1",
