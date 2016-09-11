@@ -106,7 +106,7 @@
 	mainQuestList[11] = {			
 			name: "extraQuest.4 大海原と竜の国 EXTRA II",
 			cost: "20",
-			prev: "extraQuest.3 3 大海原と竜の国 EXTRA I clear",
+			prev: "mission.96 clear",
 			enemy: "殺龍牙兵(6k)*2+槍飛龍(7k)/殺龍牙兵(7k)*2+槍飛龍(9k)/槍飛龍(22k)*2+魔法童女Ｉ★ＢＡＲＡ☆ＫＩ(33k)", 
 			drop: "狂銀棋+DVD+獅子君",
 			locate: "b_3",
