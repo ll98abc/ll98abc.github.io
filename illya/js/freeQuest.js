@@ -137,7 +137,7 @@
 	freeQuestList[13] = {			
 			name: "freeQuest.14 雪華とハチミツの国 rank C",
 			cost: "20",
-			prev: "unknown",
+			prev: "mission.90 clear",
 			enemy: "狂雪人(10k)*2+弓手(11k)/弓手(13k)+狂雪人(12k)*2/攻手(25k)+狂雪人(38k)+魔法☆惡女卡蜜拉(95k)",
 			drop: "布丁+獅子君",
 			locate: "d_3",
@@ -147,7 +147,7 @@
 	freeQuestList[14] = {			
 			name: "freeQuest.15 雪華とハチミツの国 rank B",
 			cost: "20",
-			prev: "unknown",
+			prev: "mission.41 clear",
 			enemy: "槍麋鹿(10k)*2+狂雪人(10k)/槍麋鹿(16k)+狂雪人(18k)/狂雪人(27k)+槍麋鹿(23k)+船長☆少女德雷克(98k)",
 			drop: "DVD+獅子君",
 			locate: "d_2",
