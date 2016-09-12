@@ -158,7 +158,7 @@
 			name: "freeQuest.16 雪華とハチミツの国 rank A",
 			cost: "20",
 			prev: "unknown",
-			enemy: "劍麋鹿(10k)*3/劍石巨人(?)/劍麋鹿(26k)*2+不良☆少女莫太郎(123k)",
+			enemy: "劍麋鹿(10k)*3/劍石巨人(77k)/劍麋鹿(26k)*2+不良☆少女莫太郎(123k)",
 			drop: "DVD",
 			locate: "d_4",
 			tag: "horn/saber/chaos/normal/dragon"
