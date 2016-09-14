@@ -57,33 +57,33 @@
 	}
 
     	missionList[7] = {
-		name : "Mission8 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
+		name : "Mission8",
+		target: "打倒白面♂紳士歌劇魅影",
+		prev: "mission.26 clear",
+		reward: "龍鱗*5",
 		tag: ""
 	}
 
     	missionList[8] = {
-		name : "Mission9 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
+		name : "Mission9",
+		target: "打倒紳士♂海賊黑鬍子",
+		prev: "mission.44 clear",
 		reward: "unknown",
 		tag: ""
 	}
 
     	missionList[9] = {
-		name : "Mission10 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
+		name : "Mission10",
+		target: "打倒魔法♂旦那藍鬍子",
+		prev: "mission.69 clear",
 		reward: "unknown",
         	tag: ""
 	}
 
     	missionList[10] = {
-		name : "Mission11 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
+		name : "Mission11",
+		target: "打倒杯具♂紳士刷子哥",
+		prev: "mission.70 clear",
 		reward: "unknown",
 		tag: ""
 	}
@@ -97,9 +97,9 @@
 	}
 	
 	    missionList[12] = {
-		name : "Mission13 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
+		name : "Mission13",
+		target: "打倒黑魔☆少女伊莉雅",
+		prev: "mission.12 clear",
 		reward: "unknown",
 		tag: ""
 	}
@@ -146,41 +146,41 @@
 	}
 
     	missionList[18] = {
-		name : "Mission19 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
+		name : "Mission19",
+		target: "對白面♂紳士歌劇魅影造成1.5M傷害",
+		prev: "mission.26 clear",
+		reward: "100綠方",
 		tag: ""
 	}
 
     	missionList[19] = {
-		name : "Mission20 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-        	prev: "unknown",
+		name : "Mission20",
+		target: "對紳士♂海賊黑鬍子造成??傷害",
+        	prev: "mission.44 clear",
         	reward: "unknown",
         	tag: ""
 	}
 
     	missionList[20] = {
-		name : "Mission21 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-        	prev: "unknown",
+		name : "Mission21",
+		target: "對魔法♂旦那藍鬍子造成??傷害",
+        	prev: "mission.69 clear",
 		reward: "unknown",
         	tag: ""
 	}
 
     	missionList[21] = {
-		name : "Mission22 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-        	prev: "unknown",
+		name : "Mission22",
+		target: "對杯具♂紳士刷子哥造成??傷害",
+        	prev: "mission.70 clear",
 		reward: "unknown",
         	tag: ""
 	}
 
     	missionList[22] = {
-		name : "Mission23 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-        	prev: "unknown",
+		name : "Mission23",
+		target: "對黑魔☆少女伊莉雅造成??傷害",
+        	prev: "mission.12 clear",
 		reward: "unknown",
         	tag: ""
 	}
