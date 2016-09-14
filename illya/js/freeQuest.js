@@ -215,7 +215,7 @@
 	}
 	
 	freeQuestList[21] = {			
-			name: "freeQuest.19 星原と水晶の国 rank A+",
+			name: "freeQuest.22 星原と水晶の国 rank A+",
 			cost: "20",
 			prev: "unknown",
 			enemy: "狂魔杖(12k)*3/殺黑狗(107k)/狂魔杖(39k)*2+復讎☆少女黑阿貞(146k)",
@@ -224,5 +224,54 @@
 			tag: "wand/avanger/chaos/evil"
 	}
 	
+	freeQuestList[22] = {			
+			name: "freeQuest.23 お菓子の国 rank EX",
+			cost: "20",
+			prev: "unknown",
+			enemy: "狂薑餅人(10k)*3/術火精靈(117k)+狂薑餅人(33k)/狂薑餅人(44k)+子安♂武人梅非斯特(117k)",
+			drop: "布丁",
+			locate: "a_1",
+			tag: "biscuitGolem/caster/chaos/evil/male"
+	}
+	
+	freeQuestList[23] = {			
+			name: "freeQuest.24 大海原と竜の国 rank EX",
+			cost: "20",
+			prev: "unknown",
+			enemy: "槍飛龍(10k)*3/殺巨龍(112k)/槍飛龍(46k)*2+大斧♂紳士埃里克(153k)",
+			drop: "布丁+獅子君",
+			locate: "b_1",
+			tag: "rainbowWyvern/giant//berserker/chaos/normal/male"
+	}
+	
+	freeQuestList[24] = {			
+			name: "freeQuest.25 死せる書架の国 rank EX",
+			cost: "20",
+			prev: "unknown",
+			enemy: "術魔書(10k)*3/術魔書(30k)*2+術惡魔(99k)/術魔書(36k)*2+白衣☆紳士豆子爸(80k)",
+			drop: "獅子君",
+			locate: "c_1",
+			tag: "spellBook/caster/chaos/good/male"
+	}
+	
+	freeQuestList[25] = {			
+			name: "freeQuest.26 雪華とハチミツの国 rank EX",
+			cost: "20",
+			prev: "unknown",
+			enemy: "劍麋鹿(10k)*3/石巨人(150k)/劍麋鹿(48k)+性慾☆大叔小剛(95k)",
+			drop: "DVD",
+			locate: "d_3",
+			tag: "horn/saber/giant/lawful/normal/male"
+	}
+	
+	freeQuestList[26] = {			
+			name: "freeQuest.27 星原と水晶の国 rank EX",
+			cost: "20",
+			prev: "unknown",
+			enemy: "狂魔杖(12k)+術魔杖(16k)/殺黑犬(132k)/殺魔杖(57k)+術魔杖(64k)+交流♂紳士特斯拉(213k)",
+			drop: "布丁+DVD+獅子君",
+			locate: "e_2",
+			tag: "wand/giant/archer/chaos/good/male"
+	}
 	
 }
