@@ -522,7 +522,7 @@
 	}
 
 	missionList[65] = {
-		name : "Mission66",
+		name : "Mission66 *小黑寶具任務",
 		target: "打倒20隻caster class的魔法♂少女鯖",
 		prev: "mainQuest.魔法紳士 clear",
 		reward: "強吻♡少女小★黑",
@@ -634,7 +634,7 @@
 	}
 
 	missionList[79] = {
-		name : "Mission80",
+		name : "Mission80 *小黑寶具任務",
 		target: "所有Rank EX的關卡過關",
 		prev: "mainQuest.魔法紳士 clear",
 		reward: "強吻♡少女小★黑",
