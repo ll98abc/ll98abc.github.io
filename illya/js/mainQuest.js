@@ -495,4 +495,13 @@
 		locate: "e_1"
 	}
 	
+	worldMatchList[19] = {
+		name: "worldMatch.20 白面♂紳士歌劇魅影",
+		cost: "10",
+		prev: "mission.26 clear",
+		enemy: "狂薑餅人(27k)*3/狂薑餅人(71k)*2+白面♂紳士歌劇魅影(350k)",
+		drop: "布丁",
+		locate: "a_3"
+	}
+	
 }
