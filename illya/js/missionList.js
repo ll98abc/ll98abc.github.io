@@ -683,7 +683,7 @@
 
     	missionList[85] = {
 		name : "Mission86",
-		target: "All Mission Clear",
+		target: "全關卡通關",
 		prev: "mainQuest.魔法紳士 clear",
 		reward: "傳承結晶*1",
 		tag: ""
