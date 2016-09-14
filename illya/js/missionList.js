@@ -89,10 +89,10 @@
 	}
 
     	missionList[11] = {
-		name : "Mission12 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
+		name : "Mission12",
+		target: "打倒所有魔法♂紳士",
+		prev: "mainQuest.魔法紳士 clear",
+		reward: "呼符",
         	tag: ""
 	}
 	
@@ -202,11 +202,11 @@
     	}
 
     	missionList[25] = {
-		name : "Mission26 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-	        prev: "unknown",
-		reward: "unknown",
-	        tag: ""
+		name : "Mission26",
+		target: "打倒80隻餅乾哥雷姆",
+	        prev: "mainQuest.魔法紳士 clear",
+		reward: "弓秘石*5",
+	        tag: "biscuitGolem"
 	}
 
     	missionList[26] = {
@@ -346,11 +346,11 @@
 	}
 
     	missionList[43] = {
-		name : "Mission44 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-        	prev: "unknown",
-		reward: "unknown",
-        	tag: ""
+		name : "Mission44",
+		target: "在EX關卡中打倒大型魔物",
+        	prev: "mainQuest.魔法紳士 clear",
+		reward: "龍鱗*5",
+        	tag: "giant"
 	}
 
     	missionList[44] = {
@@ -522,11 +522,11 @@
 	}
 
 	missionList[65] = {
-		name : "Mission66 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
-		tag: ""
+		name : "Mission66",
+		target: "打倒20隻caster class的魔法♂少女鯖",
+		prev: "mainQuest.魔法紳士 clear",
+		reward: "強吻♡少女小★黑",
+		tag: "caster"
 	}
 
 	missionList[66] = {
@@ -547,18 +547,18 @@
 
 	missionList[68] = {
 		name : "Mission69 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
-		tag: ""
+		target: "在EX關卡中打倒5個「學者」屬性的魔法☆少女鯖",
+		prev: "mainQuest.魔法紳士 clear",
+		reward: "術秘石*5",
+		tag: "scholar"
 	}
 
 	missionList[69] = {
-		name : "Mission70 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
-		tag: ""
+		name : "Mission70",
+		target: "打倒五個男性魔法♂紳士",
+		prev: "mainQuest.魔法紳士 clear",
+		reward: "神燈*5",
+		tag: "male"
 	}
 
 	missionList[70] = {
@@ -634,10 +634,10 @@
 	}
 
 	missionList[79] = {
-		name : "Mission80 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
+		name : "Mission80",
+		target: "所有Rank EX的關卡過關",
+		prev: "mainQuest.魔法紳士 clear",
+		reward: "強吻♡少女小★黑",
 		tag: ""
 	}
 
@@ -682,10 +682,10 @@
 	}
 
     	missionList[85] = {
-		name : "Mission86 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
+		name : "Mission86",
+		target: "All Mission Clear",
+		prev: "mainQuest.魔法紳士 clear",
+		reward: "傳承結晶*1",
 		tag: ""
 	}
 
@@ -788,10 +788,10 @@
 	}
 
     	missionList[98] = {
-		name : "Mission99 9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
+		name : "Mission99",
+		target: "完成90個任務",
+		prev: "mainQuest.魔法紳士 clear",
+		reward: "強吻♡少女小★黑",
 		tag: ""
 	}
 
@@ -802,5 +802,5 @@
 		reward: "unknown",
 		tag: ""
 	}
-          
+        
 }
