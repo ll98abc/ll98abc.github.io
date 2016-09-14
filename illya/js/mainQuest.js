@@ -325,7 +325,7 @@
 	
 	
 	worldMatchList[0] = {			
-		name: "worldMatch.1 魔法☆少女童謠醬",
+		name: "worldMatch.1 魔法☆少女童謠醬【Ⅰ】",
 		cost: "10",
 		prev:  "mainQuest.1-3 clear",
 		enemy: "狂薑餅人(3k)*3/魔神柱(50k)+魔法☆少女童謠醬(35k)",
@@ -334,7 +334,7 @@
 	}
 
 	worldMatchList[1] = {
-		name: "worldMatch.2  魔法☆少女童謠醬",
+		name: "worldMatch.2  魔法☆少女童謠醬【Ⅱ】",
 		cost: "10",
 		prev: "mission.24 clear",
 		enemy: "狂薑餅人(3k)*3/魔神柱(60k)+魔法☆少女童謠醬(40k)",
@@ -343,7 +343,7 @@
 	}
 
 	worldMatchList[2] = {			
-		name: "worldMatch.3 魔法☆少女童謠醬",
+		name: "worldMatch.3 魔法☆少女童謠醬【Ⅲ】",
 		cost: "10",
 		prev: "mission.71 clear",
 		enemy: "狂薑餅人(3k)*3/魔神柱(75k)+魔法☆少女童謠醬(62k)",
@@ -352,7 +352,7 @@
 	}
 
 	worldMatchList[3] = {
-		name: "worldMatch.4 治癒☆少女C子蘿",
+		name: "worldMatch.4 治癒☆少女C子蘿【Ⅰ】",
 		cost: "10",
 		prev:  "mainQuest.大海原と竜の国【Ⅲ】 clear",
 		enemy: "槍龍(6k)*3/劍龍牙兵(45k)*2+治癒☆少女C子蘿(100k)",
@@ -361,7 +361,7 @@
 	}
 
 	worldMatchList[4] = {			
-		name: "worldMatch.5 治癒☆少女C子蘿",
+		name: "worldMatch.5 治癒☆少女C子蘿【Ⅱ】",
 		cost: "10",
 		prev: "mission.35 clear",
 		enemy: "槍龍(6k)*3/劍龍牙兵(60k)*2+治癒☆少女C子蘿(150k)",
@@ -370,7 +370,7 @@
 	}
 
 	worldMatchList[5] = {
-		name: "worldMatch.6 治癒☆少女C子蘿",
+		name: "worldMatch.6 治癒☆少女C子蘿【Ⅲ】",
 		cost: "10",
 		prev: "mission.27 clear",
 		enemy: "槍龍(6k)*3/劍龍牙兵(90k)+治癒☆少女C子蘿(180k)",
@@ -379,7 +379,7 @@
 	}
 	
 	worldMatchList[6] = {
-		name: "worldMatch.7 文學☆少女艾蓮娜",
+		name: "worldMatch.7 文學☆少女艾蓮娜【Ⅰ】",
 		cost: "10",
 		prev: "unknown",
 		enemy: "術女鬼(9k)*3/術魔書(42k)*2+文學☆少女艾蓮娜(180k)",
@@ -388,7 +388,7 @@
 	}
 	
 	worldMatchList[7] = {
-		name: "worldMatch.8 文學☆少女艾蓮娜",
+		name: "worldMatch.8 文學☆少女艾蓮娜【Ⅱ】",
 		cost: "10",
 		prev: "mission.38 clear",
 		enemy: "術女鬼(9k)*3/術魔書(52k)*2+文學☆少女艾蓮娜(220k)",
@@ -397,7 +397,7 @@
 	}
 	
 	worldMatchList[8] = {
-		name: "worldMatch.9 文學☆少女艾蓮娜",
+		name: "worldMatch.9 文學☆少女艾蓮娜【Ⅲ】",
 		cost: "10",
 		prev: "mission.49 clear",
 		enemy: "術女鬼(9k)*3/術魔書(58k)*2+文學☆少女艾蓮娜(300k)",
@@ -406,7 +406,7 @@
 	}
 	
 	worldMatchList[9] = {
-		name: "worldMatch.10 文學☆少女艾蓮娜",
+		name: "worldMatch.10 文學☆少女艾蓮娜【Ⅳ】",
 		cost: "10",
 		prev: "mission.29 clear",
 		enemy: "術女鬼(9k)*3/術魔書(80k)+文學☆少女艾蓮娜(360k)",
@@ -415,7 +415,7 @@
 	}
 	
 	worldMatchList[10] = {
-		name: "worldMatch.11 婊子☆天使梅芙",
+		name: "worldMatch.11 婊子☆天使梅芙【Ⅰ】",
 		cost: "10",
 		prev: "mainQuest.星原と水晶の国【Ⅳ】 clear",
 		enemy: "狂雪人(10k)+殺麋鹿(10k)*2/使魔‧庫醬(100k)+婊子☆天使梅芙(240k)",
@@ -424,7 +424,7 @@
 	}
 	
 	worldMatchList[11] = {
-		name: "worldMatch.12 婊子☆天使梅芙",
+		name: "worldMatch.12 婊子☆天使梅芙【Ⅱ】",
 		cost: "10",
 		prev: "mission.58 clear",
 		enemy: "狂雪人(10k)+殺麋鹿(10k)*2/使魔‧庫醬(120k)+婊子☆天使梅芙(300k)",
@@ -433,7 +433,7 @@
 	}
 
 	worldMatchList[12] = {
-		name: "worldMatch.13 婊子☆天使梅芙",
+		name: "worldMatch.13 婊子☆天使梅芙【Ⅲ】",
 		cost: "10",
 		prev: "mission.42 clear",
 		enemy: "狂雪人(11k)+殺麋鹿(11k)*2/使魔‧庫醬(140k)+婊子☆天使梅芙(360k)",
@@ -442,7 +442,7 @@
 	}
 	
 	worldMatchList[13] = {
-		name: "worldMatch.14 婊子☆天使梅芙",
+		name: "worldMatch.14 婊子☆天使梅芙【Ⅳ】",
 		cost: "10",
 		prev: "mission.52 clear",
 		enemy: "狂雪人(12k)+殺麋鹿(12k)*2/使魔‧庫醬(160k)+婊子☆天使梅芙(400k)",
@@ -451,7 +451,7 @@
 	}
 	
 	worldMatchList[14] = {
-		name: "worldMatch.15 強吻♡少女小★黑",
+		name: "worldMatch.15 強吻♡少女小★黑【Ⅰ】",
 		cost: "10",
 		prev: "mainQuest.星原と水晶の国【Ⅳ】 clear",
 		enemy: "強吻♡少女小★黑(200k)",
@@ -460,7 +460,7 @@
 	}
 	
 	worldMatchList[15] = {
-		name: "worldMatch.16 強吻♡少女小★黑",
+		name: "worldMatch.16 強吻♡少女小★黑【Ⅱ】",
 		cost: "10",
 		prev: "unknown",
 		enemy: "殺魔杖(10k)*3/狂魔杖(48k)+術魔杖(73k)+強吻♡少女小★黑(240k)",
@@ -469,7 +469,7 @@
 	}
 	
 	worldMatchList[16] = {
-		name: "worldMatch.17 強吻♡少女小★黑",
+		name: "worldMatch.17 強吻♡少女小★黑【Ⅲ】",
 		cost: "10",
 		prev: "mission.60 clear",
 		enemy: "殺魔杖(11k)*3/狂魔杖(51k)+術魔杖(78k)+強吻♡少女小★黑(300k)",
@@ -478,7 +478,7 @@
 	}
 	
 	worldMatchList[17] = {
-		name: "worldMatch.18 強吻♡少女小★黑",
+		name: "worldMatch.18 強吻♡少女小★黑【Ⅳ】",
 		cost: "10",
 		prev: "mission.34 clear",
 		enemy: "殺術狂魔杖(16k)/強吻♡少女小★黑(380k)",
@@ -487,7 +487,7 @@
 	}
 	
 	worldMatchList[18] = {
-		name: "worldMatch.19 強吻♡少女小★黑",
+		name: "worldMatch.19 強吻♡少女小★黑【Ⅳ】",
 		cost: "10",
 		prev: "mission.64 clear",
 		enemy: "殺術狂魔杖(22k)/強吻♡少女小★黑(400k)",
@@ -496,10 +496,28 @@
 	}
 	
 	worldMatchList[19] = {
-		name: "worldMatch.20 白面♂紳士歌劇魅影",
+		name: "worldMatch.20 白面♂紳士歌劇魅影【Ⅰ】",
 		cost: "10",
 		prev: "mission.26 clear",
 		enemy: "狂薑餅人(27k)*3/狂薑餅人(71k)*2+白面♂紳士歌劇魅影(350k)",
+		drop: "布丁",
+		locate: "a_3"
+	}
+	
+	worldMatchList[20] = {
+		name: "worldMatch.21 白面♂紳士歌劇魅影【Ⅱ】",
+		cost: "10",
+		prev: "worldMatch.20 clear",
+		enemy: "狂薑餅人(29k)*3/狂薑餅人(75k)*2+白面♂紳士歌劇魅影(450k)",
+		drop: "布丁",
+		locate: "a_3"
+	}
+	
+	worldMatchList[21] = {
+		name: "worldMatch.22 白面♂紳士歌劇魅影【Ⅲ】",
+		cost: "10",
+		prev: "worldMatch.21 clear",
+		enemy: "狂薑餅人(30k)*3/狂薑餅人(77k)*2+白面♂紳士歌劇魅影(700k)",
 		drop: "布丁",
 		locate: "a_3"
 	}
