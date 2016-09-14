@@ -546,7 +546,7 @@
 	}
 
 	missionList[68] = {
-		name : "Mission69 *9/14 1700 後滿足條件開啟",
+		name : "Mission69",
 		target: "在EX關卡中打倒5個「學者」屬性的魔法☆少女鯖",
 		prev: "mainQuest.魔法紳士 clear",
 		reward: "術秘石*5",
