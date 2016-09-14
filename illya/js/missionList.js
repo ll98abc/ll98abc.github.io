@@ -508,7 +508,7 @@
 	missionList[63] = {
 		name : "Mission64",
 		target: "打倒10隻caster class的魔法♂少女鯖",
-		prev: "unknown",
+		prev: "對強吻♡少女小★黑造成440k傷害(擊倒8次)",
 		reward: "術輝石",
 		tag: "caster"
 	}
