@@ -290,7 +290,7 @@
 	}
 
     	missionList[36] = {
-		name : "Mission37",
+		name : "Mission37 *小黑靈基道具",
 		target: "打倒70隻「骨」系敵人",
         	prev: "Mission.36 clear",
 		reward: "心型護腕",
@@ -442,7 +442,7 @@
 	}
 
 	missionList[55] = {
-		name : "Mission56",
+		name : "Mission56 *小黑靈基道具",
 		target: "打倒15隻中庸屬性的魔法♂少女鯖",
 		prev: "Mission.55 clear",
 		reward: "心型護腕",
@@ -626,7 +626,7 @@
 	}
 
 	missionList[78] = {
-		name : "Mission79",
+		name : "Mission79 *小黑靈基道具",
 		target: "所有Rank A或是A+關卡過關",
 		prev: "unknown",
 		reward: "心型護腕",
@@ -780,7 +780,7 @@
 	}
 
     	missionList[97] = {
-		name : "Mission98",
+		name : "Mission98 *小黑靈基道具",
 		target: "完成60個任務",
         	prev: "Mission.97 clear",
 		reward: "心型護腕",
@@ -788,7 +788,7 @@
 	}
 
     	missionList[98] = {
-		name : "Mission99",
+		name : "Mission99 *小黑寶具任務",
 		target: "完成90個任務",
 		prev: "mainQuest.魔法紳士 clear",
 		reward: "強吻♡少女小★黑",
