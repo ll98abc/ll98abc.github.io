@@ -241,7 +241,7 @@
 			enemy: "槍飛龍(10k)*3/殺巨龍(112k)/槍飛龍(46k)*2+大斧♂紳士埃里克(153k)",
 			drop: "布丁+獅子君",
 			locate: "b_1",
-			tag: "rainbowWyvern/giant//berserker/chaos/normal/male"
+			tag: "rainbowWyvern/giant//berserker/chaos/male"
 	}
 	
 	freeQuestList[24] = {			
@@ -251,7 +251,7 @@
 			enemy: "術魔書(10k)*3/術魔書(30k)*2+術惡魔(99k)/術魔書(36k)*2+白衣☆紳士豆子爸(80k)",
 			drop: "獅子君",
 			locate: "c_1",
-			tag: "spellBook/caster/chaos/good/male"
+			tag: "spellBook/caster/chaos/good/male/scholar"
 	}
 	
 	freeQuestList[25] = {			
@@ -261,7 +261,7 @@
 			enemy: "劍麋鹿(10k)*3/石巨人(150k)/劍麋鹿(48k)+性慾☆大叔小剛(254k)",
 			drop: "DVD",
 			locate: "d_3",
-			tag: "horn/saber/giant/lawful/normal/male"
+			tag: "horn/saber/giant/lawful/male"
 	}
 	
 	freeQuestList[26] = {			
@@ -271,7 +271,7 @@
 			enemy: "狂魔杖(12k)+術魔杖(16k)/殺黑犬(132k)/殺魔杖(57k)+術魔杖(64k)+交流♂紳士特斯拉(213k)",
 			drop: "布丁+DVD+獅子君",
 			locate: "e_2",
-			tag: "wand/giant/archer/chaos/good/male"
+			tag: "wand/giant/archer/chaos/good/male/scholar"
 	}
 	
 }
