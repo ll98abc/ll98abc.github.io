@@ -274,7 +274,7 @@
 	}
 	
 	mainQuestList[28] = {			
-			name: "魔法♂紳士",
+			name: "魔法♂紳士 開幕",
 			cost: "20",
 			prev: "完成第一階段主線任務",
 			enemy: "no battle", 
@@ -283,13 +283,43 @@
 			tag: ""
 	}
 	
-	mainQuestList[28] = {			
-			name: "魔法♂紳士 II",
+	mainQuestList[29] = {			
+			name: "魔法♂紳士 A",
+			cost: "20",
+			prev: "mission.26 clear",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "a_3",
+			tag: ""
+	}
+	
+	mainQuestList[30] = {			
+			name: "魔法♂紳士 B",
 			cost: "20",
 			prev: "mission.44 clear",
 			enemy: "no battle", 
 			drop: "N/A",
 			locate: "b_4",
+			tag: ""
+	}
+	
+	mainQuestList[31] = {			
+			name: "魔法♂紳士 C",
+			cost: "20",
+			prev: "mission.69 clear",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "c_2",
+			tag: ""
+	}
+	
+	mainQuestList[32] = {			
+			name: "魔法♂紳士 D",
+			cost: "20",
+			prev: "mission.70 clear",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "d_1",
 			tag: ""
 	}
 	
