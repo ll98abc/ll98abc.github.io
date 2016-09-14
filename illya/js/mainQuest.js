@@ -420,7 +420,7 @@
 		name: "worldMatch.18 強吻♡少女小★黑",
 		cost: "10",
 		prev: "mission.34 clear",
-		enemy: "unknown",
+		enemy: "殺術狂魔杖(16k)/強吻♡少女小★黑(380k)",
 		drop: "布丁+獅子君",
 		locate: "e_1"
 	}
@@ -428,8 +428,8 @@
 	worldMatchList[18] = {
 		name: "worldMatch.19 強吻♡少女小★黑",
 		cost: "10",
-		prev: "unknown",
-		enemy: "unknown",
+		prev: "mission.64 clear",
+		enemy: "殺術狂魔杖(22k)/強吻♡少女小★黑(400k)",
 		drop: "布丁+獅子君",
 		locate: "e_1"
 	}
