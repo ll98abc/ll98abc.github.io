@@ -658,10 +658,10 @@
 	}
 
 	missionList[82] = {
-		name : "Mission83 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
+		name : "Mission83",
+		target: "死せる書架の国 all quests clear",
+		prev: "freeQuest.25 死せる書架の国 EX clear",
+		reward: "100綠方",
 		tag: ""
 	}
 
