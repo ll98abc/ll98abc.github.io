@@ -642,18 +642,18 @@
 	}
 
 	missionList[80] = {
-		name : "Mission81 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
+		name : "Mission81",
+		target: "お菓子の国 all quests clear",
+		prev: "freeQuest.23 お菓子の国 EX clear",
+		reward: "100綠方",
 		tag: ""
 	}
 
 	missionList[81] = {
-		name : "Mission82 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
+		name : "Mission82",
+		target: "大海原と竜の国 all quests clear",
+		prev: "freeQuest.24 大海原と竜の国 EX clear",
+		reward: "100綠方",
 		tag: ""
 	}
 
@@ -666,18 +666,18 @@
 	}
 
     	missionList[83] = {
-		name : "Mission84 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-		prev: "unknown",
-		reward: "unknown",
+		name : "Mission84",
+		target: "雪華とハチミツの国",
+		prev: "freeQuests.26 雪華とハチミツの国 EX clear",
+		reward: "100綠方",
 		tag: ""
 	}
 
     	missionList[84] = {
-		name : "Mission85 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
-        	prev: "unknown",
-		reward: "unknown",
+		name : "Mission85",
+		target: "星原と水晶の国 all quests clear",
+        	prev: "freeQuest.27 星原と水晶の国 EX clear",
+		reward: "100綠方",
 		tag: ""
 	}
 
@@ -796,10 +796,10 @@
 	}
 
     	missionList[99] = {
-		name : "Mission100 *9/14 1700 後滿足條件開啟",
-		target: "unknown",
+		name : "Mission100",
+		target: "all mission clear",
 		prev: "unknown",
-		reward: "unknown",
+		reward: "傳承結晶",
 		tag: ""
 	}
         
