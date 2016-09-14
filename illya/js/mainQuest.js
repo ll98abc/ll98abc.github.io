@@ -263,6 +263,37 @@
 			tag: ""
 	}
 	
+	mainQuestList[27] = {			
+			name: "終幕",
+			cost: "20",
+			prev: "擊破強吻♡少女小★黑",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "e_1",
+			tag: ""
+	}
+	
+	mainQuestList[28] = {			
+			name: "魔法♂紳士",
+			cost: "20",
+			prev: "完成第一階段主線任務",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "z_0",
+			tag: ""
+	}
+	
+	mainQuestList[28] = {			
+			name: "魔法♂紳士 II",
+			cost: "20",
+			prev: "mission.44 clear",
+			enemy: "no battle", 
+			drop: "N/A",
+			locate: "b_4",
+			tag: ""
+	}
+	
+	
 	worldMatchList[0] = {			
 		name: "worldMatch.1 魔法☆少女童謠醬",
 		cost: "10",
@@ -433,4 +464,5 @@
 		drop: "布丁+獅子君",
 		locate: "e_1"
 	}
+	
 }
