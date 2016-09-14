@@ -258,7 +258,7 @@
 			name: "freeQuest.26 雪華とハチミツの国 rank EX",
 			cost: "20",
 			prev: "unknown",
-			enemy: "劍麋鹿(10k)*3/石巨人(150k)/劍麋鹿(48k)+性慾☆大叔小剛(95k)",
+			enemy: "劍麋鹿(10k)*3/石巨人(150k)/劍麋鹿(48k)+性慾☆大叔小剛(254k)",
 			drop: "DVD",
 			locate: "d_3",
 			tag: "horn/saber/giant/lawful/normal/male"
