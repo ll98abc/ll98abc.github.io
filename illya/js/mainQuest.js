@@ -514,7 +514,7 @@
 	}
 	
 	worldMatchList[21] = {
-		name: "worldMatch.22 白面♂紳士歌劇魅影【Ⅲ】",
+		name: "worldMatch.22 白面♂紳士歌劇魅影【Ⅰ】",
 		cost: "10",
 		prev: "worldMatch.21 clear",
 		enemy: "狂薑餅人(30k)*3/狂薑餅人(77k)*2+白面♂紳士歌劇魅影(700k)",
@@ -522,4 +522,30 @@
 		locate: "a_3"
 	}
 	
+	worldMatchList[22] = {
+		name: "worldMatch.23 紳士♂海賊黑鬍子【Ⅲ】",
+		cost: "10",
+		prev: "mission.44 clear",
+		enemy: "槍飛龍(15k)*3/槍飛龍(56k)*2+紳士♂海賊黑鬍子(320k)",
+		drop: "獅子君",
+		locate: "b_4"
+	}
+	
+	worldMatchList[23] = {
+		name: "worldMatch.24 紳士♂海賊黑鬍子【Ⅱ】",
+		cost: "10",
+		prev: "worldMatch.23 clear",
+		enemy: "槍飛龍(15k)*3/槍飛龍(56k)*2+紳士♂海賊黑鬍子(320k)",
+		drop: "獅子君",
+		locate: "b_4"
+	}
+	
+	worldMatchList[24] = {
+		name: "worldMatch.25 紳士♂海賊黑鬍子【Ⅲ】",
+		cost: "10",
+		prev: "worldMatch.24 clear",
+		enemy: "槍飛龍(15k)*3/槍飛龍(56k)*2+紳士♂海賊黑鬍子(320k)",
+		drop: "獅子君",
+		locate: "b_4"
+	}
 }
