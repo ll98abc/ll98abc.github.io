@@ -514,7 +514,7 @@
 	}
 	
 	worldMatchList[21] = {
-		name: "worldMatch.22 白面♂紳士歌劇魅影【Ⅰ】",
+		name: "worldMatch.22 白面♂紳士歌劇魅影【Ⅲ】",
 		cost: "10",
 		prev: "worldMatch.21 clear",
 		enemy: "狂薑餅人(30k)*3/狂薑餅人(77k)*2+白面♂紳士歌劇魅影(700k)",
@@ -523,7 +523,7 @@
 	}
 	
 	worldMatchList[22] = {
-		name: "worldMatch.23 紳士♂海賊黑鬍子【Ⅲ】",
+		name: "worldMatch.23 紳士♂海賊黑鬍子【Ⅰ】",
 		cost: "10",
 		prev: "mission.44 clear",
 		enemy: "槍飛龍(15k)*3/槍飛龍(56k)*2+紳士♂海賊黑鬍子(320k)",
