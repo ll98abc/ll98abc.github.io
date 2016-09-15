@@ -68,7 +68,7 @@
 		name : "Mission9",
 		target: "打倒紳士♂海賊黑鬍子",
 		prev: "mission.44 clear",
-		reward: "unknown",
+		reward: "聖甲蟲*5",
 		tag: ""
 	}
 
@@ -76,7 +76,7 @@
 		name : "Mission10",
 		target: "打倒魔法♂旦那藍鬍子",
 		prev: "mission.69 clear",
-		reward: "unknown",
+		reward: "精靈根*5",
         	tag: ""
 	}
 
@@ -84,7 +84,7 @@
 		name : "Mission11",
 		target: "打倒杯具♂紳士刷子哥",
 		prev: "mission.70 clear",
-		reward: "unknown",
+		reward: "蠻神的心臟*5",
 		tag: ""
 	}
 
@@ -97,10 +97,10 @@
 	}
 	
 	    missionList[12] = {
-		name : "Mission13",
+		name : "Mission13 *小黑寶具任務",
 		target: "打倒黑魔☆少女伊莉雅",
 		prev: "mission.12 clear",
-		reward: "unknown",
+		reward: "強吻♡少女小★黑",
 		tag: ""
 	}
 
@@ -155,7 +155,7 @@
 
     	missionList[19] = {
 		name : "Mission20",
-		target: "對紳士♂海賊黑鬍子造成??傷害",
+		target: "對紳士♂海賊黑鬍子造成1.5M傷害",
         	prev: "mission.44 clear",
         	reward: "unknown",
         	tag: ""
@@ -163,7 +163,7 @@
 
     	missionList[20] = {
 		name : "Mission21",
-		target: "對魔法♂旦那藍鬍子造成??傷害",
+		target: "對魔法♂旦那藍鬍子造成2M傷害",
         	prev: "mission.69 clear",
 		reward: "unknown",
         	tag: ""
@@ -171,7 +171,7 @@
 
     	missionList[21] = {
 		name : "Mission22",
-		target: "對杯具♂紳士刷子哥造成??傷害",
+		target: "對杯具♂紳士刷子哥造成2M傷害",
         	prev: "mission.70 clear",
 		reward: "unknown",
         	tag: ""
@@ -179,7 +179,7 @@
 
     	missionList[22] = {
 		name : "Mission23",
-		target: "對黑魔☆少女伊莉雅造成??傷害",
+		target: "對黑魔☆少女伊莉雅造成4M傷害",
         	prev: "mission.12 clear",
 		reward: "unknown",
         	tag: ""
