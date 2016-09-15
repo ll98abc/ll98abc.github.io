@@ -548,4 +548,31 @@
 		drop: "獅子君",
 		locate: "b_4"
 	}
+	
+	worldMatchList[25] = {
+		name: "worldMatch.26 魔法♂旦那藍鬍子【Ⅰ】",
+		cost: "10",
+		prev: "mission.69 clear",
+		enemy: "術魔書(18k)*3/術魔書(59k)*2+魔法♂旦那藍鬍子(500k)",
+		drop: "獅子君",
+		locate: "c_2"
+	}
+	
+	worldMatchList[26] = {
+		name: "worldMatch.27 魔法♂旦那藍鬍子【Ⅱ】",
+		cost: "10",
+		prev: "worldMatch.26 clear",
+		enemy: "術魔書(19k)*3/術魔書(64k)*2+魔法♂旦那藍鬍子(600k)",
+		drop: "獅子君",
+		locate: "c_2"
+	}
+	
+	worldMatchList[27] = {
+		name: "worldMatch.28 魔法♂旦那藍鬍子【Ⅲ】",
+		cost: "10",
+		prev: "worldMatch.27 clear",
+		enemy: "術魔書(20k)*3/術魔書(69k)*2+魔法♂旦那藍鬍子(900k)",
+		drop: "獅子君",
+		locate: "c_2"
+	}
 }
