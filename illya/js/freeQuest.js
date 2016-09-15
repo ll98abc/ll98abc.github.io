@@ -271,7 +271,7 @@
 			enemy: "狂魔杖(12k)+術魔杖(16k)/殺黑犬(132k)/殺魔杖(57k)+術魔杖(64k)+交流♂紳士特斯拉(213k)",
 			drop: "布丁+DVD+獅子君",
 			locate: "e_2",
-			tag: "wand/giant/archer/chaos/good/male/scholar"
+			tag: "wand/archer/chaos/good/male/scholar"
 	}
 	
 }
