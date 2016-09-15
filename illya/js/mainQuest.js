@@ -535,7 +535,7 @@
 		name: "worldMatch.24 紳士♂海賊黑鬍子【Ⅱ】",
 		cost: "10",
 		prev: "worldMatch.23 clear",
-		enemy: "槍飛龍(15k)*3/槍飛龍(56k)*2+紳士♂海賊黑鬍子(320k)",
+		enemy: "槍飛龍(16k)*3/槍飛龍(58k)*2+紳士♂海賊黑鬍子(470k)",
 		drop: "獅子君",
 		locate: "b_4"
 	}
@@ -544,7 +544,7 @@
 		name: "worldMatch.25 紳士♂海賊黑鬍子【Ⅲ】",
 		cost: "10",
 		prev: "worldMatch.24 clear",
-		enemy: "槍飛龍(15k)*3/槍飛龍(56k)*2+紳士♂海賊黑鬍子(320k)",
+		enemy: "槍飛龍(17k)*3/槍飛龍(60k)*2+紳士♂海賊黑鬍子(710k)",
 		drop: "獅子君",
 		locate: "b_4"
 	}
