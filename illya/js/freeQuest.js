@@ -248,7 +248,7 @@
 			name: "freeQuest.25 死せる書架の国 rank EX",
 			cost: "20",
 			prev: "unknown",
-			enemy: "術魔書(10k)*3/術魔書(30k)*2+術惡魔(99k)/術魔書(36k)*2+白衣☆紳士豆子爸(80k)",
+			enemy: "術魔書(10k)*3/術魔書(30k)*2+術惡魔(99k)/術魔書(36k)*2+白衣☆紳士豆子爸(142k)",
 			drop: "獅子君",
 			locate: "c_1",
 			tag: "spellBook/caster/chaos/good/male/scholar"
