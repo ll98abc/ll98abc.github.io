@@ -607,7 +607,7 @@
 		name: "worldMatch.32 黑魔☆少女伊莉雅【Ⅰ】",
 		cost: "10",
 		prev: "mission.12 clear",
-		enemy: "殺術狂魔杖(17k~20k)*3/術魔杖(68k)+狂魔杖(51k)+黑魔☆少女伊莉雅(680k)",
+		enemy: "殺術狂魔杖(15k~20k)*3/術魔杖(68k)+狂魔杖(51k)+黑魔☆少女伊莉雅(680k)",
 		drop: "布丁+DVD+獅子君",
 		locate: "e_1"
 	}
@@ -616,7 +616,7 @@
 		name: "worldMatch.33 黑魔☆少女伊莉雅【Ⅱ】",
 		cost: "10",
 		prev: "worldMatch.32 clear",
-		enemy: "殺術狂魔杖(17k~20k)*3/術魔杖(68k)+狂魔杖(51k)+黑魔☆少女伊莉雅(680k)",
+		enemy: "殺術狂魔杖(15k~21k)*3/術魔杖(70k)+狂魔杖(53k)+黑魔☆少女伊莉雅(800k)",
 		drop: "布丁+DVD+獅子君",
 		locate: "e_1"
 	}
@@ -625,7 +625,7 @@
 		name: "worldMatch.34 黑魔☆少女伊莉雅【Ⅲ】",
 		cost: "10",
 		prev: "worldMatch.33 clear",
-		enemy: "殺術狂魔杖(17k~20k)*3/術魔杖(68k)+狂魔杖(51k)+黑魔☆少女伊莉雅(680k)",
+		enemy: "殺術狂魔杖(17k~22k)*3/術魔杖(88k)+狂魔杖(66k)+黑魔☆少女伊莉雅(950k)",
 		drop: "布丁+DVD+獅子君",
 		locate: "e_1"
 	}
@@ -634,7 +634,7 @@
 		name: "worldMatch.35 黑魔☆少女伊莉雅【Ⅳ】",
 		cost: "10",
 		prev: "worldMatch.34 clear",
-		enemy: "殺術狂魔杖(17k~20k)*3/術魔杖(68k)+狂魔杖(51k)+黑魔☆少女伊莉雅(680k)",
+		enemy: "殺術狂魔杖(18k~24k)*3/術魔杖(107k)+狂魔杖(80k)+黑魔☆少女伊莉雅(1350k)",
 		drop: "布丁+DVD+獅子君",
 		locate: "e_1"
 	}
