@@ -575,4 +575,67 @@
 		drop: "獅子君",
 		locate: "c_2"
 	}
+	
+	worldMatchList[28] = {
+		name: "worldMatch.29 杯具♂紳士刷子哥【Ⅰ】",
+		cost: "10",
+		prev: "mission.70 clear",
+		enemy: "槍麋鹿(12k)*3/槍麋鹿(70k)*2+杯具♂紳士刷子哥(480k)",
+		drop: "DVD",
+		locate: "d_1"
+	}
+	
+	worldMatchList[29] = {
+		name: "worldMatch.30 杯具♂紳士刷子哥【Ⅱ】",
+		cost: "10",
+		prev: "worldMatch.29 clear",
+		enemy: "槍麋鹿(13k)*3/槍麋鹿(73k)*2+杯具♂紳士刷子哥(590k)",
+		drop: "DVD",
+		locate: "d_1"
+	}
+	
+	worldMatchList[30] = {
+		name: "worldMatch.31 杯具♂紳士刷子哥【Ⅲ】",
+		cost: "10",
+		prev: "worldMatch.30 clear",
+		enemy: "槍麋鹿(14k)*3/槍麋鹿(75k)*2+杯具♂紳士刷子哥(930k)",
+		drop: "DVD",
+		locate: "d_1"
+	}
+	
+	worldMatchList[31] = {
+		name: "worldMatch.32 黑魔☆少女伊莉雅【Ⅰ】",
+		cost: "10",
+		prev: "mission.12 clear",
+		enemy: "殺術狂魔杖(17k~20k)*3/術魔杖(68k)+狂魔杖(51k)+黑魔☆少女伊莉雅(680k)",
+		drop: "布丁+DVD+獅子君",
+		locate: "e_1"
+	}
+	
+	worldMatchList[32] = {
+		name: "worldMatch.33 黑魔☆少女伊莉雅【Ⅱ】",
+		cost: "10",
+		prev: "worldMatch.32 clear",
+		enemy: "殺術狂魔杖(17k~20k)*3/術魔杖(68k)+狂魔杖(51k)+黑魔☆少女伊莉雅(680k)",
+		drop: "布丁+DVD+獅子君",
+		locate: "e_1"
+	}
+	
+	worldMatchList[33] = {
+		name: "worldMatch.34 黑魔☆少女伊莉雅【Ⅲ】",
+		cost: "10",
+		prev: "worldMatch.33 clear",
+		enemy: "殺術狂魔杖(17k~20k)*3/術魔杖(68k)+狂魔杖(51k)+黑魔☆少女伊莉雅(680k)",
+		drop: "布丁+DVD+獅子君",
+		locate: "e_1"
+	}
+	
+	worldMatchList[34] = {
+		name: "worldMatch.35 黑魔☆少女伊莉雅【Ⅳ】",
+		cost: "10",
+		prev: "worldMatch.34 clear",
+		enemy: "殺術狂魔杖(17k~20k)*3/術魔杖(68k)+狂魔杖(51k)+黑魔☆少女伊莉雅(680k)",
+		drop: "布丁+DVD+獅子君",
+		locate: "e_1"
+	}
 }
