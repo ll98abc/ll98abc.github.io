@@ -328,7 +328,7 @@
 			cost: "10",
 			prev: "mission all clear",
 			enemy: "小金閃(87k)+B車(104k)/衛宮爸爸(141k)+衛宮太太(170k)/衛宮大弟(210k)+衛宮幼姊(235k)", 
-			drop: "",
+			drop: "弓狂術殺金棋",
 			locate: "e_1",
 			tag: ""
 	}
