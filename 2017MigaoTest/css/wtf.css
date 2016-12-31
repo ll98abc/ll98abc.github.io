@@ -1,0 +1,77 @@
+.warpper{
+  opsition : relative;
+}
+
+.bg {
+  height : 1024px;
+  width: 1280px;
+  position : absolute;
+  background : url(../images/altera.jpg) center top no-repeat ;
+  opacity : .2;
+  z-index : -1;
+}
+
+.resultTable{
+  width: 90%;
+  border: 1px solid black;
+  padding : 10px;
+}
+
+td, th{
+  border: 1px solid black; 
+}
+
+.saber{
+  width: 11%;
+  text-align:left;
+}
+
+.archer{
+  width: 11%;
+  text-align:left;
+}
+
+.lancer{
+  width: 11%;
+  text-align:left;
+}
+.rider{
+  width: 11%;
+  text-align:left;
+}
+.assassin{
+  width: 11%;
+  text-align:left;
+}
+.caster{
+  width: 11%;
+  text-align:left;
+}
+.berserker{
+  width: 11%;
+  text-align:left;
+}
+.ex{
+  width: 11%;
+  text-align:left;
+}
+
+.hidden{
+  display:none;
+}
+
+.quiz{
+  margin-left:25%;
+  margin-top: 25px;
+}
+
+.title{
+  margin-left:33%;
+  font-size: 1cm;
+  color: red;
+}
+
+.headline{
+  font-size: 1.7em;
+  color: black;
+}

@@ -1,0 +1,412 @@
+﻿<html>
+<head>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/controller.js" /></script>
+<link href="css/wtf.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="warpper">
+  <div class="bg"></div>
+  <span class="title">米糕的2017新年福袋教室</span>
+  <div id="quest1" class="quiz">
+    <label>1. 你有任何一隻五星英靈嗎？</label><br/>
+    <br/>
+    <label>「有」→</label><input type="button" value="前往第 2 題" onclick="quiz_1_A();" /><br/>
+    <br/>
+    <label>「沒有」 → 「術」+ 30、「殺」+ 20、「狂」+ 10→</label><input type="button" value="前往第 4 題" onclick="quiz_1_B();"<br/>
+    <br/>
+  </div>
+  <div id="quest2" class="quiz">
+    <label>2. 你有任何一個職業完全無五星英靈嗎？</label><br/>
+    <br/>
+    <label>「有」 → 缺少的職業池各 + 30。</label><br/>
+    <span>我缺少：</span>
+    <input class="checkQ2" type="checkBox" value="saber" />劍&nbsp;
+    <input class="checkQ2" type="checkBox" value="lancer" />槍&nbsp;
+    <input class="checkQ2" type="checkBox" value="archer" />弓&nbsp;
+    <input class="checkQ2" type="checkBox" value="rider" />騎&nbsp;
+    <input class="checkQ2" type="checkBox" value="caster" />術&nbsp;
+    <input class="checkQ2" type="checkBox" value="assassin" />殺+秤&nbsp;
+    <input class="checkQ2" type="checkBox" value="berserker" />狂&nbsp;
+→
+&nbsp;<input type="button" value="前往第 4 題" onclick="quiz_2_A();" /><br/>
+    <br/>
+    <label>「沒有」 →</label><input type="button" value="前往第 3 題" onclick="quiz_2_B();" /><br/>
+  </div>
+  <div id="quest3" class="quiz">
+    <label>3. 你有任何一個職業缺少「單體攻擊寶具」的五星英靈嗎？</label><br/>
+    <br/>
+    <label>「有」 → 缺少的職業池各 + 20。</label><br/>
+    <span>我缺少：</span>
+    <input class="checkQ3" type="checkBox" value="saber" />劍&nbsp;
+    <input class="checkQ3" type="checkBox" value="lancer" />槍&nbsp;
+    <input class="checkQ3" type="checkBox" value="archer" />弓&nbsp;
+    <input class="checkQ3" type="checkBox" value="rider" />騎&nbsp;
+    <input class="checkQ3" type="checkBox" value="caster" />術&nbsp;
+    <input class="checkQ3" type="checkBox" value="assassin" />殺+秤&nbsp;
+    <input class="checkQ3" type="checkBox" value="berserker" />狂&nbsp;
+    →<input type="button" value="前往第 4 題" onclick="quiz_3_A();" /><br/>
+    <br/>
+<label>「沒有」 →</labe><input type="button" value="前往第 4 題" onclick="quiz_3_B();"<br/>
+  </div>
+  <div id="quest4" class="quiz">
+<label>4. 不考慮性能的情況下，你對這次福袋中的五星英靈有特別喜歡或特別討厭的嗎？</label><br/>
+    <br/>
+    <label>「有」→喜歡英靈的職業池 + (喜歡英靈的數量) * 10、</label><br/>
+    <label>　　　　討厭英靈的職業池 - (討厭英靈的數量) * 10。</label><br/>
+    <span>我喜歡：</span>劍*<select id="saber4_a">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                            </select>&nbsp;
+                         弓*<select id="archer4_a">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                            </select>&nbsp;
+                         槍*<select id="lancer4_a">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                            </select>&nbsp;
+                         術*<select id="caster4_a">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                            </select>&nbsp;
+                         騎*<select id="rider4_a">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                               <option value="40">4</option>
+                            </select>&nbsp;
+                         殺*<select id="assassin4_a">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                            </select>&nbsp;
+                         狂*<select id="berserker4_a">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                            </select>&nbsp;<br/>
+    <br/>
+    <span>我討厭：</span>劍*<select id="saber4_b">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                            </select>&nbsp;
+                         弓*<select id="archer4_b">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                            </select>&nbsp;
+                         槍*<select id="lancer4_b">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                            </select>&nbsp;
+                         術*<select id="caster4_b">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                            </select>&nbsp;
+                         騎*<select id="rider4_b">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                               <option value="40">4</option>
+                            </select>&nbsp;
+                         殺*<select id="assassin4_b">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                            </select>&nbsp;
+                         狂*<select id="berserker4_b">
+                               <option value="0">0</option>
+                               <option value="10">1</option>
+                               <option value="20">2</option>
+                               <option value="30">3</option>
+                            </select>&nbsp;→
+    <input type="button" value="前往第 5 題" onclick="quiz_4_A();" /><br/>
+    <br/>
+   「沒有」 → <input type="button" value="前往第 5 題" onclick="quiz_4_B();" />
+  </div>
+  <div id="quest5" class="quiz">
+    <label>5. 你有任何一隻攻擊型寶具四星英靈嗎？</label><br/>
+    <br/>
+    <label>「有」 → 該卡池 - AOE 攻擊寶具英靈數量 - 單體攻擊寶具英靈數量 * 2</label<br/>
+    <br/>
+    <label>　　e.g.坂田金時[騎] 寶具 5 = 5 * 2 = 10，衛宮[弓] 寶具 3 = 3</label><br/>
+    <br/>
+    <span>我的AOE打手：</span>劍*<select id="saber5_a">
+                               <option value="0">0</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                            </select>&nbsp;
+                         弓*<select id="archer5_a">
+                               <option value="0">0</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                            </select>&nbsp;
+                         槍*<select id="lancer5_a">
+                               <option value="0">0</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                            </select>&nbsp;
+                         術*<select id="caster5_a">
+                               <option value="0">0</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                            </select>&nbsp;
+                         騎*<select id="rider5_a">
+                               <option value="0">0</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                            </select>&nbsp;
+                         殺*<select id="assassin5_a">
+                               <option value="0">0</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                            </select>&nbsp;
+                         狂*<select id="berserker5_a">
+                               <option value="0">0</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                            </select>&nbsp;<br/>
+    <br/>
+    <span>我的單體打手：</span>劍*<select id="saber5_b">
+                               <option value="0">0</option>
+                               <option value="2">1</option>
+                               <option value="4">2</option>
+                               <option value="6">3</option>
+                               <option value="8">4</option>
+                               <option value="10">5</option>
+                               <option value="12">6</option>
+                               <option value="14">7</option>
+                               <option value="16">8</option>
+                               <option value="18">9</option>
+                               <option value="20">10</option>
+                            </select>&nbsp;
+                         弓*<select id="archer5_b">
+                               <option value="0">0</option>
+                               <option value="2">1</option>
+                               <option value="4">2</option>
+                               <option value="6">3</option>
+                               <option value="8">4</option>
+                               <option value="10">5</option>
+                               <option value="12">6</option>
+                               <option value="14">7</option>
+                               <option value="16">8</option>
+                               <option value="18">9</option>
+                               <option value="20">10</option>
+                            </select>&nbsp;
+                         槍*<select id="lancer5_b">
+                               <option value="0">0</option>
+                               <option value="2">1</option>
+                               <option value="4">2</option>
+                               <option value="6">3</option>
+                               <option value="8">4</option>
+                               <option value="10">5</option>
+                               <option value="12">6</option>
+                               <option value="14">7</option>
+                               <option value="16">8</option>
+                               <option value="18">9</option>
+                               <option value="20">10</option>
+                            </select>&nbsp;
+                         術*<select id="caster5_b">
+                               <option value="0">0</option>
+                               <option value="2">1</option>
+                               <option value="4">2</option>
+                               <option value="6">3</option>
+                               <option value="8">4</option>
+                               <option value="10">5</option>
+                               <option value="12">6</option>
+                               <option value="14">7</option>
+                               <option value="16">8</option>
+                               <option value="18">9</option>
+                               <option value="20">10</option>
+                            </select>&nbsp;
+                         騎*<select id="rider5_b">
+                               <option value="0">0</option>
+                               <option value="2">1</option>
+                               <option value="4">2</option>
+                               <option value="6">3</option>
+                               <option value="8">4</option>
+                               <option value="10">5</option>
+                               <option value="12">6</option>
+                               <option value="14">7</option>
+                               <option value="16">8</option>
+                               <option value="18">9</option>
+                               <option value="20">10</option>
+                            </select>&nbsp;
+                         殺*<select id="assassin5_b">
+                               <option value="0">0</option>
+                               <option value="2">1</option>
+                               <option value="4">2</option>
+                               <option value="6">3</option>
+                               <option value="8">4</option>
+                               <option value="10">5</option>
+                               <option value="12">6</option>
+                               <option value="14">7</option>
+                               <option value="16">8</option>
+                               <option value="18">9</option>
+                               <option value="20">10</option>
+                            </select>&nbsp;
+                         狂*<select id="berserker5_b">
+                                <option value="0">0</option>
+                               <option value="2">1</option>
+                               <option value="4">2</option>
+                               <option value="6">3</option>
+                               <option value="8">4</option>
+                               <option value="10">5</option>
+                               <option value="12">6</option>
+                               <option value="14">7</option>
+                               <option value="16">8</option>
+                               <option value="18">9</option>
+                               <option value="20">10</option>
+                           </select>&nbsp;→
+    <input type="button" value="前往第 6 題" onclick="quiz_5_A();" /><br/>
+    <br/>
+   <label>「沒有」→</label><input type="button" value="前往第 6 題" onclick="quiz_5_B();" />
+  </div>
+  <div id="quest6" class="quiz">
+    <label>6. 你擁有「諸葛孔明」、「玉藻前」、「貞德」、「南丁格爾」任何一個嗎？</label><br/>
+    <br/>
+    <label>「有」 → 該卡池 - 擁有數量 * 5。</label><br/>
+    <span>我有：</span>
+    諸葛孔明*<select id="select6_1">
+               <option value="0">0</option>
+               <option value="5">1</option>
+               <option value="10">2</option>
+               <option value="15">3</option>
+               <option value="20">4</option>
+               <option value="25">5</option>
+             </select>&nbsp;
+    玉藻前*<select id="select6_2">
+               <option value="0">0</option>
+               <option value="5">1</option>
+               <option value="10">2</option>
+               <option value="15">3</option>
+               <option value="20">4</option>
+               <option value="25">5</option>
+             </select>&nbsp;
+    貞德*<select id="select6_3">
+               <option value="0">0</option>
+               <option value="5">1</option>
+               <option value="10">2</option>
+               <option value="15">3</option>
+               <option value="20">4</option>
+               <option value="25">5</option>
+             </select>&nbsp;
+    南丁格爾*<select id="select6_4">
+               <option value="0">0</option>
+               <option value="5">1</option>
+               <option value="10">2</option>
+               <option value="15">3</option>
+               <option value="20">4</option>
+               <option value="25">5</option>
+             </select>&nbsp;
+    <input type="button" value="計算並顯示結果" onclick="quiz_6_A();" /><br/>
+    <br/>
+    <label>「沒有」 → 問題結束<label><input type="button" value="顯示結果" onclick="goResult();" /><br/>
+  </div>
+  <div class="result">
+    <label class="headline">福袋測驗結果：</label>
+    <table class="resultTable"><thead>
+      <th>class</th>
+        <th>劍</th>
+        <th>弓</th>
+        <th>槍</th>
+        <th>騎</th>
+        <th>殺+秤</th>
+        <th>術</th>
+        <th>狂</th>
+      </thead>
+      <tbody>
+        <tr class="1">
+          <td style="text-align:center; width:5%">得點</td>
+          <td class="saber"></td>
+          <td class="archer"></td>
+          <td class="lancer"></td>
+          <td class="rider"></td>
+          <td class="assassin"></td>
+          <td class="caster"></td>
+          <td class="berserker"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script type="text/javascript">
+initPage();
+</script>
+</body>
+</html>
