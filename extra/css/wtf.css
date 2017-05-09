@@ -1,0 +1,417 @@
+﻿.warpper{
+  opsition : relative;
+}
+
+.bg {
+  height : 1024px;
+  width: 1280px;
+  position : absolute;
+  background : url(../images/meltLilith.jpg) right center no-repeat fixed;
+  background-size : 936px 1078px;
+  opacity : .2;
+  z-index : -1;
+}
+
+.anchor{
+  position: absolute;
+  float: left;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  z-index: 99;		
+}
+
+.spot{
+  position: absolute;
+  float: left;
+  display:block;
+  height : 50px;
+  width: 50px;
+  z-index: 3;	
+}
+
+.worldMapF{
+  height: 1334px;
+  width: 1330px;
+  background-image: url(../images/front_map.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.worldMapB{
+  height: 1334px;
+  width: 1330px;
+  background-image: url(../images/back_map.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.front_eyes{
+  /* オープン・アイズ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 92%;
+  left: 67%;
+}
+
+.front_hair{
+  /* アンビリカル・ヘア  */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 92%;
+  left: 67%;
+}
+
+.front_rightArm{
+  /* デビル・エルボー */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 109%;
+  left: 69%;
+}
+
+.front_leftArm{
+  /* サーチ・アーム */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 101%;
+  left: 77%;
+}
+
+.front_leftHand{
+  /* カインド・シィーナー */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 109%;
+  left: 86%;
+}
+
+.front_breast{
+  /* ブレスト・バレー */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 91%;
+  left: 33%;
+}
+
+.front_separator{
+  /* フランク・セパレータ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 86%;
+  left: 17%;
+}
+
+.front_core{
+  /* コア‧マトリックス */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 110%;
+  left: 29%;
+}
+.front_rightLeg{
+  /* ポートピア・サイ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.front_leftLeg{
+  /* ランディング・サイ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.front_rightFeet{
+  /* アンクル・リンク */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.front_leftFeet{
+  /* リンク・アンクル */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_ear{
+  /* ウィークネス・イヤー */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_neck{
+  /* シークレット・ネープ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_rightArm{
+  /* アンダーアーム・レイ  */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_rightHand{
+  /* ダーク・ハンド */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_leftHand{
+  /* ジェイル・ハンド */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_coster{
+  /* スパイナル・コースター */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_hip{
+  /* コーディック・ヒップ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_rightLeg{
+  /* ステーション・サイ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_rightFeet{
+  /* スタンプ・シィーナー */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_leftLeg{
+  /* リジェクション・カーフ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.back_leftFeet{
+  /* クルーエル・シィーナー */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.controllerDiv{
+  z-index : 2;
+}
+
+.panel{
+  width: 70%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding : 10px;
+  z-index : 2;
+}
+
+.zone{  
+	width: 450px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding : 10px;  
+}
+
+tr{
+  line-height: 28px;
+}
+
+td, th{
+  border: 1px solid black; 
+}
+
+.hidden{
+  display:none;
+}
+
+.popUp{	
+  width: 450px;
+  background-color: #FFFFFF;  	
+}
+
+.note{
+  padding : 5px;
+  border: 1px solid grey;
+  width: 45%;
+  display: inline-block;
+  float: left;
+}
+
