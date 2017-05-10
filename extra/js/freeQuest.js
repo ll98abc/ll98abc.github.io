@@ -14,7 +14,7 @@
 			name: "WANTED.2 キャスターＭ",
 			cost: "40",
 			prev: "Mission No.11 clear",
-			enemy: "美迪亞 caster (285k) / (356k) *break時弱體解除&charge+2", 
+			enemy: "美迪亞 caster (285k) / (356k) *break時弱體解除&charge+1", 
 			drop: "ＢＢスロット：A卡效能下降20％（固定）",
 			locate: "back_coster",
 			tag: ""
@@ -26,7 +26,7 @@
 			prev: "Mission No.14 clear",
 			enemy: "X alter 狂 (326k) / (288k) *break時攻擊力&爆擊率上升", 
 			drop: "ＢＢスロット：封技三回合",
-			locate: "--",
+			locate: "front_leftFeet",
 			tag: ""
 	}		
 	
@@ -34,9 +34,9 @@
 			name: "WANTED.4 アサシンＫ",
 			cost: "40",
 			prev: "Mission No.17 clear",
-			enemy: "--", 
-			drop: "ＢＢスロット：--",
-			locate: "--",
+			enemy: "艷后 (204k) / (300k) *break時無敵1T", 
+			drop: "ＢＢスロット：我方全體dot 300/10T",
+			locate: "back_leftHand",
 			tag: ""
 	}	
 
@@ -54,9 +54,9 @@
 			name: "WANTED.6 ライダーＭ",
 			cost: "40",
 			prev: "Mission No.21 clear",
-			enemy: "--", 
-			drop: "ＢＢスロット：--",
-			locate: "--",
+			enemy: "R姊 rider(315k) / (200k) *break時charge+1", 
+			drop: "ＢＢスロット：Q卡效能下降20% (固定)",
+			locate: "front_breast",
 			tag: ""
 	}
 
@@ -75,9 +75,9 @@
 			name: "WANTED.8 ランサーＫ",
 			cost: "40",
 			prev: "Mission No.26 clear",
-			enemy: "--", 
-			drop: "ＢＢスロット：--",
-			locate: "--",
+			enemy: "泳裝清姬 lancer (199k) / (349k) *break時B卡強化", 
+			drop: "ＢＢスロット：A卡效能下降20％（固定) ",
+			locate: "back_rightFeet",
 			tag: ""
 	}
 
@@ -139,7 +139,7 @@
 			cost: "20",
 			prev: "Mission No.50 clear",
 			enemy: "狂大公 berserker (376k) / (242k) *break時吸血降我方NP&charge+1", 
-			drop: "ＢＢスロット：--",
+			drop: "ＢＢスロット：A卡效能下降20％（固定）",
 			locate: "--",
 			tag: ""
 	}						 
