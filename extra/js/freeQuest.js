@@ -25,7 +25,7 @@
 			cost: "40",
 			prev: "Mission No.14 clear",
 			enemy: "X alter 狂 (326k) / (288k) *break時攻擊力&爆擊率上升", 
-			drop: "ＢＢスロット：--",
+			drop: "ＢＢスロット：封技三回合",
 			locate: "--",
 			tag: ""
 	}		
