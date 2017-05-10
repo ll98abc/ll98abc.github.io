@@ -2,106 +2,106 @@
 	
 	missionList[0] = {
 		name : "Mission1",
-		target: "おかしなおかしなお菓子の国【Ⅱ】 clear",
-                prev: "mainQuest.おかしなおかしなお菓子の国【I】",
+		target: "第一幕 スワンレイク・リターンズ(1/6) clear",
+                prev: "--",
 		reward: "金蘋果",
                 tag: ""
 	}
 
 	missionList[1] = {
 		name : "Mission2",
-		target: "extraQuest.1 お菓子の国 EXTRA I clear",
+		target: "第一幕 スワンレイク・リターンズ clear",
                 prev: "Mission1",
-		reward: "金蘋果",
+		reward: "綠方*50",
                 tag: ""
 	}
 
 	missionList[2] = {
 		name : "Mission3",
-		target: "打倒魔法☆少女童謠醬",
-                prev: "mainQuest.おかしなおかしなお菓子の国【Ⅲ】 clear",
+		target: "第二幕 滑落のコッペリア clear",
+                prev: " 第二幕 滑落のコッペリア (1/5) clear",
 		reward: "呼符",
                 tag: ""
 	}
 
         missionList[3] = {
 		name : "Mission4",
-		target: "打倒治癒☆少女C子蘿",
-                prev: "mainQuest.大海原と竜の国【Ⅲ】 clear",
+		target: "第三幕 ナッツ・クラッカーをもう一度 clear",
+                prev: "第三幕 ナッツ・クラッカーをもう一度 (1/3) clear",
 		reward: "呼符",
                 tag: ""
 	}
 
         missionList[4] = {
 		name : "Mission5",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
+		target: "第四幕 沈める森の美女(2/4) clear",
+                prev: "第四幕 沈める森の美女(1/4) clear",
+		reward: "綠方*50",
                 tag: ""
 	}
 
         missionList[5] = {
 		name : "Mission6",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
+		target: "第四幕 沈める森の美女(4/4)",
+                prev: "5/6開放",
+		reward: "EXP禮裝肥",
                 tag: ""
 	}
 
         missionList[6] = {
 		name : "Mission7",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
+		target: " 打倒ビーストⅢ／Ｒ",
+                prev: "─閉幕─ clear",
+		reward: "呼符",
                 tag: ""
 	}
 
         missionList[7] = {
 		name : "Mission8",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
-                tag: ""
+		target: "打倒30個type1 系列的敵人",
+                prev: "第一幕 スワンレイク・リターンズ(5/6) clear",
+		reward: "櫻money*500",
+                tag: "type1"
 	}
 
         missionList[8] = {
 		name : "Mission9",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
-                tag: ""
+		target: "打倒60個type1 系列的敵人",
+                prev: "Mission.8 clear",
+		reward: "狂輝石*5",
+                tag: "type1"
 	}
 
         missionList[9] = {
 		name : "Mission10",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
-                tag: ""
+		target: "打倒90個type1 系列的敵人",
+                prev: "Mission.9 clear",
+		reward: "泳裝櫻禮裝*1",
+                tag: "type1"
 	}
 
         missionList[10] = {
 		name : "Mission11",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
-                tag: ""
+		target: "打倒120個type1 系列的敵人",
+                prev: "5/6開放",
+		reward: "櫻money*800",
+                tag: "type1"
 	}
 
         missionList[11] = {
 		name : "Mission12",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
-                tag: ""
+		target: "打倒30個type2 系列的敵人",
+                prev: "第二幕 滑落のコッペリア (4/5) clear",
+		reward: "魔術髓液*5",
+                tag: "type2"
 	}
 
         missionList[12] = {
 		name : "Mission13",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
-                tag: ""
+		target: "打倒60個type2 系列的敵人",
+                prev: "Mission.12 clear",
+		reward: "魔術髓液*5",
+                tag: "type2"
 	}
 
 
