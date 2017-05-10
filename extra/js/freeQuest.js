@@ -173,6 +173,16 @@
 			locate: "--",
 			tag: ""
 	}
+	 
+	wantedQuestList[16] = {			
+			name: "BB/GO",
+			cost: "5",
+			prev: "完成Mission.81、82、83",
+			enemy: "車輪戰由前至後:影劍蘭斯/影羅賓/影刷哥/影呂布/影鬍子/影?殺?/影艾迪獅/BBGO(13萬/18萬/15萬)", 
+			drop: "ＢＢスロット：魅惑我方1人",
+			locate: "--",
+			tag: ""
+	}
 	
 	freeQuestList[0] = {			
 			name: "freeQuest.1 オープン・アイズ",
@@ -182,8 +192,7 @@
 			drop: "蛇眼/羽毛",
 			locate: "front_eyes{" ,
 			tag: "chaos/king/octopus/type1/type2/sakuraHand"
-	}
-
+	}	
 	freeQuestList[1] = {
 			name: "freeQuest.2 アンビリカル・ヘア",
 			cost: "40",
