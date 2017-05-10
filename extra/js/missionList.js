@@ -594,7 +594,7 @@
 	}
 
         missionList[74] = {
-		name : "Mission75 *BB再臨任務*",
+		name : "Mission75 *BB再臨Mission*",
 		target: "在BB的下半身完成5種任務",
                 prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
 		reward: "緞帶",
@@ -619,22 +619,22 @@
 
         missionList[77] = {
 		name : "Mission78",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
+		target: "BB全任務clear",
+                prev: "Mission.80、81、82 clear",
+		reward: "禮裝exp肥",
                 tag: ""
 	}
 
         missionList[78] = {
-		name : "Mission79",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
+		name : "Mission79 *BB再臨Mission",
+		target: "所有任務clear",
+                prev: "Mission.80、81、82 clear",
+		reward: "緞帶",
                 tag: ""
 	}
 
         missionList[79] = {
-		name : "Mission80 *BB寶具任務*",
+		name : "Mission80 *BB寶具Mission*",
 		target: "打倒無銘",
                 prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
 		reward: "BB*1",
@@ -642,7 +642,7 @@
 	}
 
         missionList[80] = {
-		name : "Mission81 *BB寶具任務*",
+		name : "Mission81 *BB寶具Mission*",
 		target: "打倒FOX",
                 prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
 		reward: "BB*1",
@@ -650,7 +650,7 @@
 	}
 
         missionList[81] = {
-		name : "Mission82 *BB寶具任務*",
+		name : "Mission82 *BB寶具Mission*",
 		target: "打倒紅王",
                 prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
 		reward: "BB*1",
@@ -658,15 +658,15 @@
 	}
 
         missionList[82] = {
-		name : "Mission83",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
+		name : "Mission83 *BB寶具Mission",
+		target: "打倒BB/GO",
+                prev: "Mission.81、82、83 clear",
+		reward: "BB*1",
                 tag: ""
 	}
 
         missionList[83] = {
-		name : "Mission84 *BB再臨任務*",
+		name : "Mission84 *BB再臨Mission*",
 		target: "Mission.80、81、82 clear",
                 prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
 		reward: "緞帶",
@@ -709,7 +709,7 @@
 		name : "Mission89",
 		target: "BB 再臨1",
                 prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
-		reward: "50綠方",
+		reward: "騎魔石*5",
                 tag: ""
 	}
 
@@ -717,7 +717,7 @@
 		name : "Mission90",
 		target: "BB 再臨3",
                 prev: "Mission.89 clear",
-		reward: "unknown",
+		reward: "騎秘石*5",
                 tag: ""
 	}
 
@@ -725,15 +725,15 @@
 		name : "Mission91",
 		target: "BB 絆1",
                 prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
-		reward: "unknown",
+		reward: "術魔石*5",
                 tag: ""
 	}
 
         missionList[91] = {
 		name : "Mission92",
-		target: "BB 絆1",
+		target: "BB 絆3",
                 prev: "Mission.91",
-		reward: "unknown",
+		reward: "綠方*50",
                 tag: ""
 	}
 
@@ -788,18 +788,18 @@
 	}
 
         missionList[98] = {
-		name : "Mission99",
-		target: "unknown",
+		name : "Mission99 *BB再臨Mission",
+		target: "完成90個Mission",
                 prev: "unknown",
-		reward: "unknown",
+		reward: "緞帶",
                 tag: ""
 	}
 
         missionList[99] = {
 		name : "Mission100",
-		target: "unknown",
-                prev: "unknown",
-		reward: "unknown",
+		target: "完成所有Mission",
+                prev: "Mission.99 clear",
+		reward: "傳承結晶",
                 tag: ""
 	}
           
