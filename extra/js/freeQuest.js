@@ -142,8 +142,38 @@
 			drop: "ＢＢスロット：A卡效能下降20％（固定）",
 			locate: "--",
 			tag: ""
-	}						 
+	}
     
+	wantedQuestList[14] = {			
+			name: "謎樣的阿恰先生",
+			cost: "5",
+			prev: "完成第一部份主線",
+			enemy: "紅阿洽 archer (318k) / archer (282k) *break時chrage填滿", 
+			drop: "ＢＢスロット：Q卡上升100%",
+			locate: "--",
+			tag: ""
+	}
+	 
+	 wantedQuestList[15] = {			
+			name: "咪空～～～～",
+			cost: "5",
+			prev: "完成第一部份主線",
+			enemy: "玉藻前 caster (399k) / lancer(318k) *break時切換成槍狐，chrage-1", 
+			drop: "ＢＢスロット：A卡上升100%",
+			locate: "--",
+			tag: ""
+	}
+	 
+	 wantedQuestList[16] = {			
+			name: "「暴君」",
+			cost: "5",
+			prev: "完成第一部份主線",
+			enemy: "紅傻巴 saber (376k) / saber(313k) *break時使用三度落陽(根性3次)", 
+			drop: "ＢＢスロット：B卡上升100%",
+			locate: "--",
+			tag: ""
+	}
+	
 	freeQuestList[0] = {			
 			name: "freeQuest.1 オープン・アイズ",
 			cost: "40",
