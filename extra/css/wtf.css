@@ -483,6 +483,10 @@
   display:block;
   height : 150px;
   width: 68px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
 }
 
 .backBtn{
@@ -490,6 +494,10 @@
   display:block;
   height : 150px;
   width: 68px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
 }
 
 .bbBtn{
@@ -497,6 +505,10 @@
   display:block;
   height : 150px;
   width: 68px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
 }
 
 .controllerDiv{
