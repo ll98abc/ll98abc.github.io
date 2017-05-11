@@ -1,8 +1,9 @@
 ﻿function initPage(){
 	
   buildSelector();
-	
-  $(".anchor").not(".hidden").addClass("hidden");
+  buttonSetup();
+	 
+  //$(".anchor").not(".hidden").addClass("hidden");
   
   $("input[name='questFilter']").bind("change", function(){
 	  //總之把當前的隱藏
@@ -156,5 +157,18 @@ function cleanMap(){
 	$(".anchor").not(".hidden").addClass("hidden");
 }
 
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
+function buttonSetUp(){
+  $(a.frontBtn).click(function(){
+    $("#frontMap , #backMap , #bbMap").fadeOut();   
+    $("#frontMap").fadeIn();
+  });
+  
+  $(a.backBtn).click(function(){
+    $("#frontMap , #backMap , #bbMap").fadeOut();   
+    $("#backMap").fadeIn();  
+  });
+  $(a.bbBtn).click(function(){
+    $("#frontMap , #backMap , #bbMap").fadeOut();   
+    $("#bbMap").fadeIn();  
+  });
+}
