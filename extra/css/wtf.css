@@ -50,6 +50,14 @@
   background-position: center center;
 }
 
+.worldMapBB{
+  height: 1334px;
+  width: 1330px;
+  background-image: url(../images/bb_map.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .front_eyes{
   /* オープン・アイズ */
   position: absolute;
@@ -371,6 +379,126 @@
   left: 18%;
 }
 
+.bb_bb_leftHand{
+  /* カインド‧タッチ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.bb_rightHand{
+  /* ラヴァーズ‧スクィーズ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.bb_heart{
+  /* オンリー‧ハート */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.bb_liver{
+  /* スマート‧レバー */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.bb_knee{
+  /* スリップ‧ニー */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.bb_heel{
+  /* ボトム‧ヒール */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+
+.bb_steep{
+  /* ラスト‧ステップ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 103%;
+  left: 18%;
+}
+
+.frontBtn{
+  position: absolute;
+  display:block;
+  height : 150px;
+  width: 68px;
+}
+
+.backBtn{
+  position: absolute;
+  display:block;
+  height : 150px;
+  width: 68px;
+}
+
+.bbBtn{
+  position: absolute;
+  display:block;
+  height : 150px;
+  width: 68px;
+}
+
 .controllerDiv{
   z-index : 2;
 }
@@ -389,6 +517,8 @@
   border-collapse: collapse;
   padding : 10px;  
 }
+
+
 
 tr{
   line-height: 28px;
