@@ -6,6 +6,7 @@
   height : 1024px;
   width: 1280px;
   position : absolute;
+  background-position:right bottom;
   background : url(../images/meltLilith.jpg) right center no-repeat fixed;
   background-size : 936px 1078px;
   opacity : .2;
@@ -82,8 +83,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size : 100% 100%;
-  top: 92%;
-  left: 67%;
+  top: 30%;
+  left: 30%;
 }
 
 .front_rightArm{
@@ -481,34 +482,40 @@
 .frontBtn{
   position: absolute;
   display:block;
-  height : 150px;
-  width: 68px;
+  height : 68px;
+  width: 150px;
   background-image: url(../images/anchor.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size : 100% 100%;
+  top: 60%;
+  left: 100%;
 }
 
 .backBtn{
   position: absolute;
   display:block;
-  height : 150px;
-  width: 68px;
+  height : 68px;
+  width: 150x;
   background-image: url(../images/anchor.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size : 100% 100%;
+  top: 80%;
+  left: 100%;
 }
 
 .bbBtn{
   position: absolute;
   display:block;
-  height : 150px;
-  width: 68px;
+  height : 68px;
+  width: 150px;
   background-image: url(../images/anchor.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size : 100% 100%;
+  top: 103%;
+  left: 100%;
 }
 
 .controllerDiv{
