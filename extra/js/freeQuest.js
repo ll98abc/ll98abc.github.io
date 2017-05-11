@@ -406,4 +406,84 @@
 			locate: "back_leftFeet",
 			tag: "strA/chaos/type3/type2/type1/octopus"
 	}
+	 
+	freeQuestList[22] = {			
+			name: "freeQuest.23 クルーエル・シィーナー",
+			cost: "40",
+			prev: "--",
+			enemy: "章魚typeⅡ(術13k)*2 + 章魚typeI(術11k) / 章魚typeI(術26k) + 章魚typeⅡ(術24k) + 章魚typeⅢ(術25k) / 庫醬(狂177k) + 章魚typeI(術35k) + 章魚typeⅢ(術40k)",
+			drop: "蛇眼",
+			locate: "back_leftFeet",
+			tag: "strA/chaos/type3/type2/type1/octopus"
+	}
+	 
+	freeQuestList[23] = {			
+			name: "freeQuest.24 カインド‧タッチ",
+			cost: "40",
+			prev: "通過活動第一階段",
+			enemy: "狗狗typeI(騎12k)*3 / 奇美拉 (狂100k) / 小征服(騎2xxk) +狗狗type1(騎25k)*2",
+			drop: "毒針",
+			locate: "bb_leftHand",
+			tag: "eater/type1"
+	}
+	 
+	freeQuestList[24] = {			
+			name: "freeQuest.25 ラヴァーズ‧スクィーズ",
+			cost: "40",
+			prev: "通過活動第一階段",
+			enemy: "章魚typeⅢ(術12k)*3 / 惡魔(術100k) + 章魚typeⅢ(18k)*2 / 童謠(術200k) + 章魚typeⅢ(術28k)*2",
+			drop: "蛇眼/心臟",
+			locate: "bb_rightHand",
+			tag: "type3/octopus"
+	}
+	 
+	freeQuestList[25] = {			
+			name: "freeQuest.26 オンリー‧ハート",
+			cost: "40",
+			prev: "通過活動第一階段",
+			enemy: "章魚typeI(術11k)*3  / 巨大魔豬(狂100k) / 黑阿貞(仇177k) + 章魚typeI(術28k)*2",
+			drop: "蛇眼/膽石",
+			locate: "bb_heart",
+			tag: "type1/octopus"
+	}
+	
+	freeQuestList[26] = {			
+			name: "freeQuest.27 スマート‧レバー",
+			cost: "40",
+			prev: "通過活動第一階段",
+			enemy: "櫻蟲(殺11k)*3  / 石巨人 (劍100k) + 櫻蟲(殺18k)*1 / 漢堡王(劍200k) + 櫻蟲(殺24k)*2",
+			drop: "鎖鏈/蕃薯藤",
+			locate: "bb_liver",
+			tag: "sakuraWorm"
+	}
+	
+	freeQuestList[27] = {			
+			name: "freeQuest.28 スリップ‧ニー",
+			cost: "40",
+			prev: "通過活動第一階段",
+			enemy: "櫻機人(弓12k)*3  / 大眼怪 (弓100k) + 櫻機人(殺18k)*1 / 俵藤太(弓200k) + 櫻機人(弓24k)*2",
+			drop: "雙晶/眼球",
+			locate: "bb_knee",
+			tag: "sakuraBot"
+	}
+
+	freeQuestList[28] = {			
+			name: "freeQuest.29 ボトム‧ヒール",
+			cost: "40",
+			prev: "通過活動第一階段",
+			enemy: "狗狗typeⅢ(騎13k)*3  / 狗狗typeⅢ(騎18k)*3 / 小莫(騎200k) + 巨龍(騎116k)",
+			drop: "毒針/龍鱗",
+			locate: "bb_heel",
+			tag: "eater/type3"
+	}
+
+	freeQuestList[29] = {			
+			name: "freeQuest.30 ラスト‧ステップ",
+			cost: "40",
+			prev: "通過活動第一階段",
+			enemy: "櫻手(術13k)*3  / 雙角馬(槍100k) + 櫻手(術16k)*1 / 槍哥proto(槍200k) + 櫻手(術24k)*2",
+			drop: "羽毛/馬角",
+			locate: "bb_steep",
+			tag: "sakuraHand"
+	}
 }
