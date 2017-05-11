@@ -3,8 +3,9 @@
   buildSelector();
   buttonSetup();
 	 
-  //$(".anchor").not(".hidden").addClass("hidden");
-  
+  $(".anchor").not(".hidden2").addClass("hidden2");
+    
+
   $("input[name='questFilter']").bind("change", function(){
 	  //總之把當前的隱藏
 	  $(".selector").not(".hidden").addClass("hidden");
@@ -36,14 +37,14 @@ function buildSelector(){
                              .val(mainQuestList[i].name));
     }
 
-    for (var i = 0; i <	worldMatchList.length;i++){
-      $("#worldMatchQuestSelector").append($("<option>"+worldMatchList[i].name+"</option>")
-                             .attr("cost" , worldMatchList[i].cost)
-                             .attr("prev" , worldMatchList[i].prev)
-                             .attr("enemy" , worldMatchList[i].enemy)
-                             .attr("drop" , worldMatchList[i].drop)
-                             .attr("locate" , worldMatchList[i].locate)
-                             .val(worldMatchList[i].name));
+    for (var i = 0; i <	wantedQuestList.length;i++){
+      $("#wantedQuestSelector").append($("<option>"+wantedQuestList[i].name+"</option>")
+                             .attr("cost" , wantedQuestList[i].cost)
+                             .attr("prev" , wantedQuestList[i].prev)
+                             .attr("enemy" , wantedQuestList[i].enemy)
+                             .attr("drop" , wantedQuestList[i].drop)
+                             .attr("locate" , wantedQuestList[i].locate)
+                             .val(wantedQuestList[i].name));
     }
 
     for (var i = 0; i < missionList.length;i++){
@@ -67,7 +68,7 @@ function buildSelector(){
     }
     
 
-    $("#mainQuestSelector , #freeQuestSelector , #worldMatchQuestSelector").bind("change" , function (){
+    $("#mainQuestSelector , #freeQuestSelector , #wantedQuestSelector").bind("change" , function (){
 
       //總之先清除table內容
       $("#questContent , #questReward , #questPrevStep").html("");
@@ -127,13 +128,23 @@ function missionFilter(){
   }
   
   //清除之前的檢索紀錄
-  $(".anchor").not(".hidden").addClass("hidden");
+  $(".anchor").not(".hidden2").addClass("hidden2");
   
   for (var i = 0;i < freeQuestList.length;i++){
 	  if (freeQuestList[i].tag.indexOf(tag) > -1){
-		  $("."+freeQuestList[i].locate).removeClass("hidden");
+		  $("."+freeQuestList[i].locate).removeClass("hidden2");
 	  }
   }
+
+  $("div.myMap").addClass("hidden");
+
+  $("div.myMap").each(function(){
+    if ($(this).children("a.anchor").not(".hidden2").size() != 0){     
+      $(this).removeClass("hidden");
+      return false;
+    }
+  });
+  
   
   $("html,body").stop().animate({scrollTop:$('#mapDiv').offset().top},400);
 }
@@ -154,21 +165,21 @@ function popUp(target){
 
 function cleanMap(){
 	//清除之前的檢索紀錄
-	$(".anchor").not(".hidden").addClass("hidden");
+	$(".anchor").not(".hidden2").addClass("hidden2");
 }
 
-function buttonSetUp(){
-  $(a.frontBtn).click(function(){
-    $("#frontMap , #backMap , #bbMap").fadeOut();   
-    $("#frontMap").fadeIn();
+function buttonSetup(){
+  $("a.front_frontBtn , a.back_frontBtn , a.bb_frontBtn").click(function(){
+    $("#frontMap , #backMap , #bbMap").addClass("hidden");   
+    $("#frontMap").removeClass("hidden");
   });
   
-  $(a.backBtn).click(function(){
-    $("#frontMap , #backMap , #bbMap").fadeOut();   
-    $("#backMap").fadeIn();  
+  $("a.front_backBtn , a.back_backBtn , a.bb_backBtn").click(function(){
+    $("#frontMap , #backMap , #bbMap").addClass("hidden");   
+    $("#backMap").removeClass("hidden");  
   });
-  $(a.bbBtn).click(function(){
-    $("#frontMap , #backMap , #bbMap").fadeOut();   
-    $("#bbMap").fadeIn();  
+  $("a.front_bbBtn , a.back_bbBtn , a.bb_bbBtn").click(function(){
+    $("#frontMap , #backMap , #bbMap").addClass("hidden");   
+    $("#bbMap").removeClass("hidden");  
   });
 }

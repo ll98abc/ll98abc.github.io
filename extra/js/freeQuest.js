@@ -190,7 +190,7 @@
 			prev: "--",
 			enemy: "章魚TypeI(10k)*2 / 章魚TypeⅡ(25k)*1 + 血斧埃里克 (狂232k) + 櫻手(術29k)",
 			drop: "蛇眼/羽毛",
-			locate: "front_eyes{" ,
+			locate: "front_eyes" ,
 			tag: "chaos/king/octopus/type1/type2/sakuraHand"
 	}	
 	freeQuestList[1] = {

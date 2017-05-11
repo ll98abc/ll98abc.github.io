@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="js/mainQuest.js"></script>
@@ -69,53 +69,52 @@
 <hr/>
 <h3>世界地圖</h3>
 <div id="mapDiv">
-  <div id="frontMap" class="worldMapF">
-    <a class="front_eyes anchor" onclick="popUp('front_eyes');"></a><a class="front_eyes spot" onclick="popUp('front_eyes');"></a>
-    <a class="front_hair anchor" onclick="popUp('front_hair');"></a><a class="front_hair spot" onclick="popUp('front_hair');"></a>
-    <a class="front_rightArm anchor" onclick="popUp('front_rightArm');"></a><a class="front_rightArm spot" onclick="popUp('front_rightArm');"></a>
-    <a class="front_leftArm anchor" onclick="popUp('front_leftArm');"></a><a class="front_leftArm spot" onclick="popUp('front_leftArm');"></a>
-    <a class="front_leftHand anchor" onclick="popUp('front_leftHand');"></a><a class="front_leftHand spot" onclick="popUp('front_leftHand');"></a>
-    <a class="front_breast anchor" onclick="popUp('front_breast');"></a><a class="front_breast spot" onclick="popUp('front_breast');"></a>
-    <a class="front_separator anchor" onclick="popUp('front_separator');"></a><a class="front_separator spot" onclick="popUp('front_separator');"></a>
-    <a class="front_core anchor" onclick="popUp('front_core');"></a><a class="front_core spot" onclick="popUp('front_core');"></a>
-    <a class="front_rightLeg anchor" onclick="popUp('front_rightLeg');"></a><a class="front_rightLeg spot" onclick="popUp('front_rightLeg');"></a>
-    <a class="front_leftLeg anchor" onclick="popUp('front_leftLeg');"></a><a class="front_leftLeg spot" onclick="popUp('front_leftLeg');"></a>
-    <a class="front_rightFeet anchor" onclick="popUp('front_rightFeet');"></a><a class="front_rightFeet spot" onclick="popUp('front_rightFeet');"></a>
-    <a class="front_leftFeet anchor" onclick="popUp('front_leftFeet');"></a><a class="front_leftFeet spot" onclick="popUp('front_leftFeet');"></a>
-    <a class="frontBtn"></a>
-    <a class="backBtn"></a>
-    <a class="bbBtn"></a>
+  <div id="frontMap" class="worldMapF myMap">
+    <a class="front_eyes anchor" onclick="popUp('front_eyes');"></a>
+    <a class="front_hair anchor" onclick="popUp('front_hair');"></a>
+    <a class="front_rightArm anchor" onclick="popUp('front_rightArm');"></a>
+    <a class="front_leftArm anchor" onclick="popUp('front_leftArm');"></a>
+    <a class="front_leftHand anchor" onclick="popUp('front_leftHand');"></a>
+    <a class="front_breast anchor" onclick="popUp('front_breast');"></a>
+    <a class="front_separator anchor" onclick="popUp('front_separator');"></a>
+    <a class="front_core anchor" onclick="popUp('front_core');"></a>
+    <a class="front_rightLeg anchor" onclick="popUp('front_rightLeg');"></a>
+    <a class="front_leftLeg anchor" onclick="popUp('front_leftLeg');"></a>
+    <a class="front_rightFeet anchor" onclick="popUp('front_rightFeet');"></a>
+    <a class="front_leftFeet anchor" onclick="popUp('front_leftFeet');"></a>
+    <a class="front_frontBtn"></a>  
+    <a class="front_backBtn"></a> 
+    <a class="front_bbBtn"></a>
   </div>
-  <!--
-  <div id="backMap" class="worldMapB" style="display:none;">
-    <a class="back_ear anchor" onclick="popUp('back_ear');"></a><a class="back_ear spot" onclick="popUp('back_ear');"></a>
-    <a class="back_neck anchor" onclick="popUp('back_neck');"></a><a class="back_neck spot" onclick="popUp('back_neck');"></a>
-    <a class="back_rightArm anchor" onclick="popUp('back_rightArm');"></a><a class="back_rightArm spot" onclick="popUp('back_rightArm');"></a>
-    <a class="back_rightHand anchor" onclick="popUp('back_rightHand');"></a><a class="back_rightHand spot" onclick="popUp('back_rightHand');"></a>
-    <a class="back_leftHand anchor" onclick="popUp('back_leftHand');"></a><a class="back_leftHand spot" onclick="popUp('back_leftHand');"></a>
-    <a class="back_coster anchor" onclick="popUp('back_coster');"></a><a class="back_coster spot" onclick="popUp('back_coster');"></a>
-    <a class="back_hip anchor" onclick="popUp('back_hip');"></a><a class="back_hip spot" onclick="popUp('back_hip');"></a>
-    <a class="back_rightLeg anchor" onclick="popUp('back_rightLeg');"></a><a class="back_rightLeg spot" onclick="popUp('back_rightLeg');"></a>
-    <a class="back_rightFeet anchor" onclick="popUp('back_rightFeet');"></a><a class="back_rightFeet spot" onclick="popUp('back_rightFeet');"></a>
-    <a class="back_leftLeg anchor" onclick="popUp('back_leftLeg');"></a><a class="back_leftLeg spot" onclick="popUp('back_leftLeg');"></a>
-    <a class="back_leftFeet anchor" onclick="popUp('back_leftFeet');"></a><a class="back_leftFeet spot" onclick="popUp('back_leftFeet');"></a>
-    <a class="frontBtn"></a>
-    <a class="backBtn"></a>
-    <a class="bbBtn"></a>
+  <div id="backMap" class="worldMapB maMap hidden">
+    <a class="back_ear anchor" onclick="popUp('back_ear');"></a>
+    <a class="back_neck anchor" onclick="popUp('back_neck');"></a>
+    <a class="back_rightArm anchor" onclick="popUp('back_rightArm');"></a>
+    <a class="back_rightHand anchor" onclick="popUp('back_rightHand');"></a>
+    <a class="back_leftHand anchor" onclick="popUp('back_leftHand');"></a>
+    <a class="back_coster anchor" onclick="popUp('back_coster');"></a>
+    <a class="back_hip anchor" onclick="popUp('back_hip');"></a>
+    <a class="back_rightLeg anchor" onclick="popUp('back_rightLeg');"></a>
+    <a class="back_rightFeet anchor" onclick="popUp('back_rightFeet');"></a>
+    <a class="back_leftLeg anchor" onclick="popUp('back_leftLeg');"></a>
+    <a class="back_leftFeet anchor" onclick="popUp('back_leftFeet');"></a>
+    <a class="back_frontBtn"></a>
+    <a class="back_backBtn"></a>
+    <a class="back_bbBtn"></a>
   </div>
-  <div id="bbMap" class="worldMapBB" style="display:none;">
-    <a class="bb_leftHand anchor" onclick="popUp('bb_leftHand');"></a><a class="bb_leftHand spot" onclick="popUp('bb_leftHand');"></a>
-    <a class="bb_rightHand anchor" onclick="popUp('bb_rightHand');"></a><a class="bb_rightHand spot" onclick="popUp('bb_rightHand');"></a>
-    <a class="bb_heart anchor" onclick="popUp('bb_heart');"></a><a class="bb_heart spot" onclick="popUp('bb_heart');"></a>
-    <a class="bb_liver anchor" onclick="popUp('bb_liver');"></a><a class="bb_liver spot" onclick="popUp('bb_liver');"></a>
-    <a class="bb_knee anchor" onclick="popUp('bb_knee');"></a><a class="bb_knee spot" onclick="popUp('bb_knee');"></a>
-    <a class="bb_heel anchor" onclick="popUp('bb_heel');"></a><a class="bb_heel spot" onclick="popUp('bb_heel');"></a>
-    <a class="bb_steep anchor" onclick="popUp('bb_steep');"></a><a class="bb_steep spot" onclick="popUp('bb_steep');"></a>    
-    <a class="frontBtn"></a>
-    <a class="backBtn"></a>
-    <a class="bbBtn"></a>
+  <div id="bbMap" class="worldMapBB myMap hidden">
+    <a class="bb_leftHand anchor" onclick="popUp('bb_leftHand');"></a>
+    <a class="bb_rightHand anchor" onclick="popUp('bb_rightHand');"></a>
+    <a class="bb_heart anchor" onclick="popUp('bb_heart');"></a>
+    <a class="bb_liver anchor" onclick="popUp('bb_liver');"></a>
+    <a class="bb_knee anchor" onclick="popUp('bb_knee');"></a>
+    <a class="bb_heel anchor" onclick="popUp('bb_heel');"></a>
+    <a class="bb_step anchor" onclick="popUp('bb_step');"></a>
+    <a class="bb_frontBtn"></a>
+    <a class="bb_backBtn"></a>
+    <a class="bb_bbBtn"></a>
   </div>
-   -->
+
 </div>
 <hr/>
 </div>
@@ -319,7 +318,7 @@
     </tbody>
     </table>
   </div>
-  <div id="front_rightLeg" style="display:none;" class="popUp">
+  <div id="front_leftLeg" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
       <th colspan="2" style="background-color: #00DD44;">zone:ランディング・サイ</th>
