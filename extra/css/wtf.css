@@ -379,7 +379,7 @@
   left: 18%;
 }
 
-.bb_bb_leftHand{
+.bb_leftHand{
   /* カインド‧タッチ */
   position: absolute;
   display:block;
@@ -464,7 +464,7 @@
 }
 
 
-.bb_steep{
+.bb_step{
   /* ラスト‧ステップ */
   position: absolute;
   display:block;
