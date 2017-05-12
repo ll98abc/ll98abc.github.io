@@ -180,7 +180,7 @@
 			locate: "シークレット・ネーブ"
 	}
 
-	mainQuestList[19] = {			
+	mainQuestList[20] = {			
 			name: "ナッツ・クラッカーをもう一度(3/3) Ⅲ",
 			cost: "5",
 			prev: "ナッツ・クラッカーをもう一度(3/3) Ⅱ clear",
@@ -189,7 +189,7 @@
 			locate: "ブレスト・バレー"
 	}
 
-	mainQuestList[20] = {			
+	mainQuestList[21] = {			
 			name: "ナッツ・クラッカーをもう一度(3/3) Ⅳ",
 			cost: "5",
 			prev: "ナッツ・クラッカーをもう一度(3/3) Ⅲ clear",
@@ -198,7 +198,7 @@
 			locate: "ブレスト・バレー"
 	}
 
-	mainQuestList[21] = {			
+	mainQuestList[22] = {			
 			name: "ナッツ・クラッカーをもう一度(3/3) Ｖ",
 			cost: "0",
 			prev: "ナッツ・クラッカーをもう一度(3/3) Ⅳ clear",
@@ -207,7 +207,7 @@
 			locate: "ポートピア・サイ"
 	}
 
-	mainQuestList[22] = {			
+	mainQuestList[23] = {			
 			name: "沈める森の美女(1/4)",
 			cost: "5",
 			prev: "ナッツ・クラッカーをもう一度(3/3) Ｖ clear",
@@ -216,7 +216,7 @@
 			locate: "ウィークネス・イヤー"
 	}
 
-	mainQuestList[23] = {			
+	mainQuestList[24] = {			
 			name: "沈める森の美女(2/4)",
 			cost: "5",
 			prev: "ゲート・キー（レイ）の取得 *600櫻money",
@@ -225,7 +225,7 @@
 			locate: "アンダーアーム・レイ"
 	}
 
-	mainQuestList[24] = {			
+	mainQuestList[25] = {			
 			name: "沈める森の美女(3/4)",
 			cost: "5",
 			prev: "鈴鹿の鍵與ゲート・キー（コースター）の取得 *800/500櫻money",
@@ -234,7 +234,7 @@
 			locate: "スパイナル・コースター"
 	}
 
-	mainQuestList[25] = {			
+	mainQuestList[26] = {			
 			name: "沈める森の美女(3/4) Ⅱ",
 			cost: "5",
 			prev: "沈める森の美女(3/4) clear",
@@ -243,7 +243,7 @@
 			locate: "スパイナル・コースター"
 	}
 
-	mainQuestList[26] = {			
+	mainQuestList[27] = {			
 			name: "沈める森の美女(3/4) Ⅲ",
 			cost: "5",
 			prev: "沈める森の美女(3/4) Ⅱ clear",
@@ -252,7 +252,7 @@
 			locate: "スパイナル・コースター"
 	}
 
-	mainQuestList[27] = {			
+	mainQuestList[28] = {			
 			name: "沈める森の美女(3/4) Ⅳ",
 			cost: "5",
 			prev: "沈める森の美女(3/4) Ⅲ clear",
@@ -261,7 +261,7 @@
 			locate: "リジェクション・カーフ"
 	}
 
-	mainQuestList[28] = {			
+	mainQuestList[29] = {			
 			name: "沈める森の美女(3/4) Ｖ",
 			cost: "0",
 			prev: "沈める森の美女(3/4) Ⅳ clear",
@@ -270,7 +270,7 @@
 			locate: "ポートピア・サイ"
 	}
 
-	mainQuestList[29] = {			
+	mainQuestList[30] = {			
 			name: "沈める森の美女(4/4)",
 			cost: "5",
 			prev: "「メルトの鍵」の取得",
@@ -279,7 +279,7 @@
 			locate: "クルーエル・シィーナー"
 	}
 
-	mainQuestList[30] = {			
+	mainQuestList[31] = {			
 			name: "沈める森の美女(4/4) Ⅱ",
 			cost: "0",
 			prev: "沈める森の美女(4/4) clear",
@@ -288,7 +288,7 @@
 			locate: "ポートピア・サイ"
 	}
 
-	mainQuestList[31] = {			
+	mainQuestList[32] = {			
 			name: "－閉幕－",
 			cost: "5",
 			prev: "沈める森の美女(4/4) clear",
@@ -297,7 +297,7 @@
 			locate: "コア・マトリックス"
 	}
 
-	mainQuestList[32] = {			
+	mainQuestList[33] = {			
 			name: "－閉幕－ Ⅱ",
 			cost: "5",
 			prev: "－閉幕－ clear",
@@ -307,7 +307,7 @@
 	}
 
 
-	mainQuestList[33] = {			
+	mainQuestList[34] = {			
 			name: "－閉幕－ Ⅲ",
 			cost: "5",
 			prev: "－閉幕－ Ⅱ clear",
@@ -316,7 +316,7 @@
 			locate: "コア・マトリックス"
 	}
 
-	mainQuestList[34] = {			
+	mainQuestList[35] = {			
 			name: "－閉幕－ Ⅳ",
 			cost: "0",
 			prev: "－閉幕－ Ⅲ clear",
@@ -325,7 +325,7 @@
 			locate: "コア・マトリックス"
 	}
 
-	mainQuestList[35] = {			
+	mainQuestList[36] = {			
 			name: "－閉幕－ Ｖ",
 			cost: "0",
 			prev: "－閉幕－ Ⅳ clear",
@@ -334,7 +334,7 @@
 			locate: "コア・マトリックス"
 	}
 
-	mainQuestList[36] = {			
+	mainQuestList[37] = {			
 			name: "－閉幕－ 刻を裂くバラディオン (1/2)",
 			cost: "5",
 			prev: "－閉幕－ Ｖ clear",
@@ -343,7 +343,7 @@
 			locate: "コア・マトリックス"
 	}
 
-	 mainQuestList[37] = {			
+	 mainQuestList[38] = {			
 			name: "－閉幕－ 刻を裂くバラディオン (2/2)",
 			cost: "0",
 			prev: "－閉幕－ 刻を裂くバラディオン (1/2) clear",
