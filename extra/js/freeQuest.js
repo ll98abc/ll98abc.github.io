@@ -24,7 +24,7 @@
 			name: "WANTED.3 バーサーカーＨＸＯ",
 			cost: "40",
 			prev: "Mission No.14 clear",
-			enemy: "X alter 狂 (326k) / (288k) *break時攻擊力&爆擊率上升", 
+			enemy: "X alter 狂 (303k) / (261k) *break時攻擊力上升", 
 			drop: "ＢＢスロット：封技三回合",
 			locate: "front_leftFeet",
 			tag: ""
@@ -34,7 +34,7 @@
 			name: "WANTED.4 アサシンＫ",
 			cost: "40",
 			prev: "Mission No.17 clear",
-			enemy: "艷后 (204k) / (300k) *break時無敵1T", 
+			enemy: "艷后 (204k) / (318k) *break時無敵1T", 
 			drop: "ＢＢスロット：我方全體dot 300/10T",
 			locate: "back_leftHand",
 			tag: ""
@@ -97,8 +97,8 @@
 			name: "WANTED.10 アーチャーＡ&Ｍ",
 			cost: "40",
 			prev: "Mission No.30 clear",
-			enemy: "--", 
-			drop: "ＢＢスロット：--",
+			enemy: "海賊雙子(泳裝) archer (315k) / (200k) *break時攻擊力上升+根性&弱體耐性下降", 
+			drop: "ＢＢスロット：B卡效能下降20% (固定)",
 			locate: "--",
 			tag: ""
 	}
@@ -118,7 +118,7 @@
 			name: "WANTED.12 セイバーＡ",
 			cost: "40",
 			prev: "Mission No.34 clear",
-			enemy: "阿提拉 saber (326k) / (288k) *break時攻擊力&爆擊率上升", 
+			enemy: "阿提拉 saber (326k) / (288k) *break時攻擊力&爆擊威力上升", 
 			drop: "ＢＢスロット：B卡效能下降20％（固定）",
 			locate: "front_leftLeg",
 			tag: ""
@@ -129,7 +129,7 @@
 			cost: "40",
 			prev: "Mission No.36 clear",
 			enemy: "亨利與海德  (殺326k) / (狂288k) *break時切換職階", 
-			drop: "ＢＢスロット：B卡效能下降20％（固定）",
+			drop: "ＢＢスロット：A卡效能下降20％（固定）",
 			locate: "front_leftFeet",
 			tag: ""
 	}	
@@ -178,8 +178,8 @@
 			name: "BB/GO",
 			cost: "5",
 			prev: "完成Mission.81、82、83",
-			enemy: "車輪戰由前至後:影劍蘭斯/影羅賓/影刷哥/影呂布/影鬍子/影?殺?/影艾迪獅/BBGO(13萬、18萬、15萬)", 
-			drop: "ＢＢスロット：--",
+			enemy: "車輪戰由前至後:影劍蘭斯(46k)/影大衛(48k)/影刷哥(45k)/影呂布(55k)/影鬍子(56k)/影艾迪獅(59k)/影燕青(58k)//BBGO(13萬、18萬、15萬)/影從者滿charge只會ex攻擊無寶具", 
+			drop: "ＢＢスロット：我方單體魅惑5T。御主推薦穿解除debuff的阿特拉斯制服",
 			locate: "--",
 			tag: ""
 	}
@@ -340,7 +340,7 @@
 			name: "freeQuest.16 アンダーアーム・レイ",
 			cost: "40",
 			prev: "--",
-			enemy: "狗狗typeⅡ(騎11k)*2 + 狗狗typeⅢ/ 狗狗typeⅡ(騎27k) + 狗狗typeⅢ(騎27k) / 『神槍』(槍202k) + 狗狗typeⅡ(騎37k) + 狗狗typeⅢ(騎38k)",
+			enemy: "狗狗typeⅡ(騎11k)*2 + 狗狗typeⅢ(13k)/ 狗狗typeⅡ(騎25k) + 狗狗typeⅢ(騎27k) / 『神槍』(槍202k) + 狗狗typeⅡ(騎37k) + 狗狗typeⅢ(騎38k)",
 			drop: "毒針",
 			locate: "back_rightArm",
 			tag: "east/neutral/type3/type2/eater"
@@ -411,7 +411,7 @@
 			name: "freeQuest.23 カインド‧タッチ",
 			cost: "40",
 			prev: "通過活動第一階段",
-			enemy: "狗狗typeI(騎12k)*3 / 奇美拉 (狂100k) / 小征服(騎2xxk) +狗狗type1(騎25k)*2",
+			enemy: "狗狗typeI(騎11k)*3 / 奇美拉 (狂104k) / 小征服(騎208k) +狗狗type1(騎28k)*2",
 			drop: "毒針",
 			locate: "bb_leftHand",
 			tag: "eater/type1/neutral"
@@ -421,7 +421,7 @@
 			name: "freeQuest.24 ラヴァーズ‧スクィーズ",
 			cost: "40",
 			prev: "通過活動第一階段",
-			enemy: "章魚typeⅢ(術12k)*3 / 惡魔(術100k) + 章魚typeⅢ(18k)*2 / 童謠(術200k) + 章魚typeⅢ(術28k)*2",
+			enemy: "章魚typeⅢ(術12k)*3 / 惡魔(術107k) + 章魚typeⅢ(14k)*2 / 童謠(術203k) + 章魚typeⅢ(術25k)*2",
 			drop: "蛇眼/心臟",
 			locate: "bb_rightHand",
 			tag: "type3/octopus/neutral"
@@ -431,7 +431,7 @@
 			name: "freeQuest.25 オンリー‧ハート",
 			cost: "40",
 			prev: "通過活動第一階段",
-			enemy: "章魚typeI(術11k)*3  / 巨大魔豬(狂100k) / 黑阿貞(仇177k) + 章魚typeI(術28k)*2",
+			enemy: "章魚typeI(術11k)*3  / 巨大魔豬(狂115k) / 黑阿貞(仇205k) + 章魚typeI(術29k)*2",
 			drop: "蛇眼/膽石",
 			locate: "bb_heart",
 			tag: "type1/octopus"
@@ -451,7 +451,7 @@
 			name: "freeQuest.27 スリップ‧ニー",
 			cost: "40",
 			prev: "通過活動第一階段",
-			enemy: "櫻機人(弓12k)*3  / 大眼怪 (弓100k) + 櫻機人(殺18k)*1 / 俵藤太(弓200k) + 櫻機人(弓24k)*2",
+			enemy: "櫻機人(弓12k)*3  / 大眼怪 (弓100k) + 櫻機人(弓18k)*1 / 俵藤太(弓206k) + 櫻機人(弓24k)*2",
 			drop: "雙晶/眼球",
 			locate: "bb_knee",
 			tag: "sakuraBot"
@@ -461,7 +461,7 @@
 			name: "freeQuest.28 ボトム‧ヒール",
 			cost: "40",
 			prev: "通過活動第一階段",
-			enemy: "狗狗typeⅢ(騎13k)*3  / 狗狗typeⅢ(騎18k)*3 / 小莫(騎200k) + 巨龍(騎116k)",
+			enemy: "狗狗typeⅢ(騎13k)*3  / 狗狗typeⅢ(騎17k)*3 / 小莫(騎201k) + 巨龍(騎116k)",
 			drop: "毒針/龍鱗",
 			locate: "bb_heel",
 			tag: "eater/type3"
@@ -471,7 +471,7 @@
 			name: "freeQuest.29 ラスト‧ステップ",
 			cost: "40",
 			prev: "通過活動第一階段",
-			enemy: "櫻手(術13k)*3  / 雙角馬(槍100k) + 櫻手(術16k)*1 / 槍哥proto(槍200k) + 櫻手(術24k)*2",
+			enemy: "櫻手(術13k)*3  / 雙角馬(槍105k) + 櫻手(術16k)*1 / 槍哥proto(槍206k) + 櫻手(術24k)*2",
 			drop: "羽毛/馬角",
 			locate: "bb_step",
 			tag: "sakuraHand"
