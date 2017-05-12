@@ -174,7 +174,7 @@
 			tag: ""
 	}
 	 
-	wantedQuestList[16] = {			
+	wantedQuestList[17] = {			
 			name: "BB/GO",
 			cost: "5",
 			prev: "完成Mission.81、82、83",
