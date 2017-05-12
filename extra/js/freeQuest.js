@@ -183,6 +183,16 @@
 			locate: "--",
 			tag: ""
 	}
+	 
+	wantedQuestList[18] = {			
+			name: "雨中遭遇",
+			cost: "5",
+			prev: "完成Mission.100",
+			enemy: "兩儀式 assassin(305k) *丟寶具前會先開直死之魔眼破無敵 / saber (370)k *break後爆擊率上升，無法解除。超痛。/ *alertEgo在此戰有剋職攻擊效果。", 
+			drop: "ＢＢスロット：寶具傷害下降50%，推薦穿解除debuff的阿特拉斯制服，解前排主攻手全力推倒殺式。死人之後，補進來的archer不會有debuff直接寶具KO劍式。",
+			locate: "--",
+			tag: ""
+	}
 	
 	freeQuestList[0] = {			
 			name: "freeQuest.1 オープン・アイズ",
@@ -193,6 +203,7 @@
 			locate: "front_eyes" ,
 			tag: "chaos/king/octopus/type1/type2/sakuraHand"
 	}	
+	 
 	freeQuestList[1] = {
 			name: "freeQuest.2 アンビリカル・ヘア",
 			cost: "40",
