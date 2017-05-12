@@ -206,7 +206,7 @@
 		target: "打倒狗狗typeX 20隻",
                 prev: "Mission.98 clear",
 		reward: "番薯藤*5",
-                tag: "typeX"
+                tag: "typex"
 	}
 
         missionList[26] = {
