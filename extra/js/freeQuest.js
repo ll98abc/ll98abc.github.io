@@ -197,7 +197,7 @@
 			name: "freeQuest.2 アンビリカル・ヘア",
 			cost: "40",
 			prev: "--",
-			enemy: "櫻蟲(殺)*2 / 櫻蟲(殺27k)+櫻機人(弓23k)+豆爸(術218k)",
+			enemy: "櫻蟲(殺11k)*2 / 櫻蟲(殺27k)+櫻機人(弓23k)+豆爸(術218k)",
 			drop: "雙晶/鎖鍊",
 			locate: "front_hair",
 			tag: "sakuraWorm/sakuraBot/chaos"
