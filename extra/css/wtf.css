@@ -5,12 +5,13 @@
 .bg {
   width: 936px;
   height : 1078px;
-  position : absolute;
+  position : fixed;
   background-position:right bottom;
   background : url(../images/meltLilith.jpg) right center no-repeat ;
   background-size : 936px 1078px;
   opacity : .2;
   z-index : -1;
+  margin-left: 400px;
 }
 
 .anchor{
