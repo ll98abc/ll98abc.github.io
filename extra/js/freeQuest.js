@@ -395,7 +395,7 @@
 			enemy: "狗狗typeⅡ(騎11k)*2 + 狗狗typeⅢ(騎10k) / 狗狗typeⅡ(騎24k)*2 + 狗狗typeX(騎29k) / 羽蛇神(騎) + 巨龍(騎87k)",
 			drop: "龍鱗/毒針(x) 哈達王子角(o)",
 			locate: "back_rightFeet",
-			tag: "eater/typex/type3/type2/chaos/myth"
+			tag: "eater/typeX/type3/type2/chaos/myth"
 	}
 
 	freeQuestList[20] = {			
