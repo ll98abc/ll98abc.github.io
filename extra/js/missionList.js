@@ -468,7 +468,7 @@
         missionList[58] = {
 		name : "Mission59",
 		target: "完成10次在SE.RA.PH.腳部的任務",
-                prev: "unknown",
+                prev: "第一幕 スワンレイク・リターンズ (6/6) clear",
 		reward: "術輝石*5",
                 tag: ""
 	}
@@ -676,7 +676,7 @@
         missionList[84] = {
 		name : "Mission85",
 		target: "獲得200個櫻chip",
-                prev: "unknown",
+                prev: "Mission.1 clear",
 		reward: "殺輝石*5",
                 tag: "Mission.1 clear"
 	}
@@ -782,7 +782,7 @@
         missionList[97] = {
 		name : "Mission98",
 		target: "完成60個Mission",
-                prev: "Mission.97 clear & FreeQuest.ステーション・サイのクリア",
+                prev: "Mission.97 clear & FreeQuest.ステーション・サイのクリア clear",
 		reward: "呼符",
                 tag: ""
 	}
@@ -790,7 +790,7 @@
         missionList[98] = {
 		name : "Mission99 *BB再臨Mission",
 		target: "完成90個Mission",
-                prev: "unknown",
+                prev: "Mission.98 clear",
 		reward: "緞帶",
                 tag: ""
 	}
