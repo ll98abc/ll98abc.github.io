@@ -1,0 +1,102 @@
+﻿.warpper{
+  opsition : relative;
+}
+
+.bg {
+  height : 1024px;
+  width: 1280px;
+  position : absolute;
+  background : url(../images/eli.png) right center no-repeat fixed;
+  background-size : 1000px 865px;
+  opacity : .2;
+  z-index : -1;
+}
+
+.anchor{
+  position: absolute;
+  float: left;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  z-index: 99;		
+}
+
+.spot{
+  position: absolute;
+  float: left;
+  display:block;
+  height : 50px;
+  width: 50px;
+  z-index: 3;	
+}
+
+.worldMapF{
+  height: 1334px;
+  width: 1330px;
+  background-image: url(../images/front_map.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.front_eyes{
+  /* オープン・アイズ */
+  position: absolute;
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  top: 92%;
+  left: 67%;
+}
+
+.controllerDiv{
+  z-index : 2;
+}
+
+.panel{
+  width: 70%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding : 10px;
+  z-index : 2;
+}
+
+.zone{  
+  width: 450px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding : 10px;  
+}
+
+tr{
+  line-height: 28px;
+}
+
+td, th{
+  border: 1px solid black; 
+}
+
+.hidden{
+  display:none;
+}
+
+.popUp{	
+  width: 450px;
+  background-color: #FFFFFF;  	
+}
+
+.note{
+  padding : 5px;
+  border: 1px solid grey;
+  width: 45%;
+  display: inline-block;
+  float: left;
+}
+
