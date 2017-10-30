@@ -375,7 +375,7 @@
 }
 
 .zone{  
-	width: 450px;
+  width: 666px;
   border: 1px solid black;
   border-collapse: collapse;
   padding : 10px;  
@@ -400,7 +400,7 @@ td, th{
 }
 
 .popUp{	
-  width: 450px;
+  width: 666px;
   background-color: #FFFFFF;  	
 }
 
