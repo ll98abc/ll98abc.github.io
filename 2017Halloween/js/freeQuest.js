@@ -150,7 +150,7 @@
 			enemy: "南瓜機械兵(8k騎)*2/南瓜機械兵(8k騎)+大眼南瓜(25k騎)/南瓜機械兵(9k騎)*2+事件撮影班(聖喬治46k騎)", 
 			drop: "飛彈汽水/血淚石/齒輪/騎藍石",
 			locate: "greatCorridor",
-			tag: "lawful/rider/170cm/pumpkin/mech/drone/demonic"
+			tag: "lawful/rider/170cm/pumpkin/mech/drone/demonic/p_bigEye"
 	}
 
 	freeQuestList[13] = {			
@@ -160,7 +160,7 @@
 			enemy: "自動人偶(11k騎)*2+自動人偶(20k騎)/大眼南瓜(52k騎)+自動人偶(25k騎)/自動人偶(25k騎)+自動人偶(12k騎)+鋼鐵看護(88k狂)", 
 			drop: "飛彈汽水/黑粉/血淚石",
 			locate: "secretPassages",
-			tag: "lawful/pumpkin/demonic/mech/automata"
+			tag: "lawful/pumpkin/demonic/mech/automata/p_bigEye"
 	}
 
 
@@ -252,7 +252,7 @@
 			enemy: "金屬南瓜騎士(15k狂)+金屬南瓜騎士(20k狂)*2/金屬南瓜骷髏(32k狂)+大眼南瓜(80k騎)/金屬南瓜騎士(20k狂)+金屬南瓜骷髏(32k狂)+大幹部赤紅短劍德雷克(138k騎)", 
 			drop: "熱線餅乾/鑽頭軟糖/龍牙/雙晶/血淚石",
 			locate: "chitori",
-			tag: "rider/evil/chaos/m_knight/m_skeleton/mech/demonic/pumpkin"
+			tag: "rider/evil/chaos/m_knight/m_skeleton/mech/demonic/pumpkin/p_bigEye"
 	}
 	 
 	freeQuestList[23] = {			
