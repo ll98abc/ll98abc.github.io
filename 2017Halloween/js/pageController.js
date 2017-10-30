@@ -142,10 +142,11 @@ function popUp(target){
 	$.blockUI({
         message: $("#"+target),
         css: {       
-        	top: "20%",
+            top: "20%",
             border: "0px", 
             'background-color': 'rgba(0,0,0,0)',
-            cursor: 'default'            
+            cursor: 'default',
+            left: "25%"           
           }
       });
 	
