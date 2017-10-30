@@ -37,15 +37,14 @@ function buildSelector(){
                              .val(mainQuestList[i].name));
     }
 
-    for (var i = 0; i <	wantedQuestList.length;i++){
+    for (var i = 0; i < wantedQuestList.length;i++){
       $("#wantedQuestSelector").append($("<option>"+wantedQuestList[i].name+"</option>")
-                             .attr("cost" , wantedQuestList[i].cost)
-                             .attr("prev" , wantedQuestList[i].prev)
-                             .attr("enemy" , wantedQuestList[i].enemy)
-                             .attr("drop" , wantedQuestList[i].drop)
-                             .attr("locate" , wantedQuestList[i].locate)
-                             .val(wantedQuestList[i].name));
-    }
+                           .attr("target" , wantedQuestList[i].target)
+                           .attr("prev" , wantedQuestList[i].prev)
+                           .attr("reward" , wantedQuestList[i].reward)
+                           .attr("tag" , wantedQuestList[i].tag)
+                           .val(wantedQuestList[i].name));
+    }    
 
     for (var i = 0; i < missionList.length;i++){
       $("#missionSelector").append($("<option>"+missionList[i].name+"</option>")
@@ -134,17 +133,7 @@ function missionFilter(){
 	  if (freeQuestList[i].tag.indexOf(tag) > -1){
 		  $("."+freeQuestList[i].locate).removeClass("hidden2");
 	  }
-  }
-
-  $("div.myMap").addClass("hidden");
-
-  $("div.myMap").each(function(){
-    if ($(this).children("a.anchor").not(".hidden2").size() != 0){     
-      $(this).removeClass("hidden");
-      return false;
-    }
-  });
-  
+  }   
   
   $("html,body").stop().animate({scrollTop:$('#mapDiv').offset().top},400);
 }
@@ -169,17 +158,5 @@ function cleanMap(){
 }
 
 function buttonSetup(){
-  $("a.front_frontBtn , a.back_frontBtn , a.bb_frontBtn").click(function(){
-    $("#frontMap , #backMap , #bbMap").addClass("hidden");   
-    $("#frontMap").removeClass("hidden");
-  });
-  
-  $("a.front_backBtn , a.back_backBtn , a.bb_backBtn").click(function(){
-    $("#frontMap , #backMap , #bbMap").addClass("hidden");   
-    $("#backMap").removeClass("hidden");  
-  });
-  $("a.front_bbBtn , a.back_bbBtn , a.bb_bbBtn").click(function(){
-    $("#frontMap , #backMap , #bbMap").addClass("hidden");   
-    $("#bbMap").removeClass("hidden");  
-  });
+
 }

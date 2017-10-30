@@ -3,18 +3,18 @@
 }
 
 .bg {
-  height : 1024px;
-  width: 1280px;
-  position : absolute;
-  background : url(../images/eli.png) right center no-repeat fixed;
-  background-size : 1000px 865px;
+  width: 600px;
+  height : 900px;
+  position : fixed;
+  background-position:right bottom;
+  background : url(../images/eli.jpg) right center no-repeat ;
+  background-size : 600px 900px;
   opacity : .2;
   z-index : -1;
+  margin-left: 800px;
 }
 
 .anchor{
-  position: absolute;
-  float: left;
   display:block;
   height : 50px;
   width: 50px;
@@ -26,34 +26,340 @@
 }
 
 .spot{
-  position: absolute;
   float: left;
-  display:block;
+  display:inline;
   height : 50px;
   width: 50px;
+  top: -50px;
   z-index: 3;	
 }
 
-.worldMapF{
-  height: 1334px;
-  width: 1330px;
-  background-image: url(../images/front_map.jpg);
+.worldMap{
+  width: 1068px;
+  height: 1134px;
+  background-image: url(../images/map.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.front_eyes{
-  /* オープン・アイズ */
-  position: absolute;
+.foodDepot{
+  /* 食料庫 */
+  position: relative;
   display:block;
   height : 50px;
   width: 50px;
-  background-image: url(../images/anchor.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size : 100% 100%;
-  top: 92%;
-  left: 67%;
+  top: -311px;
+  left: 333px;
+}
+
+.vipRoom{
+  /* 貴賓室 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -361px;
+  left: 420px;
+}
+
+.greatHall{
+  /* 大広間 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -411px;
+  left: 508px;
+}
+
+.monitorTower{
+  /* 監視塔 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -461px;
+  left: 598px;
+}
+
+.treasureRoom{
+  /* 宝物庫 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -511px;
+  left: 685px;
+}
+
+.gate{
+  /* 城門 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -412px;
+  left: 508px;
+}
+
+.factory{
+  /* 地下工場 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -462px;
+  left: 605px;
+}
+
+.reactorRoom{
+  /* リアクタールーム */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -512px;
+  left: 702px;
+}
+
+.obsoleteWell{
+  /* 古井戶 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -562px;
+  left: 825px;
+}
+
+.servantRoom{
+  /* 從者の間 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -326px;
+  left: 417px;
+}
+
+.entertainmentRoom{
+  /* 玄室 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -376px;
+  left: 508px;
+}
+
+.meditationRoom{
+  /* 祈りの間 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -426px;
+  left: 600px;
+}
+
+.ventilator{
+  /* 通風口 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -173px;
+  left: 330px;
+}
+
+.greatLadder{
+  /* 大階段 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -223px;
+  left: 417px;
+}
+
+.queenHall{
+  /* 女王の間 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -273px;
+  left: 510px;
+}
+
+.greatCorridor{
+  /* 大回廊 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -323px;
+  left: 600px;
+}
+
+.secretPassages{
+  /* 隱し通路 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -373px;
+  left: 693px;
+}
+
+.windRoom{
+  /* 破風の間 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -86px;
+  left: 355px;
+}
+
+.samuraiWay{
+  /* 武者走り */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -136px;
+  left: 430px;
+}
+
+.doubleDoor{
+  /* 二重扉 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -186px;
+  left: 510px;
+}
+
+.weaponDepot{
+  /* 武具庫 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -236px;
+  left: 590px;
+}
+
+.stoneDrop{
+  /* 石落とし */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -286px;
+  left: 666px;
+}
+
+.stoneShelf{
+  /* 石打棚 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 81px;
+  left: 380px;
+}
+
+.samuraiChamber{
+  /* 武者隠し */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 31px;
+  left: 443px;
+}
+
+.innerRoom{
+  /* 內室 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -19px;
+  left: 510px;
+}
+
+.lookoutWindow{
+  /* 高窓 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -69px;
+  left: 573px;
+}
+
+.chitori{
+  /* 大千鳥破風 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: -119px;
+  left: 640px;
+}
+
+.westPillar{
+  /* 西大柱 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 103px;
+  left: 445px;
+}
+
+.eastPillar{
+  /* 東大柱 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 53px;
+  left: 575px;
+}
+
+.castleTower{
+  /* 天守閣 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 90px;
+  left: 510px;
+}
+
+.leftWhale{
+  /* 左鯱 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 92px;
+  left: 434px;
+}
+
+.rightWhale{
+  /* 右鯱 */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 42px;
+  left: 580px;
 }
 
 .controllerDiv{
@@ -69,11 +375,13 @@
 }
 
 .zone{  
-  width: 450px;
+	width: 450px;
   border: 1px solid black;
   border-collapse: collapse;
   padding : 10px;  
 }
+
+
 
 tr{
   line-height: 28px;
@@ -85,6 +393,10 @@ td, th{
 
 .hidden{
   display:none;
+}
+
+.hidden2{
+  opacity : 0;
 }
 
 .popUp{	

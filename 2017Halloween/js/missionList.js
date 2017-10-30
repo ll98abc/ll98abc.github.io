@@ -2,7 +2,7 @@
 	
 	missionList[0] = {
 		name : "Mission1",
-		target: "第一幕 スワンレイク・リターンズ(1/6) clear",
+		target: "mainQuest.第二節 フォルテッシモな始動 clear",
                 prev: "--",
 		reward: "金蘋果",
                 tag: ""
@@ -10,788 +10,785 @@
 
 	missionList[1] = {
 		name : "Mission2",
-		target: "第一幕 スワンレイク・リターンズ clear",
-                prev: "Mission1",
-		reward: "綠方*50",
+		target: "通過freeQuest.祈りの間",
+                prev: "Mission.28 clear",
+		reward: "QP 2M",
                 tag: ""
 	}
 
 	missionList[2] = {
 		name : "Mission3",
-		target: "第二幕 滑落のコッペリア clear",
-                prev: " 第二幕 滑落のコッペリア (1/5) clear",
-		reward: "呼符",
+		target: "freeQuest.武者走り clear」",
+                prev: "mainQuest.第四節 トリプルヘッド女帝 clear",
+		reward: "50綠方",
                 tag: ""
 	}
 
         missionList[3] = {
 		name : "Mission4",
-		target: "第三幕 ナッツ・クラッカーをもう一度 clear",
-                prev: "第三幕 ナッツ・クラッカーをもう一度 (1/3) clear",
+		target: "mainQuest.第六節 メカエリチャンの逆襲 clear",
+                prev: "mainQuest.第五節 エリザベート・リム clear",
 		reward: "呼符",
                 tag: ""
 	}
 
         missionList[4] = {
 		name : "Mission5",
-		target: "第四幕 沈める森の美女(2/4) clear",
-                prev: "第四幕 沈める森の美女(1/4) clear",
-		reward: "綠方*50",
+		target: "freeQuest.通風口 clear",
+                prev: "Mission.66 clear",
+		reward: "50綠方",
                 tag: ""
 	}
 
         missionList[5] = {
 		name : "Mission6",
-		target: "第四幕 沈める森の美女(4/4)",
-                prev: "5/6開放",
-		reward: "EXP禮裝肥",
+		target: "freeQuest.石落とし clear",
+                prev: "Mission.60 clear",
+		reward: "QP 2.5M",
                 tag: ""
 	}
 
         missionList[6] = {
 		name : "Mission7",
-		target: " 打倒ビーストⅢ／Ｒ",
-                prev: "─閉幕─ clear",
-		reward: "呼符",
+		target: "freeQuest.石打棚 clear",
+                prev: "Mission.39 clear",
+		reward: "50綠方",
                 tag: ""
 	}
 
         missionList[7] = {
 		name : "Mission8",
-		target: "打倒30個type1 系列的敵人",
-                prev: "第一幕 スワンレイク・リターンズ(5/6) clear",
-		reward: "櫻money*500",
-                tag: "type1"
+		target: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+                prev: "通過：第十四節 メカエリザVSメカエリザMKⅡ",
+		reward: "聖杯",
+                tag: ""
 	}
 
         missionList[8] = {
-		name : "Mission9",
-		target: "打倒60個type1 系列的敵人",
-                prev: "Mission.8 clear",
-		reward: "狂輝石*5",
-                tag: "type1"
+		name : "Mission9 *機械Eli寶具",
+		target: "freeQuest.古井戶 clear",
+                prev: "Mission.81 clear",
+		reward: "預備反應爐",
+                tag: ""
 	}
 
         missionList[9] = {
 		name : "Mission10",
-		target: "打倒90個type1 系列的敵人",
-                prev: "Mission.9 clear",
-		reward: "泳裝櫻禮裝*1",
-                tag: "type1"
+		target: "打倒25名「南瓜」系敵人",
+                prev: "通過freeQuest.祈りの間",
+		reward: "5黑粉",
+                tag: "pumpkin"
 	}
 
         missionList[10] = {
 		name : "Mission11",
-		target: "打倒120個type1 系列的敵人",
-                prev: "5/6開放",
-		reward: "櫻money*800",
-                tag: "type1"
+		target: "打倒60名「南瓜」系敵人",
+                prev: "Mission.10 clear",
+		reward: "5黑粉/mainQuest.第四節 トリプルヘッド女帝 開放",
+                tag: "pumpkin"
 	}
 
         missionList[11] = {
 		name : "Mission12",
-		target: "打倒30個type2 系列的敵人",
-                prev: "第二幕 滑落のコッペリア (4/5) clear",
-		reward: "魔術髓液*5",
-                tag: "type2"
+		target: "打倒120名「南瓜」系敵人",
+                prev: "Mission.11 clear",
+		reward: "5弓藍石",
+                tag: "pumpkin"
 	}
 
         missionList[12] = {
 		name : "Mission13",
-		target: "打倒60個type2 系列的敵人",
+		target: "打倒220名「南瓜」系敵人",
                 prev: "Mission.12 clear",
-		reward: "魔術髓液*5",
-                tag: "type2"
+		reward: "金狗",
+                tag: "pumpkin"
 	}
-
 
         missionList[13] = {
                 name : "Mission14",
-                target : "打倒90個type2 系列的敵人",
-                prev: "第四幕 沈める森の美女(2/4) clear",
-                reward: "泳裝櫻禮裝",
-                tag: ""
+		target: "打倒30名「機械」系的敵人",
+                prev: "mainQuest.第七節 アマゾネス・ドットコム clear",
+		reward: "5種子/mainQuest.第八節 いざ天守閣へ！ 開放",
+                tag: "mech"
         }
 
         missionList[14] = {
                 name : "Mission15",
-                target : "打倒30個type3 系列的敵人",
-                prev: "第三幕 ナッツ・クラッカーをもう一度 (2/3) clear",
-                reward: "櫻money*500",
-                tag: "type3"
+		target: "打倒60名「機械」系的敵人",
+                prev: "5種子",
+		reward: "Mission.14 clear",
+                tag: "mech"
         }
 
         missionList[15] = {
 		name : "Mission16",
-		target: "打倒60個type3 系列的敵人",
-                prev: "第四幕 沈める森の美女(2/4) clear",
-		reward: "櫻money*700",
-                tag: "type3"
+		target: "打倒120名「機械」系的敵人",
+                prev: "Mission.15 clear",
+		reward: "4★黃金フハハハ禮裝",
+                tag: "mech"
 	}
 
         missionList[16] = {
 		name : "Mission17",
-		target: "打倒90個type3 系列的敵人",
-                prev: "Mission.16 clear",
-		reward: "聖甲蟲*5",
-                tag: "type3"
+		target: "打倒280名「機械」系的敵人",
+                prev: "通過mainQuest.第十二節 No Way Out",
+		reward: "5心臟/mainQuest.第十三節 招かれざる客たちへのミサイル 開放",
+                tag: "mech"
 	}
 
         missionList[17] = {
 		name : "Mission18",
-		target: "打倒30個櫻系列的敵人",
-                prev: "Mission.1 clear",
-		reward: "黨證*5",
-                tag: "sakura"
+		target: "打倒20名「南瓜骷髏兵」",
+                prev: "freeQuest.祈りの間 clear",
+		reward: "5哈達王子角",
+                tag: "p_skeleton"
 	}
 
         missionList[18] = {
 		name : "Mission19",
-		target: "打倒90個櫻系列的敵人",
-                prev: "Mission.18 clear",
-		reward: "黨證*5",
-                tag: "sakura"
+		target: "打倒60名「南瓜骷髏兵」",
+                prev: "mainQuest.第五節 エリザベート・リム clear",
+		reward: "5哈達王子角/freeQuest.武者隱し 開放",
+                tag: "p_skeleton"
 	}
 
         missionList[19] = {
 		name : "Mission20",
-		target: "打倒150個櫻系列的敵人",
-                prev: "第三幕 ナッツ・クラッカーをもう一度 (3/3) clear",
-		reward: "櫻money*400",
-                tag: "sakura"
+		target: "打倒120名「南瓜骷髏兵」",
+                prev: "Mission.19 clear",
+		reward: "5狂餅乾",
+                tag: "p_skeleton"
 	}
 
         missionList[20] = {
 		name : "Mission21",
-		target: "打倒240個櫻系列的敵人",
-                prev: "Mission.20 clear",
-		reward: "神燈*5",
-                tag: "sakura"
+		target: "打倒20名「金屬南瓜骷髏兵」",
+                prev: "mainQuest.第七節 アマゾネス・ドットコム clear",
+		reward: "5殺紅石/freeQuest.食料庫 開放",
+                tag: "m_skeleton"
 	}
 
         missionList[21] = {
 		name : "Mission22",
-		target: "打倒30隻狗狗",
-                prev: "第一幕 スワンレイク・リターンズ(6/6)",
-		reward: "狂輝石*5",
-                tag: "eater"
+		target: "打倒80名「南瓜骷髏兵」",
+                prev: "Mission.21 clear",
+		reward: "5神燈",
+                tag: "m_skeleton"
 	}
 
         missionList[22] = {
 		name : "Mission23",
-		target: "打倒60隻狗狗",
-                prev: "Mission.22 clear",
-		reward: "塵*5",
-                tag: "eater"
+		target: "打倒6名「南瓜騎士」",
+                prev: "Mission.1 clear",
+		reward: "5黨證/mainQuest.第三節 フリークライミング！ 開放",
+                tag: "p_knight"
 	}
 
         missionList[23] = {
                 name : "Mission24",
-                target : "打倒90隻狗狗",
+		target: "打倒60名「南瓜騎士」",
                 prev: "Mission.23 clear",
-                reward: "塵*5",
-                tag: "eater"
+		reward: "5狂藍石",
+                tag: "p_knight"
         }
 
         missionList[24] = {
                 name : "Mission25",
-                target : "打倒180隻狗狗",
-                prev: "Mission24 clear",
-                reward: "爪爪*5",
-                tag: "eater"
+		target: "打倒120名「南瓜騎士」",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "5膽結石/freeQuest.左鯱 開放",
+                tag: "p_knight"
         }
 
         missionList[25] = {
 		name : "Mission26",
-		target: "打倒狗狗typeX 20隻",
-                prev: "Mission.98 clear",
-		reward: "番薯藤*5",
-                tag: "typex"
+		target: "打倒45名「金屬南瓜騎士」",
+                prev: "freeQuest.石打棚 clear",
+		reward: "5齒輪/mainQuest.第十節 白鷺城の憂鬱姫 開放",
+                tag: "m_knight"
 	}
 
         missionList[26] = {
                 name : "Mission27",
-                target : "打倒20隻章魚",
-                prev: "Mission.1 clear",
-                reward: "騎輝石*5",
-                tag: "octopus"
+		target: "打倒80名「金屬南瓜騎士」",
+                prev: "Mission.26 clear",
+		reward: "5聖甲蟲",
+                tag: "m_knight"
         }
 
         missionList[27] = {
                 name : "Mission28",
-                target : "打倒40隻章魚",
-                prev: "Mission.27 clear",
-                reward: "騎輝石*5",
-                tag: "octopus"
+		target: "打倒8名「南瓜幽靈」",
+                prev: "mainQuest.第三節 フリークライミング！ clear",
+		reward: "5黑粉/freeQuest.祈りの間 開放",
+                tag: "p_scarecrow"
         }
 
         missionList[28] = {
 		name : "Mission29",
-		target: "打倒80隻章魚",
+		target: "打倒60名「南瓜幽靈」",
                 prev: "Mission.28 clear",
-		reward: "櫻money*400",
-                tag: "octopus"
+		reward: "5騎藍石",
+                tag: "p_scarecrow"
 	}
 
         missionList[29] = {
 		name : "Mission30",
-		target: "打倒160隻章魚",
+		target: "打倒120名「南瓜幽靈」",
                 prev: "Mission.29 clear",
-		reward: "爪爪*5",
-                tag: "octopus"
+		reward: "5羽毛",
+                tag: "p_scarecrow"
 	}
 
         missionList[30] = {
 		name : "Mission31",
-		target: "打倒30隻櫻蟲",
-                prev: "第二幕 滑落のコッペリア (1/5) clear",
-		reward: "櫻money*500",
-                tag: "sakuraWorm"
+		target: "打倒40名「金屬南瓜幽靈」",
+                prev: "freeQuest.石落とし clear",
+		reward: "5騎紅石",
+                tag: "m_scarecrow"
 	}
 
         missionList[31] = {
 		name : "Mission32",
-		target: "打倒60隻櫻蟲",
+		target: "打倒80名「金屬南瓜幽靈」",
                 prev: "Mission.31 clear",
-		reward: "雙晶*5",
-                tag: "sakuraWorm"
+		reward: "5殺餅乾",
+                tag: "m_scarecrow"
 	}
 
         missionList[32] = {
 		name : "Mission33",
-		target: "打倒30隻櫻機人",
-                prev: "第二幕 滑落のコッペリア (5/5) clear",
-		reward: "術魔石*5",
-                tag: "sakuraBot"
+		target: "打倒25名「機械兵」",
+                prev: "freeQuest.通風口 clear",
+		reward: "5哈達王子角/mainQuest.第九節 拗ねるパトラ 開放",
+                tag: "drone"
 	}
 
         missionList[33] = {
 		name : "Mission34",
-		target: "打倒60隻櫻機人",
+		target: "打倒50名「機械兵」",
                 prev: "Mission.33 clear",
-		reward: "術金棋",
-                tag: "sakuraBot"
+		reward: "5弓藍石",
+                tag: "drone"
 	}
 
         missionList[34] = {
-		name : "Mission35",
-		target: "打倒30隻櫻手",
-                prev: "FreeQuest「ランディング・サイ」 clear",
-		reward: "殺魔石*5",
-                tag: "sakuraHand"
+		name : "Mission35 *機械Eli再臨",
+		target: "打倒100名「機械兵」",
+                prev: "Mission.34 clear",
+		reward: "B-pellet (再臨道具)",
+                tag: "drone"
 	}
 
         missionList[35] = {
 		name : "Mission36",
-		target: "打倒60隻櫻手",
-                prev: "Mission35 clear",
-		reward: "騎金棋*5",
-                tag: "sakuraHand"
+		target: "打倒20名「人造人」",
+                prev: "freeQuest.武者走り clear",
+		reward: "5黨證/mainQuest.第五節 エリザベート・リム 開放",
+                tag: "homunculus"
 	}
 
         missionList[36] = {
 		name : "Mission37",
-		target: "打倒10名「秩序」從者",
-                prev: "第一幕 スワンレイク・リターンズ(6/6) clear",
-		reward: "櫻money*300",
-                tag: "lawful"
+		target: "打倒50名「人造人」",
+                prev: "Mission.36 clear",
+		reward: "5黨證",
+                tag: "homunculus"
 	}
           
         missionList[37] = {
 		name : "Mission38",
-		target: "打倒20名「秩序」從者",
+		target: "打倒80名「人造人」",
                 prev: "Mission.37 clear",
-		reward: "泳裝櫻禮裝",
-                tag: "lawful"
+		reward: "5血淚石",
+                tag: "homunculus"
 	} 
 
         missionList[38] = {
 		name : "Mission39",
-		target: "打倒30名「秩序」從者",
-                prev: "Mission.38 clear",
-		reward: "地溝油*5",
-                tag: "lawful"
+		target: "打倒30名「自動人偶」",
+                prev: "freeQuest.石落とし clear",
+		reward: "5種子/freeQuest.石打棚 開放",
+                tag: "automata"
 	}
 
         missionList[39] = {
 		name : "Mission40",
-		target: "打倒10名「中立」從者",
-                prev: "第二幕 滑落のコッペリア (2/5) clear",
-		reward: "櫻money*400",
-                tag: "neutral"
+		target: "打倒50名「自動人偶」",
+                prev: "Mission.39 clear",
+		reward: "5騎藍石",
+                tag: "automata"
 	}
 
         missionList[40] = {
 		name : "Mission41",
-		target: "打倒20名「中立」從者",
+		target: "打倒80名「自動人偶」",
                 prev: "Mission.40 clear",
-		reward: "雙晶*5",
-                tag: "neutral"
+		reward: "5★丸太禮裝",
+                tag: "automata"
 	}
 
         missionList[41] = {
 		name : "Mission42",
-		target: "打倒30名「中立」從者",
-                prev: "Mission.41 clear",
-		reward: "神燈*5",
-                tag: "neutral"
+		target: "打倒10隻「大眼南瓜」",
+                prev: "freeQuest.通風口 clear",
+		reward: "5殺紅石",
+                tag: "p_bigEye"
 	}
 
         missionList[42] = {
 		name : "Mission43",
-		target: "打倒10名「渾沌」從者",
-                prev: "Mission.1 clear",
-		reward: "騎士勳章*5",
-                tag: "chaos"
+		target: "打倒20隻「大眼南瓜」",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "5膽結石/freeQuest.玄室 開放",
+                tag: "p_bigEye"
 	}
 
         missionList[43] = {
 		name : "Mission44",
-		target: "打倒20名「渾沌」從者",
-                prev: "Mission.43 clear",
-		reward: "騎士勳章*5",
-                tag: "chaos"
+		target: "打倒30名「量產型Eli」",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "5書頁",
+                tag: "mech_eli"
 	}
 
         missionList[44] = {
-		name : "Mission45",
-		target: "打倒30名「渾沌」從者",
-                prev: "第四幕 沈める森の美女(1/4) clear",
-		reward: "櫻money*500",
-                tag: "chaos"
+		name : "Mission45 *機械Eli再臨",
+		target: "打倒60名「量產型Eli」",
+                prev: "Mission.44 clear",
+		reward: "B-pellet (再臨道具)",
+                tag: "mech_eli"
 	}
 
         missionList[45] = {
 		name : "Mission46",
-		target: "打倒10名「王」從者",
-                prev: "第一幕 スワンレイク・リターンズ (2/6) clear",
-		reward: "狂魔石*5",
-                tag: "king"
+		target: "打倒50名有「魔性」屬性的敵人",
+                prev: "freeQuest.武者走り clear",
+		reward: "5殺藍石/freeQuest.二重扉 開放",
+                tag: "demonic"
 	}
 
         missionList[46] = {
 		name : "Mission47",
-		target: "打倒10名「騎士」從者",
-                prev: "第一幕 スワンレイク・リターンズ (4/6)clear",
-		reward: "騎銀棋*5",
-                tag: "knight"
+		target: "打倒100名有「魔性」屬性的敵人",
+                prev: "Mission.46 clear",
+		reward: "5地溝油",
+                tag: "demonic"
 	}
 
         missionList[47] = {
 		name : "Mission48",
-		target: "打倒10名「神話」從者",
-                prev: "第三幕 ナッツ・クラッカーをもう一度 (1/3) clear",
-		reward: "櫻money*500",
-                tag: "myth"
+		target: "打倒10名有「巨大」屬性的敵人",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "5雙晶",
+                tag: "huge"
 	}
 
         missionList[48] = {
 		name : "Mission49",
-		target: "打倒10名「筋力A」從者",
-                prev: "第四幕 沈める森の美女(2/4) clear",
-		reward: "櫻money*800",
-                tag: "strA"
+		target: "打倒20名有「巨大」屬性的敵人",
+                prev: "Mission.48 clear",
+		reward: "金狗/freeQuest.大千鳥破風 開放",
+                tag: "huge"
 	}
 
         missionList[49] = {
 		name : "Mission50",
-		target: "打倒10名「銀髮or白髮」從者",
-                prev: "第二幕 滑落のコッペリア (5/5) clear",
-		reward: "殺金棋*5",
-                tag: "silver"
+		target: "打倒10名「archer」階從者",
+                prev: "mainQuest.第八節 いざ天守閣へ！ clear",
+		reward: "3★巴貝奇禮裝",
+                tag: "archer"
 	}
 
         missionList[50] = {
 		name : "Mission51",
-		target: "打倒10名「東洋」從者",
-                prev: "第四幕 沈める森の美女(1/4) clear",
-		reward: "櫻money*500",
-                tag: "east"
+		target: "打倒15名「archer」階從者",
+                prev: "Mission50 clear",
+		reward: "5弓紅石",
+                tag: "archer"
 	}
 
         missionList[51] = {
-		name : "Mission52",
-		target: "打倒四個懸賞從者",
-                prev: "第一幕 スワンレイク・リターンズ (5/6) clear",
-		reward: "QP*2M",
-                tag: ""
+		name : "Mission52 *機械Eli再臨",
+		target: "打倒20名「archer」階從者",
+                prev: "Mission.51 clear",
+		reward: "B-pellet (再臨道具)",
+                tag: "archer"
 	}
 
         missionList[52] = {
 		name : "Mission53",
-		target: "打倒八個懸賞從者",
-                prev: "Mission.52 clear",
-		reward: "QP*3M",
-                tag: ""
+		target: "打倒10名「rider」階從者",
+                prev: "freeQuest.通風口 clear",
+		reward: "5人造人胚胎/freeQuest.隱し通路 開放",
+                tag: "rider"
 	}
 
         missionList[53] = {
 		name : "Mission54",
-		target: "打倒十一個懸賞從者",
+		target: "打倒15名「rider」階從者",
                 prev: "Mission.53 clear",
-		reward: "QP*6M",
-                tag: ""
+		reward: "5騎紅石",
+                tag: "rider"
 	}
 
         missionList[54] = {
 		name : "Mission55",
-		target: "打倒所有懸賞從者",
-                prev: "Mission.54 clear",
-		reward: "QP*8M",
-                tag: ""
+		target: "打倒20名「rider」階從者",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "5騎餅乾/freeQuest.破風の間 開放",
+                tag: "rider"
 	}
 
         missionList[55] = {
 		name : "Mission56",
-		target: "完成10次在SE.RA.PH.頭部的任務",
-                prev: "第一幕 スワンレイク・リターンズ (3/6) clear",
-		reward: "櫻money*300",
-                tag: ""
+		target: "打倒10名「berserker」階從者",
+                prev: "mainQuest.第五節 エリザベート・リム clear",
+		reward: "5齒輪/freeQuest.高窓 開放",
+                tag: "berserker"
 	}
 
         missionList[56] = {
 		name : "Mission57",
-		target: "完成10次在SE.RA.PH.手跟腕部的任務",
-                prev: "第二幕 滑落のコッペリア (4/5) clear",
-		reward: "櫻money*500",
-                tag: ""
+		target: "打倒15名「berserker」階從者",
+                prev: "Mission.56 clear",
+		reward: "5齒輪",
+                tag: "berserker"
 	}
 
         missionList[57] = {
 		name : "Mission58",
-		target: "完成10次在SE.RA.PH.身體部的任務",
-                prev: "第二幕 滑落のコッペリア (5/5) clear",
-		reward: "泳裝櫻禮裝",
-                tag: ""
+		target: "打倒20名「berserker」階從者",
+                prev: "Mission.57 clear",
+		reward: "5弓餅乾",
+                tag: "berserker"
 	}
 
         missionList[58] = {
 		name : "Mission59",
-		target: "完成10次在SE.RA.PH.腳部的任務",
-                prev: "第一幕 スワンレイク・リターンズ (6/6) clear",
-		reward: "術輝石*5",
-                tag: ""
+		target: "打倒10名持有「神性」屬性的從者",
+                prev: "mainQuest.第七節 アマゾネス・ドットコム clear",
+		reward: "5弓紅石",
+                tag: "god"
 	}
 
         missionList[59] = {
 		name : "Mission60",
-		target: "完成10次在SE.RA.PH.裡側頭部的任務",
-                prev: "第三幕 ナッツ・クラッカーをもう一度 (2/3) clear",
-		reward: "狂魔石",
-                tag: ""
+		target: "打倒15名持有「神性」屬性的從者",
+                prev: "mainQuest.第九節 拗ねるパトラ clear",
+		reward: "5狂紅石/freeQuest.石落とし 開放",
+                tag: "god"
 	}
 
         missionList[60] = {
 		name : "Mission61",
-		target: "完成10次在SE.RA.PH.裡側手與腕部的任務",
-                prev: "第四幕 沈める森の美女(2/4) clear",
-		reward: "櫻money*600",
-                tag: ""
+		target: "打倒20名持有「神性」屬性的從者",
+                prev: "Mission.60 clear",
+		reward: "金狗",
+                tag: "god"
 	}
 
         missionList[61] = {
 		name : "Mission62",
-		target: "完成10次在SE.RA.PH.裡側身體部的任務",
-                prev: "第三幕 ナッツ・クラッカーをもう一度 (2/3) clear",
-		reward: "狂金棋*5",
-                tag: "saber"
+		target: "打倒10名持有「混沌」屬性的從者",
+                prev: "freeQuest.武者走り clear",
+		reward: "5人造人胚胎/freeQuest.武具庫 開放",
+                tag: "chaos"
 	}
 
         missionList[62] = {
 		name : "Mission63",
-		target: "完成10次在SE.RA.PH.裡側腳部的任務",
-                prev: "第三幕 ナッツ・クラッカーをもう一度 (3/3) clear",
-		reward: "綠方*50",
-                tag: ""
+		target: "打倒15名持有「混沌」屬性的從者",
+                prev: "Mission.62 clear",
+		reward: "5人造人胚胎",
+                tag: "chaos"
 	}
 
         missionList[63] = {
 		name : "Mission64",
-		target: "在SE.RA.PH.頭部完成5種任務",
-                prev: "第一幕 スワンレイク・リターンズ (3/6) clear",
-		reward: "綠方*50",
-                tag: ""
+		target: "打倒20名持有「混沌」屬性的從者",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "5地溝油/freeQuest.右鯱 開放",
+                tag: "chaos"
 	}
 
         missionList[64] = {
 		name : "Mission65",
-		target: "在SE.RA.PH.手與腳部完成10種任務",
-                prev: "第二幕 滑落のコッペリア (4/5) clear",
-		reward: "殺輝石*5",
-                tag: ""
+		target: "打倒10名持有「惡」屬性的從者",
+                prev: "freeQuest.東大柱 clear",
+		reward: "5狂紅石",
+                tag: "evil"
 	}
 
         missionList[65] = {
 		name : "Mission66",
-		target: "在SE.RA.PH.身體部完成5種任務",
-                prev: "第三幕 ナッツ・クラッカーをもう一度 (1/3) clear",
-		reward: "殺魔石*5",
-                tag: ""
+		target: "打倒15名持有「惡」屬性的從者",
+                prev: "mainQuest.第八節 いざ天守閣へ！ clear",
+		reward: "5雙晶/freeQuest.通風口 開放",
+                tag: "evil"
 	}
 
         missionList[66] = {
 		name : "Mission67",
-		target: "在SE.RA.PH.裡側頭部完成5種任務",
-                prev: "第四幕 沈める森の美女(1/4) clear",
-		reward: "狂秘石*5",
-                tag: ""
+		target: "打倒20名持有「惡」屬性的從者",
+                prev: "Mission.66 clear",
+		reward: "血淚石",
+                tag: "evil"
 	}
           
         missionList[67] = {
 		name : "Mission68",
-		target: "在SE.RA.PH.裡側手與腳部完成10種任務",
-                prev: "第四幕 沈める森の美女(3/4) clear",
-		reward: "禮裝exp肥",
-                tag: ""
+		target: "打倒10名持有「秩序」屬性的從者",
+                prev: "mainQuest.第五節 エリザベート・リム clear",
+		reward: "5書頁",
+                tag: "lawful"
 	}
 
         missionList[68] = {
 		name : "Mission69",
-		target: "在SE.RA.PH.裡側身體部完成5種任務",
-                prev: "--",
-		reward: "殺秘石*5",
-                tag: ""
+		target: "打倒15名持有「秩序」屬性的從者",
+                prev: "Mission.68 clear",
+		reward: "5書頁",
+                tag: "lawful"
 	}
 
         missionList[69] = {
 		name : "Mission70",
-		target: "在SE.RA.PH.上半身完成10種任務",
-                prev: "第二幕 滑落のコッペリア (4/5) clear",
-		reward: "術銀棋",
-                tag: ""
+		target: "打倒20名持有「秩序」屬性的從者",
+                prev: "Mission.69 clear",
+		reward: "5羽毛",
+                tag: "lawful"
 	}
 
         missionList[70] = {
 		name : "Mission71",
-		target: "在SE.RA.PH.下半身完成10種任務",
-                prev: "第三幕 ナッツ・クラッカーをもう一度 (1/3) clear",
-		reward: "綠方*100",
-                tag: ""
+		target: "打倒10名「日本」的從者",
+                prev: "mainQuest.第五節 エリザベート・リム clear",
+		reward: "100綠方",
+                tag: "japanese"
 	}
 
         missionList[71] = {
 		name : "Mission72",
-		target: "在SE.RA.PH.右半身完成10種任務",
-                prev: "--",
-		reward: "術秘石*5",
-                tag: ""
+		target: "打倒10名「身高170CM以上」的從者",
+                prev: "freeQuest.石落とし clear",
+		reward: "4★フハハハ禮裝",
+                tag: "170cm"
 	}
 
         missionList[72] = {
 		name : "Mission73",
-		target: "在SE.RA.PH.左半身完成10種任務",
-                prev: "第二幕 滑落のコッペリア (5/5) clear",
-		reward: "殺銀棋",
-                tag: ""
+		target: "打倒10名「敏捷A以上」的從者",
+                prev: "mainQuest.第五節 エリザベート・リム clear",
+		reward: "QP 4M",
+                tag: "agi_A"
 	}
 
         missionList[73] = {
 		name : "Mission74",
-		target: "在BB的上半身完成5種任務",
-                prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
-		reward: "綠方*100",
-                tag: ""
+		target: "打倒10名「魔力A以上」屬性的從者",
+                prev: "mainQuest.第九節 拗ねるパトラ clear",
+		reward: "5神燈",
+                tag: "mag_A"
 	}
 
         missionList[74] = {
-		name : "Mission75 *BB再臨Mission*",
-		target: "在BB的下半身完成5種任務",
-                prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
-		reward: "緞帶",
+		name : "Mission75",
+		target: "通過10次賽伊特城的quest",
+                prev: "Mission.1 clear",
+		reward: "50綠方/freeQuest.監視塔 開放",
                 tag: ""
 	}
 
         missionList[75] = {
 		name : "Mission76",
-		target: "SE.RA.PH.表側全任務clear",
-                prev: "--",
-		reward: "綠方*100",
+		target: "通過10次金字塔的quest",
+                prev: "freeQuest.大階段 clear",
+		reward: "QP 2.5M/freeQuest.大回廊 開放",
                 tag: ""
 	}
 
         missionList[76] = {
 		name : "Mission77",
-		target: "SE.RA.PH.裡側全任務clear",
-                prev: "─閉幕─ clear",
-		reward: "心臟*5",
+		target: "通過10次在姬路城的quest",
+                prev: "mainQuest.第五節 エリザベート・リム clear",
+		reward: "3★巴貝奇禮裝/freeQuest.西大柱 開放",
                 tag: ""
 	}
 
         missionList[77] = {
 		name : "Mission78",
-		target: "BB全任務clear",
-                prev: "Mission.80、81、82 clear",
-		reward: "禮裝exp肥",
+		target: "通過疊疊樂城右側全部的quest",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "5心臟/freeQuest.地下工場 開放",
                 tag: ""
 	}
 
         missionList[78] = {
-		name : "Mission79 *BB再臨Mission",
-		target: "所有任務clear",
-                prev: "Mission.80、81、82 clear",
-		reward: "緞帶",
+		name : "Mission79 *機械Eli再臨",
+		target: "通過疊疊樂城中央全部的quest",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "B-pellet (再臨道具)",
                 tag: ""
 	}
 
         missionList[79] = {
-		name : "Mission80 *BB寶具Mission*",
-		target: "打倒無銘",
-                prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
-		reward: "BB*1",
+		name : "Mission80 機械Eli寶具",
+		target: "通過疊疊樂城左側全部的quest",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "預備反應爐",
                 tag: ""
 	}
 
         missionList[80] = {
-		name : "Mission81 *BB寶具Mission*",
-		target: "打倒FOX",
-                prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
-		reward: "BB*1",
+		name : "Mission81",
+		target: "通過賽伊特城全部的quest",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "4★フハハハ禮裝/freeQuest.古井戶 開放",
                 tag: ""
 	}
 
         missionList[81] = {
-		name : "Mission82 *BB寶具Mission*",
-		target: "打倒紅王",
-                prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
-		reward: "BB*1",
+		name : "Mission82",
+		target: "通過金字塔全部的quest",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "3★巴貝奇禮裝",
                 tag: ""
 	}
 
         missionList[82] = {
-		name : "Mission83 *BB寶具Mission",
-		target: "打倒BB/GO",
-                prev: "Mission.81、82、83 clear",
-		reward: "BB*1",
+		name : "Mission83",
+		target: "通過姬路城全部的quest",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "5★丸太禮裝",
                 tag: ""
 	}
 
         missionList[83] = {
-		name : "Mission84 *BB再臨Mission*",
-		target: "Mission.80、81、82 clear",
-                prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
-		reward: "緞帶",
+		name : "Mission84",
+		target: "通過所有的quest",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "金狗",
                 tag: ""
 	}
 
         missionList[84] = {
 		name : "Mission85",
-		target: "獲得200個櫻chip",
+		target: "累計獲得200個鑽頭軟糖",
                 prev: "Mission.1 clear",
-		reward: "殺輝石*5",
-                tag: "Mission.1 clear"
+		reward: "QP 2.5M",
+                tag: ""
 	}
 
         missionList[85] = {
 		name : "Mission86",
-		target: "獲得400個櫻chip",
+		target: "累計獲得400個鑽頭軟糖",
                 prev: "Mission.85 clear",
-		reward: "術輝石*5",
+		reward: "50綠方",
                 tag: ""
 	}
 
         missionList[86] = {
 		name : "Mission87",
-		target: "獲得800個櫻chip",
-                prev: "Mission.86 clear",
-		reward: "50綠方",
+		target: "累計獲得200個飛蛋汽水",
+                prev: "mainQuest.第三節 フリークライミング！ clear",
+		reward: "QP 2.5M",
                 tag: ""
 	}
 
         missionList[87] = {
 		name : "Mission88",
-		target: "獲得1600個櫻chip",
-                prev: "Mission.87 clear",
-		reward: "禮裝exp肥",
+		target: "累計獲得400個飛蛋汽水",
+                prev: "Miossion.87 clear",
+		reward: "5殺藍石",
                 tag: ""
 	}
 
         missionList[88] = {
 		name : "Mission89",
-		target: "BB 再臨1",
-                prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
-		reward: "騎魔石*5",
+		target: "累計獲得200個熱線餅乾",
+                prev: "mainQuest.第三節 フリークライミング！ clear",
+		reward: "QP 2.5M",
                 tag: ""
 	}
 
         missionList[89] = {
 		name : "Mission90",
-		target: "BB 再臨3",
+		target: "累計獲得400個熱線餅乾",
                 prev: "Mission.89 clear",
-		reward: "騎秘石*5",
+		reward: "5狂藍石",
                 tag: ""
 	}
 
         missionList[90] = {
 		name : "Mission91",
-		target: "BB 絆1",
-                prev: "Mission ─閉幕─ 刻を裂くパラディオン(2/2) clear",
-		reward: "術魔石*5",
+		target: "把機械eli或機械eli MKII再臨到靈基3",
+                prev: "mainQuest.メカエリチャン選択権獲得クエスト clear",
+		reward: "100綠方",
                 tag: ""
 	}
 
         missionList[91] = {
 		name : "Mission92",
-		target: "BB 絆3",
-                prev: "Mission.91",
-		reward: "綠方*50",
+		target: "把機械eli或機械eli MKII絆等級提升到Lv.3",
+                prev: "mainQuest.メカエリチャン選択権獲得クエスト clear",
+		reward: "QP 5M",
                 tag: ""
 	}
 
         missionList[92] = {
 		name : "Mission93",
-		target: "完成10個Mission",
-                prev: "Mission.1 clear",
-		reward: "泳裝櫻禮裝",
+		target: "帶著機械eli或機械eli MKII通關10次",
+                prev: "mainQuest.メカエリチャン選択権獲得クエスト clear",
+		reward: "5雙晶",
                 tag: ""
 	}
           
         missionList[93] = {
-		name : "Mission94",
-		target: "完成20個Mission",
+		name : "Mission94 *機械Eli寶具",
+		target: "帶著機械eli或機械eli MKII通關15次",
                 prev: "Mission.93 clear",
-		reward: "狂銀棋*5",
+		reward: "預備反應爐",
                 tag: ""
 	}
-
 
         missionList[94] = {
 		name : "Mission95",
-		target: "完成30個Mission",
-                prev: "Mission.94 clear",
-		reward: "騎魔石*5",
+		target: "完成10個Mission",
+                prev: "freeQuest.祈りの間 clear",
+		reward: "呼符/freeQuest.大階段 開放",
                 tag: ""
 	}
 
-
         missionList[95] = {
 		name : "Mission96",
-		target: "完成40個Mission",
+		target: "完成30個Mission",
                 prev: "Mission.95 clear",
-		reward: "地溝油*5",
+		reward: "5★丸太禮裝",
                 tag: ""
 	}
 
         missionList[96] = {
 		name : "Mission97",
 		target: "完成50個Mission",
-                prev: "Mission.96 clear",
-		reward: "禮裝exp肥",
+                prev: "mainQuest.第十一節 退けば死、臆せば死、進めば歌 clear",
+		reward: "呼符/mainQuest.第十二節 No Way Out 開放",
                 tag: ""
 	}
 
         missionList[97] = {
 		name : "Mission98",
-		target: "完成60個Mission",
-                prev: "Mission.97 clear & FreeQuest.ステーション・サイのクリア clear",
-		reward: "呼符",
+		target: "完成70個Mission",
+                prev: "mainQuest.第十五節 ファイナル・エクスプロージョン・コースター clear",
+		reward: "金狗/freeQuest.宝物庫 開放",
                 tag: ""
 	}
 
         missionList[98] = {
-		name : "Mission99 *BB再臨Mission",
+		name : "Mission99 *機械Eli寶具",
 		target: "完成90個Mission",
                 prev: "Mission.98 clear",
-		reward: "緞帶",
+		reward: "預備反應爐",
                 tag: ""
 	}
 
@@ -799,8 +796,7 @@
 		name : "Mission100",
 		target: "完成所有Mission",
                 prev: "Mission.99 clear",
-		reward: "傳承結晶",
+		reward: "傳承結晶/開放【高難易度】罪と罰 ～散華すべきは白い髭～",
                 tag: ""
-	}
-          
+	}          
 }

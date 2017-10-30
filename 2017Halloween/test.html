@@ -1,10 +1,10 @@
 ﻿<html>
 <head>
-<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="js/mainQuest.js"></script>
 <script type="text/javascript" src="js/freeQuest.js"></script>
 <script type="text/javascript" src="js/missionList.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js"></script>
 <script type="text/javascript" src="js/pageController.js"></script>
 <link href="css/wtf.css" rel="stylesheet" type="text/css" />
 </head>
@@ -18,7 +18,7 @@
      <td style="width:25%;text-align: left;">Category:</td>
      <td style="width:75%;test-align: right;">
       <input type="radio" name="questFilter" value="mainQuestSelector"/>主線關卡&nbsp;
-      <input type="radio" name="questFilter" value="wantedQuestSelector"/>懸賞關卡&nbsp;
+      <input type="radio" name="questFilter" value="wantedQuestSelector"/>挑戰關卡&nbsp;
       <input type="radio" name="questFilter" value="freeQuestSelector"/>農場關卡&nbsp;
       <input type="radio" name="questFilter" value="missionSelector" checked="checked"/>活動任務&nbsp;
      </td>
@@ -28,7 +28,7 @@
      <td style="width:75%;test-align: right;">
         <select id="mainQuestSelector" class="selector hidden">
           <option value="">請選擇</option>        
-        </select>
+        </select>        
         <select id="wantedQuestSelector" class="selector hidden">
           <option value="">請選擇</option>        
         </select>
@@ -55,11 +55,13 @@
      <td style="width:75%;test-align: right;" id="questPrevStep">     
      </td>
   </tr>
-  <tr>
+   <tr>
      <td colspan="2">
-       <input id="dropMap" type="button" value="任務地點"/>
-       <input id="missionTag" type="input" value=""/>
-       <input id="missionLocate" type="input" value="" />
+       <input id="mapAnchor" type="button" value="任務地點檢索" onclick="missionFilter();"/>
+       <input id="missionTag" type="hidden" value=""/>
+       <input id="missionLocate" type="hidden" value="" />
+       <label style="color:#220088;">※任務地點檢索只支援「打倒x個怪物」or「打倒o屬性的鯖」的任務。</label>
+       <input type="button" style="float:right;" value="清除錨點" onclick="cleanMap();">
      </td>
   </tr>
 </table>
@@ -68,14 +70,900 @@
 <h3>世界地圖</h3>
 <div id="mapDiv">
   <div id="frontMap" class="worldMap">
-    <a class="front_eyes anchor"></a>
+    <!-- 姬路城 -->
+    <a class="leftWhale anchor" onclick="popUp('leftWhale');"></a>
+    <a class="rightWhale anchor" onclick="popUp('rightWhale');"></a>
+    <a class="castleTower anchor" onclick="popUp('castleTower');"></a>
+    <a class="westPillar anchor" onclick="popUp('westPillar');"></a> 
+    <a class="eastPillar anchor" onclick="popUp('eastPillar');"></a> 
+    <a class="stoneShelf anchor" onclick="popUp('stoneShelf');"></a> 
+    <a class="samuraiChamber anchor" onclick="popUp('samuraiChamber');"></a>
+    <a class="innerRoom anchor" onclick="popUp('innerRoom');"></a>
+    <a class="lookoutWindow anchor" onclick="popUp('lookoutWindow');"></a> 
+    <a class="chitori anchor" onclick="popUp('chitori');"></a>
+    <a class="windRoom anchor" onclick="popUp('windRoom');"></a>
+    <a class="samuraiWay anchor" onclick="popUp('samuraiWay');"></a> 
+    <a class="doubleDoor anchor" onclick="popUp('doubleDoor');"></a>
+    <a class="weaponDepot anchor" onclick="popUp('weaponDepot');"></a> 
+    <a class="stoneDrop anchor" onclick="popUp('stoneDrop');"></a> 
+    <!-- 金字塔 -->
+    <a class="ventilator anchor" onclick="popUp('ventilator');"></a> 
+    <a class="greatLadder anchor" onclick="popUp('greatLadder');"></a> 
+    <a class="queenHall anchor" onclick="popUp('queenHall');"></a>
+    <a class="greatCorridor anchor" onclick="popUp('greatCorridor');"></a> 
+    <a class="secretPassages anchor" onclick="popUp('secretPassages');"></a> 
+    <a class="servantRoom anchor" onclick="popUp('servantRoom');"></a> 
+    <a class="entertainmentRoom anchor" onclick="popUp('entertainmentRoom');"></a>
+    <a class="meditationRoom anchor" onclick="popUp('meditationRoom');"></a> 
+    <!-- 賽伊特 -->
+    <a class="foodDepot anchor" onclick="popUp('foodDepot');"></a> 
+    <a class="vipRoom anchor" onclick="popUp('vipRoom');"></a>
+    <a class="greatHall anchor" onclick="popUp('greatHall');"></a> 
+    <a class="monitorTower anchor" onclick="popUp('monitorTower');"></a> 
+    <a class="treasureRoom anchor" onclick="popUp('treasureRoom');"></a> 
+    <a class="gate anchor" onclick="popUp('gate');"></a> 
+    <a class="factory anchor" onclick="popUp('factory');"></a> 
+    <a class="reactorRoom anchor" onclick="popUp('reactorRoom');"></a> 
+    <a class="obsoleteWell anchor" onclick="popUp('obsoleteWell');"></a> 
   </div>
 </div>
 <hr/>
-<h3>關卡內容<input style="margin-left:60%" type="button" value="all Clear" onclick="allClear();"></h3>
-<div id="questDiv">
-</div>
-</div>
+Data resources:<br/>
+1.教王site:<a href="http://kazemai.github.io/fgo-vz/event_80073.html">http://kazemai.github.io/fgo-vz/event_80073.html</a><br/>
+2.FGO攻略site:<a href="https://game.boom-app.com/entry/fate_go-play-794">https://game.boom-app.com/entry/fate_go-play-794</a>
+
+
+  <!-- 賽伊特 -->
+  <div id="foodDepot" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:食料庫</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.21 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">金屬南瓜骷髏(14k狂)*2+自動人偶(25k騎)<br/>自動人偶(28k騎)+金屬南瓜骷髏(21k狂)<br/>金屬南瓜骷髏(39k狂)+大米射手俵藤太(80k弓)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">黑粉/龍牙/飛彈汽水/鑽頭軟糖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：4★二姊與牛/3★雙子海賊<br/>出現率：4★黃金フハハハ/3★巴貝奇</td>
+    </tr>
+
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">弓/170cm/金屬南瓜骷髏(4)/南瓜(4)/魔性(4)/金屬(6)/自動人偶(2)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  </div>
+  <div id="vipRoom" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:貴賓室</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">mainQuest.第二節 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">南瓜骷髏(6k槍)*2+南瓜騎士(6k騎)<br/>南瓜騎士(19k騎)+月之王子阿斯托爾福(20k騎)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鑽頭軟糖/熱線餅乾/大騎士勳章/兇骨</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/3★雙子海賊<br/>出現率：5★鐵拳/3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/騎/南瓜騎士(2)/南瓜骷髏(2)/南瓜(4)/魔性(2)</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div id="greatHall" style="display:none;" class="popUp">
+    <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:大広間</th>
+    </thead>
+　　<tbody>
+　　<tr>
+　　　　<td colspan="2">No free quest here.</td>
+　　</tr>
+　　</tbody>
+    </table>
+  </div>
+  <div id="monitorTower" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:監視塔</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.75 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">南瓜骷髏(9k弓)*2+南瓜骷髏(9k騎)<br/>南瓜骷髏(9k騎)+投石之王大衛(20k弓)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鑽頭軟糖/兇骨</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：3★雙子海賊<br/>出現率：3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/弓/170cm/南瓜骷髏(4)/南瓜(4)/魔性(4)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="treasureRoom" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:宝物庫</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.98 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">金屬南瓜骷髏(15k狂)*2+機械兵(23k劍)<br/>金屬南瓜骷髏(15k狂)+逃げ出した家畜(巨大魔豬86k狂)<br/>金屬南瓜骷髏(15k狂)+機械兵(44k劍)+竜魔戦士SUMANAI(抱歉哥140k劍)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">膽石/龍牙/劍魔石/飛彈汽水/鑽頭軟糖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：4★二姊與牛/3★雙子海賊<br/>出現率：4★黃金フハハハ/3★巴貝奇</td>
+    </tr>
+
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/170cm/金屬南瓜骷髏(4)/魔性(1)/機械兵(2)/金屬(6)/巨大(1)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="gate" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:城門</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">mainQuest.第七節 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">金屬南瓜骷髏(12k狂)+金屬南瓜骷髏(12k弓)<br/>金屬南瓜骷髏(22k弓)*2<br/>金屬南瓜骷髏(39k狂)*2+魔淑女Ｃ子(76k術)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">弓輝石/術金棋/鑽頭軟糖/龍牙</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：3★雙子海賊<br/>出現率：3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">惡/魔力A/金屬南瓜骷髏(6)/南瓜(6)/魔性(6)/金屬(6)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="factory" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:地下工場</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.78 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">量產型eli(31k狂)+量產型eli(殺21k)*2<br/>量產型eli(25k騎)+量產型eli(21k殺)+量產型eli(31k狂)<br/>量產型eli(43k騎)+量產型eli(50k狂)+量產型eli(163k騎)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">熱線餅乾/黨證</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁<br/>出現率：5★鐵拳</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">金屬(9)/量產型(9)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="reactorRoom" style="display:none;" class="popUp">
+    <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:反應爐</th>
+    </thead>
+　　<tbody>
+　　<tr>
+　　　　<td colspan="2">No free quest here.</td>
+　　</tr>
+　　</tbody>
+    </table>
+  </div>
+  <div id="obsoleteWell" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:古井戶</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.81 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">金屬南瓜騎士(23k弓)*3<br/>金屬南瓜騎士(27k弓)+黒い瑠璃(九頭蛇81K弓)<br/>金屬南瓜騎士(30k弓)*2+大教授ニコラ(156k弓)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">八連雙晶/奇奇神酒/熱線餅乾</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁<br/>出現率：5★鐵拳</td>
+    </tr>
+
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/170cm/弓/金屬南瓜騎士(6)/魔性(1)/金屬(6)/巨大(1)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <!-- 金字塔 -->
+  <div id="servantRoom" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:從者の間</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">mainQuest.第三節 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">南瓜幽靈(12k殺)+人造人(12k殺)<br/>南瓜幽靈(11k殺)*2<br/>挖ㄟ馬卡龍咧...？(肥木33k狂)+人造人(14k殺)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">飛彈汽水/鑽頭軟糖/鬼燈/狂銀棋/人造人胚胎</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：4★二姊與牛/3★雙子海賊<br/>出現率：4★黃金フハハハ/3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/惡/狂/日本/南瓜幽靈(3)/人造人(2)/魔性(5)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="entertainmentRoom" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:玄室</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.43 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">金屬南瓜骷髏(13k狂)+金屬南瓜骷髏(19k狂)*2<br/>金屬南瓜骷髏(26k狂)+大毛狗(70k騎)<br/>金屬南瓜骷髏(39k狂)*2+太陽の威光(略)フハハハ(140k騎)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">龍牙/產毛/鑽頭軟糖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：3★雙子海賊<br/>出現率：3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/神性/騎/魔力A/170cm/金屬南瓜骷髏(6)/(金屬(6)/魔性(7)/(南瓜6)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="meditationRoom" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:祈りの間</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.28 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">人造人(12k殺)+南瓜騎士(10k槍)<br/>南瓜騎士(15k槍)*2<br/>人造人(14k殺)+巡邏之犬(Proto狗哥35k槍)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">熱線餅乾/飛彈汽水/大騎士勳章/人造人胚胎</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/4★二姊與牛<br/>出現率：5★鐵拳/4★黃金フハハハ</td>
+    </tr>
+
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/170cm/敏捷A/神性/南瓜騎士(3)/人造人(2)/南瓜(3)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="ventilator" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:通風口</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">Mission.66 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">金屬南瓜騎士(17k狂)+機械兵(14k劍)<br/>機械兵(15k劍)+機械兵(44k劍)+金屬南瓜騎士(20k狂)<br/>機械兵(44k劍)+大神官マー(丸太91k騎)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">熱線餅乾/飛彈汽水/笨蛋鎖/騎金棋/八連雙晶/劍藍石</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/4★二姊與牛<br/>出現率：5★鐵拳/4★黃金フハハハ</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/神性/魔力A/騎/金屬南瓜騎士(2)/南瓜(2)/機械兵(4)/金屬(6)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="greatLadder" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:大階段</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.95 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">南瓜骷髏(10k弓)+南瓜騎士(10k弓)<br/>南瓜骷髏(10弓)+南瓜騎士(14k騎)<br/>南瓜騎士(14k騎)+艷后？還早呢！(二姊47k弓)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">熱線餅乾/鑽頭軟糖/大騎士勳章/兇骨/槍藍石</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/3★雙子海賊<br/>出現率：5★鐵拳/3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/神性/魔力A/弓/南瓜騎士(3)/南瓜骷髏(2)/南瓜(5)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="queenRoom" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:女王の間</th>
+    </thead>
+　　<tbody>
+　　<tr>
+　　　　<td colspan="2">No free quest here.</td>
+　　</tr>
+　　</tbody>
+    </table>
+  </div>
+  <div id="greatCorridor" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:大回廊</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.76 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">南瓜機械兵(8k騎)*2<br/>南瓜機械兵(8k騎)+大眼南瓜(25k騎)<br/>南瓜機械兵(9k騎)*2+事件撮影班(聖喬治46k騎)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">飛彈汽水/血淚石/齒輪/騎藍石</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：4★二姊與牛<br/>出現率：4★黃金フハハハ</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/騎/170cm/南瓜(6)/魔性(1)/機械兵(5)/金屬(5)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="secretPassages" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:隱し通路</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.53 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">自動人偶(11k騎)*2+自動人偶(20k騎)<br/>大眼南瓜(52k騎)+自動人偶(25k騎)<br/>自動人偶(25k騎)+自動人偶(12k騎)+鋼鐵看護(88k狂)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">飛彈汽水/黑粉/血淚石</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：4★二姊與牛<br/>出現率：4★黃金フハハハ</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/南瓜(1)/魔性(1)/金屬(6)/自動人偶(6)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <!-- 姬路城 -->
+  <div id="windRoom" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:破風の間</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.55 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">機械兵(17k劍)*2+金屬幽靈(16k殺)<br/>石巨人(44k劍)+機械兵(79k劍)<br/>機械兵(28k劍)+金屬幽靈(23k殺)+玉藻喵喵(135k狂)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">飛彈汽水/鑽頭軟糖/蕃薯藤/蹄鐵/笨蛋鎖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：4★二姊與牛/3★雙子海賊<br/>出現率：4★黃金フハハハ/3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/狂/敏捷A/魔力A/金屬幽靈(2)/機械兵(4)/機械(6)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="samuraiWay" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:武者走り</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">mainQuest.第四節 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">人造人(10k殺)+南瓜騎士(19k槍)<br/>人造人(9k)*2+南瓜騎士(18k槍)<br/>南瓜騎士(19k)+病例「坐骨神經痛」(赫克托59k槍)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">熱線餅乾/飛彈汽水/槍銀棋/槍紅石/殺藍石/大騎士勳章</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/4★二姊與牛<br/>出現率：5★鐵拳/4★黃金フハハハ</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/敏捷A/170cm/南瓜騎士(3)/人造人(3)/南瓜(3)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="doubleDoor" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:二重扉</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.46 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">南瓜骷髏(8k狂)+南瓜騎士(11k弓)<br/>奇美拉(22k狂)+機械兵(12k騎)<br/>南瓜骷髏(8k狂)+機械兵(12k騎)+症例「乾眼症」叔父大人(48k狂)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">兇骨/齒輪/爪爪/熱線餅乾/飛彈汽水/鑽頭軟糖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/4★二姊與牛/3★雙子海賊<br/>出現率：5★鐵拳/4★黃金フハハハ/3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/惡/狂/170cm/南瓜騎士(2)/南瓜骷髏(2)/南瓜(6)/魔性(4)/機械兵(2)/金屬(2)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="weaponDepot" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:武具庫</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.62 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">南瓜骷髏(8k狂)*2+南瓜騎士(7k)<br/>南瓜骷髏(8k狂)+巨大魔豬(34k騎)<br/>南瓜骷髏(8k狂)+南瓜騎士(8k騎)+症例「血液循環不良」阿提拉(44k劍)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">熱線餅乾/鑽頭軟糖/膽結石/大騎士勳章/兇骨</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/3★雙子海賊<br/>出現率：5★鐵拳/3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/神性/敏捷A/南瓜騎士(2)/南瓜骷髏(4)/南瓜(6)/魔性(5)/巨大(1)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="stoneDrop" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:石落とし</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.60 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">金屬幽靈(18k殺)*2+金屬幽靈(12k殺)<br/>金屬幽靈(18k殺)+大黑狗(83k殺)<br/>金屬幽靈(18k殺)*2+「鳥鳥」崔斯坦(86k弓)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">地溝油/蹄鐵/鑽頭軟糖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：3★雙子海賊<br/>出現率：3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/敏捷A/弓/170cm/金屬幽靈(6)/魔性(1)/金屬(6)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="stoneShelf" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:石打棚</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.39 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">金屬南瓜騎士(16k槍)*2+自動人偶(12k騎)<br/>金屬南瓜騎士(22k槍)+人面獅身(56k槍)<br/>自動人偶(18k騎)+金屬南瓜騎士(22k槍)+假面騎士金時(109k騎)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">聖甲蟲/雙晶/笨蛋鎖/熱線餅乾/飛彈汽水</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/4★二姊與牛<br/>出現率：5★鐵拳/4★黃金フハハハ</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/神性/170cm/金屬南瓜騎士(4)/金屬(6)/自動人偶(2)/巨大(1)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="samuraiChamber" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:武者隠し</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.19 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">南瓜骷髏(10k槍)*2+機械兵(11k騎)<br/>南瓜骷髏(10k槍)+人面獅身(42k槍)<br/>機械兵(11k騎)+南瓜骷髏(10k槍)+神代第一清道夫師匠</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">兇骨/齒輪/聖甲蟲/鑽頭軟糖/飛彈汽水</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：4★二姊與牛/3★雙子海賊<br/>出現率：4★黃金フハハハ/3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">敏捷A/南瓜骷髏(4)/南瓜(6)/魔性(4)/機械兵(2)/金屬(2)/巨大(1)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="innerRoom" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:內室</th>
+    </thead>
+    <tbody>
+　　<tr>
+　　　　<td colspan="2">No free quest here.</td>
+　　</tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="lookoutWindow" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:高窓</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.56 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">人造人(10k殺)+人造人(12k殺)<br/>人造人(10k殺)+大黑狗(40k殺)<br/>人造人(12k殺)*2+現代第一處分人切肆爸爸(52k殺)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">地溝油/人造人胚胎/飛彈汽水</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：4★二姊與牛<br/>出現率：4★黃金フハハハ</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">敏捷A/惡/混沌/日本/170cm/人造人(6)/魔性(1)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="chitori" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:大千鳥破風</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.49 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">金屬南瓜騎士(15k狂)+金屬南瓜騎士(20k狂)*2<br/>金屬南瓜骷髏(32k狂)+大眼南瓜(80k騎)<br/>金屬南瓜騎士(20k狂)+金屬南瓜骷髏(32k狂)+大幹部赤紅短劍德雷克(138k騎)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">熱線餅乾/鑽頭軟糖/龍牙/雙晶/血淚石</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/3★雙子海賊<br/>出現率：5★鐵拳/3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/惡/騎/金屬南瓜騎士(4)/金屬南瓜骷髏(2)/金屬(6)/魔性(1)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="westPillar" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:西大柱</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.77 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">南瓜幽靈(12k殺)*2+南瓜幽靈(7k殺)<br/>南瓜幽靈(14k殺)+石巨人(42k劍)<br/>南瓜幽靈(15k殺)*2+馬卡龍超好吃茶茶(54k狂)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鬼燈/蕃薯藤/鑽頭軟糖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：3★雙子海賊<br/>出現率：3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/狂/日本/南瓜幽靈(6)/魔性(6)/巨大(1)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="eastPillar" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:東大柱</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">mainQuest.第五節 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">南瓜騎士(9k騎)+南瓜騎士(13k弓)*2<br/>機械兵(15k騎)+巨龍(42k騎)<br/>南瓜騎士(9k騎)*2+來自金星的匿名神秘妖艷美女神遠坂凜(72k弓)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">熱線餅乾/飛彈汽水/龍鱗/齒輪/大騎士勳章</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/4★二姊與牛<br/>出現率：5★鐵拳/4★黃金フハハハ</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/神性/弓/魔力A/南瓜騎士(5)/南瓜(6)/機械兵(1)/金屬(1)/巨大(1)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="castleTower" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:天守閣</th>
+    </thead>
+    <tbody>
+　　<tr>
+　　　　<td colspan="2">No free quest here.</td>
+　　</tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="leftWhale" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone:左鯱</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.25 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">金屬南瓜骷髏(17k狂)*2+機械兵(20k劍)<br/>金屬南瓜騎士(25k狂)+奇美拉(76k狂)<br/>金屬南瓜骷髏(16k狂)+機械兵(53k劍)+宇宙土方(139k狂)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">熱線餅乾/飛彈汽水/螺旋軟糖/爪爪/雙晶/龍牙/笨蛋鎖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：5★南丁/4★二姊與牛/3★雙子海賊<br/>出現率：5★鐵拳/4★黃金フハハハ/3★巴貝奇</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/惡/170cm/狂/金屬南瓜騎士(2)/金屬南瓜骷髏(2)/機械兵(2)/金屬(6)/南瓜(4)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div id="rightWhale" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">zone: 右鯱</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">前置：</td>
+      <td style="width:85%;text-align: left;">Mission.64 clear</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">自動人偶(14k騎)*2+自動人偶(27k騎)<br/>自動人偶(33k騎)+巨龍(76k騎)<br/>自動人偶(22k騎)+自動人偶(33k騎)+大幹部毛衣卿梅芙</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">黑粉/龍鱗/飛彈汽水</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">裝備：</td>
+      <td style="width:85%;text-align: left;">掉落：4★二姊與牛<br/>出現率：4★黃金フハハハ</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">混沌/惡/騎/金屬(6)/自動人偶(6)/巨大(1)</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
 </body>
 <script type="text/javascript">
 var mainQuestList = new Array();
