@@ -3,7 +3,7 @@
 	wantedQuestList[0] = {			
 			name: "extra.1 No data",
 			cost: "0",
-			prev: "11/1開放",
+			prev: "--",
 			enemy: "--", 
 			drop: "--",
 			locate: "castleTower",
