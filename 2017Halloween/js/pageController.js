@@ -33,7 +33,7 @@ function buildSelector(){
                              .attr("prev" , mainQuestList[i].prev)
                              .attr("enemy" , mainQuestList[i].enemy)
                              .attr("drop" , mainQuestList[i].drop)
-                             .attr("locate" , mainQuestList[i].locate)
+                             .attr("locate" , mainQuestList[i].locate)				      
                              .val(mainQuestList[i].name));
     }
 
@@ -41,8 +41,11 @@ function buildSelector(){
       $("#wantedQuestSelector").append($("<option>"+wantedQuestList[i].name+"</option>")
                            .attr("target" , wantedQuestList[i].target)
                            .attr("prev" , wantedQuestList[i].prev)
+                           .attr("enemy" , wantedQuestList[i].enemy)
+		           .attr("drop" , wantedQuestList[i].drop)
                            .attr("reward" , wantedQuestList[i].reward)
                            .attr("tag" , wantedQuestList[i].tag)
+		           .attr("locate" , wantedQuestList[i].locate)
                            .val(wantedQuestList[i].name));
     }    
 
