@@ -38,13 +38,11 @@ function buildSelector(){
     }
 
     for (var i = 0; i < wantedQuestList.length;i++){
-      $("#wantedQuestSelector").append($("<option>"+wantedQuestList[i].name+"</option>")
-                           .attr("target" , wantedQuestList[i].target)
+      $("#wantedQuestSelector").append($("<option>"+wantedQuestList[i].name+"</option>")                           
+		           .attr("cost" , wantedQuestList[i].cost)
                            .attr("prev" , wantedQuestList[i].prev)
                            .attr("enemy" , wantedQuestList[i].enemy)
-		           .attr("drop" , wantedQuestList[i].drop)
-                           .attr("reward" , wantedQuestList[i].reward)
-                           .attr("tag" , wantedQuestList[i].tag)
+		           .attr("drop" , wantedQuestList[i].drop)                           
 		           .attr("locate" , wantedQuestList[i].locate)
                            .val(wantedQuestList[i].name));
     }    
