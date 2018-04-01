@@ -9,7 +9,7 @@
     $("#rarityCheck").val(rareValue);
   });
    
-  $("input[name='myClass']").bind("change" , function({
+  $("input[name='myClass']").bind("change" , function(){
     var myClass = "";
     $("input[name='myClass']:checked").each(function(){
       myClass += $(this).val();
