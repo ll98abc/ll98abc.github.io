@@ -8,21 +8,28 @@
     
     $("#rarityCheck").val(rareValue);
   });
+   
+  $("input[name='myClass']").bind("change" , function({
+    var myClass = "";
+    $("input[name='myClass']:checked").each(function(){
+      myClass += $(this).val();
+    });
+    $("#classSelector").val(myClass);
+  });
 }
 
 function filterRun(){
 
   clearResult();
   
-  var rareCheck = $("#rarityCheck").val();
+  var rareCheck = $("#rarityCheck").val();   
   var classCheck = $("#classSelector").val();
   var itemCheck = $("#itemSelector").val();
-
   
 
   for (var i = 0; i < servantData.length ; i++){
     
-    if ( !(servantData[i].class == classCheck || classCheck == "all") ){
+    if ( !(classCheck.indexOf(servantData[i].class) > -1) ){
       continue;
     }
     
