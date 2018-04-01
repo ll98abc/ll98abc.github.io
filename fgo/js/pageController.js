@@ -16,6 +16,8 @@
     });
     $("#classSelector").val(myClass);
   });
+   
+   $("input[name='myClass']").change();
 }
 
 function filterRun(){
