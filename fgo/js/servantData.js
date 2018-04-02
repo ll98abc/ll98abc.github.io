@@ -8,21 +8,21 @@
 
        servantData[1] = {"class" : "saber" ,
                           "rarity": "5",
-                          "name" : "阿爾托利藍" , 
+                          "name" : "阿爾托莉亞(藍)" , 
                           "cost" : "16",
                           "item2" : "blue",
                           "item" : "food"};
 
        servantData[2] = {"class" : "saber" ,
                           "rarity": "4",
-                          "name" : "阿爾托利黑" , 
+                          "name" : "阿爾托莉亞(黑)" , 
                           "cost" : "12",
                           "item2" : "silver",
                           "item" : "food"};
 
        servantData[3] = {"class" : "saber" ,
                           "rarity": "4",
-                          "name" : "阿爾托莉莉" , 
+                          "name" : "阿爾托莉亞Lily" , 
                           "cost" : "12",
                           "item2" : "gold",
                           "item" : "water"};
@@ -71,7 +71,7 @@
 
        servantData[10] = {"class" : "archer" ,
                           "rarity": "4",
-                          "name" : "土狼" , 
+                          "name" : "紅A" , 
                           "cost" : "12",
                           "item2" : "cement",
                           "item" : "iron"};
@@ -99,7 +99,7 @@
 
        servantData[14] = {"class" : "archer" ,
                           "rarity": "3",
-                          "name" : "二姐" , 
+                          "name" : "尤瑞艾莉" , 
                           "cost" : "7",
                           "item2" : "gold",
                           "item" : "stone"};
@@ -134,7 +134,7 @@
 
        servantData[19] = {"class" : "lancer" ,
                           "rarity": "3",
-                          "name" : "庫夫林P" , 
+                          "name" : "庫夫林ProtoType" , 
                           "cost" : "7",
                           "item2" : "gold",
                           "item" : "wood"};
@@ -211,7 +211,7 @@
 
        servantData[30] = {"class" : "caster" ,
                           "rarity": "3",
-                          "name" : "C子" , 
+                          "name" : "美狄亞" , 
                           "cost" : "7",
                           "item2" : "silver",
                           "item" : "stone"};
@@ -225,7 +225,7 @@
 
        servantData[32] = {"class" : "caster" ,
                           "rarity": "2",
-                          "name" : "子安徒生" , 
+                          "name" : "安徒生" , 
                           "cost" : "4",
                           "item2" : "cement",
                           "item" : "water"};
@@ -281,7 +281,7 @@
 
        servantData[40] = {"class" : "assassin" ,
                           "rarity": "4",
-                          "name" : "大姐" , 
+                          "name" : "絲西娜" , 
                           "cost" : "12",
                           "item2" : "gold",
                           "item" : "stone"};
@@ -309,7 +309,7 @@
 
        servantData[44] = {"class" : "assassin" ,
                           "rarity": "1",
-                          "name" : "瑪塔" , 
+                          "name" : "瑪塔哈里" , 
                           "cost" : "3",
                           "item2" : "blue",
                           "item" : "water"};
@@ -358,14 +358,14 @@
 
        servantData[51] = {"class" : "berserker" ,
                           "rarity": "5",
-                          "name" : "串刺公" , 
+                          "name" : "弗拉德三世" , 
                           "cost" : "16",
                           "item2" : "silver",
                           "item" : "iron"};
 
        servantData[52] = {"class" : "berserker" ,
                           "rarity": "1",
-                          "name" : "牛牛" , 
+                          "name" : "阿斯特里歐" , 
                           "cost" : "3",
                           "item2" : "cement",
                           "item" : "food"};
@@ -393,42 +393,42 @@
 
        servantData[56] = {"class" : "berserker" ,
                           "rarity": "2",
-                          "name" : "血斧王" , 
+                          "name" : "血斧埃里克" , 
                           "cost" : "4",
                           "item2" : "silver",
                           "item" : "iron"};
 
        servantData[57] = {"class" : "berserker" ,
                           "rarity": "4",
-                          "name" : "B狐" , 
+                          "name" : "玉藻貓" , 
                           "cost" : "12",
                           "item2" : "gold",
                           "item" : "food"};
 
        servantData[58] = {"class" : "ex" ,
                           "rarity": "5",
-                          "name" : "白阿貞" , 
+                          "name" : "貞德(白)" , 
                           "cost" : "16",
                           "item2" : "silver",
                           "item" : "water"};
 
        servantData[59] = {"class" : "archer" ,
                           "rarity": "5",
-                          "name" : "月神" , 
+                          "name" : "俄里翁(月神)" , 
                           "cost" : "16",
                           "item2" : "silver",
                           "item" : "stone"};
 
        servantData[60] = {"class" : "caster" ,
                           "rarity": "4",
-                          "name" : "C龍娘" , 
+                          "name" : "術伊莉莎白" , 
                           "cost" : "12",
                           "item2" : "oil",
                           "item" : "food"};
 
        servantData[61] = {"class" : "caster" ,
                           "rarity": "5",
-                          "name" : "C狐" , 
+                          "name" : "玉藻前" , 
                           "cost" : "16",
                           "item2" : "blue",
                           "item" : "food"};
@@ -449,21 +449,21 @@
 
        servantData[64] = {"class" : "rider" ,
                           "rarity": "5",
-                          "name" : "船長" , 
+                          "name" : "德雷克" , 
                           "cost" : "16",
                           "item2" : "oil",
                           "item" : "food"};
 
        servantData[65] = {"class" : "rider" ,
                           "rarity": "4",
-                          "name" : "騎雙子" , 
+                          "name" : "海賊雙子(騎)" , 
                           "cost" : "12",
                           "item2" : "oil",
                           "item" : "iron"};
 
        servantData[66] = {"class" : "caster" ,
                           "rarity": "4",
-                          "name" : "C子莉莉" , 
+                          "name" : "美狄亞Lily" , 
                           "cost" : "12",
                           "item2" : "blue",
                           "item" : "water"};
@@ -491,21 +491,21 @@
 
        servantData[70] = {"class" : "lancer" ,
                           "rarity": "3",
-                          "name" : "刷哥" , 
+                          "name" : "迪爾慕德" , 
                           "cost" : "7",
                           "item2" : "blue",
                           "item" : "wood"};
 
        servantData[71] = {"class" : "saber" ,
                           "rarity": "3",
-                          "name" : "小剛" , 
+                          "name" : "弗格斯(小剛)" , 
                           "cost" : "7",
                           "item2" : "cement",
                           "item" : "stone"};
 
        servantData[72] = {"class" : "rider" ,
                           "rarity": "4",
-                          "name" : "阿爾托聖誕" , 
+                          "name" : "阿爾托莉亞(聖誕)" , 
                           "cost" : "12",
                           "item2" : "gold",
                           "item" : "wood"};
@@ -526,7 +526,7 @@
 
        servantData[75] = {"class" : "saber" ,
                           "rarity": "5",
-                          "name" : "小莫" , 
+                          "name" : "莫德雷德" , 
                           "cost" : "16",
                           "item2" : "silver",
                           "item" : "iron"};
@@ -540,7 +540,7 @@
 
        servantData[77] = {"class" : "lancer" ,
                           "rarity": "4",
-                          "name" : "阿爾托黑槍" , 
+                          "name" : "阿爾托莉亞(黑乳上)" , 
                           "cost" : "12",
                           "item2" : "silver",
                           "item" : "iron"};
@@ -596,42 +596,42 @@
 
        servantData[85] = {"class" : "lancer" ,
                           "rarity": "4",
-                          "name" : "水槍哥" , 
+                          "name" : "芬恩" , 
                           "cost" : "12",
                           "item2" : "blue",
                           "item" : "water"};
 
        servantData[86] = {"class" : "lancer" ,
                           "rarity": "5",
-                          "name" : "病嬌布姐" , 
+                          "name" : "布倫希爾特" , 
                           "cost" : "16",
                           "item2" : "gold",
                           "item" : "iron"};
 
        servantData[87] = {"class" : "berserker" ,
                           "rarity": "4",
-                          "name" : "貝不愁沒(略)" , 
+                          "name" : "貝奧武夫" , 
                           "cost" : "12",
                           "item2" : "cement",
                           "item" : "wood"};
 
        servantData[88] = {"class" : "saber" ,
                           "rarity": "5",
-                          "name" : "嫁王" , 
+                          "name" : "尼祿(嫁)" , 
                           "cost" : "16",
                           "item2" : "gold",
                           "item" : "stone"};
 
        servantData[89] = {"class" : "saber" ,
                           "rarity": "5",
-                          "name" : "兩儀劍" , 
+                          "name" : "兩儀式(劍)" , 
                           "cost" : "16",
                           "item2" : "silver",
                           "item" : "water"};
 
        servantData[90] = {"class" : "assassin" ,
                           "rarity": "4",
-                          "name" : "兩儀殺" , 
+                          "name" : "兩儀式(殺)" , 
                           "cost" : "12",
                           "item2" : "silver",
                           "item" : "water"};
@@ -645,7 +645,7 @@
 
        servantData[92] = {"class" : "rider" ,
                           "rarity": "4",
-                          "name" : "阿芙" ,
+                          "name" : "阿斯托爾芙" ,
                           "cost" : "12", 
                           "item2" : "blue",
                           "item" : "food"};
@@ -666,14 +666,14 @@
 
        servantData[95] = {"class" : "berserker" ,
                           "rarity": "5",
-                          "name" : "夜鶯" , 
+                          "name" : "南丁格爾" , 
                           "cost" : "16",
                           "item2" : "blue",
                           "item" : "water"};
 
        servantData[96] = {"class" : "berserker" ,
                           "rarity": "5",
-                          "name" : "狂犬" , 
+                          "name" : "狂庫夫林" , 
                           "cost" : "16",
                           "item2" : "blue",
                           "item" : "wood"};
@@ -729,7 +729,7 @@
 
        servantData[104] = {"class" : "ex" ,
                           "rarity": "5",
-                          "name" : "黑阿貞" , 
+                          "name" : "貞德(黑)" , 
                           "cost" : "16",
                           "item2" : "oil",
                           "item" : "water"};
@@ -749,7 +749,7 @@
 
        servantData[107] = {"class" : "assassin" ,
                           "rarity": "4",
-                          "name" : "切嗣帕帕" , 
+                          "name" : "切嗣" , 
                           "cost" : "12",
                           "item2" : "oil",
                           "item" : "water"};
@@ -819,7 +819,7 @@
 
        servantData[117] = {"class" : "lancer" ,
                           "rarity": "5",
-                          "name" : "阿爾托白槍" , 
+                          "name" : "阿爾托莉亞(白乳上)" , 
                           "cost" : "16",
                           "item2" : "silver",
                           "item" : "iron"};
@@ -882,14 +882,14 @@
 
        servantData[126] = {"class" : "lancer" ,
                           "rarity": "5",
-                          "name" : "L狐" , 
+                          "name" : "玉藻前(泳裝)" , 
                           "cost" : "16",
                           "item2" : "blue",
                           "item" : "food"};
 
        servantData[127] = {"class" : "archer" ,
                           "rarity": "5",
-                          "name" : "阿爾托泳裝" , 
+                          "name" : "阿爾托莉亞(泳裝)" , 
                           "cost" : "16",
                           "item2" : "blue",
                           "item" : "food"};
@@ -931,7 +931,7 @@
 
        servantData[133] = {"class" : "ex" ,
                           "rarity": "4",
-                          "name" : "泳裝丸太" , 
+                          "name" : "泳裝鐵拳聖女" , 
                           "cost" : "12",
                           "item2" : "blue",
                           "item" : "water"};
