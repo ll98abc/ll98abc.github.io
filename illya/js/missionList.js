@@ -667,7 +667,7 @@
 
     	missionList[83] = {
 		name : "Mission84",
-		target: "雪華とハチミツの国",
+		target: "雪華とハチミツの国 all quests clear",
 		prev: "freeQuests.26 雪華とハチミツの国 EX clear",
 		reward: "100綠方",
 		tag: ""
