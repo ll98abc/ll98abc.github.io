@@ -79,7 +79,7 @@
 			cost: "20",
 			prev: "mission.89 clear",
 			enemy: "劍龍牙兵(8k)*3/殺巨龍(53k)/劍龍牙兵(12k)+大食☆少女藍傻巴(50k)",
-			drop: "布丁+DVD+獅子君",
+			drop: "布丁",
 			locate: "b_1",
 			tag: "skeleton/saber/lawful/good/dragon"
 	}
