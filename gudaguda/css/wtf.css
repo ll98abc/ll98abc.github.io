@@ -1,0 +1,494 @@
+﻿.warpper{
+  opsition : relative;
+}
+
+.bg {
+  width: 936px;
+  height : 1078px;
+  position : fixed;
+  background-position:right bottom;
+  background : url(../images/meltLilith.jpg) right center no-repeat ;
+  background-size : 936px 1078px;
+  opacity : .2;
+  z-index : -1;
+  margin-left: 400px;
+}
+
+.anchor{
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  z-index: 99;    
+}
+
+.spot{
+  float: left;
+  display:inline;
+  height : 50px;
+  width: 50px;
+  top: -50px;
+  z-index: 3; 
+}
+
+.worldMapF{
+  width: 1200px;
+  height: 1196px;
+  background-image: url(../images/front_map.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.worldMapB{
+  width: 1200px;
+  height: 1196px;
+  background-image: url(../images/back_map.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.worldMapBB{
+  width: 1200px;
+  height: 1196px;
+  background-image: url(../images/bb_map.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.front_eyes{
+  /* オープン・アイズ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 190px;
+  left: 780px;
+}
+
+.front_hair{
+  /* アンビリカル・ヘア  */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 222px;
+  left: 820px;
+}
+
+.front_rightArm{
+  /* デビル・エルボー */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 36px;
+  left: 625px;
+}
+
+.front_leftArm{
+  /* サーチ・アーム */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 245px;
+  left: 800px;
+}
+
+.front_leftHand{
+  /* カインド・シィーナー */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 456px;
+  left: 816px;
+}
+
+.front_breast{
+  /* ブレスト・バレー */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 69px;
+  left: 684px;
+}
+
+.front_separator{
+  /* フランク・セパレータ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 124px;
+  left: 699px;
+}
+
+.front_core{
+  /* コア‧マトリックス */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 135px;
+  left: 596px;
+}
+.front_rightLeg{
+  /* ポートピア・サイ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 145px;
+  left: 480px;
+}
+
+.front_leftLeg{
+  /* ランディング・サイ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 170px;
+  left: 510px;
+}
+
+.front_rightFeet{
+  /* アンクル・リンク */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 363px;
+  left: 207px;
+}
+
+.front_leftFeet{
+  /* リンク・アンクル */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 381px;
+  left: 543px;
+}
+
+.front_frontBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;
+  top: 300px;
+  left: 1070px;
+  z-index:3
+}
+
+.front_backBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;  
+  top: 305px;
+  left: 1070px;
+  z-index:3
+}
+
+.front_bbBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;  
+  top: 308px;
+  left: 1070px;
+  z-index:3
+}
+
+.back_ear{
+  /* ウィークネス・イヤー */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 215px;
+  left: 820px;
+}
+
+.back_neck{
+  /* シークレット・ネープ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 237px;
+  left: 770px;
+}
+
+.back_rightArm{
+  /* アンダーアーム・レイ  */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 284px;
+  left: 806px;
+}
+
+.back_rightHand{
+  /* ダーク・ハンド */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 478px;
+  left: 795px;
+}
+
+.back_leftHand{
+  /* ジェイル・ハンド */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 228px;
+  left: 469px;
+}
+
+.back_coster{
+  /* スパイナル・コースター */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 172px;
+  left: 706px;
+}
+
+.back_hip{
+  /* コーディック・ヒップ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 192px;
+  left: 618px;
+}
+
+.back_rightLeg{
+  /* ステーション・サイ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 468px;
+  left: 489px;
+}
+
+.back_rightFeet{
+  /* スタンプ・シィーナー */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 567px;
+  left: 388px;
+}
+
+.back_leftLeg{
+  /* リジェクション・カーフ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 194px;
+  left: 394px;
+}
+
+.back_leftFeet{
+  /* クルーエル・シィーナー */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 150px;
+  left: 209px;
+}
+
+.back_frontBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;
+  top: 350px;
+  left: 1070px;
+}
+
+.back_backBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;  
+  top: 355px;
+  left: 1070px;
+}
+
+.back_bbBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;  
+  top: 358px;
+  left: 1070px;
+}
+
+.bb_leftHand{
+  /* カインド‧タッチ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 174px;
+  left: 714px;
+}
+
+.bb_rightHand{
+  /* ラヴァーズ‧スクィーズ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 214px;
+  left: 274px;
+}
+
+.bb_heart{
+  /* オンリー‧ハート */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 243px;
+  left: 493px;
+}
+
+.bb_liver{
+  /* スマート‧レバー */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 284px;
+  left: 495px;
+}
+
+.bb_knee{
+  /* スリップ‧ニー */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 357px;
+  left: 652px;
+}
+
+.bb_heel{
+  /* ボトム‧ヒール */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 678px;
+  left: 578px;
+}
+
+
+.bb_step{
+  /* ラスト‧ステップ */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 656px;
+  left: 954px;
+}
+
+.bb_frontBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;
+  top: 550px;
+  left: 1070px;
+}
+
+.bb_backBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;  
+  top: 555px;
+  left: 1070px;
+}
+
+.bb_bbBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;  
+  top: 558px;
+  left: 1070px;
+}
+
+.controllerDiv{
+  z-index : 2;
+}
+
+.panel{
+  width: 70%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding : 10px;
+  z-index : 2;
+}
+
+.zone{  
+  width: 450px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding : 10px;  
+}
+
+
+
+tr{
+  line-height: 28px;
+}
+
+td, th{
+  border: 1px solid black; 
+}
+
+.hidden{
+  display:none;
+}
+
+.hidden2{
+  opacity : 0;
+}
+
+.popUp{ 
+  width: 450px;
+  background-color: #FFFFFF;    
+}
+
+.note{
+  padding : 5px;
+  border: 1px solid grey;
+  width: 45%;
+  display: inline-block;
+  float: left;
+}
+
