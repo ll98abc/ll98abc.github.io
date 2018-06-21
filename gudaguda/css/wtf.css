@@ -7,7 +7,7 @@
   height : 1078px;
   position : fixed;
   background-position:right bottom;
-  background : url(../images/meltLilith.jpg) right center no-repeat ;
+  background : url(../images/okida.jpg) right center no-repeat ;
   background-size : 936px 1078px;
   opacity : .2;
   z-index : -1;
@@ -37,7 +37,7 @@
 .worldMapF{
   width: 1200px;
   height: 1196px;
-  background-image: url(../images/front_map.jpg);
+  background-image: url(../images/map_front.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -45,21 +45,13 @@
 .worldMapB{
   width: 1200px;
   height: 1196px;
-  background-image: url(../images/back_map.jpg);
+  background-image: url(../images/map_back.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.worldMapBB{
-  width: 1200px;
-  height: 1196px;
-  background-image: url(../images/bb_map.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.front_eyes{
-  /* オープン・アイズ */
+.ekoda{
+  /* 江古田 */
   position: relative;
   display:block;
   height : 50px;
@@ -68,8 +60,8 @@
   left: 780px;
 }
 
-.front_hair{
-  /* アンビリカル・ヘア  */
+.kouEnTera{
+  /* 高円寺  */
   position: relative;
   display:block;
   height : 50px;
@@ -78,8 +70,8 @@
   left: 820px;
 }
 
-.front_rightArm{
-  /* デビル・エルボー */
+.whiteTemple{
+  /* 目白不動 */
   position: relative;
   display:block;
   height : 50px;
@@ -88,8 +80,8 @@
   left: 625px;
 }
 
-.front_leftArm{
-  /* サーチ・アーム */
+.redTemple{
+  /* 目赤不動 */
   position: relative;
   display:block;
   height : 50px;
@@ -98,8 +90,8 @@
   left: 800px;
 }
 
-.front_leftHand{
-  /* カインド・シィーナー */
+.tabata{
+  /* 田端 */
   position: relative;
   display:block;
   height : 50px;
@@ -108,8 +100,8 @@
   left: 816px;
 }
 
-.front_breast{
-  /* ブレスト・バレー */
+.yellowTemple{
+  /* 目黃不動 */
   position: relative;
   display:block;
   height : 50px;
@@ -118,8 +110,8 @@
   left: 684px;
 }
 
-.front_separator{
-  /* フランク・セパレータ */
+.sakamoto{
+  /* 坂本探偵事務所 */
   position: relative;
   display:block;
   height : 50px;
@@ -128,8 +120,8 @@
   left: 699px;
 }
 
-.front_core{
-  /* コア‧マトリックス */
+.shinjuku{
+  /* 新宿 */
   position: relative;
   display:block;
   height : 50px;
@@ -137,8 +129,8 @@
   top: 135px;
   left: 596px;
 }
-.front_rightLeg{
-  /* ポートピア・サイ */
+.holyGrail{
+  /* 聖杯研究所 */
   position: relative;
   display:block;
   height : 50px;
@@ -147,8 +139,8 @@
   left: 480px;
 }
 
-.front_leftLeg{
-  /* ランディング・サイ */
+.kiba{
+  /* 木場 */
   position: relative;
   display:block;
   height : 50px;
@@ -157,8 +149,8 @@
   left: 510px;
 }
 
-.front_rightFeet{
-  /* アンクル・リンク */
+.tsukiji{
+  /* 築地 */
   position: relative;
   display:block;
   height : 50px;
@@ -167,8 +159,8 @@
   left: 207px;
 }
 
-.front_leftFeet{
-  /* リンク・アンクル */
+.shibaGarden{
+  /* 芝公園 */
   position: relative;
   display:block;
   height : 50px;
@@ -177,7 +169,8 @@
   left: 543px;
 }
 
-.front_frontBtn{
+.blueTemple{
+	/* 目青不動 */
   position: relative;
   display:block;
   height : 65px;
@@ -187,7 +180,8 @@
   z-index:3
 }
 
-.front_backBtn{
+.blackTemple{
+	/* 目黑不動 */
   position: relative;
   display:block;
   height : 65px;
