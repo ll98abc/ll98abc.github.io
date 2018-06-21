@@ -1,6 +1,6 @@
 ﻿<html>
 <head>
-<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/mainQuest.js"></script>
 <script type="text/javascript" src="js/freeQuest.js"></script>
 <script type="text/javascript" src="js/missionList.js"></script>
@@ -18,7 +18,7 @@
      <td style="width:25%;text-align: left;">Category:</td>
      <td style="width:75%;test-align: right;">
       <input type="radio" name="questFilter" value="mainQuestSelector"/>主線關卡&nbsp;
-      <input type="radio" name="questFilter" value="suppressionQuestSelector"/>懸賞關卡&nbsp;
+      <input type="radio" name="questFilter" value="suppressionQuestSelector"/>壓制任務&nbsp;
       <input type="radio" name="questFilter" value="freeQuestSelector"/>農場關卡&nbsp;
       <input type="radio" name="questFilter" value="missionSelector" checked="checked"/>活動任務&nbsp;
      </td>
@@ -70,779 +70,192 @@
 <h3>世界地圖</h3>
 <div id="mapDiv">
   <div id="frontMap" class="worldMapF myMap">
-    <a class="front_eyes anchor" onclick="popUp('front_eyes');"></a>
-    <a class="front_hair anchor" onclick="popUp('front_hair');"></a>
-    <a class="front_rightArm anchor" onclick="popUp('front_rightArm');"></a>
-    <a class="front_leftArm anchor" onclick="popUp('front_leftArm');"></a>
-    <a class="front_leftHand anchor" onclick="popUp('front_leftHand');"></a>
-    <a class="front_breast anchor" onclick="popUp('front_breast');"></a>
-    <a class="front_separator anchor" onclick="popUp('front_separator');"></a>
-    <a class="front_core anchor" onclick="popUp('front_core');"></a>
-    <a class="front_rightLeg anchor" onclick="popUp('front_rightLeg');"></a>
-    <a class="front_leftLeg anchor" onclick="popUp('front_leftLeg');"></a>
-    <a class="front_rightFeet anchor" onclick="popUp('front_rightFeet');"></a>
-    <a class="front_leftFeet anchor" onclick="popUp('front_leftFeet');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+
     <a class="front_frontBtn"></a>  
-    <a class="front_backBtn"></a> 
-    <a class="front_bbBtn"></a>
+    <a class="front_backBtn"></a>     
   </div>
   <div id="backMap" class="worldMapB myMap hidden">
-    <a class="back_ear anchor" onclick="popUp('back_ear');"></a>
-    <a class="back_neck anchor" onclick="popUp('back_neck');"></a>
-    <a class="back_rightArm anchor" onclick="popUp('back_rightArm');"></a>
-    <a class="back_rightHand anchor" onclick="popUp('back_rightHand');"></a>
-    <a class="back_leftHand anchor" onclick="popUp('back_leftHand');"></a>
-    <a class="back_coster anchor" onclick="popUp('back_coster');"></a>
-    <a class="back_hip anchor" onclick="popUp('back_hip');"></a>
-    <a class="back_rightLeg anchor" onclick="popUp('back_rightLeg');"></a>
-    <a class="back_rightFeet anchor" onclick="popUp('back_rightFeet');"></a>
-    <a class="back_leftLeg anchor" onclick="popUp('back_leftLeg');"></a>
-    <a class="back_leftFeet anchor" onclick="popUp('back_leftFeet');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
+    <a class=" anchor" onclick="popUp('');"></a>
     <a class="back_frontBtn"></a>
-    <a class="back_backBtn"></a>
-    <a class="back_bbBtn"></a>
-  </div>
-  <div id="bbMap" class="worldMapBB myMap hidden">
-    <a class="bb_leftHand anchor" onclick="popUp('bb_leftHand');"></a>
-    <a class="bb_rightHand anchor" onclick="popUp('bb_rightHand');"></a>
-    <a class="bb_heart anchor" onclick="popUp('bb_heart');"></a>
-    <a class="bb_liver anchor" onclick="popUp('bb_liver');"></a>
-    <a class="bb_knee anchor" onclick="popUp('bb_knee');"></a>
-    <a class="bb_heel anchor" onclick="popUp('bb_heel');"></a>
-    <a class="bb_step anchor" onclick="popUp('bb_step');"></a>
-    <a class="bb_frontBtn"></a>
-    <a class="bb_backBtn"></a>
-    <a class="bb_bbBtn"></a>
-  </div>
+    <a class="back_backBtn"></a>    
+  </div>  
 
 </div>
 <hr/>
 </div>
-  <div id="front_eyes" style="display:none;" class="popUp">
+  <div id="" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:オープン・アイズ</th>
+      <th colspan="2" style="background-color: #00DD44;"></th>
     </thead>
     <tbody>
     <tr>
       <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.1 オープン・アイズ</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">章魚TypeI(10k)*2<br/>章魚TypeⅡ(25k)*1 + 血斧埃里克 (狂232k) + 櫻手(術29k)</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">蛇眼/羽毛</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">混沌/王/章魚/櫻手/type1/type2</td>
+      <td style="width:85%;text-align: left;"</td>
     </tr>
     </tbody>
   </table>
   </div>
-  <div id="front_hair" style="display:none;" class="popUp">
+  <div id="" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:アンビリカル・ヘア</th>
+      <th colspan="2" style="background-color: #00DD44;"></th>
     </thead>
     <tbody>
     <tr>
       <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.2 アンビリカル・ヘア</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻蟲(殺11k)*2 <br/>櫻蟲(殺27k)+櫻機人(弓23k)+豆爸(術218k)</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">雙晶/鎖鍊</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">混沌/櫻蟲/櫻機人</td>
+      <td style="width:85%;text-align: left;"</td>
     </tr>
     </tbody>
-    </table>
+  </table>
   </div>
-  <div id="front_rightArm" style="display:none;" class="popUp">
+  <div id="" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:デビル・エルボー</th>
+      <th colspan="2" style="background-color: #00DD44;"></th>
     </thead>
     <tbody>
     <tr>
       <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.3 デビル・エルボー</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">章魚TypeI(術10k)+櫻蟲(殺11k)*2<br/>章魚TypeI(術24k)*2 + 芬恩(槍224k)</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">蛇眼/鎖鍊</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">混沌/神話/騎士/王/櫻蟲/章魚/type1</td>
+      <td style="width:85%;text-align: left;"</td>
     </tr>
     </tbody>
-    </table>
+  </table>
   </div>
-  <div id="front_breast" style="display:none;" class="popUp">
+  <div id="" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:ブレスト・バレー</th>
+      <th colspan="2" style="background-color: #00DD44;"></th>
     </thead>
     <tbody>
     <tr>
       <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.4 ブレスト・バレー</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">狗狗TypeI(騎11k)*2 + 章魚typeI (術11k)<br/>惡魔(術68k) + 章魚typeI(術23k)<br/>狗狗type1(騎31k) + 小金閃(弓165k) + 章魚type1(術28k)</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">蛇眼/哈達王子角(X) 毒針(o)</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">章魚/狗狗/type1/混沌/王/神話</td>
+      <td style="width:85%;text-align: left;"</td>
     </tr>
     </tbody>
-    </table>
+  </table>
   </div>
-  <div id="front_separator" style="display:none;" class="popUp">
+  <div id="" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:フランク・セパレータ</th>
+      <th colspan="2" style="background-color: #00DD44;"></th>
     </thead>
     <tbody>
     <tr>
       <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.5 フランク・セパレータ</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻蟲(殺12k) + 狗狗typeI(騎10k)<br/>櫻機人(弓22k) + 櫻蟲(殺21k)<br/>櫻機人(31k)*2 + 卡蜜拉(殺196k)</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">毒針/雙晶/鎖鍊</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">狗狗/type1/混沌/櫻蟲/櫻機人/銀髮</td>
+      <td style="width:85%;text-align: left;"</td>
     </tr>
     </tbody>
-    </table>
+  </table>
   </div>
-  <div id="front_leftArm" style="display:none;" class="popUp">
+  <div id="" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:ブレスト・バレー</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：サーチ・アーム</td>
-      <td style="width:85%;text-align: left;">freeQuest.6 サーチ・アーム</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">章魚typeI(術10k) + 狗狗typeI(騎10k)<br/>狗狗typeI(騎22k) + 櫻機人(弓26k)<br/>蘭斯(狂194k) + 櫻機人(弓31k) + 章魚typeI(術30k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">毒針/蛇眼/雙晶</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">章魚/狗狗/type1/混沌/騎士/筋力A/櫻機人/騎士</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="front_leftHand" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:カインド・シィーナー</th>
+      <th colspan="2" style="background-color: #00DD44;"></th>
     </thead>
     <tbody>
     <tr>
       <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.7 カインド・シィーナー</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻蟲(殺10k)+櫻手(術11k)<br/>櫻蟲(殺21k) + 狗狗typeⅡ(騎23k)<br/>R姐Lily(槍193k) + 狗狗typeⅡ(騎28k) + 櫻手(術28k)</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">羽毛/鎖鍊/哈達王子角(X) 毒針(o)</td>
+      <td style="width:85%;text-align: left;"></td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">櫻蟲/中立/神話/櫻手/type2/狗狗</td>
+      <td style="width:85%;text-align: left;"</td>
     </tr>
     </tbody>
-    </table>
-  </div>
-  <div id="front_rightLeg" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:ポートピア・サイ</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.8 ポートピア・サイ</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">狗狗typeI(騎10k) + 櫻機人(弓11k)<br/>百貌(殺232k) + 狗狗typeⅡ(騎28k) + 狗狗typeI(騎29k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">毒針/雙晶</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">秩序/狗狗/type1/type2/櫻機人</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="front_leftLeg" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:ランディング・サイ</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.9 ランディング・サイ</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻機人(弓13k) + 櫻手(術11k)<br/>櫻手(術23k) + 章魚typeI(術21k)<br/>海賊雙子(騎196k) + 櫻手(術33k) + 櫻機人(弓33k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">羽毛/蛇眼/雙晶</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">章魚/type1/櫻手/櫻機人/混沌/銀髮</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="front_rightFeet" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:アンクル・リンク</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.10 アンクル・リンク</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻手(術10k) + 狗狗typeI(騎10k)<br/>傑洛尼莫(術228k) + 狗狗typeI(29k) + 櫻手(術23k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">羽毛/毒針</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">中立/櫻手/type1/狗狗</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="front_leftFeet" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:リンク・アンクル</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.11 リンク・アンクル</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">章魚typeⅡ(術14k) + 櫻手(術11k)<br/>章魚typeⅡ(術24k) + 櫻手(術24k)<br/>貝不缺女人武夫(狂186k) + 章魚typeⅡ(術30k) + 櫻手(術31k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">羽毛/蛇眼</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">筋力A/櫻手/type2/章魚/混沌</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="back_ear" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:ウィークネス・イヤー</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.12 ウィークネス・イヤー</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻機人(弓11k)*2 + 櫻手(術11k)<br/>櫻手(術23k)*2 + 櫻機人(弓20k)<br/>呂呂呂呂呂布(狂193k) + 櫻手(術42k) + 櫻機人(弓34k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">羽毛/雙晶</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">筋力A/東洋/混沌/櫻手/櫻機人</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="back_neck" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:シークレット・ネープ</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.13 シークレット・ネープ</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">狗狗typeI(騎11k)*2 + 狗狗typeⅢ(騎13k)<br/>狗狗typeⅢ(騎26k) + 雙角馬(槍68k)<br/>藤姊(槍160k) + 狗狗typeI(騎39k) + 狗狗typeⅢ(騎30k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">哈達王子角(x) 毒針(o) / 馬角</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">神話/混沌/狗狗/type1/type3</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="back_leftHand" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:ジェイル・ハンド</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.14 ジェイル・ハンド</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">章魚typeⅡ(術10k)*2<br/>章魚typeⅡ(術21k)*2 + 章魚typeⅢ(23k)<br/>島崎信長(弓202k)+ 章魚typeII(術35k) + 章魚typeⅢ(38k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">蛇眼</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">筋力A/東洋/神話/秩序/章魚/type2/type3</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="back_rightHand" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:15 ダーク・ハンド</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.15 ダーク・ハンド</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻蟲(殺12k)*2 + 章魚typeⅢ(術11k)<br/>櫻蟲(殺22k)*2 + 章魚typeⅢ(術21k)<br/>迦爾那(槍181k) + 奇美拉(狂69k) + 章魚typeⅢ(術37k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">蛇眼/鎖鍊</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">東洋/神話/櫻蟲/type3/章魚</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="back_rightArm" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:アンダーアーム・レイ</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.16 アンダーアーム・レイ</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">狗狗typeⅡ(騎11k)*2 + 狗狗typeⅢ<br/>狗狗typeⅡ(騎27k) + 狗狗typeⅢ(騎27k)<br/>『神槍』(槍202k) + 狗狗typeⅡ(騎37k) + 狗狗typeⅢ(騎38k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">毒針</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">狗狗/中立/東洋/type2/type3</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="back_coster" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:スパイナル・コ－スター</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.17 スパイナル・コ－スター</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻手(術12k) + 狗狗typeⅢ(騎12k)<br/>櫻手(術23k)*2<br/>莎士比亞(術211k) + 櫻手(術46k) + 狗狗typeⅢ(騎47k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">羽毛/毒針</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">中立/櫻手/type3/狗狗</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="back_hip" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:コーディック・ヒップ</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.18 コーディック・ヒップ</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">章魚typeI(術13k)*2+ 章魚typeⅢ(術12k)<br/>石巨人(劍68k) + 章魚typeⅢ(術21k)<br/>羅摩(劍178k) + 章魚typeI(術23k) + 章魚typeⅢ(術29k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">蛇眼/番薯藤</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">神話/王/秩序/筋力A/章魚/type3/type1</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="back_rightLeg" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:ステーション・サイ</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.19 ステーション・サイ</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻蟲(殺13k) + 櫻手(術15k) + 櫻機人(弓13k)<br/>大眼(弓66k) + 櫻機人(弓24k)<br/>嫁怪(狂166k) + 櫻手(術33k) + 櫻蟲(殺31k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">血淚/雙晶/羽毛/鎖鍊</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">櫻蟲/櫻機人/櫻手/混沌</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="back_rightFeet" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:スタンプ・シィーナー</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.20 スタンプ・シィーナー</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">狗狗typeⅡ(騎11k)*2 + 狗狗typeⅢ(騎10k)<br/>狗狗typeⅡ(騎24k)*2 + 狗狗typeX(騎29k)<br/>羽蛇神(騎) + 巨龍(騎87k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">龍鱗/毒針(x) 哈達王子角(o)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">神話/混沌/typeX/type2/type3/狗狗</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="back_leftLeg" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:リジェクション・カーフ</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.21 リジェクション・カーフ</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">狗狗typeⅡ(騎12k)*2 + 狗狗typeI(騎11k)<br/>狗狗typeI(騎26k) + 狗狗typeⅢ(騎25k)*2<br/>希望廚(仇177k) + 狗狗typeI(騎42k) + 狗狗typeⅢ(騎44k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">毒針</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">type1/type2/type3/狗狗/混沌</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-    <div id="back_leftFeet" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:クルーエル・シィーナー</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.22 クルーエル・シィーナー</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">章魚typeⅡ(術13k)*2 + 章魚typeI(術11k)<br/>章魚typeI(術26k) + 章魚typeⅡ(術24k) + 章魚typeⅢ(術25k)<br/>庫醬(狂177k) + 章魚typeI(術35k) + 章魚typeⅢ(術40k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">蛇眼</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">章魚/筋力A/混沌/type1/type2/type3</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="bb_leftHand" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:溫柔撫觸</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.23 カインド‧タッチ</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">狗狗typeI(騎11k)*3<br/>奇美拉 (狂104k)<br/>小征服(騎208k) +狗狗type1(騎28k)*2</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">毒針</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">狗狗/中立/type1</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="bb_rightHand" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:愛人之擁</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.24 ラヴァーズ‧スクィーズ</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">章魚typeⅢ(術12k)*3<br/>惡魔(術107k) + 章魚typeⅢ(18k)*2<br/>童謠(術203k) + 章魚typeⅢ(術25k)*2</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">蛇眼/心臟"</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">type3/章魚/中立</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="bb_heart" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:一片癡心</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.25 オンリー‧ハート</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">章魚typeI(術11k)*3<br/>巨大魔豬(狂115k)<br/>黑阿貞(仇205k) + 章魚typeI(術29k)*2</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">蛇眼/膽石</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">章魚/type1</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-  <div id="bb_liver" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:伶俐心肝</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.26 スマート‧レバー</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻蟲(殺11k)*3<br/>石巨人(劍100k) + 櫻蟲(殺18k)*1<br/>漢堡王(劍200k) + 櫻蟲(殺24k)*2</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">鎖鏈/蕃薯藤</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">櫻蟲</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-    <div id="bb_knee" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:專用膝枕</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.27 スリップ‧ニー</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻機人(弓12k)*3<br/>大眼怪 (弓100k) + 櫻機人(弓18k)*1<br/>俵藤太(弓200k) + 櫻機人(弓24k)*2</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">雙晶/眼球</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">櫻機人</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-    <div id="bb_heel" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:下方腳跟  ※想用"屁屁與腳踝(毆"</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.28 ボトム‧ヒール</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">狗狗typeⅢ(騎13k)*3<br/>狗狗typeⅢ(騎18k)*3<br/>小莫(騎201k) + 巨龍(騎116k)</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">毒針/龍鱗</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">狗狗/type3</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-    <div id="bb_step" style="display:none;" class="popUp">
-  <table class="zone">
-    <thead>
-      <th colspan="2" style="background-color: #00DD44;">zone:最後一步</th>
-    </thead>
-    <tbody>
-    <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;">freeQuest.29 ラスト‧ステップ</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;">櫻手(術13k)*3<br/>雙角馬(槍105k) + 櫻手(術16k)*1<br/>槍哥proto(槍206k) + 櫻手(術24k)*2</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;">羽毛/馬角</td>
-    </tr>
-    <tr>
-      <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;">櫻手</td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
+  </table>
+  </div>  
 </body>
 <script type="text/javascript">
 var mainQuestList = new Array();
