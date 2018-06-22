@@ -36,7 +36,7 @@ function buildSelector(){
                              .attr("locate" , mainQuestList[i].locate)
                              .val(mainQuestList[i].name));
     }
-
+/**
     for (var i = 0; i <	suppressionQuestList.length;i++){
       $("#suppressionQuestSelector").append($("<option>"+suppressionQuestList[i].name+"</option>")
                              .attr("cost" , suppressionQuestList[i].cost)
@@ -46,6 +46,7 @@ function buildSelector(){
                              .attr("locate" , suppressionQuestList[i].locate)
                              .val(suppressionQuestList[i].name));
     }
+*/
 
     for (var i = 0; i < missionList.length;i++){
       $("#missionSelector").append($("<option>"+missionList[i].name+"</option>")
@@ -68,7 +69,7 @@ function buildSelector(){
     }
     
 
-    $("#mainQuestSelector , #freeQuestSelector , #suppressionQuestSelector").bind("change" , function (){
+    $("#mainQuestSelector , #freeQuestSelector ").bind("change" , function (){
 
       //總之先清除table內容
       $("#questContent , #questReward , #questPrevStep").html("");
@@ -169,17 +170,14 @@ function cleanMap(){
 }
 
 function buttonSetup(){
-  $("a.front_frontBtn , a.back_frontBtn , a.bb_frontBtn").click(function(){
-    $("#frontMap , #backMap , #bbMap").addClass("hidden");   
+  $("a.back_frontBtn").click(function(){
+    $("#frontMap , #backMap").addClass("hidden");   
     $("#frontMap").removeClass("hidden");
   });
   
-  $("a.front_backBtn , a.back_backBtn , a.bb_backBtn").click(function(){
-    $("#frontMap , #backMap , #bbMap").addClass("hidden");   
+  $("a.front_backBtn").click(function(){
+    $("#frontMap , #backMap").addClass("hidden");   
     $("#backMap").removeClass("hidden");  
   });
-  $("a.front_bbBtn , a.back_bbBtn , a.bb_bbBtn").click(function(){
-    $("#frontMap , #backMap , #bbMap").addClass("hidden");   
-    $("#bbMap").removeClass("hidden");  
-  });
+ 
 }

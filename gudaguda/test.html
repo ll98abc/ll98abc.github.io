@@ -18,7 +18,7 @@
      <td style="width:25%;text-align: left;">Category:</td>
      <td style="width:75%;test-align: right;">
       <input type="radio" name="questFilter" value="mainQuestSelector"/>主線關卡&nbsp;
-      <input type="radio" name="questFilter" value="suppressionQuestSelector"/>壓制任務&nbsp;
+<!--      <input type="radio" name="questFilter" value="suppressionQuestSelector"/>壓制任務&nbsp; -->
       <input type="radio" name="questFilter" value="freeQuestSelector"/>農場關卡&nbsp;
       <input type="radio" name="questFilter" value="missionSelector" checked="checked"/>活動任務&nbsp;
      </td>
@@ -29,9 +29,11 @@
         <select id="mainQuestSelector" class="selector hidden">
           <option value="">請選擇</option>        
         </select>
+<!--
         <select id="suppressionQuestSelector" class="selector hidden">
           <option value="">請選擇</option>        
         </select>
+-->
         <select id="freeQuestSelector" class="selector hidden">
           <option value="">請選擇</option>        
         </select>
@@ -70,192 +72,592 @@
 <h3>世界地圖</h3>
 <div id="mapDiv">
   <div id="frontMap" class="worldMapF myMap">
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-
-    <a class="front_frontBtn"></a>  
+    <a class="ekoda anchor" onclick="popUp('ekoda');"></a>
+    <a class="tabata anchor" onclick="popUp('tabata');"></a>
+    <a class="yellowTemple anchor" onclick="popUp('yellowTemple');"></a>
+    <a class="redTemple anchor" onclick="popUp('redTemple');"></a>
+    <a class="whiteTemple anchor" onclick="popUp('whiteTemple');"></a>
+    <a class="kouEnTera anchor" onclick="popUp('kouEnTera');"></a>
+    <a class="shinjuku anchor" onclick="popUp('shinjuku');"></a>
+    <a class="sakamoto anchor" onclick="popUp('sakamoto');"></a>
+    <a class="holyGrail anchor" onclick="popUp('holyGrail');"></a>
+    <a class="kiba anchor" onclick="popUp('kiba');"></a>
+    <a class="tsukiji anchor" onclick="popUp('tsukiji');"></a>
+    <a class="shibaGarden anchor" onclick="popUp('shibaGarden');"></a>    
+    <a class="blueTemple anchor" onclick="popUp('blueTemple');"></a>
+    <a class="blackTemple anchor" onclick="popUp('blackTemple');"></a>
     <a class="front_backBtn"></a>     
   </div>
   <div id="backMap" class="worldMapB myMap hidden">
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class=" anchor" onclick="popUp('');"></a>
-    <a class="back_frontBtn"></a>
-    <a class="back_backBtn"></a>    
+    <a class="back_yellowTemple anchor" onclick="popUp('back_yellowTemple');"></a>
+    <a class="back_redTemple anchor" onclick="popUp('back_redTemple');"></a>
+    <a class="back_whiteTemple anchor" onclick="popUp('back_whiteTemple');"></a>
+    <a class="back_shinjuku anchor" onclick="popUp('back_shinjuku');"></a>
+    <a class="back_sakamoto anchor" onclick="popUp('back_sakamoto');"></a>
+    <a class="back_holyGrail anchor" onclick="popUp('back_holyGrail');"></a>
+    <a class="back_shibaGarden anchor" onclick="popUp('back_shibaGarden');"></a>
+    <a class="back_blueTemple anchor" onclick="popUp('back_blueTemple');"></a>
+    <a class="back_blackTemple anchor" onclick="popUp('back_blackTemple');"></a>
+    <a class="back_frontBtn"></a>    
   </div>  
-
 </div>
 <hr/>
+<div id="memoDiv">
+<h3>參考資料：</h3>
+1.<span class="delLine">風向網</span>&nbsp;<a href="https://appmedia.jp/fategrandorder/2096596" target="_blank">appmedia攻略wiki</a><br/>
+2.<span class="delLine">FGO台版官方網站</span>&nbsp;<a href="http://kazemai.github.io/fgo-vz/" target="_blank">茹西教王的理想鄉</a><br/>
+3.backGround image：<a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=69308010" target="_blank">https://www.pixiv.net/member_illust.php?mode=medium&illust_id=69308010</a>
 </div>
-  <div id="" style="display:none;" class="popUp">
+</div>
+  <div id="ekoda" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;"></th>
+      <th colspan="2" style="background-color: #00DD44;">江古田</th>
     </thead>
     <tbody>
     <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.20&nbsp;打倒40隻金色nobu</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">美艷人妻C狐*1<br/>迷你金色nobu*3<br/>黑道*5</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">火藥/髓液/金青蛙/銀青蛙/布</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;"</td>
+      <td style="width:85%;text-align: left;">「術」鯖/東洋/惡/魔力A/人類/金色nobu/北方</td>
     </tr>
     </tbody>
   </table>
   </div>
-  <div id="" style="display:none;" class="popUp">
+  <div id="tabata" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;"></th>
+      <th colspan="2" style="background-color: #00DD44;">田端</th>
     </thead>
     <tbody>
     <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.23&nbsp;打倒140隻nobu</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">海賊雙子(騎)*1<br/>UFO nobu*3<br/>狼*5</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">書頁/種子/金青蛙/銀青蛙</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;"</td>
+      <td style="width:85%;text-align: left;">惡/浮游/野獸/北方</td>
     </tr>
     </tbody>
   </table>
   </div>
-  <div id="" style="display:none;" class="popUp">
+  <div id="yellowTemple" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;"></th>
+      <th colspan="2" style="background-color: #00DD44;">目黃不動</th>
     </thead>
     <tbody>
     <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.25&nbsp;打倒100隻猛獸</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">靜謐*1<br/>巨大金色nobu*3<br/>幽靈*5</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">羽毛/鬼燈/金青蛙</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;"</td>
+      <td style="width:85%;text-align: left;">秩序/「殺」鯖/惡/浮游/魔性/金色nobu/大型nobu/北方</td>
     </tr>
     </tbody>
   </table>
   </div>
-  <div id="" style="display:none;" class="popUp">
+  <div id="redTemple" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;"></th>
+      <th colspan="2" style="background-color: #00DD44;">目赤不動</th>
     </thead>
     <tbody>
     <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.26&nbsp;完成50個任務</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">小金閃*1<br/>迷你nobu*3<br/>失心者*5</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">齒輪/笨蛋鎖/銀青蛙</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;"</td>
+      <td style="width:85%;text-align: left;">人型/北方</td>
     </tr>
     </tbody>
   </table>
   </div>
-  <div id="" style="display:none;" class="popUp">
+  <div id="whiteTemple" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;"></th>
+      <th colspan="2" style="background-color: #00DD44;">目白不動</th>
     </thead>
     <tbody>
     <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.22&nbsp;通過主線第七節</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">JK狐*1<br/>新選nobu*3<br/>海賊*5</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">大騎士勳章/黨政/金青蛙/布</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;"</td>
+      <td style="width:85%;text-align: left;">東洋/惡/人類/北方</td>
     </tr>
     </tbody>
   </table>
   </div>
-  <div id="" style="display:none;" class="popUp">
+  <div id="kouEnTera" style="display:none;" class="popUp">
   <table class="zone">
     <thead>
-      <th colspan="2" style="background-color: #00DD44;"></th>
+      <th colspan="2" style="background-color: #00DD44;">高円寺</th>
     </thead>
     <tbody>
     <tr>
-      <td style="width:15%;text-align: right;">名稱：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.17&nbsp;打倒30隻魔性敵人</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">內容：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">亨利杰基爾*1<br/>迷你銀色nobu*3<br/>失心者*5</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">掉落：</td>
-      <td style="width:85%;text-align: left;"></td>
+      <td style="width:85%;text-align: left;">火藥/笨蛋鎖/銀青蛙/布</td>
     </tr>
     <tr>
       <td style="width:15%;text-align: right;">note：</td>
-      <td style="width:85%;text-align: left;"</td>
+      <td style="width:85%;text-align: left;">秩序/「殺」鯖/地/人類/銀色nobu/北方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div id="shinjuku" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">新宿</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">刷哥*1<br/>魔豬*5<br/>nobu*3</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">火藥/種子/銀青蛙/布</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/野獸/地/「槍」鯖/魔性</td>
     </tr>
     </tbody>
   </table>
   </div>  
+  <div id="sakamoto" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">坂本探偵事務所</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">騎金時*1<br/>巨大銀色nobu*3<br/>狼*5</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">羽毛/種子/金青蛙/銀青蛙</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/地/東洋/野獸/銀色nobu/大型nobu</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div id="holyGrail" style="display:none;" class="popUp">
+    <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">聖杯研究所</th>
+    </thead>
+    <tbody>
+    <tr>
+     <td colspan="2">No free quest here.</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>  
+  <div id="kiba" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">木場</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.29&nbsp;打倒15隻caster</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">清姬(狂)*1<br/>迷你nobu*3<br/>鬼武者*5</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">勾玉/火藥/布</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">沿海/惡/地/東洋/魔性/南方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>  
+  <div id="tsukiji" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">築地</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.32&nbsp;打倒20隻猛獸</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">孔明*1<br/>迷你銀色機械nobu*3<br/>海賊*5</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">八連雙晶/黨證/金青蛙/布</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">「術」鯖/東洋/銀色nobu/機械nobu/魔力A/人類/南方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>  
+  <div id="shibaGarden" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">芝公園</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">探偵調查‧芝公園</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.35&nbsp;打倒15隻惡屬性鯖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">八連雙晶/種子/銀青蛙/布</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">沿海/地/魔力A/魔性/銀色nobu/機械nobu/南方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>  
+  <div id="blueTemple" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">目青不動</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.18&nbsp;通過主線第五節</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">寶藏院*1<br/>迷你金色機械nobu*3<br/>鬼武者*5</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">勾玉/八連雙晶/金青蛙/銀青蛙</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">「槍」鯖/東洋/魔性/金色nobu/機械nobu/南方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>  
+  <div id="blackTemple" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">目黑不動</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.16&nbsp;打倒8隻秩序鯖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">歌劇魅影*1<br/>巨大金色nobu*3<br/>幽靈*5</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">羽毛/鬼燈/金青蛙/布</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">「殺」鯖/惡/地/浮游/魔性/金色nobu/大型nobu/南方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>  
+  <div id="back_yellowTemple" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">裡目黃不動</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.39&nbsp;完成80個任務</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">術狗*1+惡魔*1<br/>UFO nobu*3<br/>黑道*3</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">心臟/書頁/髓液/布</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/「術」鯖/魔性/浮游/人類/北方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>  
+  <div id="back_redTemple" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">裡目赤不動</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.37&nbsp;打倒20隻lancer</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">黑A*1+大眼怪*1<br/>UFO nobu*3<br/>海賊*3</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">血淚石/火藥/黨證/金青蛙/銀青蛙</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">惡/東洋/魔性/浮游/人類/北方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div id="back_whiteTemple" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">裡目白不動</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.36&nbsp;打倒160隻大型nobu</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">黑傻巴*1+大黑狗*1<br/>新選nobu<br/>鬼武者*3</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">勾玉/地溝油/大騎士勳章/銀青蛙/布</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/惡/魔力A/耐久A/魔性/野獸/北方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div id="back_shinjuku" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">裡新宿</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">巖窟王*1+巨大魔豬*1<br/>巨大銀色nobu*3<br/>魔豬*3</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">膽石/黑粉/金青蛙/銀青蛙/布</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">巨大危險生物/惡/耐久A/魔性/野獸/銀色nobu/大型nobu</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div id="back_sakamoto" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">裡坂本探偵事務所</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.40&nbsp;打倒130隻機械nobu</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">船長*1+雙角馬*1<br/>迷你nobu*3<br/>狼*3</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">馬角/齒輪/種子/銀青蛙</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">惡/野獸/魔性</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div id="back_holyGrail" style="display:none;" class="popUp">
+    <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">裡聖杯研究所</th>
+    </thead>
+    <tbody>
+    <tr>
+     <td colspan="2">No free quest here.</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>  
+  <div id="back_shibaGarden" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">裡芝公園</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.42&nbsp;打倒120名人類</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">茨木*1+人面獅身*1<br/>巨大nobu*3<br/>英靈兵*3</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">聖甲蟲/羽毛/黑粉/金青蛙/銀青蛙/布</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">魔性/惡/東洋/地/耐久A/巨大危險生物/英靈兵<br/>大型nobu/南方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div id="back_blackTemple" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">裡目黑不動</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.41&nbsp;打倒50隻英靈兵</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">超高校級艷后*1+古戰場英雄(歿)<br/>迷你銀色機械nobu<br/>幽靈*3</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鬼燈/八連雙晶/金青蛙</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">秩序/「殺」鯖/浮游/巨大危險生物/銀色nobu<br/>機械nobu/南方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div id="back_blueTemple" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">裡目青不動</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">解放：</td>
+      <td style="width:85%;text-align: left;">Mission.38&nbsp;打倒20隻秩序鯖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">伊莉莎白*1+大蛇*1<br/>迷你機械金色nobu*3<br/>失心者*3</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">神酒/八連雙晶/笨蛋鎖</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">巨大危險生物/「槍」鯖/惡/魔力A/魔性/野獸<br/>金色nobu/機械nobu/人類/南方</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
 </body>
 <script type="text/javascript">
 var mainQuestList = new Array();
