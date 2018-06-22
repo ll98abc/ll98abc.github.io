@@ -149,7 +149,7 @@
 			name: "【只要沒有槍的話還是會成問題】",
 			cost: "5",
 			prev: "Mission.38 clear",
-			enemy: "李書文(314k槍)+庫nobu(45k槍)/梅杜莎break後(232k騎)",
+			enemy: "李書文(314k槍)+庫nobu(45k槍)/李書文break後(232k騎)",
 			drop: "戰線特效：每回合賦予一次爆擊威力上昇。break特動：自己中毒+普攻帶降防",
 			locate: "--"
 	}
