@@ -191,7 +191,7 @@
 		cost: "40",
 		prev: "Mission.38 clear",
 		enemy: "伊莉莎白*1+大蛇*1/迷你機械金色nobu*3/失心者*3",
-		drop: "神酒/八連雙晶/笨蛋鎖",
+		drop: "神酒/八連雙晶/笨蛋鎖/金青蛙/布",
 		locate: "back_blueTemple" ,
 		tag: "lancer/danger/evil/mag_a/demonic/beast/Qnobu/goldNobu/mechNobu/human/back_south"				
 	}
