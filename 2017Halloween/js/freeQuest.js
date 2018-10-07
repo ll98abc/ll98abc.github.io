@@ -46,7 +46,7 @@
                         name: "賽伊特‧監視塔",
 			cost: "0",
 			prev: "Mission.75 clear",
-			enemy: "南瓜骷髏(9k弓)*2+南瓜騎士(9k騎)/南瓜騎士(9k騎)+投石之王大衛(20k弓)", 
+			enemy: "南瓜骷髏(9k弓)*2+南瓜骷髏(9k騎)/南瓜骷髏(9k騎)+投石之王大衛(20k弓)", 
 			drop: "鑽頭軟糖/兇骨",
 			locate: "monitorTower",
 			tag: "lawful/archer/170cm/p_skeleton/demonic/pumpkin"	
