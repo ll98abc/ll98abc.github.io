@@ -170,7 +170,7 @@
 
         missionList[21] = {
 		name : "Mission22",
-		target: "打倒80名「南瓜骷髏兵」",
+		target: "打倒80名「金屬南瓜骷髏兵」",
                 prev: "Mission.21 clear",
 		reward: "5神燈",
                 tag: "m_skeleton"
