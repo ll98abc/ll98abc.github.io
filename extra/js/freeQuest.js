@@ -272,7 +272,7 @@
 			enemy: "狗狗typeI(騎10k) + 櫻機人(弓11k) / 百貌(殺232k) + 狗狗typeⅡ(騎28k) + 狗狗typeI(騎29k)",
 			drop: "毒針/雙晶",
 			locate: "front_rightLeg",
-			tag: "type1/type2/eater/lawful"
+			tag: "type1/type2/eater/lawful/sakuraBot"
 	}
 
 	freeQuestList[8] = {			
@@ -281,7 +281,7 @@
 			prev: "Mission.33 clear",
 			enemy: "櫻機人(弓13k) + 櫻手(術11k) / 櫻手(術23k) + 章魚typeI(術21k) / 海賊雙子(騎196k) + 櫻手(術33k) + 櫻機人(弓33k)",
 			drop: "羽毛/蛇眼/雙晶",
-			locate: "front_rightLeg",
+			locate: "front_leftLeg",
 			tag: "octopus/type1/sakuraHand/sakuraBot/chaos/silver"
 	}
 
