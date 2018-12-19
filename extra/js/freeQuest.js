@@ -272,7 +272,7 @@
 			enemy: "狗狗typeI(騎10k) + 櫻機人(弓11k) / 百貌(殺232k) + 狗狗typeⅡ(騎28k) + 狗狗typeI(騎29k)",
 			drop: "毒針/雙晶",
 			locate: "front_rightLeg",
-			tag: "type1/type2/eater/sakuraBot/lawful"
+			tag: "type1/type2/eater/lawful"
 	}
 
 	freeQuestList[8] = {			
