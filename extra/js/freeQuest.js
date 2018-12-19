@@ -222,7 +222,7 @@
 			enemy: "章魚TypeI(術10k)+櫻蟲(殺11k)*2 / 章魚TypeI(術24k)*2 + 芬恩(槍224k)",
 			drop: "蛇眼/鎖鍊",
 			locate: "front_rightArm",
-			tag: "octopus/type1/sakuraWorm/king/chaos/myth/knight"
+			tag: "octopus/type1/sakuraWorm/king/chaos/myth/knight/neutral"
 	}
 
 	freeQuestList[3] = {
