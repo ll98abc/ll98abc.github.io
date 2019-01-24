@@ -125,7 +125,7 @@
 		name : "Mission16",
 		target: "對文學☆少女艾蓮娜造成1M傷害",
         	prev: "mainQuest.死せる書架の国【Ⅲ】clear",
-		reward: "2.5M QP",
+		reward: "特攻禮裝(Q卡)",
         	tag: ""
 	}
 
@@ -133,7 +133,7 @@
 		name : "Mission17",
 		target: "對婊子☆天使梅芙造成1.5M傷害",
         	prev: "unknown",
-		reward: "3M QP",
+		reward: "特攻禮裝(A卡)",
         	tag: ""
 	}
 
@@ -189,7 +189,7 @@
         	name : "Mission24",
         	target : "打倒20隻餅乾哥雷姆",
         	prev: "對魔法少女童謠醬造成35k傷害 (擊倒1次)",
-        	reward: "開啟童謠醬第二階段的worldMatch與特攻禮裝(紅)",
+        	reward: "開啟童謠醬第二階段的worldMatch與特攻禮裝(B卡)",
         	tag: "biscuitGolem"
     	}
 
@@ -277,7 +277,7 @@
 		name : "Mission35",
 		target: "打倒30隻「骨」系敵人",
         	prev: "對治癒☆少女C子蘿造成200k傷害(擊倒2次)",
-		reward: "開啟C子蘿第二階段的worldMatch與特攻禮裝(藍)",
+		reward: "開啟C子蘿第二階段的worldMatch與特攻禮裝(A卡)",
         	tag: "skeleton"
 	}
 
@@ -317,7 +317,7 @@
 		name : "Mission40",
 		target: "打倒亡靈系敵人70隻",
         	prev: "Mission.39 clear",
-		reward: "特攻禮裝(紅)",
+		reward: "特攻禮裝(B卡)",
         	tag: "ghost"
 	}
 
@@ -341,7 +341,7 @@
 		name : "Mission43",
 		target: "打倒有角的敵人50隻",
         	prev: "Mission.42 clear",
-		reward: "特攻禮裝(藍)",
+		reward: "特攻禮裝(A卡)",
         	tag: "horn"
 	}
 
@@ -373,7 +373,7 @@
 		name : "Mission47",
 		target: "打倒15隻龍屬性魔法♂少女鯖",
         	prev: "Mission.46 clear",
-		reward: "unknown",
+		reward: "特攻禮裝(B卡)",
         	tag: "dragon"
 	}
 
@@ -413,7 +413,7 @@
 		name : "Mission52",
 		target: "打倒10隻惡屬性的魔法♂少女鯖",
 		prev: "Mission.51 clear",
-		reward: "特攻禮裝(藍)",
+		reward: "特攻禮裝(A卡)",
 		tag: "evil"
 	}
 
@@ -469,7 +469,7 @@
 		name : "Mission59",
 		target: "打倒15隻秩序屬性的魔法♂少女鯖",
 		prev: "Mission.58 clear",
-		reward: "特攻禮裝(藍)",
+		reward: "特攻禮裝(Q卡)",
 		tag: "lawful"
 	}
 
@@ -581,7 +581,7 @@
 		name : "Mission73",
 		target: "在 死せる書架の国 完成5次有戰鬥的任務",
 		prev: "mainQuest.死せる書架の国【Ⅲ】clear",
-		reward: "100綠方",
+		reward: "特攻禮裝(Q卡)",
 		tag: ""
 	}
 
@@ -725,7 +725,7 @@
 		name : "Mission91",
 		target: "取得100個獅子君",
 		prev: "Nission.3 clear",
-		reward: "弓輝石*5",
+		reward: "特攻禮裝(B卡)",
 		tag: "獅子君"
 	}
 
@@ -767,7 +767,7 @@
 		name : "Mission96",
 		target: "完成10個任務",
         	prev: "Mission.1 clear",
-		reward: "特攻禮裝(紅)",
+		reward: "特攻禮裝(Q卡)",
         	tag: ""
 	}
 
