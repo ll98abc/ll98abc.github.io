@@ -253,14 +253,14 @@
 		name : "Mission32",
 		target: "打倒40個雪人",
         	prev: "Mission.31 clear",
-		reward: "unknown",
+		reward: "黨證*5",
         	tag: "snowMan"
 	}
 
 	missionList[32] = {
 		name : "Mission33",
 		target: "打倒魔法杖40根",
-        	prev: "unknown",
+        	prev: "肥料禮裝",
 		reward: "肥料禮裝",
         	tag: "wand"
 	}
