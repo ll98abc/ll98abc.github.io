@@ -171,7 +171,7 @@
 			enemy: "殺魔杖(8k)*3/殺魔杖(18k)*3/殺魔杖(34k)+狂魔杖(30k)+神秘☆少女Ｘ(115k)",
 			drop: "布丁+獅子君",
 			locate: "e_2",
-			tag: "wand/assassin/chaos/normal/dragon"
+			tag: "wand/assassin/chaos//dragon"
 	}
 	
 	freeQuestList[17] = {			
