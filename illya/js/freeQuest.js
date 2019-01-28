@@ -38,10 +38,10 @@
 			name: "freeQuest.4 お菓子の国 rank A",
 			cost: "20",
 			prev: "mission.3", 
-			enemy: "槍人馬(6k)*2+狂薑餅人(8k)/槍人馬(13k)*2+狂薑餅人(13k)/奇美拉(22k)+爆乳☆少女黑槍傻(26k)",
+			enemy: "槍骷髏兵(6k)*2+狂薑餅人(8k)/槍人馬(13k)*2+狂薑餅人(13k)/奇美拉(22k)+爆乳☆少女黑槍傻(26k)",
 			drop: "布丁+DVD+獅子君",
 			locate: "a_1",
-			tag: "biscuitGolem/horseman/lancer/lawful/evil/dragon"
+			tag: "skeleton/biscuitGolem/horseman/lancer/lawful/evil/dragon"
 	}
 
 	freeQuestList[4] = {			
