@@ -59,7 +59,7 @@
 			cost: "20",
 			prev: "對治癒☆少女C子蘿造成200k傷害(擊倒2次)",
 			enemy: "槍飛龍(8k)+殺龍牙兵(8k)/槍飛龍(10k)*2+殺龍牙兵(10k)/槍飛龍(15k)*2+偶像☆少女槍龍娘(43k)",
-			drop: "布丁+DVD+獅子君",
+			drop: "布丁+獅子君",
 			locate: "b_1",
 			tag: "rainbowWyvern/skeleton/lancer/chaos/evil/dragon"
 	}
