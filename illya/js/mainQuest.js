@@ -537,7 +537,7 @@
 		cost: "10",
 		prev: "mission.44 clear",
 		enemy: "槍飛龍(15k)*3/槍飛龍(56k)*2+紳士♂海賊黑鬍子(320k)",
-		drop: "獅子君",
+		drop: "獅子君+DVD",
 		locate: "b_4"
 	}
 	
@@ -546,7 +546,7 @@
 		cost: "10",
 		prev: "worldMatch.23 clear",
 		enemy: "槍飛龍(16k)*3/槍飛龍(58k)*2+紳士♂海賊黑鬍子(470k)",
-		drop: "獅子君",
+		drop: "獅子君+DVD",
 		locate: "b_4"
 	}
 	
@@ -555,7 +555,7 @@
 		cost: "10",
 		prev: "worldMatch.24 clear",
 		enemy: "槍飛龍(17k)*3/槍飛龍(60k)*2+紳士♂海賊黑鬍子(710k)",
-		drop: "獅子君",
+		drop: "獅子君+DVD",
 		locate: "b_4"
 	}
 	
