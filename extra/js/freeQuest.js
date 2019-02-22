@@ -14,7 +14,7 @@
 			name: "渴愛の重力圈.2",
 			cost: "5",
 			prev: "--",
-			enemy: "wave2.廢棄data.食人魔 (101k騎)*1/wave2.影巴太太(140k弓)無break/影茨木(150k狂)無break/影小太郎(141k殺)無break/影酒吞(171殺)/(181k殺)break後我方全體寶具威力下降", 
+			enemy: "wave2.廢棄data.食人魔 (101k騎)*1/wave2.影巴太太(140k弓)無break/影茨木(150k狂)無break/影小太郎(141k殺)無break/影酒吞(171殺)+(181k殺)break後我方全體寶具威力下降", 
 			drop: "",
 			locate: "",
 			tag: ""
