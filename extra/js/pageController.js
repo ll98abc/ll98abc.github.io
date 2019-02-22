@@ -66,9 +66,19 @@ function buildSelector(){
                              .attr("tag" , freeQuestList[i].tag)
                              .val(freeQuestList[i].name));
     }
-    
+	
+    for (var i = 0;i < extraQuestList.length;i++){
+      $("#extraQuestSelector").append($("<option>"+extraQuestList[i].name+"</option>")
+                             .attr("cost" , extraQuestList[i].cost)
+                             .attr("prev" , extraQuestList[i].prev)
+                             .attr("enemy" , extraQuestList[i].enemy)
+                             .attr("drop" , extraQuestList[i].drop)
+                             .attr("locate" , extraQuestList[i].locate)
+                             .attr("tag" , extraQuestList[i].tag)
+                             .val(extraQuestList[i].name));
+    }	        
 
-    $("#mainQuestSelector , #freeQuestSelector , #wantedQuestSelector").bind("change" , function (){
+    $("#mainQuestSelector , #freeQuestSelector , #wantedQuestSelector , #extraQuestSelector ").bind("change" , function (){
 
       //總之先清除table內容
       $("#questContent , #questReward , #questPrevStep").html("");
