@@ -1,4 +1,24 @@
 ﻿function initFreeQuestData(){
+	 
+	 extraQuestList[0] = {			
+			name: "渴愛の重力圈.1",
+			cost: "5",
+			prev: "--",
+			enemy: "wave1.廢棄data.奇美拉 (101k狂)*1/wave2.影芬恩(119k槍)break後(121k槍)/影賴光(141k狂)break後(151k狂)/影師匠(121k槍)break後(141k槍)", 
+			drop: "",
+			locate: "",
+			tag: ""
+	}
+	 
+	extraQuestList[1] = {			
+			name: "渴愛の重力圈.2",
+			cost: "5",
+			prev: "--",
+			enemy: "wave2.廢棄data.食人魔 (101k騎)*1/wave2.影巴太太(140k弓)無break/影茨木(150k狂)無break/影小太郎(141k殺)無break/影酒吞(171殺)/(181k殺)break後我方全體寶具威力下降", 
+			drop: "",
+			locate: "",
+			tag: ""
+	}
 
 	wantedQuestList[0] = {			
 			name: "WANTED.1 アーチャーＴ",
