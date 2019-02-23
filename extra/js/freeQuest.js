@@ -69,6 +69,36 @@
 			locate: "",
 			tag: ""
 	}
+	
+	extraQuestList[7] = {			
+			name: "渴愛の重力圈.8",
+			cost: "5",
+			prev: "--",
+			enemy: "wave1.廢棄data.巨龍(109k騎)*1/wave2.影征服王(170k騎)+(200k騎)/影法老王(153k騎)+(187k騎)/影烏魯克王(152k弓)+(187k弓)/影法老王break後我方三人強制HP1 (後備不受影響)",
+			drop: "",
+			locate: "",
+			tag: ""
+	}
+	 
+	extraQuestList[8] = {			
+			name: "渴愛の重力圈.9",
+			cost: "5",
+			prev: "--",
+			enemy: "wave1.進場我方強化無效3次/影船長(84k騎)無break/影羅賓漢(74k弓)無break/影童謠(78k術)無break/影大公(89k槍)無break/影書文(108k殺)+(113k殺)/影呂布(100k狂)+(109k狂)/影高文(138k劍)+(158k劍)/呂布break後敵方全體額外+1格NP",
+			drop: "",
+			locate: "",
+			tag: ""
+	}
+	 
+	extraQuestList[9] = {			
+			name: "渴愛の重力圈.10",
+			cost: "5",
+			prev: "--",
+			enemy: "wave1.帝王花(200萬)，每過回合血量上升50萬/開場10T治療量下降90%/10T後改為降防3T→降NP率3T loop/第22T第一次虛弱(HP變回200萬+全耐性下降)/第28T第二次虛弱，在這邊打死了。/推測後面應該也是3+3虛弱一次。",
+			drop: "",
+			locate: "",
+			tag: ""
+	}
 
 	wantedQuestList[0] = {			
 			name: "WANTED.1 アーチャーＴ",
