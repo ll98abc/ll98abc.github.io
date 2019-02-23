@@ -14,7 +14,57 @@
 			name: "渴愛の重力圈.2",
 			cost: "5",
 			prev: "--",
-			enemy: "wave2.廢棄data.食人魔 (101k騎)*1/wave2.影巴太太(140k弓)無break/影茨木(150k狂)無break/影小太郎(141k殺)無break/影酒吞(171殺)+(181k殺)break後我方全體寶具威力下降", 
+			enemy: "wave1.廢棄data.食人魔 (101k騎)*1/wave2.影巴太太(140k弓)無break/影茨木(150k狂)無break/影小太郎(141k殺)無break/影酒吞(171殺)+(181k殺)break後我方全體寶具威力下降", 
+			drop: "",
+			locate: "",
+			tag: ""
+	}
+	 
+	extraQuestList[2] = {			
+			name: "渴愛の重力圈.3",
+			cost: "5",
+			prev: "--",
+			enemy: "wave1.廢棄data.黑狗 (103k殺)*1/wave2.影蘭斯(163k劍)無break/影崔斯坦(146k弓)無break/影小貝(135k劍)無break/影黑槍傻(175k槍)+(185k槍)/break後槍傻直接滿NP", 
+			drop: "",
+			locate: "",
+			tag: ""
+	}
+	 
+	extraQuestList[3] = {			
+			name: "渴愛の重力圈.4",
+			cost: "5",
+			prev: "--",
+			enemy: "wave1.廢棄data.石巨人 (103k劍)*1/wave2.影槍哥  (141k槍)無break/影西哥(158k劍)無break/影自爆哥(135k弓)無break/影小太陽(182k槍)無break/影腳後跟(169k騎)無break", 
+			drop: "",
+			locate: "",
+			tag: ""
+	}
+	 
+	extraQuestList[4] = {			
+			name: "渴愛の重力圈.5",
+			cost: "5",
+			prev: "--",
+			enemy: "wave1.廢棄data.九頭蛇 (103k弓)*1/wave2.影妮托(143k術)無break/影艾蕾(171k槍)無break/影麻雀(158k劍)無break/影山翁(181k殺)+(200k殺)/山翁break後爆擊率提升&&我方爆傷下降90%(10回合)", 
+			drop: "",
+			locate: "",
+			tag: ""
+	}
+	 
+	extraQuestList[5] = {			
+			name: "渴愛の重力圈.6",
+			cost: "5",
+			prev: "--",
+			enemy: "wave1.廢棄data.古戰場英靈(103k殺)*1/wave2.影項羽(166k狂)無break/影凱隆(142k弓)無break/影雷帝(152k騎)無break/影戈爾貢(200k仇)無break/影月月(176k仇)無break/月月進場敵方全體爆傷提升1回合",
+			drop: "",
+			locate: "",
+			tag: ""
+	}
+	 
+	extraQuestList[6] = {			
+			name: "渴愛の重力圈.7",
+			cost: "5",
+			prev: "--",
+			enemy: "wave1.廢棄data.巨大魔豬(108k狂)*1/wave2.開場我方全體NP率下降10回合/影阿妮亞(158k術)無break/影特斯拉(149k弓)無break/影按摩師(168k殺)無break/影巖窟王(184k仇)無break/影老福(203k秤)無break",
 			drop: "",
 			locate: "",
 			tag: ""
