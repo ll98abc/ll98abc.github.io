@@ -338,8 +338,8 @@
 			name: "－閉幕－ 刻を裂くバラディオン (1/2)",
 			cost: "5",
 			prev: "－閉幕－ Ｖ clear",
-			enemy: "Beast‧R",
-			drop: "N/A",
+			enemy: "Beast‧R (40萬)/(35萬) break1 charge+1&寶具威力上升(5T)/(30萬) break2 攻擊力上升(1T)/KP全部買完之後可以接關，真打不贏就3令咒復活吧",
+			drop: "AE職可以打出weak傷害，被打白字。其他職攻防皆白字",
 			locate: "コア・マトリックス"
 	}
 
