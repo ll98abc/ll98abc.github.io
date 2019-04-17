@@ -233,5 +233,15 @@
 		drop: "聖甲蟲/羽毛/黑粉/金青蛙/銀青蛙/布",
 		locate: "back_shibaGarden" ,
 		tag: "demonic/evil/earth/eastern/sta_a/danger/sabaSoldier/Qnobu/bigNobu/back_south"				
-	}			
+	}
+	 
+	freeQuestList[21] = {			
+		name: "探偵調查‧聖杯研究所",
+		cost: "40",
+		prev: "mainQuest.第12節 clear",
+		enemy: "豆爸*1+迷你金色nobu*3/英靈兵*5",
+		drop: "雙晶/黑粉/金青蛙/銀青蛙/布",
+		locate: "holyGrail" ,
+		tag: "caster/mag_a/Qnobu/goldNobu/mechNobu/sabaSoldier"				
+	}
 }
