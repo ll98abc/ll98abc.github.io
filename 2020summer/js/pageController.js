@@ -3,7 +3,7 @@
   buildSelector();
   buttonSetup();
 	 
-  //$(".anchor").not(".hidden2").addClass("hidden2");
+  $(".anchor").not(".hidden2").addClass("hidden2");
     
 
   $("input[name='questFilter']").bind("change", function(){
