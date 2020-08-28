@@ -194,10 +194,10 @@
 
 	missionList[24] = {
 		name : "Mission25",
-		target: "打倒3隻「守寶妖精」",
+		target: "打倒20隻「蟲群」",
 		prev: "mainQuest.第九節【人魚秘〆】 clear，天亮之後開啟",
 		reward: "蹄鐵、開啟mainQuest.第十節【兩千年與三千人的壞人們】",
-		tag: "spriggan"
+		tag: "bugs"
 	}
 
 	missionList[25] = {
