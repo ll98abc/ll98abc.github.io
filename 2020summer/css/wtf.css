@@ -1,0 +1,286 @@
+﻿.warpper{
+  opsition : relative;
+}
+
+.bg_day {
+  width: 1158px;
+  height : 900px;
+  position : fixed;
+  background-position:right bottom;
+  background : url(../images/bg_lack.jpg) right center no-repeat ;
+  background-size : 1158px 900px;
+  opacity : .2;
+  z-index : -1;
+  margin-left: 800px;
+}
+
+.bg_night {
+  width: 909px;
+  height : 1281px;
+  position : fixed;
+  background-position:right bottom;
+  background : url(../images/bg_83906842.png) right center no-repeat ;
+  background-size : 909px 1281px;
+  opacity : .2;
+  z-index : -1;
+  margin-left: 900px;
+}
+
+.anchor{
+  display:block;
+  height : 50px;
+  width: 50px;
+  background-image: url(../images/anchor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size : 100% 100%;
+  z-index: 99;    
+}
+
+.spot{
+  float: left;
+  display:inline;
+  height : 50px;
+  width: 50px;
+  top: -50px;
+  z-index: 3; 
+}
+
+.worldMapDay{
+  width: 1334px;
+  height: 1331px;
+  background-image: url(../images/map_day.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.worldMapNight{
+  width: 1334px;
+  height: 1333px;
+  background-image: url(../images/map_night.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cottage_A_night , .cottage_A_day{
+  /* 度假小屋A */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 310px;
+  left: 640px;
+}
+
+.deepForest_A_night , .deepForest_A_day{
+  /* 深邃森林A  */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 120px;
+  left: 640px;
+}
+
+.westBuilding_A_night , .westBuilding_A_day{
+  /* 洋館A */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 150px;
+  left: 980px;
+}
+
+.mansion_A_night , .mansion_A_day{
+  /* 大樓A */
+  position: relative;
+  display:block;
+  height : 60px;
+  width: 60px;
+  top: 310px;
+  left: 1075px;
+}
+
+.lakeside_A_night , .lakeside_A_day{
+  /* 湖畔A */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 310px;
+  left: 800px;
+}
+
+.market_A_night , .market_A_day{
+  /* 市場A */
+  position: relative;
+  display:block;
+  height : 60px;
+  width: 60px;
+  top: -10px;
+  left: 350px;
+}
+
+.house_A_night , .house_A_day{
+  /* 民家A */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 148px;
+  left: 240px;
+}
+
+.smilingHotel_night , .smilingHotel_day{
+  /* 微笑旅社 */
+  position: relative;
+  display:block;
+  height : 70px;
+  width: 70px;
+  top: 250px;
+  left: 200px;
+}
+
+.cottage_B_night , .cottage_B_day{
+  /* 度假小屋B */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 498px;
+  left: 640px;
+}
+
+.deepForest_B_night , .deepForest_B_day{
+  /* 深邃森林B  */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 595px;
+  left: 640px;
+}
+
+.westBuilding_B_night , .westBuilding_B_day{
+  /* 洋館B */
+  position: relative;
+  display:block;
+  height : 60px;
+  width: 60px;
+  top: 455px;
+  left: 303px;
+}
+
+.mansion_B_night , .mansion_B_day{
+  /* 大樓B */
+  position: relative;
+  display:block;
+  height : 60px;
+  width: 60px;
+  top: 195px;
+  left: 200px;
+}
+
+.lakeside_B_night , .lakeside_B_day{
+  /* 湖畔B */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 90px;
+  left: 485px;
+}
+
+.market_B_night , .market_B_day{
+  /* 市場B */
+  position: relative;
+  display:block;
+  height : 60px;
+  width: 60px;
+  top: 282px;
+  left: 935px;
+}
+
+.house_B_night , .house_B_day{
+  /* 民家B */
+  position: relative;
+  display:block;
+  height : 50px;
+  width: 50px;
+  top: 33px;
+  left: 1066px;
+}
+
+.day_goNightBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;  
+  top: 335px;
+  left: 1200px;
+  z-index:3
+}
+
+
+.night_goDayBtn{
+  position: relative;
+  display:block;
+  height : 65px;
+  width: 130px;
+  top: 260px;
+  left: 1200px;
+  z-index:3
+}
+
+.controllerDiv{
+  z-index : 2;
+}
+
+.panel{
+  width: 70%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding : 10px;
+  z-index : 2;
+}
+
+.zone{  
+  width: 450px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding : 10px;  
+}
+
+tr{
+  line-height: 28px;
+}
+
+td, th{
+  border: 1px solid black; 
+}
+
+.delLine{
+ text-decoration: line-through;
+}
+
+.hidden{
+  display:none;
+}
+
+.hidden2{
+  opacity : 0;
+}
+
+.popUp{ 
+  width: 450px;
+  background-color: #FFFFFF;    
+}
+
+.note{
+  padding : 5px;
+  border: 1px solid grey;
+  width: 45%;
+  display: inline-block;
+  float: left;
+}

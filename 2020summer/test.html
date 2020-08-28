@@ -1,0 +1,918 @@
+﻿<html>
+<head>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/mainQuest.js"></script>
+<script type="text/javascript" src="js/freeQuest.js"></script>
+<script type="text/javascript" src="js/missionList.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="js/pageController.js"></script>
+<link href="css/wtf.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="warpper">
+<div id="backgroundImg" class="bg_day"></div>
+<h3>任務面板</h3>
+<div class="controllerDiv">
+<table id="controlPanel" class="panel">
+  <tr>
+     <td style="width:25%;text-align: left;">Category:</td>
+     <td style="width:75%;test-align: right;">
+      <input type="radio" name="questFilter" value="mainQuestSelector"/>主線關卡&nbsp;
+      <input type="radio" name="questFilter" value="extraQuestSelector"/>額外任務&nbsp;
+      <input type="radio" name="questFilter" value="freeQuestSelector"/>農場關卡&nbsp;
+      <input type="radio" name="questFilter" value="missionSelector" checked="checked"/>活動任務&nbsp;
+     </td>
+  </tr>
+  <tr>
+     <td style="width:25%;text-align: left;">Quest:</td>
+     <td style="width:75%;test-align: right;">
+        <select id="mainQuestSelector" class="selector hidden">
+          <option value="">請選擇</option>        
+        </select>
+        <select id="suppressionQuestSelector" class="selector hidden">
+          <option value="">請選擇</option>        
+        </select>
+        <select id="freeQuestSelector" class="selector hidden">
+          <option value="">請選擇</option>        
+        </select>
+        <select id="missionSelector" class="selector hidden">
+          <option value="">請選擇</option>        
+        </select>
+     </td>
+  </tr>
+  <tr>
+     <td style="width:25%;text-align: left;">任務目標/關卡內容</td>
+     <td style="width:75%;test-align: right;" id="questContent">     
+     </td>
+  </tr>
+  <tr>
+     <td style="width:25%;text-align: left;">任務獎勵/關卡掉落</td>
+     <td style="width:75%;test-align: right;" id="questReward">     
+     </td>
+  </tr>
+  <tr>
+     <td style="width:25%;text-align: left;">前置任務</td>
+     <td style="width:75%;test-align: right;" id="questPrevStep">     
+     </td>
+  </tr>
+   <tr>
+     <td colspan="2">
+       <input id="mapAnchor" type="button" value="任務地點檢索" onclick="missionFilter();"/>
+       <input id="missionTag" type="hidden" value=""/>       
+       <input id="missionLocate" type="hidden" value="" />
+       <label style="color:#220088;">※任務地點檢索只支援「打倒x個怪物」or「打倒o屬性的鯖」的任務。</label>
+       <input type="button" style="float:right;" value="清除錨點" onclick="cleanMap();">
+     </td>
+  </tr>
+  <tr>
+     <td colspan="2">
+       【備註】本次活動因為卡日夜轉換，有些任務完成前置卻沒有開放，表示需要等待日夜轉換。
+     </td>
+  </tr>
+</table>
+</div>
+<hr/>
+<h3>世界地圖</h3>
+<div id="mapDiv">
+  <div id="dayMap" class="worldMapDay myMap">
+    <a class="cottage_A_day anchor" onclick="popUp('cottage_A_day');"></a>
+    <a class="deepForest_A_day anchor" onclick="popUp('deepForest_A_day');"></a>
+    <a class="westBuilding_A_day anchor" onclick="popUp('westBuilding_A_day');"></a>
+    <a class="mansion_A_day anchor" onclick="popUp('mansion_A_day');"></a>
+    <a class="lakeside_A_day anchor" onclick="popUp('lakeside_A_day');"></a>
+    <a class="market_A_day anchor" onclick="popUp('market_A_day');"></a>
+    <a class="house_A_day anchor" onclick="popUp('house_A_day');"></a>
+    <a class="smilingHotel_day anchor" onclick="popUp('smilingHotel_day');"></a>
+    <a class="cottage_B_day anchor" onclick="popUp('cottage_B_day');"></a>
+    <a class="deepForest_B_day anchor" onclick="popUp('deepForest_B_day');"></a>
+    <a class="westBuilding_B_day anchor" onclick="popUp('westBuilding_B_day');"></a>
+    <a class="mansion_B_day anchor" onclick="popUp('mansion_B_day');"></a>
+    <a class="lakeside_B_day anchor" onclick="popUp('lakeside_B_day');"></a>
+    <a class="market_B_day anchor" onclick="popUp('market_B_day');"></a>
+    <a class="house_B_day anchor" onclick="popUp('house_B_day');"></a>    
+    <a class="day_goNightBtn"></a>     
+  </div>
+  <div id="nightMap" class="worldMapNight myMap hidden">
+    <a class="cottage_A_night anchor" onclick="popUp('cottage_A_night');"></a>
+    <a class="deepForest_A_night anchor" onclick="popUp('deepForest_A_night');"></a>
+    <a class="westBuilding_A_night anchor" onclick="popUp('westBuilding_A_night');"></a>
+    <a class="mansion_A_night anchor" onclick="popUp('mansion_A_night');"></a>
+    <a class="lakeside_A_night anchor" onclick="popUp('lakeside_A_night');"></a>
+    <a class="market_A_night anchor" onclick="popUp('market_A_night');"></a>
+    <a class="house_A_night anchor" onclick="popUp('house_A_night');"></a>
+    <a class="smilingHotel_night anchor" onclick="popUp('smilingHotel_night');"></a>
+    <a class="cottage_B_night anchor" onclick="popUp('cottage_B_night');"></a>
+    <a class="deepForest_B_night anchor" onclick="popUp('deepForest_B_night');"></a>
+    <a class="westBuilding_B_night anchor" onclick="popUp('westBuilding_B_night');"></a>
+    <a class="mansion_B_night anchor" onclick="popUp('mansion_B_night');"></a>
+    <a class="lakeside_B_night anchor" onclick="popUp('lakeside_B_night');"></a>
+    <a class="market_B_night anchor" onclick="popUp('market_B_night');"></a>
+    <a class="house_B_night anchor" onclick="popUp('house_B_night');"></a>
+    <a class="night_goDayBtn"></a>    
+  </div>  
+
+</div>
+<hr/>
+<div id="memoDiv">
+<h3>參考資料：</h3>
+1.<span class="delLine">風向網</span>&nbsp;<a href="https://appmedia.jp/fategrandorder/5224804" target="_blank">appmedia攻略wiki</a><br/>
+2.<span class="delLine">FGO台版官方網站</span>&nbsp;<a href="http://kazemai.github.io/fgo-vz/" target="_blank">茹西教王的理想鄉</a><br/>
+3.backGround image：<a href="https://twitter.com/lalalalack/status/1296746814972944384" target="_blank">https://twitter.com/lalalalack/status/1296746814972944384</a>
+4.backGround image：<a href="https://pixiv.net/artworks/83906842" target="_blank">https://pixiv.net/artworks/83906842</a>
+</div>
+
+</div>
+<div id="cottage_A_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">コテージA</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">渡假小屋A(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">狼*3+魔豬*5+狼(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">乾柴(多)/野菜(少)/種子</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">魔性/野獸/槍/危險的豬/魔豬</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="cottage_B_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">コテージB</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">渡假小屋B(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">狼*3+魔豬*5+狼(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">乾柴(多)/野菜(少)/種子</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">魔性/野獸/槍/危險的豬/魔豬</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="deepForest_A_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">深い森A</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">深邃森林A(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">巨龍+飛龍*7+飛龍(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鏈鋸(多)/乾柴(少)/龍鱗</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">巨大生物/飛龍(wyvern)/龍(dragon)/狂職</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="deepForest_B_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">深い森B</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">深邃森林B(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">巨龍+飛龍*7+飛龍(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鏈鋸(多)/乾柴(少)/龍鱗</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">巨大生物/飛龍(wyvern)/龍(dragon)/狂職</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="lakeside_A_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">湖畔A</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">湖畔A(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">寄居蟹*8+寄居蟹(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">野菜(多)/鏈鋸(少)/貝殼</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">寄居蟹/danger蟹/魔性/saber</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="lakeside_B_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">湖畔B</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">湖畔B(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">寄居蟹*8+寄居蟹(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">野菜(多)/鏈鋸(少)/貝殼</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">寄居蟹/danger蟹/魔性/saber</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="westBuilding_A_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">洋館A</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">洋館A(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">奇美拉+蟲群*7+蟲群(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">膽石/髓液/鏈鋸(多)/乾柴(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">蟲群/野獸(1)/archer</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="westBuilding_B_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">洋館B</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">洋館B(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">娜迦+蟲群*7+蟲群(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">金蛋/髓液/鏈鋸(多)/乾柴(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">蟲群/神性(1)/archer</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="mansion_A_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">マンションA</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">大樓A(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">雙角馬+魔書*7+魔書(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">角角/書頁/三素材混搭</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">雙角馬/野獸(1)/魔性(1)/魔書</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="mansion_B_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">マンションB</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">大樓B(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">雙角馬+魔書*7+魔書(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">角角/書頁/三素材混搭</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">雙角馬/野獸(1)/魔性(1)/魔書</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="market_A_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">マーケットA</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">市場A(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">白色狗狗+蛇蜥*7+蛇蜥(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">臭臭泥/龍牙/野菜(多)/鏈鋸(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">soulEater(1)/神性(1)/猛獸(1)/魔性(1)/蛇蜥/caster</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="market_B_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">マーケットB</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">市場B(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">黑色狗狗+蛇蜥*7+蛇蜥(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">臭臭泥/龍牙/野菜(多)/鏈鋸(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">soulEater(1)/猛獸(1)/魔性(1)/蛇蜥/caster</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="house_A_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">民家A</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">民家A(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">斯芬克斯+雞*7+雞(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">神燈/箭頭/乾柴(多)/野菜(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">斯芬克斯(1)/神性(1)/巨大生物(1)/猛獸</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="house_B_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">民家B</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">民家B(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">斯芬克斯+雞*7+雞(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">神燈/箭頭/乾柴(多)/野菜(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">斯芬克斯(1)/神性(1)/巨大生物(1)/猛獸/雞</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="smilingHotel_day" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">スマイリングホテル</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">微笑旅社(日)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">呂布+巨石像+猴子*2+猴子(稀有)，1、1、(2+1)配置</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">三素材混搭/蕃薯藤/頭冠</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">石像妖精(1)/巨大生物(1)/魔性(2+1)/野獸(2+1)</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="cottage_A_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">コテージA</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">渡假小屋A(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">大鬼*1+小鬼*7+小鬼(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">乾柴(多)/野菜(少)/雙晶</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">巨大生物(1)/魔性/lancer</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="cottage_B_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">コテージB</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">渡假小屋B(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">大鬼*1+小鬼*7+小鬼(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">乾柴(多)/野菜(少)/雙晶</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">巨大生物(1)/魔性/lancer</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="lakeside_A_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">湖畔A</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">湖畔A(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">海魔*8+海魔(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">野菜(多)/鏈鋸(少)/蛇眼</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">魔性/saber</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="lakeside_B_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">湖畔B</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">湖畔B(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">海魔*8+海魔(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">野菜(多)/鏈鋸(少)/蛇眼</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">魔性/saber</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="deepForest_A_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">深い森A</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">深邃森林A(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">大蛇+骷髏兵*7+骷髏兵(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鏈鋸(多)/乾柴(少)/神酒/大騎士勳章</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">猛獸(1)/巨大生物(1)/魔性/死靈/berserker</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="deepForest_B_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">深い森B</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">深邃森林B(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">大蛇+骷髏兵*7+骷髏兵(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鏈鋸(多)/乾柴(少)/神酒/大騎士勳章</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">猛獸(1)/巨大生物(1)/魔性/死靈/berserker</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="westBuilding_A_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">洋館A</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">洋館A(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">大惡魔/人偶*7+人偶(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">心臟/齒輪/鏈鋸(多)/乾柴(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">魔性(1)/archer</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="westBuilding_B_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">洋館B</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">洋館B(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">虎戰車/人偶*7+人偶(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">爐心/齒輪/鏈鋸(多)/乾柴(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">archer</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="mansion_A_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">マンションA</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">大樓A(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">眼球+幽靈*7+幽靈(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鬼燈/血淚/三素材混搭</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">魔性/死靈/archer</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="mansion_B_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">マンションB</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">大樓B(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">眼球+幽靈*7+幽靈(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鬼燈/血淚/三素材混搭</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">魔性/死靈/archer</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="market_A_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">マーケットA</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">市場A(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">白鳥+喪屍*7+喪屍</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">羽毛/鐵釘/野菜(多)/鏈鋸(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">神性(1)/猛獸(1)/魔性/死靈/人類</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="market_B_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">マーケットB</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">市場B(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">黑鳥+喪屍*7+喪屍</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">羽毛/鐵釘/野菜(多)/鏈鋸(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">猛獸(1)/魔性/死靈/人類<br/>
+                    <label style="color:red;">黑鳥沒有神性</label>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="house_A_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">民家A</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">民家A(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">大幽靈+7女鬼+女鬼(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鏡子/黑粉/乾柴(多)/野菜(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">巨大生物(1)/死靈(1)/魔性/人類</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="house_B_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">民家B</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">民家B(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">大幽靈+7女鬼+女鬼(稀有)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">鏡子/黑粉/乾柴(多)/野菜(少)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">巨大生物(1)/死靈(1)/魔性/人類</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="smilingHotel_night" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;">スマイリングホテル</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;">微笑旅社(夜)</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;">刺繡公/紅毛獅子/殺人鬼*2+殺人鬼(稀有)，2、2、(2+1)配置</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;">三素材混搭/獅子毛/鎖鍊</td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;">berserker/野獸(1)/人類(2)/魔性(2)</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<!-- copy obj 
+<div id="" style="display:none;" class="popUp">
+  <table class="zone">
+    <thead>
+      <th colspan="2" style="background-color: #00DD44;"></th>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="width:15%;text-align: right;">名稱：</td>
+      <td style="width:85%;text-align: left;"></td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">內容：</td>
+      <td style="width:85%;text-align: left;"></td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">掉落：</td>
+      <td style="width:85%;text-align: left;"></td>
+    </tr>
+    <tr>
+      <td style="width:15%;text-align: right;">note：</td>
+      <td style="width:85%;text-align: left;"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+end of copy obj -->  
+</body>
+<script type="text/javascript">
+var mainQuestList = new Array();
+var extraQuestList = new Array();
+var freeQuestList = new Array();
+var worldMatchList = new Array();
+var missionList = new Array();
+
+initMissionData();
+initFreeQuestData();
+initMainQuestData();
+initPage();
+
+</script>
+</html>
