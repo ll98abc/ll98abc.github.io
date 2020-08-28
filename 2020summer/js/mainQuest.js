@@ -576,8 +576,17 @@
 			drop: "每回合貼我方debuff與詛咒，會使用技能「唐突な犧牲者」，對我方單體隨機作即死判定。<br/>裝特攻禮裝盡速打爆不要拖。",
 			locate: "--"
 	}
-	
+	 
 	extraQuestList[10] = {
+			name: "幽靈少女的夏天",
+			cost: "0",
+			prev: "鯖夏日露營II",
+			enemy: "no battle",
+			drop: "galGame，選上加分，選下扣分。",
+			locate: "--"
+	}
+	
+	extraQuestList[11] = {
 			name: "烈日下的暴動",
 			cost: "5",
 			prev: "all mission clear",
