@@ -202,10 +202,10 @@
 
 	missionList[25] = {
 		name : "Mission26",
-		target: "打倒3隻「守寶妖精」",
+		target: "打倒3隻「守寶妖精」 【復刻修改為「娜迦(黃金龍)」】",
 		prev: "mainQuest.第十節【兩千年與三千人的壞人們】 clear",
 		reward: "鬼燈、開啟mainQuest.第十一節【等待在死亡與恐怖之側的事物】",
-		tag: "spriggan"
+		tag: "spriggan_naga"
 	}
 
 	missionList[26] = {
