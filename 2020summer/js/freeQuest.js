@@ -19,6 +19,7 @@
 	 * var chicken = "雞"
 	 * var god     = "神性";
 	 * var spriggan= "守寶妖精"
+	 * var naga    = "娜迦"
 	 * var human   = "人類"
 	 * var saber   = "劍兵";
 	 * var lancer  = "槍兵";
@@ -108,7 +109,7 @@
 		enemy: "娜迦+蟲群*7+蟲群(稀有)",
 		drop: "金蛋/髓液/鏈鋸(多)/乾柴(少)",
 		locate: "westBuilding_B_day" ,
-		tag: "dragon/archer/bugs/god/huge/demonic/day/inside"			
+		tag: "naga/dragon/archer/bugs/god/huge/demonic/day/inside"			
 	}
 			
 	freeQuestList[8] = {			
