@@ -1,0 +1,88 @@
+﻿<html>
+<head>
+<title>Game</title>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="js/pageController.js"></script>
+<link href="css/wtf.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="warpper">
+<div class="controllerDiv">
+<div id="start" class="start">停車捉<img src="images/heart.png">楓林晚</div>
+<table style="display:none;">
+  <tbody>
+    <tr>
+      <td colspan="2">debug panel</td>
+    </tr>
+    <tr>
+      <td>set HP:<input type="text" value="3" id="setHp"/></td>
+      <td>set speed:<input type="text" value="5" id="setSpeed"/>秒</td>
+    </tr>
+    <tr>
+      <td><input id="setBtn" type="button" value="set params"/></td>      
+      <td><input id="playBtn" type="button" value="play"/></td>
+      
+    </tr>
+  </tbody>
+</table>
+</div>
+<hr>
+<div id="gamingZone" class="gamingZone">
+<div id="block_i" class="block_i" style="display:none;">i</div>
+</div>
+<div id="scorePanel" class="scorePanel">
+  <table style="border:none;width:100%"><tbody>
+   <tr>
+     <td colspan="2" id="hpGague">
+        <img src="images/heart.png" class="hp"/>
+        <img src="images/heart.png" class="hp"/>
+        <img src="images/heart.png" class="hp"/>
+     </td>
+   </tr>
+   <tr>
+    <td style="border:none;float:left;width:48%;">
+      <span id="title" class="title">title</span>      
+    </td>
+    <td style="border:none;float:right;width:48%;">
+      <span class="score">次i</span>
+      <span id="count" class="count">n</span>
+      <span class="score">目前妮已經捉了</span>
+      
+      
+    </td>  
+  </tr>
+  </tbody>
+  </table>
+</div>
+</div>
+
+<div id="failDiv" style="display:none;">
+    <div style="display:flex;">
+        <img src="images/failFace_01.png" class="failImg"/>
+        <img src="images/failFace_02.png" class="failImg"/>
+        <img src="images/failFace_03.png" class="failImg"/>
+    </div>
+    <div id="failText" class=failText>            
+    </div>  
+</div>
+<div id="successDiv" style="display:none;"> 
+    <div style="display:flex;">
+        <img src="images/successFace_01.png" class="successImg"/>
+        <img src="images/successFace_02.png" class="successImg"/>
+        <img src="images/successFace_03.png" class="successImg"/>
+    </div>
+    <div id="successText" class=successText>            
+    </div>
+</div>
+<div id="resultDiv" style="display:none;">
+    <div id="resultFace"></div>
+    <div id="resultText" class="resultText">test</div>
+    <div id="replay" class=replay>再捉一次</div>
+</div>
+<div class="bg"></div>
+</body>
+<script type="text/javascript">
+initPage();
+</script>
+</html>

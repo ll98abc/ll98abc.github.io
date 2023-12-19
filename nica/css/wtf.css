@@ -1,0 +1,128 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.warpper{
+  flex-grow:1;
+  z-index:0;
+}
+
+.bg {
+  height : 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position : fixed;
+  background : url(../images/background.jpg) right center no-repeat fixed;
+  background-size : 2016px 1134px;
+  opacity : .3;
+  z-index : -1;
+}
+
+.gamingZone{
+	height: 75vh;
+	width: 100%;
+	z-index: 1;
+}
+
+.block_i{
+	width: 64px;
+	height: 64px;
+	font-size: 48px;	
+	font-weight: bold;
+	text-align: center;
+	background-color: #FFCCDD;
+	position: absolute;
+	z-index: 10;
+}
+
+body {
+	margin-bottom: 100px;
+}
+
+.start{		
+	text-align: center;
+	font-size: 7vmin;
+	font-weight: bold;
+	color: #D9006C;
+	z-index: 9;
+}
+
+.imgZone{	
+  border: none;
+  margin: auto;
+  padding : 10px; 
+}
+
+.successImg , .failImg{
+	margin:auto;
+	display: flex;
+	max-width: 100%;
+	height:auto;
+}
+
+.successText , .resultText{
+	background-color: #444444;
+	width: 100vw;
+	font-size: 64px;	
+	text-align:center;
+	margin:auto;
+	color: #FFCCEE;
+}
+
+.failText{
+  background-color: #444444;
+  width: 100vw;
+  font-size: 64px;  
+  text-align:center;
+  margin:auto;
+  color: #FF0000;
+}
+
+.scorePanel{
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	color: black;
+	height: 100px;
+	position: fixed;
+	display:block;
+	z-index:1;
+}
+.score {
+	font-size:40px;
+	font-weight: bold;
+	color: black;
+	float:right;	
+	display:inline;
+}
+
+.count {
+	font-size:40px;
+  font-weight: bold;
+  color: red;
+  float:right;  
+  display:inline;
+}
+
+.title{
+	font-size:40px;
+	font-weight: bold;
+  color: black;  
+  display:inline;
+}
+
+.replay{
+	border: 1px solid blue;
+  background-color: #666666;
+  width: 40vw;
+  font-size: 48px;  
+  text-align:center;
+  margin:auto;
+  color: #FFCCEE;
+}
+
+.hidden{
+	display:none !important; 
+}
