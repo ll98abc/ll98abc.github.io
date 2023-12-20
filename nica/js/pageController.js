@@ -57,6 +57,15 @@ function initPage(){
 			movei();
 		}		
 	});
+	
+	//debug mode switch
+	$("#debug_i").bind("click" , function(){
+		if ($("#debugPanel").hasClass("hidden")){
+			$("#debugPanel").removeClass("hidden");	
+		}else{
+			$("#debugPanel").addClass("hidden");
+		}
+	});
 	//debug用的play Button
 	$("#playBtn").bind("click" , function(){
 		$("#block_i").show();
