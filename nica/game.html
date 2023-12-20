@@ -9,8 +9,8 @@
 <body>
 <div class="warpper">
 <div class="controllerDiv">
-<div id="start" class="start">停車捉<img src="images/heart.png">楓林晚</div>
-<table style="display:none;">
+<div class="start">停車捉<img id="start" src="images/heart.png">楓林晚</div>
+<table id="debugPanel" class="hidden">
   <tbody>
     <tr>
       <td colspan="2">debug panel</td>
@@ -45,7 +45,7 @@
       <span id="title" class="title">title</span>      
     </td>
     <td style="border:none;float:right;width:48%;">
-      <span class="score">次i</span>
+      <span class="score">次<label id="debug_i">i</label></span>
       <span id="count" class="count">n</span>
       <span class="score">目前妮已經捉了</span>
       
