@@ -22,8 +22,13 @@ body {
 
 .gamingZone{
 	height: 75vh;
-	width: 100%;
+	width:100%;
 	z-index: 1;
+	cursor: url(../images/netIcon_1.png), auto;
+}
+
+.gamingZone.mouseDown:hover{
+	cursor: url(../images/netIcon_2.png), auto;
 }
 
 .block_i{
@@ -32,9 +37,24 @@ body {
 	font-size: 48px;	
 	font-weight: bold;
 	text-align: center;
-	background-color: #FFCCDD;
+	background-color: rgba(0,0,0,0);
 	position: absolute;
 	z-index: 10;
+	top:30%;
+	left:45%;
+}
+
+.trapBlock{
+  width: 64px;
+  height: 64px;
+  font-size: 48px;  
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  z-index: 10;
+  top:30%;
+  left:-10%;
 }
 
 body {
@@ -116,6 +136,16 @@ body {
 .replay{
 	border: 1px solid blue;
   background-color: #666666;
+  width: 20vw;
+  font-size: 48px;  
+  text-align:center;
+  margin:auto;
+  color: #FFCCEE;
+}
+
+.resultTitle{
+  border: 1px solid blue;
+  background-color: rgba(128,0,0,0.5);
   width: 40vw;
   font-size: 48px;  
   text-align:center;

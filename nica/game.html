@@ -16,7 +16,7 @@
       <td colspan="2">debug panel</td>
     </tr>
     <tr>
-      <td>set HP:<input type="text" value="3" id="setHp"/></td>
+      <td>set HP:<input type="text" value="3" id="setHp"/></td>      
       <td>set speed:<input type="text" value="5" id="setSpeed"/>秒</td>
     </tr>
     <tr>
@@ -29,12 +29,23 @@
 </div>
 <hr>
 <div id="gamingZone" class="gamingZone">
-<div id="block_i" class="block_i" style="display:none;">i</div>
+<div id="block_i" class="block_i blocks hidden">i</div>
+<div id="block_1" class="trapBlock hidden">j</div>
+<div id="block_2" class="trapBlock hidden">l</div>
+<div id="block_3" class="trapBlock hidden">1</div>
+<div id="block_4" class="trapBlock hidden">j</div>
+<div id="block_5" class="trapBlock hidden">l</div>
+<div id="block_6" class="trapBlock hidden">1</div>
+<div id="block_7" class="trapBlock hidden">j</div>
+<div id="block_8" class="trapBlock hidden">l</div>
+<div id="block_9" class="trapBlock hidden">1</div>
+<div id="block_10" class="trapBlock hidden">l</div>
 </div>
 <div id="scorePanel" class="scorePanel">
   <table style="border:none;width:100%"><tbody>
    <tr>
      <td colspan="2" id="hpGague">
+        <div style="display:inline;height:48px;">&nbsp;</div>
         <img src="images/heart.png" class="hp"/>
         <img src="images/heart.png" class="hp"/>
         <img src="images/heart.png" class="hp"/>
@@ -76,9 +87,10 @@
     </div>
 </div>
 <div id="resultDiv" style="display:none;">
+    <div class="resultTitle">妮在性誕夜捉了<span id="resultMsg"></span>次i</div>
     <div id="resultFace"></div>
     <div id="resultText" class="resultText">test</div>
-    <div id="replay" class=replay>再捉一次</div>
+    <div id="replay" class="replay">再捉一次</div>
 </div>
 <div class="bg"></div>
 </body>
