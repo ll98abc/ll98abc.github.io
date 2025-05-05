@@ -18,16 +18,23 @@ var soundList = {
 	'16' : "我去唱歌了",
 	'17' : "我去買制服",
 	'18' : "我去開車了",
-	'19' : "我只會出剪刀",
-	'20' : "我在找一匹馬"
+	'19' : "我在找一匹馬",
+	'20' : "我只會出剪刀"
+	
 }
+
 
 function playSound(num) {	
 	let name = soundList[num];
 	$("#audio").stop();
-	console.log(name);
+	let playingObj = $(".grid").get(num-1);
+	$(playingObj).addClass("playing");
+	
 	$("#audio").attr("src" , 'data/' + name + ".mp3");
 	//$("#audio").play();
+	$("#audio").on('ended' , function(){		
+		$(playingObj).removeClass("playing");
+	});
 }
 
 function stopSound() {
