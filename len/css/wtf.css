@@ -49,12 +49,8 @@ body {
 	margin-top:1%;
 }
 
-.odd{
-    background-color: rgb(212, 203, 188);
-}
-
-.even{
-    background-color: rgb(162, 211, 211);
+.playing{
+	background-color: rgba(226, 43, 67, 0.6);
 }
 
 body {
