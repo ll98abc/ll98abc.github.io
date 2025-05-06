@@ -58,13 +58,8 @@ body {
 }
 
 
-.resultText{
-	background-color: #444444;
-	width: 100vw;
-	font-size: 64px;	
-	text-align:center;
-	margin:auto;
-	color: #FFCCEE;
+.headline{
+	margin-left:1%;
 }
 
 .scorePanel{
