@@ -1,4 +1,19 @@
-﻿//data list
+﻿function playSound(num) {
+	let name = soundList[num];
+	//前一個stop，remove"播放中"的顏色
+	$("#audio").stop();
+	$(".playing").removeClass("playing");
+	//當前按鈕增加"播放中"的顏色
+	$("#btn_"+num).addClass("playing");
+	//更換audio檔案
+	$("#audio").attr("src" , 'data/' + name + ".mp3");
+	//播放結束時，remove"播放中"的顏色
+	$("#audio").on('ended' , function(){		
+		$(".playing").removeClass("playing");
+	});
+}
+
+//data list
 var soundList = {
 	'01' : "不如和你聊天",
 	'02' : "不要抱怨",
@@ -19,24 +34,38 @@ var soundList = {
 	'17' : "我去買制服",
 	'18' : "我去開車了",
 	'19' : "我在找一匹馬",
-	'20' : "我只會出剪刀"
-	
-}
-
-
-function playSound(num) {	
-	let name = soundList[num];
-	$("#audio").stop();
-	let playingObj = $(".grid").get(num-1);
-	$(playingObj).addClass("playing");
-	
-	$("#audio").attr("src" , 'data/' + name + ".mp3");
-	//$("#audio").play();
-	$("#audio").on('ended' , function(){		
-		$(playingObj).removeClass("playing");
-	});
-}
-
-function stopSound() {
-	$("#audio").stop();
+	'20' : "我只會出剪刀",
+	'21' : "我來娶妳了",
+	'22' : "我的三觀不正",
+	'23' : "我的小傻瓜",
+	'24' : "我的心頭肉",
+	'25' : "我的缺點",
+	'26' : "我是九你是三",
+	'27' : "我剛剛喝了藥",
+	'28' : "我最近一直在找一家店",
+	'29' : "我想買一塊地",
+	'30' : "我跟唐僧的差別",
+	'31' : "我嘴邊有什麼東西",
+	'32' : "我覺得越來越不像自己了",
+	'33' : "我變心了",
+	'34' : "我們來玩木頭人吧",
+	'35' : "見不到你的日子",
+	'36' : "到家了嗎",	
+	'37' : "昨天晚上夢到你了",	
+	'38' : "剛剛地震了嗎",
+	'39' : "哪個英文字母最好看",
+	'40' : "恭喜你有房了",
+	'41' : "桃子柿子",
+	'42' : "除了戀愛跟你沒啥好談的",
+	'43' : "最近一直覺得很睏",
+	'44' : "最甜的蜂蜜",
+	'45' : "給你變個魔術",
+	'46' : "愛老虎油",
+	'47' : "過安檢",
+	'48' : "辣的種類",
+	'49' : "鴨子的種類",
+	'50' : "尛",	
+	'51' : "幹這是一種性騷擾",
+	'52' : "佳人會歡迎我",
+    '53' : "病毒"
 }
