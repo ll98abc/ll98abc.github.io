@@ -1,6 +1,6 @@
 ﻿<html>
 <head>
-<title>Game</title>
+<title>lenyueh</title>
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="js/jquery.blockUI.js"></script>
 <script type="text/javascript" src="js/pageController.js"></script>
@@ -25,29 +25,61 @@
 <hr>
 <audio id="audio" autoplay="false"></audio>
 <div id="mainDiv" class="mainDiv">  
-  <input type="button" class="btn-radius grid" onclick="playSound('01')" value="莫文蔚的陰天，孫燕姿的雨天，周杰倫的晴天，都不如你和我聊天"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('02')" value="不要抱怨，抱我"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('03')" value="有人說光是波，有人說光是粒子。光是愛你就竭盡全力"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('04')" value="你有打火機嗎？那你是怎麼點燃我的心"/>  
-  <input type="button" class="btn-radius grid" onclick="playSound('05')" value="你夾娃娃很厲害吧？怎麼緊緊夾住我的心"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('06')" value="你是不是有東西沒有還給我。你把我的心偷走了沒有還給我"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('07')" value="你知道我為什麼感冒嗎？因為我對你沒有抵抗力"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('08')" value="這是我的手背，這是我的腳背。你是我的寶貝"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('09')" value="你是哪裡人？我是你的心上人"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('10')" value="你能不能安靜一點，為什麼我滿腦子都是你的聲音"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('11')" value="你猜我是什麼星座？我是為你量身訂做"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('12')" value="你喜歡水嗎？那你現在已經喜歡70%的我了"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('13')" value="你摸摸我衣服的布料，是不是做你女友的料"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('14')" value="你應該累了吧？因為你在我的腦子裡跑了一天"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('15')" value="我去洗澡了。什麼澡？愛你要趁早。"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('16')" value="我去唱歌了。什麼歌？不是你真命天子的心如刀割"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('17')" value="我去買制服。什麼制服？想被你制服"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('18')" value="我去開車了。什麼車？我和你的婚車"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('19')" value="我在找一匹馬。什麼馬？你的微信號碼"/>
-  <input type="button" class="btn-radius grid" onclick="playSound('20')" value="我只會出剪刀。因為你是我的全部"/>
-  
+  <input type="button" id="btn_01" class="btn-radius grid" onclick="playSound('01')" value="莫文蔚的陰天，孫燕姿的雨天，周杰倫的晴天，都不如你和我聊天"/>
+  <input type="button" id="btn_02" class="btn-radius grid" onclick="playSound('02')" value="不要抱怨，抱我"/>
+  <input type="button" id="btn_03" class="btn-radius grid" onclick="playSound('03')" value="有人說光是波，有人說光是粒子。光是愛你就竭盡全力"/>
+  <input type="button" id="btn_04" class="btn-radius grid" onclick="playSound('04')" value="你有打火機嗎？那你是怎麼點燃我的心"/>  
+  <input type="button" id="btn_05" class="btn-radius grid" onclick="playSound('05')" value="你夾娃娃很厲害吧？怎麼緊緊夾住我的心"/>
+  <input type="button" id="btn_06" class="btn-radius grid" onclick="playSound('06')" value="你是不是有東西沒有還給我。你把我的心偷走了沒有還給我"/>
+  <input type="button" id="btn_07" class="btn-radius grid" onclick="playSound('07')" value="你知道我為什麼感冒嗎？因為我對你沒有抵抗力"/>
+  <input type="button" id="btn_08" class="btn-radius grid" onclick="playSound('08')" value="這是我的手背，這是我的腳背。你是我的寶貝"/>
+  <input type="button" id="btn_09" class="btn-radius grid" onclick="playSound('09')" value="你是哪裡人？我是你的心上人"/>
+  <input type="button" id="btn_10" class="btn-radius grid" onclick="playSound('10')" value="你能不能安靜一點，為什麼我滿腦子都是你的聲音"/>
+  <input type="button" id="btn_11" class="btn-radius grid" onclick="playSound('11')" value="你猜我是什麼星座？我是為你量身訂做"/>
+  <input type="button" id="btn_12" class="btn-radius grid" onclick="playSound('12')" value="你喜歡水嗎？那你現在已經喜歡70%的我了"/>
+  <input type="button" id="btn_13" class="btn-radius grid" onclick="playSound('13')" value="你摸摸我衣服的布料，是不是做你女友的料"/>
+  <input type="button" id="btn_14" class="btn-radius grid" onclick="playSound('14')" value="你應該累了吧？因為你在我的腦子裡跑了一天"/>
+  <input type="button" id="btn_15" class="btn-radius grid" onclick="playSound('15')" value="我去洗澡了。什麼澡？愛你要趁早。"/>
+  <input type="button" id="btn_16" class="btn-radius grid" onclick="playSound('16')" value="我去唱歌了。什麼歌？不是你真命天子的心如刀割"/>
+  <input type="button" id="btn_17" class="btn-radius grid" onclick="playSound('17')" value="我去買制服。什麼制服？想被你制服"/>
+  <input type="button" id="btn_18" class="btn-radius grid" onclick="playSound('18')" value="我去開車了。什麼車？我和你的婚車"/>
+  <input type="button" id="btn_19" class="btn-radius grid" onclick="playSound('19')" value="我在找一匹馬。什麼馬？你的微信號碼"/>
+  <input type="button" id="btn_20" class="btn-radius grid" onclick="playSound('20')" value="我只會出剪刀。因為你是我的全部"/>
+  <input type="button" id="btn_21" class="btn-radius grid" onclick="playSound('21')" value="我想去取一下東西，等一下。我來娶妳了"/>
+  <input type="button" id="btn_22" class="btn-radius grid" onclick="playSound('22')" value="我的三觀不正，很歪。因為全部偏向你"/>
+  <input type="button" id="btn_23" class="btn-radius grid" onclick="playSound('23')" value="這是西瓜，那是哈密瓜；而你是我的小傻瓜"/>
+  <input type="button" id="btn_24" class="btn-radius grid" onclick="playSound('24')" value="這是豬肉，這是牛肉；你是我的心頭肉"/>
+  <input type="button" id="btn_25" class="btn-radius grid" onclick="playSound('25')" value="你知道我的缺點是什麼嗎？缺點你"/>
+  <input type="button" id="btn_26" class="btn-radius grid" onclick="playSound('26')" value="我是九你是三，除了你還是你"/>
+  <input type="button" id="btn_27" class="btn-radius grid" onclick="playSound('27')" value="我剛剛喝了一瓶藥，你很重要"/>
+  <input type="button" id="btn_28" class="btn-radius grid" onclick="playSound('28')" value="我最近一直在找一家店，你的來電"/>
+  <input type="button" id="btn_29" class="btn-radius grid" onclick="playSound('29')" value="我想買一塊地，你的死心塌地"/>
+  <input type="button" id="btn_30" class="btn-radius grid" onclick="playSound('30')" value="我跟唐僧的差別在：他取經，我娶妳"/>
+  <input type="button" id="btn_31" class="btn-radius grid" onclick="playSound('31')" value="你看我嘴邊是不是有什麼東西？我天天把你掛在嘴邊"/>
+  <input type="button" id="btn_32" class="btn-radius grid" onclick="playSound('32')" value="我覺得我現在越來越不像自己了，越來越像妳老公"/>
+  <input type="button" id="btn_33" class="btn-radius grid" onclick="playSound('33')" value="我變心了，今天變得比昨天還喜歡妳"/>
+  <input type="button" id="btn_34" class="btn-radius grid" onclick="playSound('34')" value="我們來玩木頭人，不許動吧───我輸了，我心動了"/>
+  <input type="button" id="btn_35" class="btn-radius grid" onclick="playSound('35')" value="見不到妳的這幾天我身體很好。可以扛米袋，可以扛麵粉袋，就是扛不住想妳"/>
+  <input type="button" id="btn_36" class="btn-radius grid" onclick="playSound('36')" value="到家了嗎？還沒，沒妳的地方不算家"/>
+  <input type="button" id="btn_37" class="btn-radius grid" onclick="playSound('37')" value="我昨天晚上夢到妳了，夢裡我很愛妳。對我來說夢是虛假的，但愛妳是真的"/>  
+  <input type="button" id="btn_38" class="btn-radius grid" onclick="playSound('38')" value="剛剛地震了嗎？為什麼我看到妳我心頭一震"/>
+  <input type="button" id="btn_39" class="btn-radius grid" onclick="playSound('39')" value="妳知道哪個英文字母最好看？是U啊"/>
+  <input type="button" id="btn_40" class="btn-radius grid" onclick="playSound('40')" value="恭喜你有房了，我的左心房和右心房。※有音效"/>
+  <input type="button" id="btn_41" class="btn-radius grid" onclick="playSound('41')" value="妳知道桃子柿子我最喜歡哪一個嗎？是我們的孩子"/>
+  <input type="button" id="btn_42" class="btn-radius grid" onclick="playSound('42')" value="除了戀愛我跟妳沒啥好談的"/>
+  <input type="button" id="btn_43" class="btn-radius grid" onclick="playSound('43')" value="我最近一直覺得很睏，為妳所困"/>
+  <input type="button" id="btn_44" class="btn-radius grid" onclick="playSound('44')" value="最甜的蜂蜜是什麼？you and me"/>
+  <input type="button" id="btn_45" class="btn-radius grid" onclick="playSound('45')" value="給妳變個魔術，變得超級喜歡妳"/>
+  <input type="button" id="btn_46" class="btn-radius grid" onclick="playSound('46')" value="今天買了一瓶油，叫愛老虎油"/>
+  <input type="button" id="btn_47" class="btn-radius grid" onclick="playSound('47')" value="過安檢，我總是過不去，他們說我心裡裝著一個妳"/>
+  <input type="button" id="btn_48" class="btn-radius grid" onclick="playSound('48')" value="世界上有五種辣：微辣、中辣、麻辣、變態辣、我想妳辣"/>
+  <input type="button" id="btn_49" class="btn-radius grid" onclick="playSound('49')" value="我給妳科普一下鴨子的種類：小黃鴨、唐老鴨、可達鴨、北京烤鴨、妳喜不喜歡我呀"/>    
   <hr>
-  <div class="footer">under construction...</div>
+  <h1 class="headline">EXTRA FIELD</h2>
+  <input type="button" id="btn_50" class="btn-radius grid" onclick="playSound('50')" value="尛啦"/>
+  <input type="button" id="btn_51" class="btn-radius grid" onclick="playSound('51')" value="幹，這是一種性騷擾嗎"/>
+  <input type="button" id="btn_52" class="btn-radius grid" onclick="playSound('52')" value="佳人會歡迎我"/>
+  <input type="button" id="btn_53" class="btn-radius grid" onclick="playSound('53')" value="病毒，我現在命令妳：從我的身體裡出來"/>
 </div>
 </div>
 <div class="bg"></div>
