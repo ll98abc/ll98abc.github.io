@@ -25,7 +25,7 @@ distortionList = [
     },
     {
         "fileName" : 'carenFragment',
-        "text" : '角蓮碎片大家都有分，不要搶'
+        "text" : '角蓮碎片大家都有份，不要搶'
     },
     {
         "fileName" : 'comeAndSee',
