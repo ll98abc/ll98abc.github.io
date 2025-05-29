@@ -141,7 +141,7 @@ speechList = [
     },
     {
         "fileName" : 'hgame',
-        "text" : 'game找我工商不會看這種台啦！'
+        "text" : 'Hgame找我工商不會看這種台啦！'
     },
     {
         "fileName" : 'IamGoooood',
