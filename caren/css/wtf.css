@@ -1,0 +1,99 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.warpper{
+  flex-grow:1;
+  z-index:0;
+}
+
+.bg {
+  height : 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position : fixed;
+  background : url(../images/background.png) right center no-repeat fixed;
+  /*background-attachment: fixed;*/
+  background-size : 100% ;
+  opacity : .3;
+  z-index : -1;
+}
+
+.title{
+	width:100%;
+	text-align:center;
+	font-size:40px;
+	font-weight: bold;	
+	color: black;  	
+}
+
+.mainDiv{
+	height: 75vh;
+	width:100%;
+	z-index: 1;	
+}
+
+.btn-radius {
+	background-color: rgba(190, 110, 177, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 12px;
+	border-radius: 16px;
+	font-size: 1.1em;
+}
+
+.grid{	
+	margin-left:1%;
+	margin-bottom: 1.5%;
+}
+
+.playing{
+	background-color: rgba(226, 43, 67, 0.6);
+}
+
+body {
+	margin-bottom: 100px;
+}
+
+
+.headline{
+	margin-left:1%;
+	text-align: center;
+}
+
+.scorePanel{
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	color: black;
+	height: 100px;
+	position: fixed;
+	display:block;
+	z-index:1;
+}
+
+
+.hidden{
+	display:none !important; 
+}
+
+.navBtn{
+	background-color: rgba(191, 216, 80, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 8px;
+	border-radius: 16px;
+	font-size: 1.1em;
+}
+
+.controllerDiv{
+	position:fixed;
+	right : 5px;
+	z-index: 3;
+}
+
+.buttonCounter{
+	float: right;
+}
