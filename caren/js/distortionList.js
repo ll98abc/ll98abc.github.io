@@ -44,7 +44,7 @@ distortionList = [
         "text" : '嗯哼、人家家裡就有礦啊。人家不缺錢啦。人家、人家，嗯哼哼，賺錢是什麼人家不知道耶'
     },
     {
-        "fileName" : 'magicvegetable',
+        "fileName" : 'magicVegetable',
         "text" : '幸福的魔法是多吃青菜'
     },
     {
