@@ -14,7 +14,7 @@ extraList = [
     },
      {
         "fileName" : 'fatBirdGood',
-        "text" : '實心小鳥好啊，鳥就是要胖，瘦ㄆㄧㄚˇㄆㄧㄚˇ的怎麼能看'
+        "text" : '實心小鳥可愛啊，鳥就是要胖，瘦ㄆㄧㄚˇㄆㄧㄚˇ的鳥，那怎麼能看'
     },
     {
         "fileName" : 'notStreaming1',
