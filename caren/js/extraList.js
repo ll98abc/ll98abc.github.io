@@ -12,6 +12,10 @@ extraList = [
         "fileName" : 'yufangBaby',
         "text" : '啊、幽芳小寶貝。(石周默)'
     },
+     {
+        "fileName" : 'fatBirdGood',
+        "text" : '實心小鳥好啊，鳥就是要胖，瘦ㄆㄧㄚˇㄆㄧㄚˇ的怎麼能看'
+    },
     {
         "fileName" : 'notStreaming1',
         "text" : '白癡喔、白癡喔！'
