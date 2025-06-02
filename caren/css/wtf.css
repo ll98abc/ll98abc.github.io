@@ -53,25 +53,10 @@ body {
 	background-color: rgba(226, 43, 67, 0.6);
 }
 
-body {
-	margin-bottom: 100px;
-}
-
 
 .headline{
 	margin-left:1%;
 	text-align: center;
-}
-
-.scorePanel{
-	left: 0;
-	bottom: 10px;
-	width: 100%;
-	color: black;
-	height: 100px;
-	position: fixed;
-	display:block;
-	z-index:1;
 }
 
 
@@ -86,6 +71,12 @@ body {
 	padding: 12px 8px;
 	border-radius: 16px;
 	font-size: 1.1em;
+}
+
+.rngBtn{
+	position: fixed;
+	right:5px;
+	bottom:5px;	
 }
 
 .controllerDiv{
