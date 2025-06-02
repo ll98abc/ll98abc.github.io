@@ -269,7 +269,7 @@ speechList = [
     },
     {
         "fileName" : 'noWife',
-        "text" : "I don't care about wife."
+        "text" : "I don`t fxxking care about wife."
     },
     {
         "fileName" : 'nurseryAirport',
