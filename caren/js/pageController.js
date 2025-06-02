@@ -13,6 +13,11 @@
 		//當前按鈕增加"播放中"的顏色
 		  $(this).addClass("playing");
 	});
+
+	$(".rngBtn").bind("click" , function(){
+		let rng = Math.floor(Math.random() * $(".grid").length);		
+		$(".grid").get(rng).click();
+	});
 }
 
 function nav(param){
@@ -27,7 +32,29 @@ function playSound(fileName) {
 	//前一個stop，remove"播放中"的顏色
 	//$("#audio").stop();	
 	//更換audio檔案
-	$("#audio").attr("src" , "resource/" + fileName + ".mp3");		
+	$("#audio").attr("src" , "resource/" + fileName + ".mp3");
+	let rng = Math.floor(Math.random() * 100);
+	console.log(rng);
+	if (rng < 20){ 
+		changeIcon();
+	};
+	if (rng < 5){
+		playAnime();
+	}
+}
+
+function changeIcon(){
+	let iconRng = Math.floor(Math.random() * $(".carenIcon").length);
+	let preIcon = $(".showIcon").get(0);
+	let nextIcon = $(".carenIcon").get(iconRng);
+	$(preIcon).fadeToggle(500).addClass("carenIcon").removeClass("showIcon");	
+	setTimeout(function(){$(nextIcon).fadeToggle(500).addClass("showIcon").removeClass("carenIcon");} , 500);
+	
+}
+
+function playAnime(){
+	// to do
+	return false;
 }
 
 function initSpeechList(){
