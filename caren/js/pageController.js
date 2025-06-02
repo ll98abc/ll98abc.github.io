@@ -21,10 +21,10 @@
 }
 
 function nav(param){
-	let position = $("#"+param).offset().top;
+	let toPosition = $("#"+param).offset().top;
 	let body = $("html, body");
-	body.stop().animate({scrollTop:position}, 500,'swing',function(){
-		console.log("hello");
+	body.stop().animate({scrollTop:toPosition}, 500,'swing',function(){
+		// do something??
 	});
 }
 
@@ -39,8 +39,8 @@ function playSound(fileName) {
 		changeIcon();
 	};
 	if (rng < 5){
-		playAnime();
-	}
+		playAnime(rng);
+	}	
 }
 
 function changeIcon(){
@@ -48,12 +48,52 @@ function changeIcon(){
 	let preIcon = $(".showIcon").get(0);
 	let nextIcon = $(".carenIcon").get(iconRng);
 	$(preIcon).fadeToggle(500).addClass("carenIcon").removeClass("showIcon");	
-	setTimeout(function(){$(nextIcon).fadeToggle(500).addClass("showIcon").removeClass("carenIcon");} , 500);
-	
+	setTimeout(function(){$(nextIcon).fadeToggle(500).addClass("showIcon").removeClass("carenIcon");} , 500);	
 }
 
-function playAnime(){
-	// to do
+function playAnime(param){
+	let toPositionX = 0;
+	let toPositionY = 0;	
+	switch (param) {
+		case 1 :
+			toPositionX = $(window).width()+$(".randomCaren1").width();
+			toPositionY = Math.floor(Math.random() * 300) + 200;
+			$(".randomCaren1").animate(
+				{right : toPositionX , top : toPositionY} , 800 , 'swing' , function(){
+					//reset position
+					$(".randomCaren1").css("right" , -300);					
+			});
+			break;
+		case 2 :
+			toPositionX = $(window).width()+$(".randomCaren2").width();
+			toPositionY = Math.floor(Math.random() * 300) + 200;
+			$(".randomCaren2").animate(
+				{left : toPositionX, top : toPositionY} , 800 , 'swing' , function(){
+					//reset position
+					$(".randomCaren2").css("left" , -300);
+			});
+			break;
+		case 3 :
+			toPositionX = $(window).width()+$(".randomCaren3").width();
+			toPositionY = Math.floor(Math.random() * 300) + 200;
+			$(".randomCaren3").animate(
+				{right : toPositionX, top : toPositionY} , 800 , 'swing' , function(){
+					//reset position
+					$(".randomCaren3").css("right" , -300);
+			});
+			break;
+		case 4 :
+			toPositionX = $(window).width()+$(".randomCaren4").width();
+			toPositionY = Math.floor(Math.random() * 300) + 200;
+			$(".randomCaren4").animate(
+				{left : toPositionX, top : toPositionY} , 800 , 'swing' , function(){
+					//reset position
+					$(".randomCaren4").css("left" , -300);
+			});		
+			break;
+		default: console.log(param);break;	
+	}
+	
 	return false;
 }
 
