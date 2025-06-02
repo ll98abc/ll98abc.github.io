@@ -197,7 +197,7 @@ speechList = [
     },
     {
         "fileName" : 'keyboardBully',
-        "text" : '我的鍵盤現在在欺負我智商很低'
+        "text" : '我的鍵盤在欺負我現在智商很低'
     },
     {
         "fileName" : 'makeTrouble',
