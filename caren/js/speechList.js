@@ -389,11 +389,11 @@ speechList = [
     },
     {
         "fileName" : 'sisDemon',
-        "text" : '不是女未妹，是、是鬼未魅！是鬼未魅。你們、啊我真的'
+        "text" : '不是女未妹，是、是鬼未魅！是鬼未魅。你們、啊我真的(嘆氣)'
     },
     {
         "fileName" : 'sisDemonOk',
-        "text" : '大家還記得嗎？不要忘記喔，我是妹魔，ok？(嘆氣)'
+        "text" : '大家還記得嗎？不要忘記喔，我是妹魔，ok？'
     },
     {
         "fileName" : 'sleepWell',
