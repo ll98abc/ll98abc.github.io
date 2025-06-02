@@ -4,6 +4,10 @@ wordsList = [
         "text" : "again!!again!! fuck you!!"
     },
     {
+        "fileName" : 'antisocial',
+        "text" : '我覺得你這個發言是有點反社會了'
+    },
+    {
         "fileName" : "apologize",
         "text" : "確實是我思慮不周，今天在這邊社會大眾致上十二萬分的歉意，也感謝大家的體諒"
     },
@@ -315,6 +319,10 @@ wordsList = [
     {
         "fileName" : "thankYourOrder",
         "text" : "感謝點歌，希望你各位會喜歡"
+    },
+    {
+        "fileName" : "tsunndere",
+        "text" : "唉，我知道，你們這些小傲嬌。你們都是口是心非的傢伙，哈哈哈。"
     },
     {
         "fileName" : "veryveryGood",

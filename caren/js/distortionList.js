@@ -36,6 +36,10 @@ distortionList = [
         "text" : '我哪有很愛哭啊，靠夭喔。我開了十個月的台我哭過幾次啊？零次'
     },
     {
+        "fileName" : 'deskCaren',
+        "text" : '大家好，我是桌角'
+    },
+    {
         "fileName" : 'IamRich',
         "text" : '反正我今天，啊我今天存款、我今天存款有兩百萬啊。我這兩百萬燒─花完了，啊如果這個頻道沒做起來再去找工作。反正也找的到'
     },
@@ -44,7 +48,11 @@ distortionList = [
         "text" : '嗯哼、人家家裡就有礦啊。人家不缺錢啦。人家、人家，嗯哼哼，賺錢是什麼人家不知道耶'
     },
     {
-        "fileName" : 'magicVegetable',
+        "fileName" : 'IlikeMH',
+        "text" : '最喜歡玩魔物獵人了，哈哈'
+    },
+    {
+        "fileName" : 'magicvegetable',
         "text" : '幸福的魔法是多吃青菜'
     },
     {

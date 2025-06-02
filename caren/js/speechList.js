@@ -68,6 +68,10 @@ speechList = [
         "text" : '天啊我是個邋遢鬼，哈哈'
     },
     {
+        "fileName" : 'dying3',
+        "text" : '我該不會要得絕症死了吧'
+    },
+    {
         "fileName" : 'devilWhisper',
         "text" : '來吧林角蓮，現在開始來回憶你這輩子所犯過所有的錯誤，那些丟臉的過往那些挫折那些回憶那些你不想再回憶起的東西把他一一的全部都想起來吧哈哈哈'
     },
@@ -316,6 +320,10 @@ speechList = [
         "text" : '散播愛，讓這個世界的每一個生物都感受到我對他炙熱的愛意，就是，我！角蓮！的職責'
     },
     {
+        "fileName" : 'removeByNTD',
+        "text" : '你們可以用新台幣把我下架就好嗎'
+    },
+    {
         "fileName" : 'sageTime',
         "text" : '我現在、現在有點進入那個賢者模式的狀態了各位'
     },
@@ -432,6 +440,14 @@ speechList = [
         "text" : '塔撞過來了'
     },
     {
+        "fileName" : 'tomato',
+        "text" : '喔、對，這個世界上會有人需要番茄果凍。WHAT THE HELL'
+    },
+    {
+        "fileName" : 'trauma',
+        "text" : '他已經帶給我太多心靈創傷，我不想再面對它了'
+    },
+    {
         "fileName" : 'underDesk',
         "text" : '我他媽的就在桌子底下'
     },
@@ -456,7 +472,7 @@ speechList = [
         "text" : '我們只譴責問題，我們不解決問題'
     },
     {
-        "fileName" : 'whyFatherWhy',
+        "fileName" : 'whyFatherwhy',
         "text" : '為什麼連我爸都知道這件事情'
     },
     {
