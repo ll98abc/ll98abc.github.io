@@ -88,3 +88,24 @@ body {
 .buttonCounter{
 	float: right;
 }
+
+.randomCaren1{
+	position: fixed;
+	right: -300px;
+	top: 50px;
+}
+.randomCaren2{
+	position: fixed;
+	left: -300px;
+	top: 80px;
+}
+.randomCaren3{
+	position: fixed;
+	right: -300px;
+	top: 100px;
+}
+.randomCaren4{
+	position: fixed;
+	left: -300px;
+	top: 70px;
+}
