@@ -188,6 +188,10 @@ noiseList = [
         "text" : '妹魔噪音18'
     },
     {
+        "fileName" : 'noise19',
+        "text" : '妹魔噪音19'
+    },
+    {
         "fileName" : 'parrot',
         "text" : '阿公吃飯喔！阿公吃飯喔！'
     },
