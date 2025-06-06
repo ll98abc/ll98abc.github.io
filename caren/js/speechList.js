@@ -78,7 +78,15 @@ speechList = [
     {
         "fileName" : 'englishExamUseless',
         "text" : '全民英檢真的一點屁用都沒有'
-    },    
+    },
+    {
+        "fileName" : "famifamifami",
+        "text" : 'famifamifami～famifa你媽～(loop*4)，famifamifami～還要操你媽～'
+    },
+    {
+        "fileName" : "favoriteOBS",
+        "text" : "最喜歡的東西～就是OBS～"
+    },
     {
         "fileName" : 'flop',
         "text" : '我今天在尋找幸福的路上被棉被絆住了腳'
@@ -150,6 +158,10 @@ speechList = [
     {
         "fileName" : 'IamGoooood',
         "text" : '我已經夠好了，該變好的是這個世界'
+    },
+    {
+        "fileName" : "Imhorny",
+        "text" : "Father, my dear father. Trust me, I`m horny."
     },
     {
         "fileName" : 'IamLiar',
@@ -420,6 +432,11 @@ speechList = [
         "text" : '我只允許你再哭一次啊。你、你只能、你只能再刷三個哭哭貼圖。你只能再刷三個，你接下來都給我喝水洗腳，不然就是給我笑，我再、我再看到你哭哭貼圖，我就扁你我跟你講'
     },
     {
+        "fileName" : "sukisuki",
+        "text" : "好き好き好き好き、です"
+
+    },
+    {
         "fileName" : "temperament",
         "text" : "我要、我要維持我的氣質形象，嘿。我的氣質形象。(彈舌)"
     },
@@ -464,6 +481,10 @@ speechList = [
         "text" : '躺著玩、坐著玩，還是看Vtuber好玩'
     },
     {
+        "fileName" : "usefulMan",
+        "text" : "github上面很多好用的男人"
+    },
+    {
         "fileName" : 'wannaDie',
         "text" : 'rrrrRRrrrRR....死にたい'
     },
@@ -499,6 +520,14 @@ speechList = [
         "fileName" : 'youAreRight',
         "text" : '啊，你是對的，你都是對的，好嗎'
     },
+    {
+        "fileName" : "欠我十塊",
+        "text" : "我送你離開欠我十塊，你死了活該～投資失敗還要還債，還要借高利貸。我送你離開欠我十塊，你死了活該～父母雙亡葬身火海。用一生去還債～"
+    },
+    {
+        "fileName" : "天黑黑",
+        "text" : "天黑黑、咩落雨、阿公仔牙枝骨頭咩掘芋"
+    }
     
     /*
     {
