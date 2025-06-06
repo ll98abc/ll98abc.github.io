@@ -28,12 +28,24 @@ wordsList = [
         "text" : '好想喝珍珠奶茶喔'
     },
     {
+        "fileName" : "wantBeef",
+        "text" : "好想吃、燉的你只要用叉子一壓它就可以散開的那種燉牛肉喔"
+    },
+    {
         "fileName" : "canI",
         "text" : "欸？我會唱這首歌喔"
     },
     {
         "fileName" : "Ican",
         "text" : "我會耶！"
+    },
+    {
+        "fileName" : "didISing",
+        "text" : "我有唱過這首歌嗎？What the hack."
+    },
+    {
+        "fileName" : "yesIDid",
+        "text" : "我唱過這首歌耶！"
     },
     {
         "fileName" : "classDismiss",
@@ -63,7 +75,7 @@ wordsList = [
     {
         "fileName" : "dying",
         "text" : "我要吐血了、我真的要吐血了，我真的要吐血了，我真的要死了"
-    },
+    },    
     {
         "fileName" : "emotionalDamage",
         "text" : "Emotional Damage"
@@ -75,6 +87,10 @@ wordsList = [
     {
         "fileName" : "ending",
         "text" : "我們以上是今天的直播。非常感謝大家的共襄盛舉，那我們今天就到這裡告一個段落啦，大家晚安，掰掰"
+    },
+    {
+        "fileName" : "ending2",
+        "text" : "進 E D"
     },
     {
         "fileName" : "endured",
@@ -301,6 +317,10 @@ wordsList = [
         "text" : "感謝( )跟他的觀眾們降落～welcome welcome"
     },
     {
+        "fileName" : "tellMeWhy",
+        "text" : "tell me why, why? baby why?"
+    },
+    {
         "fileName" : "thanks",
         "text" : "謝謝！사랑해요，乾蝦，感謝します，謝謝你啊"
     },
@@ -343,6 +363,10 @@ wordsList = [
     {
         "fileName" : "workhard",
         "text" : "啊？我現在很努力地在工作捏，兄弟"
+    },
+    {
+        "fileName" : "wtf",
+        "text" : "欸、什麼意思"
     },
     {
         "fileName" : "youAreRight2",
