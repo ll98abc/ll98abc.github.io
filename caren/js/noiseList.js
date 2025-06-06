@@ -116,6 +116,10 @@ noiseList = [
         "text" : '啊、啊、啊、啊'
     },
     {
+        "fileName" : "myWaist",
+        "text" : "啊......喔我的腰、wee"
+    },
+    {
         "fileName" : 'noise',
         "text" : '妹魔噪音1'
     },
@@ -190,6 +194,14 @@ noiseList = [
     {
         "fileName" : 'noise19',
         "text" : '妹魔噪音19'
+    },
+    {
+        "fileName" : 'noise20',
+        "text" : '妹魔噪音20'
+    },
+    {
+        "fileName" : 'noise21',
+        "text" : '妹魔噪音21'
     },
     {
         "fileName" : 'parrot',
