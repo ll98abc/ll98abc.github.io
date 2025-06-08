@@ -52,7 +52,7 @@ distortionList = [
         "text" : '最喜歡玩魔物獵人了，哈哈'
     },
     {
-        "fileName" : 'magicvegetable',
+        "fileName" : 'magicVegetable',
         "text" : '幸福的魔法是多吃青菜'
     },
     {
