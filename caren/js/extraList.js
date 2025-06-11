@@ -3,7 +3,14 @@ extraList = [
         "fileName" : 'deskButt',
         "text" : '挖糙，幹你娘，我的屁眼！(阿桌)'
     },
-    
+    {
+        "fileName" : "doYouLikeJinPang",
+        "text" : "小金碧碧請問你喜歡金乓們嗎？啊、最喜歡金乓了。"
+    },
+    {
+        "fileName" : "drinkFromNose",
+        "text" : "我會用鼻子喝水"
+    },
     {
         "fileName" : 'jinBeeUMA',
         "text" : '非常感謝大家，UMA。(碧碧)'
@@ -12,10 +19,14 @@ extraList = [
         "fileName" : 'yufangBaby',
         "text" : '啊、幽芳小寶貝。(石周默)'
     },
-     {
-        "fileName" : 'fatBirdGood',
-        "text" : '實心小鳥可愛啊，鳥就是要胖，瘦ㄆㄧㄚˇㄆㄧㄚˇ的鳥，那怎麼能看'
+    {
+        "fileName" : "jinBeeCaren",
+        "text" : "大家好我是小金碧碧 (林角蓮)"
     },
+    {
+        "fileName" : 'fatBirdGood',        
+        "text" : '實心小鳥可愛啊，鳥就是要胖，瘦ㄆㄧㄚˇㄆㄧㄚˇ的鳥，那怎麼能看'
+    },    
     {
         "fileName" : 'notStreaming1',
         "text" : '白癡喔、白癡喔！'
