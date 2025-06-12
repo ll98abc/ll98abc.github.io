@@ -78,3 +78,9 @@ body {
 .hidden{
 	display:none !important; 
 }
+
+.rngBtn{
+	position: fixed;
+	right:5px;
+	bottom:5px;	
+}
