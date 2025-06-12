@@ -39,8 +39,9 @@ body {
 	background-color: rgba(190, 110, 177, 0.6);
 	color: rgb(3, 3, 0);
 	border: 1px solid rgb(176, 224, 162);
-	height: 32px;
+	padding: 10px 10px;
 	border-radius: 16px;
+	font-size: 1.1em;
 }
 
 
