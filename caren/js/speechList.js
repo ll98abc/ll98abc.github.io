@@ -497,7 +497,7 @@ speechList = [
         "text" : '我們只譴責問題，我們不解決問題'
     },
     {
-        "fileName" : 'whyFatherwhy',
+        "fileName" : 'whyFatherWhy',
         "text" : '為什麼連我爸都知道這件事情'
     },
     {
