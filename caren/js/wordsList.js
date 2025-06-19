@@ -253,6 +253,10 @@ wordsList = [
         "text" : "なんかおかしいですよね"
     },
     {
+        "fileName" : "omaera",
+        "text" : "おまえら、本当に気持ち悪い"
+    },
+    {
         "fileName" : "otsukare",
         "text" : "お疲れさまでした"
     },
