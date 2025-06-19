@@ -345,7 +345,7 @@ wordsList = [
         "text" : "唉，我知道，你們這些小傲嬌。你們都是口是心非的傢伙，哈哈哈。"
     },
     {
-        "fileName" : "veryveryGood",
+        "fileName" : "veryVeryGood",
         "text" : "很好很好很好很好"
     },
     {
