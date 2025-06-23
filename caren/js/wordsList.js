@@ -205,6 +205,10 @@ wordsList = [
         "text" : "我不為此進行任何的負責"
     },
     {
+        "fileName" : "isItLyric",
+        "text" : "這他媽是歌詞是不是啊"
+    },
+    {
         "fileName" : "itch",
         "text" : "我的背好癢喔"
     },
