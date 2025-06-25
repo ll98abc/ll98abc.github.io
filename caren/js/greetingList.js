@@ -72,6 +72,10 @@ greetingList = [
         "text" : "像我這麼積極又正向又樂觀，又知道如何要為大家帶來幸福的人，我本來就是非常樂於且善於問候大家的全家的呀"
     },
     {
+        "fileName" : "holyFuck",
+        "text" : "holy fuck"
+    },
+    {
         "fileName" : 'kusoCapcom',
         "text" : 'capcom......くそ野郎'
     },

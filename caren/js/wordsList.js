@@ -85,6 +85,10 @@ wordsList = [
         "text" : "我是雲際線工作室所屬來自星滿街的surfDemon vtuber角蓮aka雲際線官方指定唯一色氣擔當氣質擔當以及廚藝擔當大家晚下好"
     },
     {
+        "fileName" : "selfIntroduction2",
+        "text" : "大家晚上好我是個人勢的蓮，大家晚下好晚下好晚下好大家晚下好"
+    },
+    {
         "fileName" : "ending",
         "text" : "我們以上是今天的直播。非常感謝大家的共襄盛舉，那我們今天就到這裡告一個段落啦，大家晚安，掰掰"
     },
@@ -219,7 +223,11 @@ wordsList = [
     {
         "fileName" : "KoReNaNi",
         "text" : "これなに？"
-    },    
+    },
+    {
+        "fileName" : "loveAndPeace",
+        "text" : "大家晚安、bye。Love & Peace. (彈舌)"
+    },
     {
         "fileName" : "lowIQ2",
         "text" : "我、我智商，現在真的好低喔"
@@ -345,6 +353,10 @@ wordsList = [
         "text" : "再次感謝觀眾的支持"
     },
     {
+        "fileName" : "thanks5",
+        "text" : "(客)承蒙您、按子謝。※謝謝你"
+    },
+    {
         "fileName" : "thankYourOrder",
         "text" : "感謝點歌，希望你各位會喜歡"
     },
@@ -375,6 +387,10 @@ wordsList = [
     {
         "fileName" : "wtf",
         "text" : "欸、什麼意思"
+    },
+    {
+        "fileName" : "yamete",
+        "text" : "やめてください"
     },
     {
         "fileName" : "youAreRight2",

@@ -83,7 +83,7 @@ lolList = [
         "fileName" : 'lol20',
         "text" : '呵呵哈哈哈、哈哈'
     },
-        {
+    {
         "fileName" : 'lol21',
         "text" : '呵呵嘻嘻嘻、嘻↗嘻↗嘻↗嘻↗嘻↗嘻↗嘻↗嘻↗'
     },
@@ -94,6 +94,18 @@ lolList = [
     {
         "fileName" : 'lol23',
         "text" : '呵呵呵好噁心喔哈哈哈哈哈'
+    },
+    {
+        "fileName" : 'lol24',
+        "text" : '呵呵呵哈哈哈哈'
+    },
+    {
+        "fileName" : 'lol25',
+        "text" : '呵哈哈哈哈、呵呵哈哈哈、呵哈哈呵呵呵哈哈'
+    },
+    {
+        "fileName" : 'lol26',
+        "text" : '哈哈哈哈哈哈哈'
     }
     /*
     {

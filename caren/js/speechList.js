@@ -13,7 +13,7 @@ speechList = [
     },
     {
         "fileName" : 'allMyFault',
-        "text" : '在座的各位不好意思，如果你覺得你有被冒犯到的話，一切都是因為主播的、主播的道德感低落。\r\n然後EQ也很低，IQ也很低，都很低。好不好，一切都是我的問題'
+        "text" : '在座的各位不好意思，如果你覺得你有被冒犯到的話，一切都是因為主播的、主播的道德感低落，然後EQ也很低，IQ也很低，都很低。好不好，一切都是我的問題'
     },
     {
         "fileName" : 'bachelorSum',
@@ -216,6 +216,10 @@ speechList = [
         "text" : '我的鍵盤在欺負我現在智商很低'
     },
     {
+        "fileName" : "makeBigger",
+        "text" : "我把它搞大"
+    },
+    {
         "fileName" : 'makeTrouble',
         "text" : '如果你不會這件事情，你就不要硬去做這件事情，因為搞不好你會把事情搞得很糟糕'
     },
@@ -314,6 +318,10 @@ speechList = [
     {
         "fileName" : 'poor',
         "text" : '我、我我我我沒有真的他媽的窮到要脫褲好不好'
+    },
+    {
+        "fileName" : "pretend",
+        "text" : "我只是在你們面前表現的人模狗樣的而已"
     },
     {
         "fileName" : 'prettyGood',
