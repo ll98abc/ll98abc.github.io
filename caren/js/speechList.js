@@ -98,10 +98,14 @@ speechList = [
     {
         "fileName" : 'fluteLick',
         "text" : '我小時候都偷偷舔隔、偷舔隔壁女同學的直笛'
-    },
+    },    
     {
         "fileName" : 'garbage',
         "text" : '我想他應該有更好的歸處，像是廚餘桶或者是土裡'
+    },
+    {
+        "fileName" : "gay",
+        "text" : "你沒有感覺，只能、只能證明一件事情：不是我色不起來，是有沒有可能、你可能其實是個GAY"
     },
     {
         "fileName" : 'getSomeHelp',
