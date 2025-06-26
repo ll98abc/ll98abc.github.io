@@ -25,15 +25,15 @@ noiseList = [
     },
     {
         "fileName" : 'asmr2',
-        "text" : '(角之呼吸)'
+        "text" : '角之呼吸'
     },
     {
         "fileName" : 'asmr3',
-        "text" : '(角之呼吸2)'
+        "text" : '角之呼吸2'
     },
     {
         "fileName" : 'carenCatBattleCry',
-        "text" : '(角蓮貓貓戰吼)'
+        "text" : '角蓮貓貓戰吼'
     },
     {
         "fileName" : 'carenCatMeow',
@@ -97,11 +97,11 @@ noiseList = [
     },*/
     {
         "fileName" : 'lament3',
-        "text" : '(角之詠嘆調)'
+        "text" : '角之詠嘆調'
     },
     {
         "fileName" : 'melanolophus',
-        "text" : '(角‧黑冠麻鷺‧蓮)'
+        "text" : '角‧黑冠麻鷺‧蓮'
     },
     {
         "fileName" : 'micTest',
@@ -224,6 +224,10 @@ noiseList = [
         "text" : '妹魔噪音26'
     },
     {
+        "fileName" : 'noise27',
+        "text" : '妹魔噪音27'
+    },
+    {
         "fileName" : 'parrot',
         "text" : '阿公吃飯喔！阿公吃飯喔！'
     },
@@ -237,15 +241,15 @@ noiseList = [
     },
     {
         "fileName" : 'sheep',
-        "text" : '(角蓮羊)'
+        "text" : '角蓮羊'
     },
     {
         "fileName" : 'sheep2',
-        "text" : '(角蓮羊2)'
+        "text" : '角蓮羊2'
     },
     {
         "fileName" : 'spilocephalus',
-        "text" : '(黃嘴<角>鴞)'
+        "text" : '黃嘴<角>鴞'
     },
     {
         "fileName" : 'ughAh',
