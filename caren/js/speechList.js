@@ -46,7 +46,11 @@ speechList = [
     {
         "fileName" : 'buyHappy',
         "text" : '你是花了錢買到快樂啊'
-    },    
+    },
+    {
+        "fileName" : "carenFeature",
+        "text" : "我相信角蓮除了色起來跟沉著穩重以外其他都很擅長"
+    },
     {
         "fileName" : 'comfortable',
         "text" : '不能讓我不舒服，我跟你講。我是台主，我舒服。我舒服你們才能舒服知道嗎'
@@ -98,7 +102,7 @@ speechList = [
     {
         "fileName" : 'fluteLick',
         "text" : '我小時候都偷偷舔隔、偷舔隔壁女同學的直笛'
-    },    
+    },
     {
         "fileName" : 'garbage',
         "text" : '我想他應該有更好的歸處，像是廚餘桶或者是土裡'
@@ -232,6 +236,10 @@ speechList = [
         "text" : '我、我要跟角蓮結婚'
     },
     {
+        "fileName" : "married2",
+        "text" : "你這麼會說話，我可是、我可是要跟你結婚噠"
+    },
+    {
         "fileName" : 'meta',
         "text" : '現在這個版本meta，就是男娘'
     },
@@ -352,6 +360,10 @@ speechList = [
         "text" : '我現在、現在有點進入那個賢者模式的狀態了各位'
     },
     {
+        "fileName" : "sellKidney",
+        "text" : "這邊兜售新鮮、新鮮的有用的腎臟，肝臟可能比較不好不能賣。我、我賣一顆"
+    },
+    {
         "fileName" : 'seiso',
         "text" : '我這麼清純，是不可能會跟著你一起開這種黃腔的我告訴你們'
     },
@@ -394,6 +406,10 @@ speechList = [
     {
         "fileName" : 'shitTalk6',
         "text" : '角蓮有超大老二'
+    },
+    {
+        "fileName" : "shitTalk7",
+        "text" : "不是在研究說哪種魚沒有牙嗎？幹為什麼大家不考慮蛇啊？我知道，因為沒有那麼長"
     },
     {
         "fileName" : 'shock',
