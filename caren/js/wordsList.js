@@ -4,6 +4,10 @@ wordsList = [
         "text" : "again!!again!! fuck you!!"
     },
     {
+        "fileName" : "annoying",
+        "text" : "你們他媽很煩，吼呦！！"
+    },
+    {
         "fileName" : 'antisocial',
         "text" : '我覺得你這個發言是有點反社會了'
     },
