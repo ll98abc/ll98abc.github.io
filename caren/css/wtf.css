@@ -4,6 +4,7 @@ body {
 }
 
 .warpper{
+  width: 100%;		
   flex-grow:1;
   z-index:0;
 }
@@ -47,6 +48,7 @@ body {
 .grid{	
 	margin-left:1%;
 	margin-bottom: 1.5%;
+	word-wrap: break-word;
 }
 
 .playing{
@@ -108,4 +110,9 @@ body {
 	position: fixed;
 	left: -300px;
 	top: 70px;
+}
+.randomCaren5{
+	position: fixed;
+	bottom:-610px;
+	left:0px;
 }

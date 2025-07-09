@@ -37,10 +37,11 @@ function playSound(fileName) {
 	console.log(rng);
 	if (rng < 20){ 
 		changeIcon();
-	};
+	};	
+	
 	if (rng < 5){
 		playAnime(rng);
-	}	
+	}			
 }
 
 function changeIcon(){
@@ -55,6 +56,19 @@ function playAnime(param){
 	let toPositionX = 0;
 	let toPositionY = 0;	
 	switch (param) {
+		case 0 :			 
+			$(".randomCaren5").append("<img id='carenGif' src='images/carenOvO_resize.gif'></img>");
+			$("#carenGif").load(function(){
+				$(".randomCaren5").animate(
+					{bottom : 0}, 3000, 'swing', function(){
+						setTimeout(function(){
+							$(".randomCaren5").animate({bottom : -300} , 3000, 'swing', function(){
+								$(".randomCaren5").html("");
+							});
+						},800);
+				});
+			});
+			break;
 		case 1 :
 			toPositionX = $(window).width()+$(".randomCaren1").width();
 			toPositionY = Math.floor(Math.random() * 300) + 200;
