@@ -228,6 +228,14 @@ noiseList = [
         "text" : '妹魔噪音27'
     },
     {
+        "fileName" : 'noise28',
+        "text" : '(嘔吐)'
+    },
+    {
+        "fileName" : "makeNoise",
+        "text" : "how could I even make this fucking noise"
+    },
+    {
         "fileName" : 'parrot',
         "text" : '阿公吃飯喔！阿公吃飯喔！'
     },

@@ -16,6 +16,10 @@ speechList = [
         "text" : '在座的各位不好意思，如果你覺得你有被冒犯到的話，一切都是因為主播的、主播的道德感低落，然後EQ也很低，IQ也很低，都很低。好不好，一切都是我的問題'
     },
     {
+        "fileName" : "ak47",
+        "text" : "我不知道，我生命中只用過ak47啊。怎麼了嗎？"
+    },
+    {
         "fileName" : 'bachelorSum',
         "text" : '聊天室的各位也都是孤獨的總和喔。為什麼因為你們都只有一個人啊哈哈哈哈'
     },
@@ -52,6 +56,10 @@ speechList = [
         "text" : "我相信角蓮除了色起來跟沉著穩重以外其他都很擅長"
     },
     {
+        "fileName" : "cloudPresence",
+        "text" : "我沒有想到原來匿名版現在還有雲際線的靈壓耶"
+    },
+    {
         "fileName" : 'comfortable',
         "text" : '不能讓我不舒服，我跟你講。我是台主，我舒服。我舒服你們才能舒服知道嗎'
     },
@@ -68,6 +76,10 @@ speechList = [
         "text" : "我的存檔也被拿去拯救別人的結局了嗎？我的、我的存檔也被拿去開那個E結局還是什麼東西了嗎？我的存檔不見了！我沒有存檔"
     },
     {
+        "fileName" : "debutImage",
+        "text" : "初配信的時候的樣貌就很像你第一次遇到一個跟你相親的女生一樣，就是那個第一面永遠都是不準的"
+    },
+    {
         "fileName" : 'dirty',
         "text" : '天啊我是個邋遢鬼，哈哈'
     },
@@ -78,6 +90,14 @@ speechList = [
     {
         "fileName" : 'devilWhisper',
         "text" : '來吧林角蓮，現在開始來回憶你這輩子所犯過所有的錯誤，那些丟臉的過往那些挫折那些回憶那些你不想再回憶起的東西把他一一的全部都想起來吧哈哈哈'
+    },
+    {
+        "fileName" : "developing",
+        "text" : "你希望對著他開疆♂拓土"
+    },
+    {
+        "fileName" : "drawSign",
+        "text" : "簽約也要抽十分之一才有機會親簽"
     },
     {
         "fileName" : 'englishExamUseless',
@@ -102,6 +122,14 @@ speechList = [
     {
         "fileName" : 'fluteLick',
         "text" : '我小時候都偷偷舔隔、偷舔隔壁女同學的直笛'
+    },
+    {
+        "fileName" : "foodWars",
+        "text" : "先跟大家說一聲抱歉，就是、北部粽真的就是3D油飯，超噁心。然後還有pizza上面放鳳梨這件事情，罪該萬死"
+    },
+    {
+        "fileName" : "foodWars2",
+        "text" : "所有的火鍋一律不可以加芋頭。然後還有，所有在湯裡面放香菜的老闆，都應該剁手指。就這樣，以上，謝謝"
     },
     {
         "fileName" : 'garbage',
@@ -130,6 +158,10 @@ speechList = [
     {
         "fileName" : 'goodOppai',
         "text" : '你媽的ㄋㄟㄋㄟ，讚'
+    },
+    {
+        "fileName" : "goodPay",
+        "text" : "我跟妳們講，薪水決定態度啊，他一個月給我六七萬齁，他一個月給我六七萬塊的薪水吼，我姿態可以放得很低的"
     },
     {
         "fileName" : 'getSomeHelp3',
@@ -250,6 +282,10 @@ speechList = [
     {
         "fileName" : 'meta3',
         "text" : '我的自我認同是男娘'
+    },
+    {
+        "fileName" : "meta4",
+        "text" : "我還有老二呢"
     },
     {
         "fileName" : 'midiKeyboard',
@@ -438,7 +474,7 @@ speechList = [
     {
         "fileName" : 'sleepWell',
         "text" : '今天可以安詳的睡覺了'
-    },
+    },        
     {
         "fileName" : 'standUp',
         "text" : '角蓮、勃起'
@@ -491,6 +527,10 @@ speechList = [
     {
         "fileName" : 'tomato',
         "text" : '喔、對，這個世界上會有人需要番茄果凍。WHAT THE HELL'
+    },
+    {
+        "fileName" : "tooFamiliar",
+        "text" : "跟你們這些人講話，沒兩句話就是會變成這個、這個、這個、這個鳥樣子啊。我有什麼辦法？跟你們太熟了哦"
     },
     {
         "fileName" : 'trauma',
@@ -547,6 +587,18 @@ speechList = [
     {
         "fileName" : 'youAreRight',
         "text" : '啊，你是對的，你都是對的，好嗎'
+    },
+    {
+        "fileName" : "ytdt",
+        "text" : "哇──YT這麼個童貞男孩有資格嫌人家太短？What the fuck"
+    },
+    {
+        "fileName" : "ytdt2",
+        "text" : "YT就是那種，就是處男然後覺得只要雞雞大、只要懶覺比較長就一定好人的那種類型耶"
+    },
+    {
+        "fileName" : "ytIdiot",
+        "text" : "YT到底在衝三小"
     },
     {
         "fileName" : "欠我十塊",

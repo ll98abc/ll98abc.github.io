@@ -64,6 +64,14 @@ greetingList = [
         "text" : '幹林娘ㄐ掰，媽的操'
     },
     {
+        "fileName" : "greeting16",
+        "text" : "幹賃娘，林北ㄟ累死"
+    },
+    {
+        "filaName" : "greeting17",
+        "text" : "賃螺啊雞掰"
+    },
+    {
         "fileName" : 'greetingAjie',
         "text" : '操你媽的傑哥幹'
     },    
