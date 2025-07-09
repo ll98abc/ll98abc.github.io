@@ -68,7 +68,7 @@ greetingList = [
         "text" : "幹賃娘，林北ㄟ累死"
     },
     {
-        "filaName" : "greeting17",
+        "fileName" : "greeting17",
         "text" : "賃螺啊雞掰"
     },
     {
