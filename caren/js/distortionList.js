@@ -45,7 +45,7 @@ distortionList = [
     },
     {
         "fileName" : "babyYou10",
-        "text" : "我就是個嬰兒而已，我甚至未滿七歲"
+        "text" : "我就只是個嬰兒而已，我甚至未滿七歲"
     },
     {
         "fileName" : 'catAT2',
