@@ -52,6 +52,10 @@ wordsList = [
         "text" : "我唱過這首歌耶！"
     },
     {
+        "fileName" : "cannot",
+        "text" : "如果認真講的話，不行"
+    },
+    {
         "fileName" : "classDismiss",
         "text" : "好，完美，下課"
     },
@@ -157,6 +161,10 @@ wordsList = [
         "text" : "我、我真的會、我真的會裂開"
     },
     {
+        "fileName" : "iAmClown",
+        "text" : "小丑竟是我自己"
+    },
+    {
         "fileName" : "IamDone",
         "text" : "我覺得好像不行了"
     },
@@ -183,6 +191,10 @@ wordsList = [
     {
         "fileName" : "idle",
         "text" : "我想擺爛"
+    },
+    {
+        "fileName" : "identification",
+        "text" : "我就說，會有人認同我"
     },
     {
         "fileName" : "iHateYou",
@@ -305,6 +317,10 @@ wordsList = [
         "text" : "秘密だよー"
     },
     {
+        "fileName" : "share",
+        "text" : "分喔！ (笑) 分喔！！"
+    },
+    {
         "fileName" : "shutUp",
         "text" : "閉嘴啦！閉嘴啦！黙れよ、黙れ！ーー黙れ"
     },
@@ -321,12 +337,20 @@ wordsList = [
         "text" : "因為真的蠻爽的"
     },
     {
+        "fileName" : "smart",
+        "text" : "喔我真是太聰明了"
+    },
+    {
         "fileName" : "sorry",
         "text" : "對不起呀，各位"
     },
     {
         "fileName" : "stupid",
         "text" : "原來我算比較笨的是嗎"
+    },
+    {
+        "fileName" : "sueMe",
+        "text" : "我就看現在誰還告的了我"
     },
     {
         "fileName" : "subpoena",

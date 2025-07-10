@@ -32,6 +32,14 @@ noiseList = [
         "text" : '角之呼吸2'
     },
     {
+        "fileName" : "babubabu",
+        "text" : "叭鋪叭鋪、叭舖叭鋪、叭鋪"
+    },
+    {
+        "fileName" : "babubabu2",
+        "text" : "角蓮寶寶噪音"
+    },
+    {
         "fileName" : 'carenCatBattleCry',
         "text" : '角蓮貓貓戰吼'
     },
@@ -230,6 +238,10 @@ noiseList = [
     {
         "fileName" : 'noise28',
         "text" : '(嘔吐)'
+    },
+    {
+        "fileName" : 'noise29',
+        "text" : '嗯～嗯、嗯'
     },
     {
         "fileName" : "makeNoise",

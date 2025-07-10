@@ -132,6 +132,10 @@ speechList = [
         "text" : "所有的火鍋一律不可以加芋頭。然後還有，所有在湯裡面放香菜的老闆，都應該剁手指。就這樣，以上，謝謝"
     },
     {
+        "fileName" : "foodWars3",
+        "text" : "控肉就是控肉，滷肉就是滷肉，肉燥飯就是肉燥飯。不要他媽的給我把三個東西混為一談。這個世界上可以混為一壇的東西，只有隔壁人的骨灰而已好嗎，媽的。"
+    },
+    {
         "fileName" : 'garbage',
         "text" : '我想他應該有更好的歸處，像是廚餘桶或者是土裡'
     },
@@ -220,6 +224,10 @@ speechList = [
         "text" : 'I feel guilty.'
     },
     {
+        "fileName" : "iHaveADream",
+        "text" : "有夢最美，要是你真的中兩千萬的話。我不管SC還是綠界還是什麼，跟我講一聲，我一定查到你家地址"
+    },
+    {
         "fileName" : 'inheritMyWill',
         "text" : '幫我開直播、幫我開直播！傳承我的意志，請大家一定要傳承我的意志'
     },
@@ -286,6 +294,10 @@ speechList = [
     {
         "fileName" : "meta4",
         "text" : "我還有老二呢"
+    },
+    {
+        "fileName" : "meta5",
+        "text" : "我是一名有著大老二的男性"
     },
     {
         "fileName" : 'midiKeyboard',
@@ -390,6 +402,10 @@ speechList = [
     {
         "fileName" : 'removeByNTD',
         "text" : '你們可以用新台幣把我下架就好嗎'
+    },
+    {
+        "fileNAme" : "sacrifice",
+        "text" : "我、我真的是為了這個家犧牲奉獻"
     },
     {
         "fileName" : 'sageTime',
@@ -503,6 +519,10 @@ speechList = [
     {
         "fileName" : "temperament",
         "text" : "我要、我要維持我的氣質形象，嘿。我的氣質形象。(彈舌)"
+    },
+    {
+        "fileName" : "thankFather",
+        "text" : "高還是爸爸高啊。世上只有爸爸好，有爸爸的角蓮像個寶啊"
     },
     {
         "fileName" : 'thenHeDied',

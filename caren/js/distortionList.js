@@ -6,7 +6,7 @@ distortionList = [
     {
         "fileName" : "didIShot",
         "text" : "啊我射了嗎？我射了嗎"
-    },
+    },    
     {
         "fileName" : 'babyYou',
         "text" : '我就寶寶'
@@ -26,6 +26,26 @@ distortionList = [
     {
         "fileName" : "babyYou5",
         "text" : "人家、人家、人家不知道。人家兩歲歲。喔餔哇～叭～"
+    },
+    {
+        "fileName" : "babyYou6",
+        "text" : "哇哇哇──我是嬰兒。哇哇哇──我是嬰兒。哇哇哇──"
+    },
+    {
+        "fileName" : "babyYou7",
+        "text" : "哇──我喜歡吃奶嘴，哇──我是嬰兒。哇───"
+    },
+    {
+        "fileName" : "babyYou8",
+        "text" : "哇──現在凌晨三點了還沒有睡覺。哇──我好睏。哇哇──擠眠大擠吋。哇哇──叭餔"
+    },
+    {
+        "fileName" : "babyYou9",
+        "text" : "我是個嬰兒，我沒有行為能力"
+    },
+    {
+        "fileName" : "babyYou10",
+        "text" : "我就是個嬰兒而已，我甚至未滿七歲"
     },
     {
         "fileName" : 'catAT2',
@@ -60,6 +80,10 @@ distortionList = [
         "text" : '最喜歡玩魔物獵人了，哈哈'
     },
     {
+        "fileName" : "needDonate",
+        "text" : "嚶嚶嚶乾爹葛格～人家、人家、人家昨天開台的時候～嚶嚶～用那個用那個那個手把，按到大拇指肌腱炎，嗚嗚嗚、嗚嗚嗚，可以的話如果如果沒有三百萬的斗內的話我的大拇指──"
+    },
+    {
         "fileName" : 'magicVegetable',
         "text" : '幸福的魔法是多吃青菜'
     },
@@ -73,6 +97,10 @@ distortionList = [
     },
     {
         "fileName" : "sexHara",
+        "text" : "我沒有辦法證明〝我這輩子從來沒有性騷擾過我的營運〞"
+    },
+    {
+        "fileName" : "sexHara2",
         "text" : "林阿蓮，林阿蓮幾咧郎，下西下井，對自己的營運性騷擾。很嚴重、超過分、很誇張。真的很、真的很誇張"
     },
     {
