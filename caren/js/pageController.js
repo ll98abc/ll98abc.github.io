@@ -6,7 +6,8 @@
 	initDistortionList();
 	initExtraList();
 	initNoiseList();
-
+	// 開場隨機抽一個icon
+	changeIcon();
 	$(".btn-radius").bind("click" , function(){
 		//不管有沒有上一個正在播放，都先清除掉playing的顏色
 		$(".playing").removeClass("playing");
