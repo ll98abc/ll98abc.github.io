@@ -404,7 +404,7 @@ speechList = [
         "text" : '你們可以用新台幣把我下架就好嗎'
     },
     {
-        "fileNAme" : "sacrifice",
+        "fileName" : "sacrifice",
         "text" : "我、我真的是為了這個家犧牲奉獻"
     },
     {
