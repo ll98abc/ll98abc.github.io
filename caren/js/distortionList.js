@@ -111,6 +111,10 @@ distortionList = [
         "fileName" : 'wantToSeeYou',
         "text" : '會這麼快，還不是因為人家想要趕快回來見到大家'
     },
+    {
+        "fileName" : "小北沒有優點",
+        "text" : "小北沒有優點啊，幹"
+    }
     /*
     {
         "fileName" : '',
