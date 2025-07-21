@@ -30,7 +30,7 @@ function checkParam(){
 		
 
 		//$("input[onclick*="+inputStr+"]").get(0).click();
-		var target = $("input[onclick*="+inputStr+"]");		
+		var target = $("input[onclick*="+inputStr+"]").first();
 		var width = $(target).width();		
 		$(target).addClass("beTheOne");		
 		$(target).css('margin-left' , width * -0.5);
