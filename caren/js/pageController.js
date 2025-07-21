@@ -39,7 +39,8 @@ function checkParam(){
 			css : {
 				'border' : 'none',
 				'left' : '50%',
-				'background-color' : 'transparent'
+				'background-color' : 'transparent',
+				'text-align' : 'left'
 			}
 		});		
 		$(".blockOverlay").bind("click" , myUnblock );
