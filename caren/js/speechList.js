@@ -517,7 +517,7 @@ speechList = [
     },
     {
         "fileName" : "sleepWell2",
-        "text" : "我今天、我今天睡飽了。我好開心"
+        "text" : "我今天、我今天睡飽了。我好開心，我真的好開心"
     },
     {
         "fileName" : 'standUp',
