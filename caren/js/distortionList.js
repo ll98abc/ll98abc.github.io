@@ -114,6 +114,10 @@ distortionList = [
     {
         "fileName" : "小北沒有優點",
         "text" : "小北沒有優點啊，幹"
+    },
+    {
+        "fileName" : "薩爾達抄襲原神",
+        "text" : "薩爾達抄襲原神"
     }
     /*
     {

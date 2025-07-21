@@ -18,7 +18,7 @@ speechList = [
     {
         "fileName" : "ak47",
         "text" : "我不知道，我生命中只用過ak47啊。怎麼了嗎？"
-    },
+    },    
     {
         "fileName" : 'bachelorSum',
         "text" : '聊天室的各位也都是孤獨的總和喔。為什麼因為你們都只有一個人啊哈哈哈哈'
@@ -52,8 +52,16 @@ speechList = [
         "text" : '你是花了錢買到快樂啊'
     },
     {
+        "fileName" : 'buyHappy2',
+        "text" : '花錢買快樂不用負責任這件事情放諸四海皆準哦'
+    },
+    {
         "fileName" : "carenFeature",
         "text" : "我相信角蓮除了色起來跟沉著穩重以外其他都很擅長"
+    },
+    {
+        "fileName" : "ccp",
+        "text" : "Okay, CCP is, uhm, hmm. Cum on Cucumber Party. 好不好？Ok, Cum on Cucumber Party. 就是射在大黃瓜上派對，OK? 這就是CCP，OK?"
     },
     {
         "fileName" : "cloudPresence",
@@ -133,7 +141,15 @@ speechList = [
     },
     {
         "fileName" : "foodWars3",
-        "text" : "控肉就是控肉，滷肉就是滷肉，肉燥飯就是肉燥飯。不要他媽的給我把三個東西混為一談。這個世界上可以混為一壇的東西，只有隔壁人的骨灰而已好嗎，媽的。"
+        "text" : "控肉就是控肉，滷肉就是滷肉，肉燥飯就是肉燥飯。不要他媽的給我把三個東西混為一談。這個世界上可以混為一壇的東西，只有隔壁人的骨灰而已好嗎，媽的"
+    },
+    {
+        "fileName" : "foodWars4",
+        "text" : "什麼東西狗都不吃？───絲瓜"
+    },
+    {
+        "fileName" : "foodWars5",
+        "text" : "烤肉就是要有吐司啊，怎麼可以沒有吐司？烤肉沒有吐司那還算烤肉嗎"
     },
     {
         "fileName" : 'garbage',
@@ -184,6 +200,10 @@ speechList = [
         "text" : '我，還有一個興趣，就是和每一個生物友好的交流，也就是調情'
     },
     {
+        "fileName" : "hajimetenochu",
+        "text" : "什麼、什麼《はじめてのチュウ》這種東西一點都不重要，好嗎？吝娘以後他媽我就每次都唱那個中老年版本的。他媽的"
+    },
+    {
         "fileName" : 'hahaJoke',
         "text" : '笑死小丑，我要給你兩，呃，我要給你兩百塊'
     },
@@ -210,6 +230,10 @@ speechList = [
     {
         "fileName" : 'IamLiar',
         "text" : '當有人開始問我說「啊你在做、啊你平常在做什麼啊？」那個瞬間我就是這個世界上最會講、我就是這個世界上最會說謊的傢伙了'
+    },
+    {
+        "fileName" : "IamNotEmployee",
+        "text" : "Although I'm not fucking 勞工，hahaha."
     },
     {
         "fileName" : 'IamSandwich',
@@ -490,7 +514,11 @@ speechList = [
     {
         "fileName" : 'sleepWell',
         "text" : '今天可以安詳的睡覺了'
-    },        
+    },
+    {
+        "fileName" : "sleepWell2",
+        "text" : "我今天、我今天睡飽了。我好開心"
+    },
     {
         "fileName" : 'standUp',
         "text" : '角蓮、勃起'
@@ -627,6 +655,10 @@ speechList = [
     {
         "fileName" : "天黑黑",
         "text" : "天黑黑、咩落雨、阿公仔牙枝骨頭咩掘芋"
+    },
+    {
+        "fileName" : "撿角",
+        "text" : "讓我把我的角撿回來"
     }
     
     /*

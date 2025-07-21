@@ -4,6 +4,14 @@ greetingList = [
         "text" : '0886'
     },
     {
+        "fileName" : "fuckingBusy",
+        "text" : "每一天他媽都有事、幹"
+    },
+    {
+        "fileName" : "fuckingBusy2",
+        "text" : "我到底在忙什麼？我也不知道，去你媽的"
+    },
+    {
         "fileName" : 'greeting',
         "text" : '幹吝娘ㄐ掰'
     },
@@ -72,6 +80,10 @@ greetingList = [
         "text" : "賃螺啊雞掰"
     },
     {
+        "fileName" : "greeting18",
+        "text" : "幹賃娘，氣死我了"
+    },
+    {
         "fileName" : 'greetingAjie',
         "text" : '操你媽的傑哥幹'
     },    
@@ -82,6 +94,10 @@ greetingList = [
     {
         "fileName" : "holyFuck",
         "text" : "holy fuck"
+    },
+    {
+        "fileName" : "howCouldItBe",
+        "text" : "how? how could it even be possible?"
     },
     {
         "fileName" : 'kusoCapcom',
@@ -95,6 +111,10 @@ greetingList = [
         "fileName" : 'whatTheFuck',
         "text" : '幹林涼，這什麼大便東西啊'
     },
+    {
+        "fileName" : "大開腿",
+        "text" : "他腿就是開到感覺他在等人幹他你知道嗎"
+    }
     /*
     {
         "fileName" : '',

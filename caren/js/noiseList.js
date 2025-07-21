@@ -244,6 +244,18 @@ noiseList = [
         "text" : '嗯～嗯、嗯'
     },
     {
+        "fileName" : 'noise30',
+        "text" : 'Ouch!!'
+    },
+    {
+        "fileName" : 'noise31',
+        "text" : 'baaa...'
+    },
+    {
+        "fileName" : 'noise32',
+        "text" : 'ouch, 我的背'
+    },
+    {
         "fileName" : "makeNoise",
         "text" : "how could I even make this fucking noise"
     },

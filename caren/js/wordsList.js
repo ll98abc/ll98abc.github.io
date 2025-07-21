@@ -56,6 +56,14 @@ wordsList = [
         "text" : "如果認真講的話，不行"
     },
     {
+        "fileName" : "cantRespond",
+        "text" : "很想跟你們回什麼東西，然後但是他媽的，她媽又不能回。操，好氣喔"
+    },
+    {
+        "fileName" : "canYouHearMe",
+        "text" : "你們應該聽的到我講話吧？"
+    },
+    {
         "fileName" : "classDismiss",
         "text" : "好，完美，下課"
     },
@@ -66,6 +74,10 @@ wordsList = [
     {
         "fileName" : "comeOn",
         "text" : "來吧"
+    },
+    {
+        "fileName" : "cry",
+        "text" : "哭了"
     },
     {
         "fileName" : "curse",
@@ -87,7 +99,7 @@ wordsList = [
     {
         "fileName" : "emotionalDamage",
         "text" : "Emotional Damage"
-    },
+    },    
     {
         "fileName" : "selfIntroduction",
         "text" : "我是雲際線工作室所屬來自星滿街的surfDemon vtuber角蓮aka雲際線官方指定唯一色氣擔當氣質擔當以及廚藝擔當大家晚下好"
@@ -147,6 +159,10 @@ wordsList = [
     {
         "fileName" : "happy",
         "text" : "哼，開心 (喘)"
+    },
+    {
+        "fileName" : "hitMeIdiot",
+        "text" : "打我啊笨蛋"
     },
     {
         "fileName" : "howDareYou",
@@ -387,10 +403,14 @@ wordsList = [
     {
         "fileName" : "thankYourOrder",
         "text" : "感謝點歌，希望你各位會喜歡"
-    },
+    },    
     {
         "fileName" : "tsunndere",
-        "text" : "唉，我知道，你們這些小傲嬌。你們都是口是心非的傢伙，哈哈哈。"
+        "text" : "唉，我知道，你們這些小傲嬌。你們都是口是心非的傢伙，哈哈哈"
+    },
+    {
+        "fileName" : "tooFriendly",
+        "text" : "唉，對你們太友善了。真的"
     },
     {
         "fileName" : "veryVeryGood",

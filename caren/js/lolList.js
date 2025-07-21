@@ -114,6 +114,14 @@ lolList = [
     {
         "fileName" : "lol28",
         "text" : "呵哈哈、哈哈、哈↑哈↑哈↑哈↑哈↑"
+    },
+    {
+        "fileName" : "lol29",
+        "text" : "呵呵哈哈哈哈哈、哈哈哈哈哈哈"
+    },
+    {
+        "fileName" : "lol30",
+        "text" : "哈哈哈哈哈哈"
     }
     /*
     {
