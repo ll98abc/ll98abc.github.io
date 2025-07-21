@@ -105,7 +105,7 @@
 //to do something 
 $(document).ready(function(){    
   // 音效播放結束時，移除playing顏色
-  $("#audio").bind("ended" , function(){
+  $("#audio").on("ended" , function(){
     $(".playing").removeClass("playing");
   });
 

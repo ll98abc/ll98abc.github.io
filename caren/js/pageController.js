@@ -8,17 +8,54 @@
 	initNoiseList();
 	// 開場隨機抽一個icon
 	changeIcon();
-	$(".btn-radius").bind("click" , function(){
+	$(".btn-radius").on("click" , function(){
 		//不管有沒有上一個正在播放，都先清除掉playing的顏色
 		$(".playing").removeClass("playing");
 		//當前按鈕增加"播放中"的顏色
 		  $(this).addClass("playing");
 	});
 
-	$(".rngBtn").bind("click" , function(){
+	$(".rngBtn").on("click" , function(){
 		let rng = Math.floor(Math.random() * $(".grid").length);		
 		$(".grid").get(rng).click();
-	});
+	});	
+	checkParam();
+}
+
+function checkParam(){
+	var link = window.location.href;
+	if (link.indexOf("?") > -1) {
+		var param = link.split("?")[1];			
+		var inputStr = param.split("=")[1];
+		
+
+		//$("input[onclick*="+inputStr+"]").get(0).click();
+		var target = $("input[onclick*="+inputStr+"]");		
+		var width = $(target).width();		
+		$(target).addClass("beTheOne");		
+		$(target).css('margin-left' , width * -0.5);
+		$.blockUI({
+			message: $(target),
+			css : {
+				'border' : 'none',
+				'left' : '50%',
+				'background-color' : 'transparent'
+			}
+		});		
+		$(".blockOverlay").bind("click" , myUnblock );
+	}
+}
+
+function myUnblock(){	
+	var link = window.location.href;
+	if (link.indexOf("?") > -1) {
+		var param = link.split("?")[1];			
+		var inputStr = param.split("=")[1];
+		var target = $("input[onclick*="+inputStr+"]");				
+		$(target).removeClass("beTheOne");		
+		$(target).css('margin-left' , '1%');
+	}
+	$.unblockUI();
 }
 
 function nav(param){
@@ -42,7 +79,7 @@ function playSound(fileName) {
 	
 	if (rng < 5){
 		playAnime(rng);
-	}			
+	}	
 }
 
 function changeIcon(){
