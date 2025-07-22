@@ -47,7 +47,8 @@ function checkParam(){
 	}
 }
 
-function myUnblock(){	
+function myUnblock(){
+	$.unblockUI();
 	var link = window.location.href;
 	if (link.indexOf("?") > -1) {
 		var param = link.split("?")[1];			
@@ -55,8 +56,7 @@ function myUnblock(){
 		var target = $("input[onclick*="+inputStr+"]");				
 		$(target).removeClass("beTheOne");		
 		$(target).css('margin-left' , '1%');
-	}
-	$.unblockUI();
+	}	
 }
 
 function nav(param){
