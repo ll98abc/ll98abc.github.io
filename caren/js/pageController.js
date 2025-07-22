@@ -152,9 +152,7 @@ function playAnime(param){
 
 function copyLink(){
 	let link = "https://ll98abc.github.io/caren/caren.html";	
-	let param = $("#audio").attr("src");
-	console.log(param);
-	console.log($("#audio"));
+	let param = $("#audio").attr("src");	
 	if (typeof(param) != 'undefined'){
 		let fileName = param.split("/")[2];
 		let name = fileName.split(".")[0];
