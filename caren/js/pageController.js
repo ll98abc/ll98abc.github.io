@@ -65,13 +65,28 @@ function myUnblock(){
 	$.unblockUI();
 	var link = window.location.href;
 	if (link.indexOf("?") > -1) {
-		var param = link.split("?")[1];			
-		var inputStr = param.split("=")[1];
-		var target = $("input[onclick*="+inputStr+"]");				
+		let param = link.split("?")[1];			
+		let paramA = param.split("&")[0];
+		let paramB = param.split("&")[1];
+		let paramC = paramA.split("=")[1];
+		let paramD = paramB.split("=")[1];
+		let result = null;
+		if (category.includes(paramC)){
+			result = paramC + "/" + paramD;
+		}else if (category.includes(paramD)){
+			result = paramD + "/" + paramC;
+		}else{
+			// 查不到對應的category可能放錯參數，return。
+			return false;
+		}
+
+		//$("input[onclick*="+inputStr+"]").get(0).click();
+		var target = $("input[onclick*='"+result+"']").first();			
 		$(target).removeClass("beTheOne");		
 		$(target).css('margin-left' , '1%');
 	}	
 }
+
 
 function nav(param){
 	let toPosition = $("#"+param).offset().top;
