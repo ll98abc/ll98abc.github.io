@@ -75,6 +75,15 @@ body {
 	font-size: 1.1em;
 }
 
+.copyBtn{
+	background-color: rgba(80, 211, 216, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 8px;
+	border-radius: 16px;
+	font-size: 1.1em;	
+}
+
 .rngBtn{
 	position: fixed;
 	right:5px;

@@ -150,6 +150,23 @@ function playAnime(param){
 	return false;
 }
 
+function copyLink(){
+	let link = "https://ll98abc.github.io/caren/caren.html";	
+	let param = $("#audio").attr("src");
+	console.log(param);
+	console.log($("#audio"));
+	if (typeof(param) != 'undefined'){
+		let fileName = param.split("/")[2];
+		let name = fileName.split(".")[0];
+		let result = link + "?p=" + name;
+		navigator.clipboard.writeText(result);
+		alert(result +"\r\n已複製到剪貼簿");
+	}else{
+		alert("請先點擊目標按鈕");
+		return false;
+	}	
+}
+
 function initSpeechList(){
 	let category = "speech";
 	$("#speechCount").html(speechList.length);

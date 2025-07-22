@@ -1,5 +1,9 @@
 speechList = [
     {
+        "fileName" : "2比利豬",
+        "text" : "可惡，人家有伊比利，那我們就一比二吧。啊不然我們二比利好了，我們請比莉姊代言台灣的二比利豬這樣"
+    },
+    {
         "fileName" : '3toDo',
         "text" : '我每天早上在做的事情就是：刷牙、洗臉、睡覺'
     },
@@ -118,6 +122,10 @@ speechList = [
     {
         "fileName" : "favoriteOBS",
         "text" : "最喜歡的東西～就是OBS～"
+    },
+    {
+        "fileName" : "finishDinner",
+        "text" : "但我吃完了，我快吃完了，欸我好像吃完了。我吃完了！各位我吃完我的晚餐了"
     },
     {
         "fileName" : 'flop',
@@ -364,6 +372,10 @@ speechList = [
         "text" : '大家說對不對啊？───說對，謝謝'
     },
     {
+        "fileName" : "northernGuy",
+        "text" : "你們這些北部人！你們這些北部人！便當就不應該超過一百塊"
+    },
+    {
         "fileName" : 'noTomato',
         "text" : '下禮拜吃番茄？呷賽。你才呷，我不要。'
     },
@@ -372,8 +384,16 @@ speechList = [
         "text" : "I don`t fxxking care about wife."
     },
     {
+        "fileName" : "nuclearFive",
+        "text" : "就是如果你要蓋核ㄨˇ的話，我個人建議核ㄨˇ蓋金門"
+    },
+    {
         "fileName" : 'nurseryAirport',
         "text" : '再有降落過來我就只要唱，我就只唱兒歌給它們聽了'
+    },
+    {
+        "fileName" : "obeyTrafficRule",
+        "text" : "就是，台灣人的他媽交通規範的那個遵守的那個意志真的是要再加強"
     },
     {
         "fileName" : 'offend',
@@ -402,6 +422,10 @@ speechList = [
     {
         "fileName" : 'poor',
         "text" : '我、我我我我沒有真的他媽的窮到要脫褲好不好'
+    },
+    {
+        "fileName" : "powerCorruption",
+        "text" : "權力永遠會導致貪腐"
     },
     {
         "fileName" : "pretend",
@@ -486,6 +510,10 @@ speechList = [
     {
         "fileName" : "shitTalk7",
         "text" : "不是在研究說哪種魚沒有牙嗎？幹為什麼大家不考慮蛇啊？我知道，因為沒有那麼長"
+    },
+    {
+        "fileName" : "shitTalk8",
+        "text" : "沒有對不起我在講幹話對不起，等一下等一下不要不要認不要認真不要認真不要認真不要認真"
     },
     {
         "fileName" : 'shock',

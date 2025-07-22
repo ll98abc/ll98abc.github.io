@@ -12,6 +12,10 @@ greetingList = [
         "text" : "我到底在忙什麼？我也不知道，去你媽的"
     },
     {
+        "fileName" : "fuckingIdiot",
+        "text" : "媽的傻逼"
+    },
+    {
         "fileName" : 'greeting',
         "text" : '幹吝娘ㄐ掰'
     },
