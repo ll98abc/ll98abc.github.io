@@ -1,4 +1,6 @@
-﻿function initPage(){
+var category = [ "speech", "lol", "distortion", "extra", "noise", "greeting", "words" ];
+
+function initPage(){
 	initSpeechList();
 	initWordsList();
 	initLolList();
@@ -25,12 +27,23 @@
 function checkParam(){
 	var link = window.location.href;
 	if (link.indexOf("?") > -1) {
-		var param = link.split("?")[1];			
-		var inputStr = param.split("=")[1];
-		
+		let param = link.split("?")[1];			
+		let paramA = param.split("&")[0];
+		let paramB = param.split("&")[1];
+		let paramC = paramA.split("=")[1];
+		let paramD = paramB.split("=")[1];
+		let result = null;
+		if (category.includes(paramC)){
+			result = paramC + "/" + paramD;
+		}else if (category.includes(paramD)){
+			result = paramD + "/" + paramC;
+		}else{
+			// 查不到對應的category可能放錯參數，return。
+			return false;
+		}
 
 		//$("input[onclick*="+inputStr+"]").get(0).click();
-		var target = $("input[onclick*="+inputStr+"]").first();
+		var target = $("input[onclick*='"+result+"']").first();
 		var width = $(target).width();		
 		$(target).addClass("beTheOne");		
 		$(target).css('margin-left' , width * -0.5);
@@ -45,6 +58,7 @@ function checkParam(){
 		});		
 		$(".blockOverlay").bind("click" , myUnblock );
 	}
+	return false;
 }
 
 function myUnblock(){
@@ -65,6 +79,7 @@ function nav(param){
 	body.stop().animate({scrollTop:toPosition}, 500,'swing',function(){
 		// do something??
 	});
+	return false;
 }
 
 function playSound(fileName) {	
@@ -80,7 +95,8 @@ function playSound(fileName) {
 	
 	if (rng < 5){
 		playAnime(rng);
-	}	
+	}
+	return false;
 }
 
 function changeIcon(){
@@ -154,11 +170,13 @@ function copyLink(){
 	let link = "https://ll98abc.github.io/caren/caren.html";	
 	let param = $("#audio").attr("src");	
 	if (typeof(param) != 'undefined'){
-		let fileName = param.split("/")[2];
-		let name = fileName.split(".")[0];
-		let result = link + "?p=" + name;
+		let fullName = param.split("/")[2];
+		let category = param.split("/")[1];
+		let fileName = fullName.split(".")[0];
+		let result = link + "?c=" +category + "&f=" + fileName;
 		navigator.clipboard.writeText(result);
 		alert(result +"\r\n已複製到剪貼簿");
+		return false;
 	}else{
 		alert("請先點擊目標按鈕");
 		return false;
