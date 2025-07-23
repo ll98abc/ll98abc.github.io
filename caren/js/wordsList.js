@@ -91,7 +91,10 @@ wordsList = [
         "fileName" : "diabetes",
         "text" : "好甜喔，我要糖尿病了"
     },
-    
+    {
+        "fileName" : "disIstart",
+        "text" : "他媽我到底開始直播了沒有"
+    },    
     {
         "fileName" : "doNotWaste",
         "text" : "用在更有意義的地方好不好"

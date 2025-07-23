@@ -48,6 +48,10 @@ distortionList = [
         "text" : "我就只是個嬰兒而已，我甚至未滿七歲"
     },
     {
+        "fileName" : "babyYou11",
+        "text" : "成人每次兩匙？不要我是個嬰兒，我只吃一匙。一匙就已經很大一ken了。誰跟你吃到兩匙？我不，我就不"
+    },
+    {
         "fileName" : 'catAT2',
         "text" : '喵～要是可以給角蓮寶寶更多的錢錢，角蓮寶寶可能喵更多次呢。喵～喵～喵～'
     },
@@ -66,6 +70,10 @@ distortionList = [
     {
         "fileName" : 'deskCaren',
         "text" : '大家好，我是桌角'
+    },
+    {
+        "fileName" : "doNotHitMe",
+        "text" : "Hi老布！早安──不要拿這個東西扁我，不要！"
     },
     {
         "fileName" : 'IamRich',
