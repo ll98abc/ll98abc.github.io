@@ -54,7 +54,7 @@ function myUnblock(){
 	$.unblockUI();
 	let link = window.location.href;
 	if (link.indexOf("?") > -1) {
-		let result = getParam();
+		let result = getParam(link);
 		if ("" == result || 'undefined' == typeof(result)){
 			return false;
 		}
