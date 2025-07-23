@@ -31,8 +31,8 @@ function checkParam(){
 		if ("" == result || 'undefined' == typeof(result)){
 			return false;
 		}
-		//$("input[onclick*="+inputStr+"]").get(0).click();
-		var target = $("input[onclick*='"+result+"']").first();
+		let fullName = "playSound('" + result + "')";
+		var target = $("input[onclick*='"+fullName+"']").first();
 		var width = $(target).width();		
 		$(target).addClass("beTheOne");		
 		$(target).css('margin-left' , width * -0.5);
@@ -58,8 +58,8 @@ function myUnblock(){
 		if ("" == result || 'undefined' == typeof(result)){
 			return false;
 		}
-		//$("input[onclick*="+inputStr+"]").get(0).click();
-		var target = $("input[onclick*='"+result+"']").first();			
+		let fullName = "playSound('" + result + "')";		
+		var target = $("input[onclick='"+fullName+"']").first();			
 		$(target).removeClass("beTheOne");		
 		$(target).css('margin-left' , '1%');
 	}	
