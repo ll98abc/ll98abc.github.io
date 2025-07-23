@@ -4,6 +4,10 @@ wordsList = [
         "text" : "again!!again!! fuck you!!"
     },
     {
+        "fileName" : "againstMeWithMyOwnMagic",
+        "text" : "幹！你們不能用我的魔法攻擊我"
+    },
+    {
         "fileName" : "annoying",
         "text" : "你們他媽很煩，吼呦！！"
     },
