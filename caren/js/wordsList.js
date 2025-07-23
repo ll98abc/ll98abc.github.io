@@ -169,6 +169,10 @@ wordsList = [
         "text" : "打我啊笨蛋"
     },
     {
+        "fileName" : "howAreYouToday",
+        "text" : "今天過得好不好啊(偽ASMR)"
+    },
+    {
         "fileName" : "howDareYou",
         "text" : "蝦咪、賣摳，哩那ㄟ當安捏懟襪"
     },
