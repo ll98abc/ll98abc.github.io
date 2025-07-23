@@ -27,7 +27,10 @@ function initPage(){
 function checkParam(){	
 	let link = window.location.href;
 	if (link.indexOf("?") > -1) {		
-		result = getParam(link);
+		result = getParam(link);		
+		if ("" == result || 'undefined' == typeof(result)){
+			return false;
+		}
 		//$("input[onclick*="+inputStr+"]").get(0).click();
 		var target = $("input[onclick*='"+result+"']").first();
 		var width = $(target).width();		
@@ -45,6 +48,21 @@ function checkParam(){
 		$(".blockOverlay").bind("click" , myUnblock );
 	}
 	return false;
+}
+
+function myUnblock(){
+	$.unblockUI();
+	let link = window.location.href;
+	if (link.indexOf("?") > -1) {
+		let result = getParam();
+		if ("" == result || 'undefined' == typeof(result)){
+			return false;
+		}
+		//$("input[onclick*="+inputStr+"]").get(0).click();
+		var target = $("input[onclick*='"+result+"']").first();			
+		$(target).removeClass("beTheOne");		
+		$(target).css('margin-left' , '1%');
+	}	
 }
 
 function getParam(link){	
@@ -66,18 +84,6 @@ function getParam(link){
 			return "";
 		}
 	}
-}
-
-function myUnblock(){
-	$.unblockUI();
-	let link = window.location.href;
-	if (link.indexOf("?") > -1) {
-		let result = getParam();
-		//$("input[onclick*="+inputStr+"]").get(0).click();
-		var target = $("input[onclick*='"+result+"']").first();			
-		$(target).removeClass("beTheOne");		
-		$(target).css('margin-left' , '1%');
-	}	
 }
 
 function nav(param){
