@@ -241,7 +241,7 @@ speechList = [
     },
     {
         "fileName" : "IamNotEmployee",
-        "text" : "Although I'm not fucking 勞工，hahaha."
+        "text" : "Although I`m not fucking 勞工，hahaha."
     },
     {
         "fileName" : 'IamSandwich',
