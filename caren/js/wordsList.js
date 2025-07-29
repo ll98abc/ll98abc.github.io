@@ -92,7 +92,7 @@ wordsList = [
         "text" : "好甜喔，我要糖尿病了"
     },
     {
-        "fileName" : "disIstart",
+        "fileName" : "didIstart",
         "text" : "他媽我到底開始直播了沒有"
     },    
     {
