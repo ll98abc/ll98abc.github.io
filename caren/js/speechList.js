@@ -637,6 +637,14 @@ speechList = [
         "text" : '你想死嗎'
     },
     {
+        "fileName" : 'wannaSleep',
+        "text" : '好想睡覺喔...好想睡覺...媽媽我想睡覺'
+    },
+    {
+        "fileName" : 'wannaSleep2',
+        "text" : '想睡覺...人家要睡覺...私も...I want to 睡です'
+    },
+    {
         "fileName" : 'weBlameNoSolve',
         "text" : '我們只譴責問題，我們不解決問題'
     },
