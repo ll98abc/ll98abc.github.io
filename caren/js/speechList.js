@@ -178,14 +178,14 @@ speechList = [
     {
         "fileName" : 'getSomeHelp',
         "text" : '我、我比較擔心的是，你可能有類似於精神分裂或者是有一些瞻妄的症狀這樣子'
+    },    
+    {
+        "fileName" : 'getSomeHelp2',
+        "text" : '希望大家可以勇敢起來，及早就醫'
     },
     {
         "fileName" : "getRich",
         "text" : "今天，也是想發大財的一天。但是，這個月的發票一樣一張都沒有中呢"
-    },
-    {
-        "fileName" : 'getSomeHelp2',
-        "text" : '希望大家可以勇敢起來，及早就醫'
     },
     {
         "fileName" : 'glasses',
@@ -727,4 +727,5 @@ speechList = [
         "text" : ''
     },
     */
+
 ];
