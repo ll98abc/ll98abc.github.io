@@ -32,6 +32,10 @@ wordsList = [
         "text" : "你會窮死"
     },
     {
+        "fileName" : "brainWash",
+        "text" : "brain wash!!"
+    },
+    {
         "fileName" : 'bubbleMilk',
         "text" : '好想喝珍珠奶茶喔'
     },
@@ -316,8 +320,20 @@ wordsList = [
         "text" : "お疲れさまでした"
     },
     {
+        "fileName" : "okay",
+        "text" : "好的，沒有問題"
+    },
+    {
+        "fileName" : "overlyTalk",
+        "text" : "哇，你好輕描淡寫的說出好過分的話"
+    },
+    {
         "fileName" : "pain",
         "text" : "喔～～痛苦"
+    },
+    {
+        "fileName" : "pleaseForget",
+        "text" : "請大家忘記大概就是過去這一分鐘的事情，謝謝"
     },
     {
         "fileName" : "phycho",
@@ -466,6 +482,18 @@ wordsList = [
     {
         "fileName" : "youLucky",
         "text" : "我今天開台，所以你們賺到了(彈舌)"
+    },
+    {
+        "fileName" : "你已經很努力了",
+        "text" : "你已經很努力了"
+    },
+    {
+        "fileName" : "拯救世界",
+        "text" : "好強喔！他拯救了世界"
+    },
+    {
+        "fileName" : "無敵金剛王",
+        "text" : "哇！是無敵金剛王耶"
     }
     /*
     {

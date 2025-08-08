@@ -88,6 +88,10 @@ greetingList = [
         "text" : "幹賃娘，氣死我了"
     },
     {
+        "fileName" : "greeting19",
+        "text" : "幹你娘"
+    },
+    {
         "fileName" : 'greetingAjie',
         "text" : '操你媽的傑哥幹'
     },    

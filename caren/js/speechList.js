@@ -60,7 +60,11 @@ speechList = [
         "text" : '花錢買快樂不用負責任這件事情放諸四海皆準哦'
     },
     {
-        "fileName" : "carenFeature",
+        "fileName" : "cantCarry",
+        "text" : "兩公升的水我說拎就拎，但是兩、兩三公升的那個的洗衣精我不想拿"
+    },
+    {
+        "fileName" : "carenFeatures",
         "text" : "我相信角蓮除了色起來跟沉著穩重以外其他都很擅長"
     },
     {
@@ -82,6 +86,10 @@ speechList = [
     {
         "fileName" : 'crouch',
         "text" : '角蓮蹲、角蓮蹲、角蓮蹲完角蓮蹲'
+    },
+    {
+        "fileName" : "doomed",
+        "text" : "我不要跟你們講話了，我不要跟你們講話了。我覺得這個世界、我覺得這個世界、我這個我覺我覺我覺得這個世界還是就，還是就毀滅吧"
     },
     {
         "fileName" : "dataLost",
@@ -172,6 +180,10 @@ speechList = [
         "text" : '我、我比較擔心的是，你可能有類似於精神分裂或者是有一些瞻妄的症狀這樣子'
     },
     {
+        "fileName" : "getRich",
+        "text" : "今天，也是想發大財的一天。但是，這個月的發票一樣一張都沒有中呢"
+    },
+    {
         "fileName" : 'getSomeHelp2',
         "text" : '希望大家可以勇敢起來，及早就醫'
     },
@@ -230,6 +242,10 @@ speechList = [
     {
         "fileName" : 'IamGoooood',
         "text" : '我已經夠好了，該變好的是這個世界'
+    },
+    {
+        "fileName" : "imDog",
+        "text" : "はい！私は、犬です！"
     },
     {
         "fileName" : "Imhorny",
@@ -334,6 +350,10 @@ speechList = [
     {
         "fileName" : 'midiKeyboard',
         "text" : 'midi鍵盤，每個人都值得擁有一台。主要是居家旅行殺人越貨都很方便。一台長長的，又不是很重，殺傷力也夠。挺不錯的，推薦給大家'
+    },
+    {
+        "fileName" : "mineCraft",
+        "text" : "第一次知道原來楊丞琳也玩mineCraft"
     },
     {
         "fileName" : 'myAngel',
@@ -558,6 +578,10 @@ speechList = [
     {
         "fileName" : 'standUp3',
         "text" : '好啦，最後兩首歌了，甘願了，可以勃起了'
+    },
+    {
+        "fileName" : "stepBack",
+        "text" : "你後退一點，你後退一點。你離我太近了，我們之間的距離不是這樣子的"
     },
     {
         "fileName" : 'stock51',
