@@ -597,6 +597,10 @@ speechList = [
 
     },
     {
+        "fileName" : "teaRoomContract",
+        "text" : "老闆你帶我去阿公店我合約立刻簽"
+    },
+    {
         "fileName" : "temperament",
         "text" : "我要、我要維持我的氣質形象，嘿。我的氣質形象。(彈舌)"
     },
@@ -731,6 +735,4 @@ speechList = [
         "text" : ''
     },
     */
-
 ];
-

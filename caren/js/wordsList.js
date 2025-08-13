@@ -44,6 +44,14 @@ wordsList = [
         "text" : "好想吃、燉的你只要用叉子一壓它就可以散開的那種燉牛肉喔"
     },
     {
+        "fileName" : "boss",
+        "text" : "老闆"
+    },
+    {
+        "fileName" : "carenWantThis",
+        "text" : "角蓮想要這個"
+    },
+    {
         "fileName" : "canI",
         "text" : "欸？我會唱這首歌喔"
     },
