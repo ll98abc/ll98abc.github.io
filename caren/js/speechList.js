@@ -45,7 +45,7 @@ speechList = [
     },
     {
         "fileName" : "bringYourMom",
-        "text" : "聊天室的各位朋友，把你的word和Mom拿出來"
+        "text" : "聊天室的各位朋友，把你們的word和Mom拿出來"
     },
     {
         "fileName" : 'broken',
@@ -747,4 +747,5 @@ speechList = [
         "text" : ''
     },
     */
+
 ];
