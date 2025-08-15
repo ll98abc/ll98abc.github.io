@@ -48,7 +48,7 @@ noiseList = [
         "text" : '喵～喵～喵～'
     },
     {
-        "fileName" : "chichichichiOppai",
+        "fileName" : "chiChiChiChiOppai",
         "text" : "(ちちちちおっぱい～)　Boing～ Boing～"
     },
     {
@@ -321,4 +321,5 @@ noiseList = [
         "text" : ''
     },
     */
+
 ];
