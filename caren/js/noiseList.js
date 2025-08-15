@@ -48,6 +48,10 @@ noiseList = [
         "text" : '喵～喵～喵～'
     },
     {
+        "fileName" : "chichichichiOppai",
+        "text" : "(ちちちちおっぱい～)　Boing～ Boing～"
+    },
+    {
         "fileName" : 'fuHaFuHaFuHa',
         "text" : '嗷嗚、呼哈呼哈呼哈呼哈'
     },
@@ -270,6 +274,10 @@ noiseList = [
     {
         "fileName" : "noise36",
         "text" : "(哈欠2)"
+    },
+    {
+        "fileName" : "noise37",
+        "text" : "啵啵啵啵啵啵↑、啵啵啵啵啵啵↓、啵啵啵啵啵啵→，啵啵啵啵啵啵→啵啵啵啵啵啵→"
     },
     {
         "fileName" : "makeNoise",

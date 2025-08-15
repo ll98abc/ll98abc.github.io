@@ -100,6 +100,10 @@ wordsList = [
         "text" : "這是什麼惡毒至極的詛咒啊"
     },
     {
+        "fileName" : "detectedDanger",
+        "text" : "登登登，已檢測到危害。登登登，已檢測到危害"
+    },
+    {
         "fileName" : "diabetes",
         "text" : "好甜喔，我要糖尿病了"
     },
@@ -166,6 +170,10 @@ wordsList = [
     {
         "fileName" : "gonnaDie2",
         "text" : "我真的覺得我快被渡化了"
+    },
+    {
+        "fileName" : "goodBye",
+        "text" : "再見！結束直播"
     },
     {
         "fileName" : "guilty",
@@ -278,6 +286,10 @@ wordsList = [
     {
         "fileName" : "KoReNaNi",
         "text" : "これなに？"
+    },
+    {
+        "fileName" : "lackFunction",
+        "text" : "我沒有那麼多功能"
     },
     {
         "fileName" : "loveAndPeace",

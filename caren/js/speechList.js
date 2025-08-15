@@ -44,6 +44,10 @@ speechList = [
         "text" : '情感問題一律建議分手'
     },
     {
+        "fileName" : "bringYourMom",
+        "text" : "聊天室的各位朋友，把你的word和Mom拿出來"
+    },
+    {
         "fileName" : 'broken',
         "text" : '你們還是都給我去死一死好了'
     },    
@@ -70,7 +74,7 @@ speechList = [
     {
         "fileName" : "ccp",
         "text" : "Okay, CCP is, uhm, hmm. Cum on Cucumber Party. 好不好？Ok, Cum on Cucumber Party. 就是射在大黃瓜上派對，OK? 這就是CCP，OK?"
-    },
+    },    
     {
         "fileName" : "cloudPresence",
         "text" : "我沒有想到原來匿名版現在還有雲際線的靈壓耶"
@@ -102,6 +106,10 @@ speechList = [
     {
         "fileName" : 'dirty',
         "text" : '天啊我是個邋遢鬼，哈哈'
+    },
+    {
+        "fileName" : "ditchMoney",
+        "text" : "光榮且榮幸的宣布一件重要的事情，那就是本日點歌停收，再斗內就當你丟水溝，撲通一聲好大聲"
     },
     {
         "fileName" : 'dying3',
@@ -374,6 +382,10 @@ speechList = [
     {
         "fileName" : 'needHelp2',
         "text" : '我真的好想吐喔現在，救命啊、救命啊(喘)'
+    },
+    {
+        "fileName" : "noBathNo",
+        "text" : "噢我全身都是汗完了我不想洗澡"
     },
     {
         "fileName" : 'noCensure',
