@@ -246,7 +246,7 @@ function copyLink(){
 }
 
 function makeFavor(){
-	$("#playMode").removeClass("hidden");
+	$("#playMode, #delFavor").removeClass("hidden");
 	$("#makeFavor").addClass("hidden");
 	favorFlag = 1;
 }
@@ -254,7 +254,7 @@ function makeFavor(){
 function hideFavor(){
 	let favoButtons = null;
 	$("#playMode").addClass("hidden");
-	$("#makeFavor").removeClass("hidden");
+	$("#makeFavor, #delFavor").removeClass("hidden");
 	favorFlag = 0;
 	favoButtons = $("#favorDiv").children();
 	$("#favorDivMain").append(favoButtons);
@@ -263,9 +263,10 @@ function hideFavor(){
 
 function delFavor(){
 	let favoButtons = null;
+	$("#makeFavor, #playMode").removeClass("hidden");
+	$("#delFavor").addClass("hidden");
 	favoButtons = $("#favorDivMain").children();
-	$("#favorDiv").append(favoButtons);
-	$("#favorHead, #favorDiv, #hideFavor").removeClass("hidden");
+	$("#favorDiv").append(favoButtons);	
 	favorFlag = -1;
 }
 
