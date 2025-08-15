@@ -93,8 +93,7 @@ function nav(param){
 function playSound(fileName) {	
 	//前一個stop，remove"播放中"的顏色
 	//$("#audio").stop();	
-	//更換audio檔案
-	console.log(favorFlag);
+	//更換audio檔案	
 	switch (favorFlag) {
 		case 0 :
 			let target = $("input[onclick*='"+fileName+"']").first();			
@@ -324,4 +323,5 @@ function initNoiseList(){
 	for (let i =0;i < noiseList.length; i++){
 		$("#noiseDiv").append("<input type='button' class='btn-radius grid' onclick=\"playSound('"+category+"/"+noiseList[i].fileName+"')\" value='"+noiseList[i].text+"'/>");
 	}
+
 }
