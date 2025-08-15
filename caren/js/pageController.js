@@ -1,4 +1,5 @@
 ﻿var category = [ "speech", "lol", "distortion", "extra", "noise", "greeting", "words" ];
+var favorFlag = 0;
 
 function initPage(){
 	initSpeechList();
@@ -9,13 +10,7 @@ function initPage(){
 	initExtraList();
 	initNoiseList();
 	// 開場隨機抽一個icon
-	changeIcon();
-	$(".btn-radius").on("click" , function(){
-		//不管有沒有上一個正在播放，都先清除掉playing的顏色
-		$(".playing").removeClass("playing");
-		//當前按鈕增加"播放中"的顏色
-		  $(this).addClass("playing");
-	});
+	changeIcon();	
 
 	$(".rngBtn").on("click" , function(){
 		let rng = Math.floor(Math.random() * $(".grid").length);		
@@ -99,16 +94,40 @@ function playSound(fileName) {
 	//前一個stop，remove"播放中"的顏色
 	//$("#audio").stop();	
 	//更換audio檔案
-	$("#audio").attr("src" , "resource/" + fileName + ".mp3");
-	let rng = Math.floor(Math.random() * 100);
-	console.log(rng);
-	if (rng < 20){ 
-		changeIcon();
-	};	
-	
-	if (rng < 7){
-		playAnime(rng);
-	}		
+	console.log(favorFlag);
+	switch (favorFlag) {
+		case 0 :
+			let target = $("input[onclick*='"+fileName+"']").first();			
+			//不管有沒有上一個正在播放，都先清除掉playing的顏色
+			$(".playing").removeClass("playing");
+			//當前按鈕增加"播放中"的顏色
+		  	$(target).addClass("playing");	
+			$("#audio").attr("src" , "resource/" + fileName + ".mp3");
+			let rng = Math.floor(Math.random() * 100);
+			console.log(rng);
+			if (rng < 20){
+				changeIcon();
+			};
+
+			if (rng < 7){
+				playAnime(rng);
+			}		
+			break;
+		case 1 : 			
+			let check = $("input[onclick*='"+fileName+"']").first();
+			let cloneObj = null;			
+			if (check.length == 1){
+				 cloneObj = check.clone();				 
+				 $("#favorDiv").append(cloneObj);				 
+			}			
+			break;
+		case -1 :			
+			let checkFavor = $("#favorDiv").children("input[onclick*='"+fileName+"']");			
+			if (checkFavor.length){
+				checkFavor.remove();
+			}
+			break;
+	}
 	return false;
 }
 
@@ -224,6 +243,30 @@ function copyLink(){
 		alert("請先點擊目標按鈕");
 		return false;
 	}	
+}
+
+function makeFavor(){
+	$("#playMode").removeClass("hidden");
+	$("#makeFavor").addClass("hidden");
+	favorFlag = 1;
+}
+
+function hideFavor(){
+	let favoButtons = null;
+	$("#playMode").addClass("hidden");
+	$("#makeFavor").removeClass("hidden");
+	favorFlag = 0;
+	favoButtons = $("#favorDiv").children();
+	$("#favorDivMain").append(favoButtons);
+	nav('favorHead');
+}
+
+function delFavor(){
+	let favoButtons = null;
+	favoButtons = $("#favorDivMain").children();
+	$("#favorDiv").append(favoButtons);
+	$("#favorHead, #favorDiv, #hideFavor").removeClass("hidden");
+	favorFlag = -1;
 }
 
 function initSpeechList(){

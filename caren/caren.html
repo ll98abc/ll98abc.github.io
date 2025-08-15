@@ -3,7 +3,7 @@
 <title>Caren</title>
 <meta property="og:title" content="Caren Board">
 <meta property="og:url" content="https://ll98abc.github.io/caren/caren.html">
-<meta property="og:image" content="https://ll98abc.github.io/caren/images/ogImage.jpg">
+<meta property="og:image" content="images/cover.png">
 <meta property="og:description" content="角蓮之聲">
 <meta name="viewport" content="width=device-width, initial-scale=1" >
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
@@ -49,6 +49,15 @@
     <tr>
       <td><input class="copyBtn" type="button" value="copy&#13;&#10;Link" onclick="copyLink()"/></td>
     </tr>
+    <tr>
+      <td>
+        <input id="makeFavor" class="favorBtn" type="button" value="make&#13;&#10;Favor" onclick="makeFavor()"/>
+        <input id="playMode" class="playModeBtn hidden" type="button" value="play&#13;&#10;Mode" onclick="hideFavor()"/>
+      </td>
+    </tr>
+    <tr>
+      <td><input id="delFavor" class="delFavorBtn" type="button" value="del&#13;&#10;Favor" onclick="delFavor()"/></td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -70,32 +79,38 @@
 <div class="randomCaren6"><img src="images/carenSheep.png"></div>
 <div class="randomCaren7"><img src="images/carenSheep_reverse.png"></div>
 <div id="mainDiv" class="mainDiv">
-  <h1 id="speechHead" class="headline">名言</h1><span class="buttonCounter hidden">共<label id="speechCount"></label>顆</span>
+  <div id="favorDiv" class="favorBox">    
+  </div>
+  <h1 id="speechHead" class="headline">名言</h1>
   <div id="speechDiv">
   </div>
   <hr>
-  <h1 id="wordsHead" class="headline">對話</h1><span class="buttonCounter hidden">共<label id="wordsCount"></label>顆</span>
+  <h1 id="wordsHead" class="headline">對話</h1>
   <div id="wordsDiv">    
   </div>
   <hr>
-  <h1 id="lolHead" class="headline">愉悅</h1><span class="buttonCounter hidden">共<label id="lolCount"></label>顆</span>
+  <h1 id="lolHead" class="headline">愉悅</h1>
   <div id="lolDiv">    
   </div>
   <hr>
-  <h1 id="greetingHead" class="headline">問候</h1><span class="buttonCounter hidden">共<label id="greetingCount"></label>顆</span>
+  <h1 id="greetingHead" class="headline">問候</h1>
   <div id="greetingDiv">    
   </div>
   <hr>
-  <h1 id="noiseHead" class="headline">妹魔噪音</h1><span class="buttonCounter hidden">共<label id="noiseCount"></label>顆</span>
+  <h1 id="noiseHead" class="headline">妹魔噪音</h1>
   <div id="noiseDiv">    
   </div>
   <hr>
-  <h1 id="distortionHead" class="headline">是這樣，但也不是那樣</h1><span class="buttonCounter hidden">共<label id="distortionCount"></label>顆</span>
+  <h1 id="distortionHead" class="headline">是這樣，但也不是那樣</h1>
   <div id="distortionDiv">
   </div>
   <hr>
-  <h1 id="extraHead" class="headline">其他</h1><span class="buttonCounter hidden">共<label id="extraCount"></label>顆</span>
+  <h1 id="extraHead" class="headline">其他</h1>
   <div id="extraDiv">    
+  </div>
+  <hr>
+  <h1 id="favorHead" class="headline">個人面板</h1>
+  <div id="favorDivMain">
   </div>
 </div>
 </div>
@@ -112,7 +127,4 @@ $(document).ready(function(){
   initPage();
 });
 </script>
-
 </html>
-
-

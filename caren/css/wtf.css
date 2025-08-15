@@ -73,6 +73,7 @@ body {
 	padding: 12px 8px;
 	border-radius: 16px;
 	font-size: 1.1em;
+	z-index: 100;
 }
 
 .copyBtn{
@@ -81,7 +82,7 @@ body {
 	border: 1px solid rgb(176, 224, 162);
 	padding: 12px 8px;
 	border-radius: 16px;
-	font-size: 1.1em;	
+	font-size: 1.1em;
 }
 
 .rngBtn{
@@ -138,4 +139,40 @@ body {
 
 .beTheOne{
 	background-color: rgb(69, 241, 190) !important;
+}
+
+.favorBox{
+	top: 0px;
+	position: fixed;
+	width:100%;
+	z-index: 10;
+	background-color: rgba(3, 10, 3, 0.9);
+	border: 1px solid rgb(176, 224, 162);
+}
+
+.favorBtn{
+	background-color: rgba(73, 96, 199, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 8px;
+	border-radius: 16px;
+	font-size: 1.1em;
+}
+
+.delFavorBtn{
+	background-color: rgba(233, 60, 60, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 8px;
+	border-radius: 16px;
+	font-size: 1.1em;
+}
+
+.playModeBtn{
+	background-color: rgba(199, 103, 24, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 8px;
+	border-radius: 16px;
+	font-size: 1.1em;
 }
