@@ -1,10 +1,10 @@
 extraList = [   
     {
-        "fileName" : "癱瘓",
+        "fileName" : "paralysis",
         "text" : "桌：「媽的主播能動就不錯了聊天室就是最好不要在那邊嫌肝嫌腎」蓮：「我是癱瘓是不是啊？」"
     },
     {
-        "fileName" : "植物人",
+        "fileName" : "vegetative",
         "text" : "剛剛那一瞬間他媽主播連動都還不會動欸，現在看起來會動，哇他媽的就像是看到那個植物人站起來一樣 (桌)"
     },
     {
@@ -77,4 +77,5 @@ extraList = [
         "text" : ''
     },
     */
+
 ];
