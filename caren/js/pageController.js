@@ -1,4 +1,4 @@
-﻿var category = [ "speech", "lol", "distortion", "extra", "noise", "greeting", "words" ];
+var category = [ "speech", "lol", "distortion", "extra", "noise", "greeting", "words" ];
 var favorFlag = 0;
 
 function initPage(){
@@ -17,22 +17,29 @@ function initPage(){
 		$(".grid").get(rng).click();
 	});	
 	checkParam();
+	loadFavor();
 }
 
 function checkParam(){	
 	let link = window.location.href;
 	if (link.indexOf("?") > -1) {		
-		result = getParam(link);		
+		result = getParam(link);
+		let category = null, fileName = null;
 		if ("" == result || 'undefined' == typeof(result)){
 			return false;
-		}
-		let fullName = "playSound('" + result + "')";
-		var target = $("input[onclick*='"+fullName+"']").first();
-		var width = $(target).width();		
-		$(target).addClass("beTheOne");		
-		$(target).css('margin-left' , width * -0.5);
+		}else if(result.indexOf("/") > -1){
+			category = result.split("/")[0];
+			fileName = result.split("/")[1];
+		}else{
+			return false;
+		}		
+		let target = $("input[category='"+category+"'][fileName='"+fileName+"']");
+		let width = $(target).width();
+		let cloneObj = $(target).clone();
+		$(cloneObj).addClass("beTheOne");		
+		$(cloneObj).css('margin-left' , width * -0.5);
 		$.blockUI({
-			message: $(target),
+			message: $(cloneObj),
 			css : {
 				'border' : 'none',
 				'left' : '50%',
@@ -47,17 +54,24 @@ function checkParam(){
 
 function myUnblock(){
 	$.unblockUI();
+	/** 
 	let link = window.location.href;
 	if (link.indexOf("?") > -1) {
 		let result = getParam(link);
+		let category = null, fileName = null;
 		if ("" == result || 'undefined' == typeof(result)){
 			return false;
-		}
-		let fullName = "playSound('" + result + "')";		
-		var target = $("input[onclick='"+fullName+"']").first();			
+		}else if(result.indexOf("/") > -1){
+			category = result.split("/")[0];
+			fileName = result.split("/")[1];
+		}else{
+			return false;
+		}		
+		let target = $("input[category='"+category+"'][fileName='"+fileName+"']");
 		$(target).removeClass("beTheOne");		
 		$(target).css('margin-left' , '1%');
 	}	
+	*/
 }
 
 function getParam(link){	
@@ -90,18 +104,19 @@ function nav(param){
 	return false;
 }
 
-function playSound(fileName) {	
+function playSound(buttonObj) {	
 	//前一個stop，remove"播放中"的顏色
 	//$("#audio").stop();	
 	//更換audio檔案	
+	let fileName = $(buttonObj).attr("fileName");
+	let category = $(buttonObj).attr("category");	
 	switch (favorFlag) {
-		case 0 :
-			let target = $("input[onclick*='"+fileName+"']").first();			
+		case 0 :			
 			//不管有沒有上一個正在播放，都先清除掉playing的顏色
 			$(".playing").removeClass("playing");
 			//當前按鈕增加"播放中"的顏色
-		  	$(target).addClass("playing");	
-			$("#audio").attr("src" , "resource/" + fileName + ".mp3");
+		  	$(buttonObj).addClass("playing");	
+			$("#audio").attr("src" , "resource/" + category + "/" + fileName + ".mp3");
 			let rng = Math.floor(Math.random() * 100);
 			console.log(rng);
 			if (rng < 20){
@@ -112,16 +127,16 @@ function playSound(fileName) {
 				playAnime(rng);
 			}		
 			break;
-		case 1 : 			
-			let check = $("input[onclick*='"+fileName+"']").first();
+		case 1 : 						
+			let check = $("#favorDiv").children("input[category='"+category+"'][fileName='"+fileName+"']");
 			let cloneObj = null;			
-			if (check.length == 1){
-				 cloneObj = check.clone();				 
+			if (check.length == 0){
+				 cloneObj = $(buttonObj).clone();
 				 $("#favorDiv").append(cloneObj);				 
 			}			
 			break;
 		case -1 :			
-			let checkFavor = $("#favorDiv").children("input[onclick*='"+fileName+"']");			
+			let checkFavor = $("#favorDiv").children("input[category='"+category+"'][fileName='"+fileName+"']");
 			if (checkFavor.length){
 				checkFavor.remove();
 			}
@@ -247,7 +262,20 @@ function copyLink(){
 function makeFavor(){
 	$("#playMode, #delFavor").removeClass("hidden");
 	$("#makeFavor").addClass("hidden");
+	favoButtons = $("#favorDivMain").children();
+	$("#favorDiv").append(favoButtons);	
 	favorFlag = 1;
+	return false;
+}
+
+function delFavor(){
+	let favoButtons = null;
+	$("#makeFavor, #playMode").removeClass("hidden");
+	$("#delFavor").addClass("hidden");
+	favoButtons = $("#favorDivMain").children();
+	$("#favorDiv").append(favoButtons);	
+	favorFlag = -1;
+	return false;
 }
 
 function hideFavor(){
@@ -258,70 +286,92 @@ function hideFavor(){
 	favoButtons = $("#favorDiv").children();
 	$("#favorDivMain").append(favoButtons);
 	nav('favorHead');
+	saveFavor();
+	return false;
 }
 
-function delFavor(){
-	let favoButtons = null;
-	$("#makeFavor, #playMode").removeClass("hidden");
-	$("#delFavor").addClass("hidden");
-	favoButtons = $("#favorDivMain").children();
-	$("#favorDiv").append(favoButtons);	
-	favorFlag = -1;
+function saveFavor(){
+	if (typeof(Storage) !== 'undefined'){
+		let category = null;
+		let fileName = null;
+		let saveData = "";
+		$("#favorDivMain").children().each(function(){
+			category = $(this).attr("category");
+			fileName = $(this).attr("fileName");
+			saveData += category + "_" + fileName + ",";
+		});
+		localStorage.setItem("favorButtons" , saveData.substring(0 , saveData.length -1));
+	}
+	return false;
+}
+
+function loadFavor(){
+	if (typeof(Storage) !== 'undefined'){
+		let category = null;
+		let fileName = null;
+		let target = null;
+		let check = localStorage.getItem("favorButtons");
+		if (check){
+			let saveData = localStorage.getItem("favorButtons").split(",");
+			for (let i = 0;i< saveData.length;i++){
+				category = saveData[i].split("_")[0];
+				fileName = saveData[i].split("_")[1];
+				target = $("input[category='"+ category +"'][fileName='"+fileName+"']");
+				if (target){
+					$("#favorDivMain").append($(target).clone());
+				}
+			}		
+		}
+		
+	}
+	return false;
 }
 
 function initSpeechList(){
-	let category = "speech";
-	$("#speechCount").html(speechList.length);
+	let category = "speech";	
 	for (let i = 0; i < speechList.length; i++){
-		$("#speechDiv").append("<input type='button' class='btn-radius grid' onclick=\"playSound('"+category+"/"+speechList[i].fileName+"')\" value='"+speechList[i].text+"'/>");
+		$("#speechDiv").append("<input type='button' class='btn-radius grid' category='"+category+"' fileName='"+speechList[i].fileName+"' onclick=\"playSound(this)\" value='"+speechList[i].text+"'/>");
 	}
 }
 
 function initWordsList(){
-	let category = "words";
-	$("#wordsCount").html(wordsList.length);
+	let category = "words";	
 	for (let i = 0; i < wordsList.length; i++){
-		$("#wordsDiv").append("<input type='button' class='btn-radius grid' onclick=\"playSound('"+category+"/"+wordsList[i].fileName+"')\" value='"+wordsList[i].text+"'/>");
+		$("#wordsDiv").append("<input type='button' class='btn-radius grid' category='"+category+"' fileName='"+wordsList[i].fileName+"' onclick=\"playSound(this)\" value='"+wordsList[i].text+"'/>");
 	}
 }
 
 function initLolList(){
-	let category = "lol";
-	$("#lolCount").html(lolList.length);
+	let category = "lol";	
 	for (let i = 0; i < lolList.length; i++){
-		$("#lolDiv").append("<input type='button' class='btn-radius grid' onclick=\"playSound('"+category+"/"+lolList[i].fileName+"')\" value='"+lolList[i].text+"'/>");
+		$("#lolDiv").append("<input type='button' class='btn-radius grid' category='"+category+"' fileName='"+lolList[i].fileName+"' onclick=\"playSound(this)\" value='"+lolList[i].text+"'/>");
 	}
 }
 
 function initGreetingList(){
-	let category = "greeting";
-	$("#greetingCount").html(greetingList.length);
+	let category = "greeting";	
 	for (let i = 0; i < greetingList.length; i++){
-		$("#greetingDiv").append("<input type='button' class='btn-radius grid' onclick=\"playSound('"+category+"/"+greetingList[i].fileName+"')\" value='"+greetingList[i].text+"'/>");
+		$("#greetingDiv").append("<input type='button' class='btn-radius grid' category='"+category+"' fileName='"+greetingList[i].fileName+"' onclick=\"playSound(this)\" value='"+greetingList[i].text+"'/>");
 	}
 }
 
 function initDistortionList(){
-	let category = "distortion";
-	$("#distortionCount").html(distortionList.length);
+	let category = "distortion";	
 	for (let i = 0; i < distortionList.length; i++){
-		$("#distortionDiv").append("<input type='button' class='btn-radius grid' onclick=\"playSound('"+category+"/"+distortionList[i].fileName+"')\" value='"+distortionList[i].text+"'/>");
+		$("#distortionDiv").append("<input type='button' class='btn-radius grid' category='"+category+"' fileName='"+distortionList[i].fileName+"' onclick=\"playSound(this)\" value='"+distortionList[i].text+"'/>");
 	}
 }
 
 function initExtraList(){
-	let category = "extra";
-	$("#extraCount").html(extraList.length);
+	let category = "extra";	
 	for (let i = 0; i < extraList.length; i++){
-		$("#extraDiv").append("<input type='button' class='btn-radius grid' onclick=\"playSound('"+category+"/"+extraList[i].fileName+"')\" value='"+extraList[i].text+"'/>");
+		$("#extraDiv").append("<input type='button' class='btn-radius grid' category='"+category+"' fileName='"+extraList[i].fileName+"' onclick=\"playSound(this)\" value='"+extraList[i].text+"'/>");
 	}
 }
 
 function initNoiseList(){
-	let category = "noise";
-	$("#noiseCount").html(noiseList.length);
+	let category = "noise";	
 	for (let i =0;i < noiseList.length; i++){
-		$("#noiseDiv").append("<input type='button' class='btn-radius grid' onclick=\"playSound('"+category+"/"+noiseList[i].fileName+"')\" value='"+noiseList[i].text+"'/>");
+		$("#noiseDiv").append("<input type='button' class='btn-radius grid' category='"+category+"' fileName='"+noiseList[i].fileName+"' onclick=\"playSound(this)\" value='"+noiseList[i].text+"'/>");
 	}
-
 }
