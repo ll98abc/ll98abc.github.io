@@ -270,7 +270,7 @@ function makeFavor(){
 
 function delFavor(){
 	let favoButtons = null;
-	$("#playMode, #delFavor, #favorDiv").removeClass("hidden");
+	$("#playMode, #makeFavor, #favorDiv").removeClass("hidden");
 	$("#delFavor").addClass("hidden");
 	favoButtons = $("#favorDivMain").children();
 	$("#favorDiv").append(favoButtons);	
@@ -375,4 +375,5 @@ function initNoiseList(){
 		$("#noiseDiv").append("<input type='button' class='btn-radius grid' category='"+category+"' fileName='"+noiseList[i].fileName+"' onclick=\"playSound(this)\" value='"+noiseList[i].text+"'/>");
 	}
 }
+
 
