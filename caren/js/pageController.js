@@ -260,7 +260,7 @@ function copyLink(){
 }
 
 function makeFavor(){
-	$("#playMode, #delFavor").removeClass("hidden");
+	$("#playMode, #delFavor, #favorDiv").removeClass("hidden");
 	$("#makeFavor").addClass("hidden");
 	favoButtons = $("#favorDivMain").children();
 	$("#favorDiv").append(favoButtons);	
@@ -270,7 +270,7 @@ function makeFavor(){
 
 function delFavor(){
 	let favoButtons = null;
-	$("#makeFavor, #playMode").removeClass("hidden");
+	$("#playMode, #delFavor, #favorDiv").removeClass("hidden");
 	$("#delFavor").addClass("hidden");
 	favoButtons = $("#favorDivMain").children();
 	$("#favorDiv").append(favoButtons);	
@@ -280,7 +280,7 @@ function delFavor(){
 
 function hideFavor(){
 	let favoButtons = null;
-	$("#playMode").addClass("hidden");
+	$("#playMode, #favorDiv").addClass("hidden");
 	$("#makeFavor, #delFavor").removeClass("hidden");
 	favorFlag = 0;
 	favoButtons = $("#favorDiv").children();
@@ -375,3 +375,4 @@ function initNoiseList(){
 		$("#noiseDiv").append("<input type='button' class='btn-radius grid' category='"+category+"' fileName='"+noiseList[i].fileName+"' onclick=\"playSound(this)\" value='"+noiseList[i].text+"'/>");
 	}
 }
+
