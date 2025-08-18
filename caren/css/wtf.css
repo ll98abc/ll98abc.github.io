@@ -148,6 +148,7 @@ body {
 	z-index: 10;
 	background-color: rgba(3, 10, 3, 0.9);
 	border: 1px solid rgb(176, 224, 162);
+	padding-top: 1em;
 }
 
 .favorBtn{
@@ -181,3 +182,4 @@ body {
 p{
 	font-size: 1.1em;
 }
+
