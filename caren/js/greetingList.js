@@ -120,7 +120,7 @@ greetingList = [
         "text" : '幹林涼，這什麼大便東西啊'
     },
     {
-        "fileName" : "大開腿",
+        "fileName" : "waitTheFuck",
         "text" : "他腿就是開到感覺他在等人幹他你知道嗎"
     }
     /*
@@ -129,4 +129,5 @@ greetingList = [
         "text" : ''
     },
     */
+
 ];
