@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <title>Caren</title>
 <meta property="og:title" content="Caren Board">
@@ -24,7 +24,7 @@
 <div class="title">Caren Voice</div>
 <div class="controllerDiv">
 <table id="panel">
-  <tbody>    
+  <tbody>
     <tr>
       <td><input class="navBtn" type="button" value="名言" onclick="nav('speechHead')"/></td>  
     </tr>    
@@ -56,7 +56,7 @@
     </tr>
     <tr>
       <td><input id="delFavor" class="delFavorBtn" type="button" value="del&#13;&#10;Favor" onclick="delFavor()"/></td>
-    </tr>    
+    </tr>
   </tbody>
 </table>
 </div>
@@ -109,7 +109,16 @@
   </div>
   <hr>
   <h1 id="favorHead" class="headline">個人面板</h1>
-  <div id="favorDivMain" style="width:90%;">
+  <div id="favorDivMain">
+  </div>
+  <hr>
+  <h1 id="footer" class="headline">使用說明</h1>
+  <div id="footer" style="width:80%;text-align:left;line-break: auto;">
+    <p>1.copyLink按鈕可複製最後一次播放的按鈕連結到剪貼簿，使用該連結打開網頁時自動popUp該按鈕。</p>
+    <p>2.makeFavor可以新增我的最愛按鈕，在make模式中點選的按鈕會進入暫存區。返回playMode後暫存區的按鈕會存到個人面板。</p>
+    <p>3.delFavor可以刪除暫存區中的按鈕將不想要的按鈕移出我的最愛清單。</p>
+    <p>4.2025/08/18 update，將我的最愛按鈕儲存到localStorage中，可以記憶使用者的儲存好的個人面板</p>
+    <p>&nbsp;</p>
   </div>
   <hr>
 </div>
@@ -127,6 +136,4 @@ $(document).ready(function(){
   initPage();
 });
 </script>
-
 </html>
-
