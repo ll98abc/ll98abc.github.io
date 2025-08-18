@@ -504,15 +504,15 @@ wordsList = [
         "text" : "我今天開台，所以你們賺到了(彈舌)"
     },
     {
-        "fileName" : "你已經很努力了",
+        "fileName" : "youWorkedHard",
         "text" : "你已經很努力了"
     },
     {
-        "fileName" : "拯救世界",
+        "fileName" : "saveWorld",
         "text" : "好強喔！他拯救了世界"
     },
     {
-        "fileName" : "無敵金剛王",
+        "fileName" : "kingKongKing",
         "text" : "哇！是無敵金剛王耶"
     }
     /*
@@ -521,4 +521,5 @@ wordsList = [
         "text" : ''
     },
     */    
+
 ];
