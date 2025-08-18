@@ -1,6 +1,6 @@
 speechList = [
     {
-        "fileName" : "2比利豬",
+        "fileName" : "2pig",
         "text" : "可惡，人家有伊比利，那我們就一比二吧。啊不然我們二比利好了，我們請比莉姊代言台灣的二比利豬這樣"
     },
     {
@@ -725,19 +725,19 @@ speechList = [
         "text" : "YT到底在衝三小"
     },
     {
-        "fileName" : "欠我十塊",
+        "fileName" : "oweMe10Bucks",
         "text" : "我送你離開欠我十塊，你死了活該～投資失敗還要還債，還要借高利貸。我送你離開欠我十塊，你死了活該～父母雙亡葬身火海。用一生去還債～"
     },
     {
-        "fileName" : "天黑黑",
+        "fileName" : "darkSky",
         "text" : "天黑黑、咩落雨、阿公仔牙枝骨頭咩掘芋"
     },
     {
-        "fileName" : "撿角",
+        "fileName" : "getHorn",
         "text" : "讓我把我的角撿回來"
     },
     {
-        "fileName" : "とある角蓮の人生信條",
+        "fileName" : "carenCreed",
         "text" : "我的人生信條，我的人生信條就是【等一下，我要打嗝、嗝。】"
     }
     
@@ -749,3 +749,4 @@ speechList = [
     */
 
 ];
+
