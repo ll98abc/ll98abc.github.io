@@ -52,11 +52,11 @@ function makeResult(param) {
 			$("#audio").attr("src" , "resource/lol/lol20.mp3");
 			break;
 		case 1 :
-			$("#askResult").html("這個的話可以多來一點");
+			$("#askResult").html("這個的話<br/>可以多來一點");
 			$("#audio").attr("src" , "resource/words/giveMeMore.mp3");
 			break;
 		case 2 :
-			$("#askResult").html("如果認真講的話，不行");
+			$("#askResult").html("如果認真講的話<br/>不行");
 			$("#audio").attr("src" , "resource/words/cannot.mp3");
 			break;
 		default :
@@ -64,4 +64,5 @@ function makeResult(param) {
 			$("#audio").attr("src" , "resource/words/lackFunction.mp3");
 			break;
 	}
+
 }
