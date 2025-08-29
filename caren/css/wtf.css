@@ -16,7 +16,7 @@ body {
   width: 100%;
   top: 0px;
   left: 0px;
-  position : absolute;
+  position : fixed;
   background : url(../images/background.png) right center no-repeat fixed;
   /*background-attachment: fixed;*/
   background-size: 100%;
@@ -372,5 +372,6 @@ body {
 p{
 	font-size: 1.1em;
 }
+
 
 }
