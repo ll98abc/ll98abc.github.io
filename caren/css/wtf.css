@@ -278,8 +278,15 @@ body {
 
 .rngBtn{
 	position: fixed;
-	right:5px;
-	bottom:5px;	
+	right:-10%;
+	bottom:5px;
+	width: 50%;
+	max-width: 200px;
+}
+
+.showIcon{
+	width: 80%;
+	object-fit: cover;
 }
 
 .controllerDiv{
@@ -375,4 +382,5 @@ p{
 
 
 }
+
 
