@@ -50,7 +50,7 @@ body {
 .grid{	
 	margin-left:1%;
 	margin-bottom: 1.5%;
-	word-wrap: break-word;
+	white-space: normal;
 }
 
 .playing{
@@ -239,7 +239,7 @@ body {
 	max-width: 100%;
 	margin-left:1%;
 	margin-bottom: 1.5%;
-	line-break: auto;
+	white-space: normal;
 }
 
 .playing{
@@ -375,3 +375,4 @@ p{
 
 
 }
+
