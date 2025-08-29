@@ -1,3 +1,5 @@
+@media screen and (min-width: 721px) {
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -10,14 +12,14 @@ body {
 }
 
 .bg {
-  height : 100%;
+  height: 100%;
   width: 100%;
   top: 0px;
   left: 0px;
-  position : fixed;
+  position : absolute;
   background : url(../images/background.png) right center no-repeat fixed;
   /*background-attachment: fixed;*/
-  background-size : 100% ;
+  background-size: 100%;
   opacity : .3;
   z-index : -1;
 }
@@ -176,10 +178,199 @@ body {
 	padding: 12px 8px;
 	border-radius: 16px;
 	font-size: 1.1em;
-
 }
 
 p{
 	font-size: 1.1em;
 }
 
+}
+
+
+@media screen and (max-width: 720px) {
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.warpper{
+  width: 100%;		
+  flex-grow:1;
+  z-index:0;  
+}
+
+.bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;		
+  background : url(../images/background_m.png);  
+  background-repeat: no-repeat;  
+  background-attachment:  fixed;
+  opacity: 0.3;
+  z-index: -100;
+}
+
+.title{
+	width:100%;
+	text-align:center;
+	font-size:40px;
+	font-weight: bold;	
+	color: black;  	
+}
+
+.mainDiv{	
+	width:100%;
+	z-index: 1;	
+}
+
+.btn-radius {
+	background-color: rgba(190, 110, 177, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 12px;
+	border-radius: 16px;
+	font-size: 1.1em;
+}
+
+.grid{
+	max-width: 100%;
+	margin-left:1%;
+	margin-bottom: 1.5%;
+	line-break: auto;
+}
+
+.playing{
+	background-color: rgba(226, 43, 67, 0.6);
+}
+
+
+.headline{
+	margin-left:1%;
+	text-align: center;
+}
+
+
+.hidden{
+	display:none !important; 
+}
+
+.navBtn{
+	background-color: rgba(191, 216, 80, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 8px;
+	border-radius: 16px;
+	font-size: 1.1em;
+	z-index: 100;
+}
+
+.copyBtn{
+	background-color: rgba(80, 211, 216, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 8px;
+	border-radius: 16px;
+	font-size: 1.1em;
+}
+
+.rngBtn{
+	position: fixed;
+	right:5px;
+	bottom:5px;	
+}
+
+.controllerDiv{
+	position:fixed;
+	right : 5px;
+	z-index: 3;
+}
+
+.buttonCounter{
+	float: right;
+}
+
+.randomCaren1{
+	position: fixed;
+	right: -300px;
+	top: 50px;
+}
+.randomCaren2{
+	position: fixed;
+	left: -300px;
+	top: 80px;
+}
+.randomCaren3{
+	position: fixed;
+	right: -300px;
+	top: 100px;
+}
+.randomCaren4{
+	position: fixed;
+	left: -300px;
+	top: 70px;
+}
+.randomCaren5{
+	position: fixed;
+	bottom:-610px;
+	left:0px;
+}
+.randomCaren6{
+	position: fixed;
+	right: -300px;
+	top: 100px;
+}
+.randomCaren7{
+	position: fixed;
+	left: -300px;
+	top: 70px;
+}
+
+.beTheOne{
+	background-color: rgb(69, 241, 190) !important;
+}
+
+.favorBox{
+	top: 0px;
+	position: fixed;
+	width:100%;
+	z-index: 10;
+	background-color: rgba(3, 10, 3, 0.9);
+	border: 1px solid rgb(176, 224, 162);
+	padding-top: 1em;
+}
+
+.favorBtn{
+	background-color: rgba(73, 96, 199, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 8px;
+	border-radius: 16px;
+	font-size: 1.1em;
+}
+
+.delFavorBtn{
+	background-color: rgba(233, 60, 60, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 8px;
+	border-radius: 16px;
+	font-size: 1.1em;
+}
+
+.playModeBtn{
+	background-color: rgba(199, 103, 24, 0.6);
+	color: rgb(3, 3, 0);
+	border: 1px solid rgb(176, 224, 162);
+	padding: 12px 8px;
+	border-radius: 16px;
+	font-size: 1.1em;
+}
+
+p{
+	font-size: 1.1em;
+}
+
+}
