@@ -17,9 +17,9 @@ body {
   top: 0px;
   left: 0px;
   position : fixed;
-  background : url(../images/background.png) right center no-repeat fixed;
+  background : url(../images/background.png) left center no-repeat fixed;
   /*background-attachment: fixed;*/
-  background-size: 100%;
+  background-size: cover;
   opacity : .3;
   z-index : -1;
 }
@@ -382,5 +382,6 @@ p{
 
 
 }
+
 
 
