@@ -64,7 +64,7 @@ body {
 }
 
 
-.hidden{
+.{
 	display:none !important; 
 }
 
@@ -184,6 +184,42 @@ p{
 	font-size: 1.1em;
 }
 
+.askDiv, .chipDiv{
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultDiv{
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chipBox{
+    display: inline-flex;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+.chips{
+    max-width: max-content;
+    max-height: max-content;
+}
+#askInput{
+  font-size: 2em;
+}
+.askText{
+  font-size: 1.5em;
+}
+.askResult{
+  color: #3f10c2;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
 }
 
 
@@ -380,8 +416,42 @@ p{
 	font-size: 1.1em;
 }
 
-
+.askDiv, .chipDiv{
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultDiv{
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chipBox{
+    display: inline-flex;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+.chips{
+    max-width: max-content;
+    max-height: max-content;
+}
+#askInput{
+    font-size: 2em;
+	width:90%;
+}
+.askText{
+    font-size: 1.5em;
+}
+.askResult{
+    color: #3f10c2;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
 }
 
-
-
+}
