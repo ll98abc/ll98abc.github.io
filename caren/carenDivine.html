@@ -1,0 +1,103 @@
+﻿<html>
+<head>
+<title>Caren</title>
+<meta property="og:title" content="Caren Board">
+<meta property="og:url" content="https://ll98abc.github.io/caren/caren.html">
+<meta property="og:image" content="images/ogImage.png">
+<meta property="og:description" content="角蓮之聲">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="js/divineController.js"></script>
+<link href="css/wtf.css" rel="stylesheet" type="text/css" />
+<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+<div class="warpper">
+<div class="title">擲角</div>
+<div class="controllerDiv">
+</div>
+<hr>
+<audio id="audio" autoplay="false"></audio>
+<div class="rngBtn">
+  <img class="showIcon" src="images/carenSheep.png"/>    
+</div>
+<div id="mainDiv" class="mainDiv">    
+  <div class="askDiv" id="askDiv">
+    <input type="text" id="askInput" placeholder="將想問的事情填入"/>
+  </div>
+  <div class="chipDiv" id="chipDiv">
+    <div class="chipBox" id="leftBox">
+      <img class="chips" src="images/chips/left_front_1.png" alt="1"/>
+      <img class="hidden chips" src="images/chips/left_front_2.png" alt="1"/>
+      <img class="hidden chips" src="images/chips/left_front_3.png" alt="1"/>
+      <img class="hidden chips" src="images/chips/left_front_4.png" alt="1"/>
+      <img class="hidden chips" src="images/chips/left_back_1.png" alt="0"/>
+      <img class="hidden chips" src="images/chips/left_back_2.png" alt="0"/>
+      <img class="hidden chips" src="images/chips/left_back_3.png" alt="0"/>
+      <img class="hidden chips" src="images/chips/left_back_4.png" alt="0"/>
+    </div>
+    <div class="chipBox" id="rightBox">
+      <img class="chips" src="images/chips/right_back_1.png" alt="0"/>
+      <img class="hidden chips" src="images/chips/right_front_1.png" alt="1"/>
+      <img class="hidden chips" src="images/chips/right_back_2.png" alt="0"/>
+      <img class="hidden chips" src="images/chips/right_front_2.png" alt="1"/>
+      <img class="hidden chips" src="images/chips/right_back_3.png" alt="0"/>
+      <img class="hidden chips" src="images/chips/right_front_3.png" alt="1"/>
+      <img class="hidden chips" src="images/chips/right_back_4.png" alt="0"/>                  
+      <img class="hidden chips" src="images/chips/right_front_4.png" alt="1"/>      
+    </div>
+</div>
+<div class="resultDiv hidden" id="ResultDiv">
+  <span class="askResult" id="askResult"></span>    
+</div>
+</div>
+<div class="bg"></div>
+</body>
+<script type="text/javascript">
+//to do something 
+$(document).ready(function(){
+  initPage();
+});
+</script>
+<style>
+  .askDiv, .chipDiv{
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .resultDiv{
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .chipBox{
+    display: inline-flex;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+  .chips{
+    max-width: max-content;
+    max-height: max-content;
+  }
+  .hidden{
+    display: none;
+  }  
+  #askInput{
+    font-size: 2em;
+  }
+  .askText{
+    font-size: 1.5em;
+  }
+  .askResult{
+    color: #3f10c2;
+    font-weight: bold;
+    font-size: 3em;
+  }
+</style>
+</html>
