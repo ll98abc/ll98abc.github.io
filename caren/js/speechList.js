@@ -77,7 +77,7 @@ speechList = [
     },
     {
         "fileName" : "carenRisk",
-        "text" : "我這輩子至今為止，做過風險最大最carzy最窺賊最不理喻最令人難以置信的高風險行為就是：做這行。(feat.冬雲凜)"
+        "text" : "我這輩子至今為止，做過風險最大最carzy最窺賊最不可理喻最令人難以置信的高風險行為就是：做這行。(feat.冬雲凜)"
     },    
     {
         "fileName" : "ccp",
@@ -779,4 +779,5 @@ speechList = [
         "text" : ''
     },
     */
+
 ];
