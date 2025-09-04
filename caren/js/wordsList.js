@@ -92,6 +92,10 @@ wordsList = [
         "text" : "來吧"
     },
     {
+        "fileName" : "constipateReason",
+        "text" : "你們太常想這些東西，就是你們便秘的原因"
+    },
+    {
         "fileName" : "cry",
         "text" : "哭了"
     },
@@ -232,6 +236,10 @@ wordsList = [
         "text" : "我真的覺得我沒有準備好"
     },
     {
+        "fileName" : "iAmOutstanding",
+        "text" : "我可真厲害"
+    },
+    {
         "fileName" : "IamSoooGood",
         "text" : "可把我牛逼壞了(插腰)"
     },
@@ -310,6 +318,14 @@ wordsList = [
     {
         "fileName" : "neverTouchAgain",
         "text" : "我這輩子再也不要碰這個東西了"
+    },
+    {
+        "fileName" : "niceDeal",
+        "text" : "賀成交"
+    },
+    {
+        "fileName" : "niceRenewal",
+        "text" : "賀續約"
     },
     {
         "fileName" : "nikutabetai",
@@ -448,9 +464,17 @@ wordsList = [
         "text" : "(客)承蒙您、按子謝。※謝謝你"
     },
     {
+        "fileName" : "thankSC",
+        "text" : "感謝榜一大哥刷的芒果冰"
+    },
+    {
         "fileName" : "thankYourOrder",
         "text" : "感謝點歌，希望你各位會喜歡"
-    },    
+    },  
+    {
+        "fileName" : "thumbUp",
+        "text" : "評論區的寶子們給我點個三連吧"
+    },
     {
         "fileName" : "tsunndere",
         "text" : "唉，我知道，你們這些小傲嬌。你們都是口是心非的傢伙，哈哈哈"
@@ -478,6 +502,14 @@ wordsList = [
     {
         "fileName" : "workhard",
         "text" : "啊？我現在很努力地在工作捏，兄弟"
+    },
+    {
+        "fileName" : "whatTheFuck",
+        "text" : "what the fuck，太 diu 了吧"
+    },
+    {
+        "fileName" : "whoFuckingCare",
+        "text" : "贛林涼誰在乎這個？誰在乎？who fucking care？殺小，現在到底在銃啥"
     },
     {
         "fileName" : "wtf",
@@ -521,5 +553,4 @@ wordsList = [
         "text" : ''
     },
     */    
-
 ];

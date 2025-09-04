@@ -68,9 +68,17 @@ speechList = [
         "text" : "兩公升的水我說拎就拎，但是兩、兩三公升的那個的洗衣精我不想拿"
     },
     {
+        "fileName" : "carenLikeHim",
+        "text" : "就是，我很欣賞那種就是，那種你第一次到他家，然後他就會叫你幫他丟垃圾的那種人"
+    },
+    {
         "fileName" : "carenFeatures",
         "text" : "我相信角蓮除了色起來跟沉著穩重以外其他都很擅長"
     },
+    {
+        "fileName" : "carenRisk",
+        "text" : "我這輩子至今為止，做過風險最大最carzy最窺賊最不理喻最令人難以置信的高風險行為就是：做這行。(feat.冬雲凜)"
+    },    
     {
         "fileName" : "ccp",
         "text" : "Okay, CCP is, uhm, hmm. Cum on Cucumber Party. 好不好？Ok, Cum on Cucumber Party. 就是射在大黃瓜上派對，OK? 這就是CCP，OK?"
@@ -82,6 +90,10 @@ speechList = [
     {
         "fileName" : 'comfortable',
         "text" : '不能讓我不舒服，我跟你講。我是台主，我舒服。我舒服你們才能舒服知道嗎'
+    },
+    {
+        "fileName" : "contrack",
+        "text" : "二、雙方同意自本協議簽署之日起，將原合約第五條第二項增訂第八款約定為乙方應以善良管理人之注意義務維持身心健康，包括但不限於採取正常作息、均衡飲食等。"
     },
     {
         "fileName" : 'compromise',
@@ -184,13 +196,17 @@ speechList = [
         "text" : "你沒有感覺，只能、只能證明一件事情：不是我色不起來，是有沒有可能、你可能其實是個GAY"
     },
     {
+        "fileName" : "generationInsist",
+        "text" : "作為一個網路世代的基本堅持：你沒滑手機你睡什麼覺"
+    },
+    {
         "fileName" : 'getSomeHelp',
         "text" : '我、我比較擔心的是，你可能有類似於精神分裂或者是有一些瞻妄的症狀這樣子'
     },    
     {
         "fileName" : 'getSomeHelp2',
         "text" : '希望大家可以勇敢起來，及早就醫'
-    },
+    },    
     {
         "fileName" : "getRich",
         "text" : "今天，也是想發大財的一天。但是，這個月的發票一樣一張都沒有中呢"
@@ -316,6 +332,10 @@ speechList = [
         "text" : '以防你們不知道，我現在是呈現雙手合十的姿態'
     },
     {
+        "fileName" : "loveWork",
+        "text" : "我愛上班999，天天上班久久久，我愛老闆長長久久"
+    },
+    {
         "fileName" : 'keyboardBully',
         "text" : '我的鍵盤在欺負我現在智商很低'
     },
@@ -412,12 +432,20 @@ speechList = [
         "text" : '下禮拜吃番茄？呷賽。你才呷，我不要。'
     },
     {
+        "fileName" : "noVegetable",
+        "text" : "首先我在這裡要跟大家宣導一件事情：就是人不吃菜不會死。(feat.冬雲凜)"
+    },
+    {
         "fileName" : 'noWife',
         "text" : "I don`t fxxking care about wife."
-    },
+    },    
     {
         "fileName" : "nuclearFive",
         "text" : "就是如果你要蓋核ㄨˇ的話，我個人建議核ㄨˇ蓋金門"
+    },
+    {
+        "fileName" : "nuclearBomb",
+        "text" : "對面要是打過來我們就把核一核二核三核四全部都炸掉"
     },
     {
         "fileName" : 'nurseryAirport',
@@ -437,7 +465,11 @@ speechList = [
     },
     {
         "fileName" : 'originalIntention',
-        "text" : '當時的初衷咧？中出了'
+        "text" : "當時的初衷咧？中出了"
+    },
+    {
+        "fileName" : "praise",
+        "text" : "超級無敵厲害人美聲甜傾國傾城天下無雙呼風喚雨心地善良但是只有考試不見得都考一百分的角蓮"
     },
     {
         "fileName" : 'pieceOfShit',
@@ -747,6 +779,4 @@ speechList = [
         "text" : ''
     },
     */
-
 ];
-
