@@ -217,7 +217,7 @@ p{
 .askResult{
   color: #3f10c2;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
 }
 }
@@ -450,8 +450,9 @@ p{
 .askResult{
     color: #3f10c2;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
 }
+
 
 }
