@@ -86,10 +86,14 @@ greetingList = [
     {
         "fileName" : "greeting18",
         "text" : "幹賃娘，氣死我了"
-    },
+    },    
     {
         "fileName" : "greeting19",
         "text" : "幹你娘"
+    },
+    {
+        "fileName" : "greeting20",
+        "text" : "操"
     },
     {
         "fileName" : 'greetingAjie',
@@ -129,5 +133,4 @@ greetingList = [
         "text" : ''
     },
     */
-
 ];

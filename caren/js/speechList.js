@@ -40,6 +40,18 @@ speechList = [
         "text" : '對我的老闆來說，值得回味的，值得回味的直播第一名，都是我他媽在哭'
     },
     {
+        "fileName" : "brainWash2",
+        "text" : "雲際線沒有通過角蓮的書審天理難容～(叮呤)x3"
+    },
+    {
+        "fileName" : "brainWash3",
+        "text" : "美工刀png算是一種音檔～(叮呤)x3"
+    },
+    {
+        "fileName" : "brainWash4",
+        "text" : "(叮呤)角蓮有氣質～x3"
+    },
+    {
         "fileName" : 'breakup',
         "text" : '情感問題一律建議分手'
     },
@@ -92,7 +104,7 @@ speechList = [
         "text" : '不能讓我不舒服，我跟你講。我是台主，我舒服。我舒服你們才能舒服知道嗎'
     },
     {
-        "fileName" : "contract",
+        "fileName" : "contrack",
         "text" : "二、雙方同意自本協議簽署之日起，將原合約第五條第二項增訂第八款約定為乙方應以善良管理人之注意義務維持身心健康，包括但不限於採取正常作息、均衡飲食等。"
     },
     {
@@ -612,6 +624,10 @@ speechList = [
         "text" : "我今天、我今天睡飽了。我好開心，我真的好開心"
     },
     {
+        "fileName" : "speech_edit",
+        "text" : "諸君、我々の任務はなんだ？殲滅だ！一匹残らずの殲滅だ！なすべきのことただ一つ、地獄を作え！！"
+    },
+    {
         "fileName" : 'standUp',
         "text" : '角蓮、勃起'
     },
@@ -634,6 +650,10 @@ speechList = [
     {
         "fileName" : 'stopCrying',
         "text" : '我只允許你再哭一次啊。你、你只能、你只能再刷三個哭哭貼圖，你只能再刷三個。\r\n你接下來都給我喝水洗腳，不然就是給我笑。我再、我再看到你哭哭貼圖，我就扁你我跟你講'
+    },
+    {
+        "fileName" : "supportRen",
+        "text" : "大家，今天給蓮蓮一個質詢的機會，你抖300我就多踩飛輪三下。請大家支持蓮蓮"
     },
     {
         "fileName" : "sukisuki",
@@ -779,6 +799,4 @@ speechList = [
         "text" : ''
     },
     */
-
 ];
-

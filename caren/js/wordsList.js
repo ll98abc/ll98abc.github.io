@@ -104,6 +104,10 @@ wordsList = [
         "text" : "這是什麼惡毒至極的詛咒啊"
     },
     {
+        "fileName" : "curseYou",
+        "text" : "這就是要讓你受到知識的詛咒啊"
+    },
+    {
         "fileName" : "detectedDanger",
         "text" : "登登登，已檢測到危害。登登登，已檢測到危害"
     },
@@ -422,6 +426,10 @@ wordsList = [
     {
         "fileName" : "sorry",
         "text" : "對不起呀，各位"
+    },
+    {
+        "fileName" : "strongSupport",
+        "text" : "大力支持，雙手雙腳大力支持"
     },
     {
         "fileName" : "stupid",

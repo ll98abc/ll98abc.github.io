@@ -100,8 +100,24 @@ distortionList = [
         "text" : '天天吃蔬菜才不會必給'
     },
     {
+        "fileName" : "noResponse",
+        "text" : "沒有！沒有！沒有！他們這一次連感謝函都沒有給我！他們沒有！他們毫無音訊！"
+    },
+    {
         "fileName" : 'notAfraid',
         "text" : '沒有，我不害怕，我不害怕。我之所以不想玩恐怖遊戲是因為我不害怕所以玩起來不好玩'
+    },
+    {
+        "fileName" : "peropero",
+        "text" : "(喘)我喜歡的女生(喘)她今天IG打卡，她經過這間店，我也要去那間店呼吸，跟她呼吸一樣的空氣。(喘)這是我喜歡的女生坐過的椅子，peropero"
+    },
+    {
+        "fileName" : "recruitSound",
+        "text" : "雲際線的各位營運們，大家好。我是想要來投，就是，那個雲際線新一期的vtuber的徵選。然後呢，我平常呢，最喜歡做的事情就是躺在床上滑手機。那平常有在玩的遊戲呢就是candy crush，我目前candy crush已經破到第1000關了"
+    },
+    {
+        "fileName" : "recruitSound2",
+        "text" : "雲際線的各位老闆大家好。人家，我、我、我今天是想要來面試那個新的一期的那個、的那個，人家不會唸英文"
     },
     {
         "fileName" : "sexHara",
@@ -133,5 +149,4 @@ distortionList = [
         "text" : ''
     },
     */
-
 ];

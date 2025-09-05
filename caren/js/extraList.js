@@ -20,6 +20,10 @@ extraList = [
         "text" : "我會用鼻子喝水"
     },
     {
+        "fileName" : "forCaren",
+        "text" : "給林角蓮"
+    },
+    {
         "fileName" : 'jinBeeUMA',
         "text" : '非常感謝大家，UMA。(碧碧)'
     },
@@ -77,5 +81,4 @@ extraList = [
         "text" : ''
     },
     */
-
 ];

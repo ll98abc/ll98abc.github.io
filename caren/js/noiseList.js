@@ -280,6 +280,10 @@ noiseList = [
         "text" : "啵啵啵啵啵啵↑、啵啵啵啵啵啵↓、啵啵啵啵啵啵→，啵啵啵啵啵啵→啵啵啵啵啵啵→"
     },
     {
+        "fileName" : "noise38",
+        "text" : "(哈欠3)"
+    },
+    {
         "fileName" : "makeNoise",
         "text" : "how could I even make this fucking noise"
     },
@@ -321,5 +325,4 @@ noiseList = [
         "text" : ''
     },
     */
-
 ];
