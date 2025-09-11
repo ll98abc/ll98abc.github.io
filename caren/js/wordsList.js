@@ -314,7 +314,7 @@ wordsList = [
     {
         "fileName" : "mentalBroke",
         "text" : "沒心態了→沒心態了↓沒心態了↑"
-    },
+    },    
     {
         "fileName" : "needHelp",
         "text" : "(妹魔噪音) 救命啊"
@@ -386,7 +386,11 @@ wordsList = [
     {
         "fileName" : "puke",
         "text" : "(妹魔噪音)我要吐了"
-    },    
+    },
+    {
+        "fileName" : "recongnition",
+        "text" : "我不能認可"
+    },
     {
         "fileName" : "refuse",
         "text" : "我不要！我不要！絶対に嫌だ"
@@ -481,11 +485,15 @@ wordsList = [
     },  
     {
         "fileName" : "thumbUp",
-        "text" : "評論區的寶子們給我點個三連吧"
+        "text" : "評論區的各位寶子們給我點個三連吧"
     },
     {
         "fileName" : "tsunndere",
         "text" : "唉，我知道，你們這些小傲嬌。你們都是口是心非的傢伙，哈哈哈"
+    },
+    {
+        "fileName" : "tomatoNo",
+        "text" : "番茄不可以，NO"
     },
     {
         "fileName" : "tooFriendly",

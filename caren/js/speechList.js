@@ -388,6 +388,14 @@ speechList = [
         "text" : "我是一名有著大老二的男性"
     },
     {
+        "fileName" : "mentalHealth",
+        "text" : "很公正，然後盡可能客觀的討論的話，我最不健康的絕對是心理狀態"
+    },
+    {
+        "fileName" : "micOff",
+        "text" : "我就是關mic的小賤ㄆㄧㄤ啊，怎麼了嗎？"
+    },
+    {
         "fileName" : 'midiKeyboard',
         "text" : 'midi鍵盤，每個人都值得擁有一台。主要是居家旅行殺人越貨都很方便。一台長長的，又不是很重，殺傷力也夠。挺不錯的，推薦給大家'
     },
@@ -799,5 +807,4 @@ speechList = [
         "text" : ''
     },
     */
-
 ];

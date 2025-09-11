@@ -284,6 +284,22 @@ noiseList = [
         "text" : "(哈欠3)"
     },
     {
+        "fileName" : "noise39",
+        "text" : "妹魔噪音39"
+    },
+    {
+        "fileName" : "noise40",
+        "text" : "妹魔噪音40"
+    },
+    {
+        "fileName" : "noise41",
+        "text" : "妹魔噪音41"
+    },
+    {
+        "fileName" : "noise42",
+        "text" : "妹魔噪音42"
+    },
+    {
         "fileName" : "makeNoise",
         "text" : "how could I even make this fucking noise"
     },

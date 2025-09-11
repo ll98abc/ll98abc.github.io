@@ -1,4 +1,8 @@
-extraList = [   
+extraList = [
+    {
+        "fileName" : "iWillGiveYouAllMyLove",
+        "text" : "I will give you all my love."
+    },
     {
         "fileName" : "paralysis",
         "text" : "桌：「媽的主播能動就不錯了聊天室就是最好不要在那邊嫌肝嫌腎」蓮：「我是癱瘓是不是啊？」"
