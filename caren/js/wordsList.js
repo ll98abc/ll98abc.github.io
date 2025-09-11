@@ -388,7 +388,7 @@ wordsList = [
         "text" : "(妹魔噪音)我要吐了"
     },
     {
-        "fileName" : "recongnition",
+        "fileName" : "recognition",
         "text" : "我不能認可"
     },
     {
@@ -569,4 +569,5 @@ wordsList = [
         "text" : ''
     },
     */    
+
 ];
