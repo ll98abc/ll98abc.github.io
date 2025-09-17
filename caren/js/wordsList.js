@@ -476,6 +476,10 @@ wordsList = [
         "text" : "(客)承蒙您、按子謝。※謝謝你"
     },
     {
+        "fileName" : "thanks6",
+        "text" : "謝謝、謝謝、謝謝。騙呷騙呷。"
+    },
+    {
         "fileName" : "thankSC",
         "text" : "感謝榜一大哥刷的芒果冰"
     },
@@ -571,3 +575,4 @@ wordsList = [
     */    
 
 ];
+
