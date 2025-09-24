@@ -24,6 +24,10 @@ extraList = [
         "text" : "我會用鼻子喝水"
     },
     {
+        "fileName" : "effectYourMom",
+        "text" : "效你媽！！"
+    },
+    {
         "fileName" : "forCaren",
         "text" : "給林角蓮"
     },
@@ -85,4 +89,5 @@ extraList = [
         "text" : ''
     },
     */
+
 ];
