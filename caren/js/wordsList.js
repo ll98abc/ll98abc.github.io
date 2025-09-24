@@ -164,6 +164,10 @@ wordsList = [
         "text" : "這個的話可以多來一點"
     },
     {
+        "fileName" : "goblinGatherings",
+        "text" : "哥布林，一起，強大"
+    },
+    {
         "fileName" : "goPee",
         "text" : "去尿尿吧你們這些口是心非的傢伙"
     },
@@ -186,7 +190,7 @@ wordsList = [
     {
         "fileName" : "guilty",
         "text" : "哼，爾等有罪"
-    },    
+    },
     {
         "fileName" : "hahaButHoleShort",
         "text" : "哈哈屁眼笑死"
@@ -478,7 +482,7 @@ wordsList = [
     {
         "fileName" : "thanks6",
         "text" : "謝謝、謝謝、謝謝。騙呷騙呷。"
-    },
+    },    
     {
         "fileName" : "thankSC",
         "text" : "感謝榜一大哥刷的芒果冰"
@@ -575,4 +579,5 @@ wordsList = [
     */    
 
 ];
+
 
