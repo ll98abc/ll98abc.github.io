@@ -108,6 +108,10 @@ noiseList = [
         "text" : ''
     },*/
     {
+        "fileName" : "lament2",
+        "text" : "他在動！他在動！(妹魔噪音) OH NO!! 不要！！ (妹魔噪音) 他不見了！！"
+    },
+    {
         "fileName" : 'lament3',
         "text" : '角之詠嘆調'
     },
@@ -341,4 +345,5 @@ noiseList = [
         "text" : ''
     },
     */
+
 ];
