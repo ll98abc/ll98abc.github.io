@@ -68,6 +68,10 @@ wordsList = [
         "text" : "我唱過這首歌耶！"
     },
     {
+        "fileName" : "callMyBoss",
+        "text" : "拜託拜託，請幫我、請幫我找營運來幫我關台"
+    },
+    {
         "fileName" : "cannot",
         "text" : "如果認真講的話，不行"
     },
@@ -579,5 +583,6 @@ wordsList = [
     */    
 
 ];
+
 
 
