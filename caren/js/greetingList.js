@@ -4,6 +4,10 @@ greetingList = [
         "text" : '0886'
     },
     {
+        "fileName" : "effectYourMom",
+        "text" : "效你媽！！"
+    },
+    {
         "fileName" : "fuckingBusy",
         "text" : "每一天他媽都有事、幹"
     },
@@ -133,4 +137,5 @@ greetingList = [
         "text" : ''
     },
     */
+
 ];
