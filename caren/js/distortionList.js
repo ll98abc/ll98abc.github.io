@@ -77,7 +77,7 @@ distortionList = [
     },
     {
         "fileName" : "failureMe",
-        "text" : "(哭泣) 因為、因為我賺得不夠多。(哭泣)就是我賺的不夠多，我的營運才不會把我當寶。"
+        "text" : "(哭泣) 因為、因為我賺得不夠多。(哭泣) 就是因為我賺的不夠多，我的營運才不會把我當寶。"
     },
     {
         "fileName" : "failureMe2",
@@ -167,3 +167,4 @@ distortionList = [
     */
 
 ];
+
