@@ -72,6 +72,10 @@ distortionList = [
         "text" : '大家好，我是桌角'
     },
     {
+        "fileName" : "disgusting",
+        "text" : "就是，是因為你們……好噁心喔"
+    },
+    {
         "fileName" : "doNotHitMe",
         "text" : "Hi老布！早安──不要拿這個東西扁我，不要！"
     },
@@ -167,4 +171,5 @@ distortionList = [
     */
 
 ];
+
 
