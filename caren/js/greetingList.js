@@ -100,6 +100,10 @@ greetingList = [
         "text" : "操"
     },
     {
+        "fileName" : "greeting21",
+        "text" : "幹賃尼"
+    },
+    {
         "fileName" : 'greetingAjie',
         "text" : '操你媽的傑哥幹'
     },    
@@ -139,3 +143,4 @@ greetingList = [
     */
 
 ];
+
