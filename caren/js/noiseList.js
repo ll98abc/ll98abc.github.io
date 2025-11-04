@@ -304,6 +304,10 @@ noiseList = [
         "text" : "妹魔噪音42"
     },
     {
+        "fileName" : "noise43",
+        "text" : "妹魔噪音43"
+    },
+    {
         "fileName" : "makeNoise",
         "text" : "how could I even make this fucking noise"
     },
@@ -347,3 +351,4 @@ noiseList = [
     */
 
 ];
+
