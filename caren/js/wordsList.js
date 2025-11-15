@@ -84,6 +84,10 @@ wordsList = [
         "text" : "你們應該聽的到我講話吧？"
     },
     {
+        "fileName" : "cheers",
+        "text" : "加油！加油！加油！加油！"
+    },
+    {
         "fileName" : "classDismiss",
         "text" : "好，完美，下課"
     },
@@ -583,6 +587,7 @@ wordsList = [
     */    
 
 ];
+
 
 
 
