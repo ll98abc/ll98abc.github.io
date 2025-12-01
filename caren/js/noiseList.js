@@ -20,6 +20,10 @@ noiseList = [
         "text" : '啊我的屁股'
     },
     {
+        "fileName" : 'awwww',
+        "text" : '嗷嗚～～～'
+    },
+    {
         "fileName" : 'asmr',
         "text" : '(請放心您的房間裡面並沒有蚊子)'
     },
@@ -351,4 +355,5 @@ noiseList = [
     */
 
 ];
+
 
