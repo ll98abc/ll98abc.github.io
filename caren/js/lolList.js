@@ -158,6 +158,10 @@ lolList = [
     {
         "fileName" : "lol39",
         "text" : "呵呵呵哈哈哈、哈哈哈哈哈"
+    },
+    {
+        "fileName" : "lol40",
+        "text" : "哦呵呵呵呵"
     }
     /*
     {
@@ -165,4 +169,5 @@ lolList = [
         "text" : ''
     },
     */
+
 ];
