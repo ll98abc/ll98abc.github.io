@@ -28,6 +28,10 @@ noiseList = [
         "text" : '嗷嗚～～～嗷嗚～～嗷嗚～～嗷嗚嗚～～嗚嗚～～～'
     },
     {
+        "fileName" : 'test',
+        "text" : '測試'
+    },
+    {
         "fileName" : 'asmr',
         "text" : '(請放心您的房間裡面並沒有蚊子)'
     },
@@ -359,6 +363,7 @@ noiseList = [
     */
 
 ];
+
 
 
 
