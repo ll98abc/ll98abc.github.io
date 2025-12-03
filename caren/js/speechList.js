@@ -156,31 +156,31 @@ speechList = [
         "text" : "簽約也要抽十分之一才有機會親簽"
     },
     {
-        "fileName" : "dustyTalk",
+        "fileName" : "dustyTalks",
         "text" : "外面風好大，有什麼是我們被窩裏面說"
     },
     {
-        "fileName" : "dustyTalk2",
+        "fileName" : "dustyTalks2",
         "text" : "距離不是問題，你離我不夠近才是問題"
     },
     {
-        "fileName" : "dustyTalk3",
+        "fileName" : "dustyTalks3",
         "text" : "我結婚你一定要來，要不然沒有新娘很尷尬"
     },
     {
-        "fileName" : "dustyTalk4",
+        "fileName" : "dustyTalks4",
         "text" : "我做事向來十拿九穩，差的那一穩，是你的吻"
     },
     {
-        "fileName" : "dustyTalk5",
+        "fileName" : "dustyTalks5",
         "text" : "我有一個超能力，超級喜歡你"
     },
     {
-        "fileName" : "dustyTalk6",
+        "fileName" : "dustyTalks6",
         "text" : "我終於知道為什麼為我總是感冒了。因為我對你毫無抵抗力"
     },
     {
-        "fileName" : "dustyTalk7",
+        "fileName" : "dustyTalks7",
         "text" : "報告，我變心了。今天變得比昨天還喜歡你"
     },
     {
@@ -845,5 +845,6 @@ speechList = [
     */
 
 ];
+
 
 
