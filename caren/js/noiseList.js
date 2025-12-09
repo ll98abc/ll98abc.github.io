@@ -332,6 +332,10 @@ noiseList = [
         "text" : '(沒有人在刮您家的玻璃)'
     },
     {
+        "fileName" : "unbaubau",
+        "text" : "ㄤ包包包包包"
+    },
+    {
         "fileName" : 'sheep',
         "text" : '角蓮羊'
     },
@@ -359,6 +363,7 @@ noiseList = [
     */
 
 ];
+
 
 
 
