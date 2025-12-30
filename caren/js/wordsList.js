@@ -352,6 +352,10 @@ wordsList = [
         "text" : "不要"
     },
     {
+        "fileName" : "nobodyFuckingCareAboutIt",
+        "text" : "nobody fucking care about it"
+    },
+    {
         "fileName" : "noMeaning",
         "text" : "いみわかない"
     },
@@ -587,6 +591,7 @@ wordsList = [
     */    
 
 ];
+
 
 
 
