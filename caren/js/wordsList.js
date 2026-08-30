@@ -552,6 +552,18 @@ wordsList = [
         "text" : "欸、什麼意思"
     },
     {
+        "fileName" : "wtfAreYouSinging",
+        "text" : "你唱這什麼勾八"
+    },
+    {
+        "fileName" : "wtfAreYouSinging2",
+        "text" : "唱這殺洨"
+    },
+    {
+        "fileName" : "wtfAreYouSinging3",
+        "text" : "你就它媽繼續亂唱，OK啊"
+    },
+    {
         "fileName" : "yamete",
         "text" : "やめてください"
     },
