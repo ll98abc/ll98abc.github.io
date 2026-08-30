@@ -61,12 +61,8 @@ $(document).ready(function(){
   });
 
   $("#face").on("click" , function(){
-		let rng = Math.floor(Math.random() * 3);
-    let affix = "";
-    if (rng != 0){
-      affix = rng;
-    }
-		$(".grid[filename='"+"wtfAreYouSinging"+affix+"']").click();
+	let rng = 1 + Math.floor(Math.random() * 3);
+	$(".grid[filename='"+"wtfAreYouSinging"+rng+"']").click();
 	});	
 
   initPage();
