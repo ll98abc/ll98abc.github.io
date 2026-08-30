@@ -236,6 +236,10 @@ p{
 	font-weight: bolder;
 }
 
+.face{
+	margin-left:40vw;
+}
+
 }
 
 
@@ -496,6 +500,10 @@ p{
 	right: 20px;
 	font-size: x-large;
 	font-weight: bolder;
+}
+
+.face{
+	margin-left:25vw;
 }
 
 }
