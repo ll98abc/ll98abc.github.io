@@ -54,16 +54,21 @@
 </body>
 <script type="text/javascript">
 //to do something 
+let counter = 1;
 $(document).ready(function(){    
   // 音效播放結束時，移除playing顏色
   $("#audio").on("ended" , function(){
     $(".playing").removeClass("playing");
   });
 
-  $("#face").on("click" , function(){
-	let rng = 1 + Math.floor(Math.random() * 3);
-	$(".grid[filename='"+"wtfAreYouSinging"+rng+"']").click();
-	});	
+  $("#face").on("click" , function(){	
+	$(".grid[filename='"+"wtfAreYouSinging"+counter+"']").click();	
+	if (counter >= 3){
+		counter = 1;
+	}else{
+		counter++;
+	}
+  });	
 
   initPage();
 });
