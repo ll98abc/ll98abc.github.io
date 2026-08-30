@@ -1,0 +1,76 @@
+﻿<html>
+<head>
+<title>Caren</title>
+<meta property="og:title" content="Caren Board">
+<meta property="og:url" content="https://ll98abc.github.io/caren/caren.html">
+<meta property="og:image" content="images/ogImage.png">
+<meta property="og:description" content="角蓮之聲">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="js/speechList.js"></script>
+<script type="text/javascript" src="js/wordsList.js"></script>
+<script type="text/javascript" src="js/distortionList.js"></script>
+<script type="text/javascript" src="js/extraList.js"></script>
+<script type="text/javascript" src="js/lolList.js"></script>
+<script type="text/javascript" src="js/greetingList.js"></script>
+<script type="text/javascript" src="js/noiseList.js"></script>
+<script type="text/javascript" src="js/pageController.js"></script>
+<link href="css/wtf.css" rel="stylesheet" type="text/css" />
+<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+<div class="warpper">
+<div class="title">Caren Voice</div>
+<div>
+  <image src="images/carenFace.png" id="face"></image>
+</div>
+<audio id="audio" autoplay="false"></audio>
+<div id="mainDiv" class="mainDiv" style="display:none;">
+  <div id="favorDiv" class="favorBox hidden">    
+  </div>
+  <h1 id="speechHead" class="headline">名言</h1>
+  <div id="speechDiv">
+  </div>
+  <hr>
+  <h1 id="wordsHead" class="headline">對話</h1>
+  <div id="wordsDiv">    
+  </div>
+  <hr>
+  <h1 id="lolHead" class="headline">愉悅</h1>
+  <div id="lolDiv">    
+  </div>
+  <hr>
+  <h1 id="greetingHead" class="headline">問候</h1>
+  <div id="greetingDiv">    
+  </div>
+  <hr>
+  <h1 id="noiseHead" class="headline">妹魔噪音</h1>
+  <div id="noiseDiv">    
+  </div>
+</div>
+</div>
+<div class="bg"></div>
+</body>
+<script type="text/javascript">
+//to do something 
+$(document).ready(function(){    
+  // 音效播放結束時，移除playing顏色
+  $("#audio").on("ended" , function(){
+    $(".playing").removeClass("playing");
+  });
+
+  $("#face").on("click" , function(){
+		let rng = Math.floor(Math.random() * 3);
+    let affix = "";
+    if (rng != 0){
+      affix = rng;
+    }
+		$(".grid['filename'='"+wtfAreYouSinging+affix+"']").click();
+	});	
+
+  initPage();
+});
+</script>
+
+</html>
