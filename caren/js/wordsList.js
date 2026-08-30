@@ -552,7 +552,7 @@ wordsList = [
         "text" : "欸、什麼意思"
     },
     {
-        "fileName" : "wtfAreYouSinging",
+        "fileName" : "wtfAreYouSinging1",
         "text" : "你唱這什麼勾八"
     },
     {
